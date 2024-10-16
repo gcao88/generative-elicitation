@@ -1,0 +1,675 @@
+{
+  "prolific_id": "62b3491fc3790d748d09dc12",
+  "engine": "gpt-4",
+  "query_type": "Generative yes/no questions",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's fuzzy intuitions and preferences.\nIn this activity, we're going to be looking at different strings of text and you'll be deciding if they look like they could be an email address or not. For example, most people would agree that \"username@domain.com\" looks like an email address, while \"n12z5lFEN4\" does not. However, the rules for what can be an email address can be very unusual, so what we're really interested in is your intuition on what an email address could look like. \n<b>Important:</b> We are not asking you to determine the rules for a *good* email address, or a *real (non-spam)* email address. We are simply asking about your intuition as to why certain strings look like email addresses and certain strings do not. \n<b>Tip:</b> in an email such as username@cs.stanford.edu, \"username\" is called the local-part of the email, while \"cs.stanford.edu\" is the domain. Furthermore, \"cs\" is a subdomain, and \"edu\" is a top-level domain.",
+    "task_description": "your intuition of what makes email addresses look like email addresses",
+    "noninteractive_task_description": "Try to be as detailed as possible. For example, if you were writing a regex that accepts only email-address-like strings, what might that regex look like? What are permissible / non-permissible symbols and characters, and in what positions?",
+    "final": "In the final part of the study, you will give feedback on a test set of email addresses, which will enable us to see how well a chatbot reading your responses has learned your email preferences.",
+    "evaluation": "Please indicate whether you think the following strings look like reasonably well-formatted email addresses or not: \"yes\" if they do, \"no\" if they don't."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a period (.) immediately before or after the @ symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 17598,
+      "display_time": 1690235707619,
+      "submission_time": 1690235725217
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a underscore (_) immediately before or after the top-level domain (like .com_, ._net)?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 3896,
+      "display_time": 1690235727177,
+      "submission_time": 1690235731073
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a number immediately before or after the top-level domain (like .com1, .1net)?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 5571,
+      "display_time": 1690235732803,
+      "submission_time": 1690235738374
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a hyphen (-) immediately before or after the @ symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 3804,
+      "display_time": 1690235739874,
+      "submission_time": 1690235743678
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain uppercase and lowercase letters immediately before or after the top-level domain (like .Com, .NET)?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 5242,
+      "display_time": 1690235745403,
+      "submission_time": 1690235750645
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a period (.) immediately before or after the @ symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 6197,
+      "display_time": 1690235752469,
+      "submission_time": 1690235758666
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a period (.) immediately before or after the underscore (_) symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 31375,
+      "display_time": 1690235760154,
+      "submission_time": 1690235791529
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a hyphen (-) immediately before or after the period (.) symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 4403,
+      "display_time": 1690235792977,
+      "submission_time": 1690235797380
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a number immediately before or after the underscore (_) symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 11872,
+      "display_time": 1690235799471,
+      "submission_time": 1690235811343
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a number immediately before or after the period (.) symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 6229,
+      "display_time": 1690235813603,
+      "submission_time": 1690235819832
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a hyphen (-) immediately before or after the underscore (_) symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 5992,
+      "display_time": 1690235821284,
+      "submission_time": 1690235827276
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a period (.) immediately before or after a hyphen (-) symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 4685,
+      "display_time": 1690235829091,
+      "submission_time": 1690235833776
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a number immediately before or after the hyphen (-) symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 5000,
+      "display_time": 1690235835107,
+      "submission_time": 1690235840107
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a period (.) immediately before or after a number?"
+    },
+    {
+      "sender": "user",
+      "message": "Tes",
+      "time_spent_ms": 13839,
+      "display_time": 1690235841557,
+      "submission_time": 1690235855396
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a special character (like !, #, $, %, &, *, -, _, +, =, {, }, |, ~, ^, [, ], `, ;, :, <, >, ?, /) immediately before or after a number?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 5400,
+      "display_time": 1690235858864,
+      "submission_time": 1690235864264
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a special character (like !, #, $, %, &, *, -, _, +, =, {, }, |, ~, ^, [, ], `, ;, :, <, >, ?, /) immediately before or after a hyphen (-) symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 2875,
+      "display_time": 1690235867466,
+      "submission_time": 1690235870341
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a special character (like !, #, $, %, &, *, -, _, +, =, {, }, |, ~, ^, [, ], `, ;, :, <, >, ?, /) immediately before or after a period (.) symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 3117,
+      "display_time": 1690235873303,
+      "submission_time": 1690235876420
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a special character (like !, #, $, %, &, *, -, _, +, =, {, }, |, ~, ^, [, ], `, ;, :, <, >, ?, /) immediately before or after an underscore (_) symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 4798,
+      "display_time": 1690235879959,
+      "submission_time": 1690235884757
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a special character (like !, #, $, %, &, *, -, _, +, =, {, }, |, ~, ^, [, ], `, ;, :, <, >, ?, /) immediately before or after a letter?"
+    },
+    {
+      "sender": "user",
+      "message": "Only certain ones",
+      "time_spent_ms": 13586,
+      "display_time": 1690235888151,
+      "submission_time": 1690235901737
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a period (.) immediately before or after a special character (like !, #, $, %, &, *, -, _, +, =, {, }, |, ~, ^, [, ], `, ;, :, <, >, ?, /)?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 3349,
+      "display_time": 1690235904860,
+      "submission_time": 1690235908209
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a letter immediately before or after a number?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 4503,
+      "display_time": 1690235909455,
+      "submission_time": 1690235913958
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a number immediately before or after a top-level domain (like .com1, .1net)?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 4194,
+      "display_time": 1690235916209,
+      "submission_time": 1690235920403
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a letter immediately before or after a top-level domain (like .comA, .Anet)?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 6424,
+      "display_time": 1690235922458,
+      "submission_time": 1690235928882
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a hyphen (-) immediately before or after a number?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 8106,
+      "display_time": 1690235930444,
+      "submission_time": 1690235938550
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a letter immediately before or after an underscore (_) symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 4557,
+      "display_time": 1690235939966,
+      "submission_time": 1690235944523
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a hyphen (-) immediately before or after a letter?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 3546,
+      "display_time": 1690235946110,
+      "submission_time": 1690235949656
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a letter immediately before or after a hyphen (-) symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 5380,
+      "display_time": 1690235950977,
+      "submission_time": 1690235956357
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a letter immediately before or after a period (.) symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 4418,
+      "display_time": 1690235957885,
+      "submission_time": 1690235962303
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a special character (like !, #, $, %, &, *, -, _, +, =, {, }, |, ~, ^, [, ], `, ;, :, <, >, ?, /) immediately before or after a top-level domain (like .com!, .!net)?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 4402,
+      "display_time": 1690235966287,
+      "submission_time": 1690235970689
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a special character (like !, #, $, %, &, *, -, _, +, =, {, }, |, ~, ^, [, ], `, ;, :, <, >, ?, /) immediately before or after the @ symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "Mo",
+      "time_spent_ms": 3522,
+      "display_time": 1690235974271,
+      "submission_time": 1690235977793
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a special character (like !, #, $, %, &, *, -, _, +, =, {, }, |, ~, ^, [, ], `, ;, :, <, >, ?, /) immediately before or after a number?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 4557,
+      "display_time": 1690235982564,
+      "submission_time": 1690235987121
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a special character (like !, #, $, %, &, *, -, _, +, =, {, }, |, ~, ^, [, ], `, ;, :, <, >, ?, /) immediately before or after a hyphen (-) symbol?"
+    },
+    {
+      "sender": "user",
+      "message": " O",
+      "time_spent_ms": 3610,
+      "display_time": 1690235991064,
+      "submission_time": 1690235994674
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a special character (like !, #, $, %, &, *, -, _, +, =, {, }, |, ~, ^, [, ], `, ;, :, <, >, ?, /) immediately before or after a letter?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 3752,
+      "display_time": 1690235997925,
+      "submission_time": 1690236001677
+    },
+    {
+      "sender": "assistant",
+      "message": "Can an email address contain a special character (like !, #, $, %, &, *, -, _, +, =, {, }, |, ~, ^, [, ], `, ;, :, <, >, ?, /) immediately before or after an underscore (_) symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 4675,
+      "display_time": 1690236005089,
+      "submission_time": 1690236009764
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "user@domain.a",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.edu",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@111.222.333.4444",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@[123.45.67.89]",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary-jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary+jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary_jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "-maryjane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary=jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary&jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary.jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "maryjane1@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "1maryjane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "maryjane!@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary%jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary*jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary(ja)ne@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary@jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "_maryjane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": ".maryjane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary?jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "\"mary\"jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "m\"ary\"jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary'jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "'maryjane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "+user@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary\\jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "\"mary\\ jane\"@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "\"maryjane\"@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "\u0438\u0432\u0430\u043d.\u0441\u0435\u0440\u0433\u0435\u0435\u0432@\u043f\u0440\u0438\u043c\u0435\u0440.\u0440\u0444",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\u7528\u6237@\u4f8b\u5b50.\u5e7f\u544a",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\u0cac\u0cc6\u0c82\u0cac\u0cb2@\u0ca1\u0cc7\u0c9f\u0cbe\u0cae\u0cc7\u0cb2\u0ccd.\u0cad\u0cbe\u0cb0\u0ca4",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "D\u00f6rte@S\u00f6rensen.example.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user\ud83d\ude03@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user\u221a3@domin.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@sub.domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@example.co.uk",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@sub.example.co.uk",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.co.co.co.co",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "abc@domain.-com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d-omain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d+omain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d_omain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d3omain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c-om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c_om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c+om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c3om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "abc@domain.com,def@domain.com",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "3",
+    "feedback_new_issues_interaction": "2",
+    "feedback_interaction_coverage_pretest": "2",
+    "feedback_interaction_coverage_posttest": "6",
+    "feedback_testcase_use_history": "5",
+    "feedback_lm_experience": "5",
+    "feedback_other": ""
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what rules a user believes to be a valid email address format must adhere to (e.g. for developing a regex format checker).\n\nPrevious questions:\n- [Q] -> [A]\n\nGenerate the most informative yes/no question that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Make sure your question addresses different aspects of the regex than the questions that have already been asked. At the same time however, the question should be bite-sized, and not ask for too much at once. Phrase your question in a way that is understandable to non-expert humans; do not use any jargon without explanation. Generate the yes/no question and nothing else:"
+    }
+  ]
+}

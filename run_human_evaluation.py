@@ -83,8 +83,8 @@ def main(args):
             os.makedirs(f"model_human_results/{args.task}", exist_ok=True)
             outputs_save_file = open(f"model_human_results/{args.task}/{args.engine}_{args.eval_condition}_{question_mode.replace('/', '_').replace(' ', '_')}_{os.path.split(saved_interactions_file)[-1][:-5]}.txt", "w")
             test_xs, test_scores = run_problem_instance(
-                problem_instance_filename=problem_instance_filename, 
-                engine=args.engine, 
+                problem_instance_filename=problem_instance_filename,
+                engine=args.engine,
                 openai_cache_file=openai_cache_file,
                 num_interactions=sys.maxsize,
                 agent_class=FromSavedFileAgent,
@@ -125,7 +125,7 @@ class ArgumentParser(Tap):
     saved_annotations_dir: str = "annotations_gpt-4"  # The directory where the saved annotations are stored.
     task: str = "moral_reasoning"  # The target format we are designing for experiments (e.g. email_regex, moral_reasoning, website_preferences)
     eval_condition: str = "per_minute"  # When to evaluate the agent (e.g. at_end, per_minute, per_turn, per_turn_up_to_5)
-    engine: str = "gpt-4"  # The OpenAI engine to use (e.g. gpt-3.5-turbo, gpt-4).
+    engine: str = "gpt-3.5-turbo"  # The OpenAI engine to use (e.g. gpt-3.5-turbo, gpt-4).
     no_cache: bool = False  # Whether to use the OpenAI cache file.
     seed: int = 0  # The random seed to use.
     filter_trivial_preferences: bool = False  # Whether to filter out trivial preferences (e.g. all yes or all no)

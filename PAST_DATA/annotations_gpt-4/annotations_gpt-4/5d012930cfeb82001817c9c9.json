@@ -1,0 +1,231 @@
+{
+  "prolific_id": "5d012930cfeb82001817c9c9",
+  "engine": "gpt-4",
+  "query_type": "Generative edge cases",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: GreenThumb Gazette. Title: Exploring the World of Exotic Succulents: A Beginner's Guide. Description: Dive into the mesmerizing world of exotic succulents, learn how to care for them, and transform your indoor and outdoor spaces into a green paradise. Our beginner's guide introduces you to rare species, gives practical advice on their propagation and care, and provides design tips for aesthetically pleasing arrangements."
+    },
+    {
+      "sender": "user",
+      "message": "Sure, it sounds interesting",
+      "time_spent_ms": 40028,
+      "display_time": 1688784854092,
+      "submission_time": 1688784894120
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: QuantumQuirks. Title: Unraveling the Mysteries of Multiverse: A Theoretical Exploration. Description: Delve into the enigmatic concept of the \"Multiverse\". This in-depth, thought-provoking discussion on quantum physics and string theory aims at dissecting the possibilities of parallel universes and the existence of a multiverse. It provides a comprehensive exploration into the theories of renowned physicists and philosophers, while making these complex ideas accessible for the casual reader."
+    },
+    {
+      "sender": "user",
+      "message": "No, I am not interested in that topic.",
+      "time_spent_ms": 16271,
+      "display_time": 1688784898803,
+      "submission_time": 1688784915074
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FitnessFocus. Title: The Intersection of Yoga and Mental Health: A Holistic Approach. Description: Uncover the deep connection between yoga and mental health in this enlightening article. Learn about the numerous ways yoga can support mental wellness, from alleviating stress and anxiety to enhancing emotional balance and resilience. Our guide includes expert insights, practical tips for incorporating yoga into your daily routine, and suggestions for complementing conventional mental health treatments with yoga."
+    },
+    {
+      "sender": "user",
+      "message": "No I don't like yoga",
+      "time_spent_ms": 17182,
+      "display_time": 1688784919003,
+      "submission_time": 1688784936185
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: CulinaryCorner. Title: Molecular Gastronomy: Science Meets Food. Description: Explore the fascinating crossroads of science and food in this exploration of molecular gastronomy. Discover how chefs use scientific principles to create innovative, unique, and sometimes mind-bending dishes. This article delves into the history of molecular gastronomy and provides step-by-step experiments you can try at home. Perfect for food enthusiasts and science lovers alike."
+    },
+    {
+      "sender": "user",
+      "message": "Sure, food seems interesting",
+      "time_spent_ms": 16389,
+      "display_time": 1688784942297,
+      "submission_time": 1688784958686
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: HistoryHerald. Title: The Influence of Ancient Greek Civilization on Modern Democracy: An In-depth Analysis. Description: Take a journey back in time and explore how ancient Greek civilization has shaped the modern democratic systems. This comprehensive analysis highlights the impact of Greek philosophers, principles of governance, public participation, and legislative systems on today's democratic institutions. Ideal for history buffs, political science enthusiasts, or anyone curious about the roots of our current governance systems."
+    },
+    {
+      "sender": "user",
+      "message": "No I do not like history",
+      "time_spent_ms": 12892,
+      "display_time": 1688784964090,
+      "submission_time": 1688784976982
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: ArtisticAlchemy. Title: Digital Art: Shaping the Future of Creative Expression. Description: Unearth the transformative power of digital art in this detailed overview. This article unfolds the evolution of digital art, from its origin to the cutting-edge tools and platforms shaping its future. The piece also illustrates how digital art creates new spaces for creators to experiment and express, pushing the boundaries of what's conceivable. Ideal for tech enthusiasts, artists, or anyone curious about the intersection of technology and creativity."
+    },
+    {
+      "sender": "user",
+      "message": "No I do not care for art.",
+      "time_spent_ms": 16977,
+      "display_time": 1688784981944,
+      "submission_time": 1688784998921
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: AdventureAtlas. Title: Space Tourism: The Final Frontier for Travel Enthusiasts. Description: Embark on a journey through the cosmos with this in-depth look at the burgeoning field of space tourism. From private spaceflights to lunar vacations, this article explores the technology, costs, and experiences associated with this thrilling new branch of tourism. It features interviews with industry leaders, insights from astronauts, and forecasts for the future of civilian space travel. Ideal for travel buffs, science fiction fans, or anyone with a curiosity about the great beyond."
+    },
+    {
+      "sender": "user",
+      "message": "Sure, I am interested in travel",
+      "time_spent_ms": 12975,
+      "display_time": 1688785004386,
+      "submission_time": 1688785017361
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: EcoInsights. Title: Renewable Energy and Climate Change: A Path to a Sustainable Future. Description: Analyze the role of renewable energy in combating climate change in this comprehensive guide. This article examines the environmental, economic, and societal impacts of renewable energy sources, such as wind, solar, and hydropower. It also provides insights into government policies, technology advancements, and investments in this sector. A must-read for environmental enthusiasts, policy-makers, or anyone concerned about the future of our planet."
+    },
+    {
+      "sender": "user",
+      "message": "No I do not care about energy issues",
+      "time_spent_ms": 33549,
+      "display_time": 1688785022759,
+      "submission_time": 1688785056308
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: MindMatters. Title: The Enigma of Consciousness: A Psychological and Neuroscientific Perspective. Description: Venture into the labyrinthine mysteries of human consciousness in this engrossing article. This piece delves into the intricate psyche of the human mind, its complex labyrinth of thoughts, emotions, and experiences. Scientific theories and psychological perspectives are intertwined to offer a comprehensive understanding of consciousness, memory, and perception. Ideal for those fascinated by psychology, neuroscience, or individuals intrigued by the inner workings of the human mind."
+    },
+    {
+      "sender": "user",
+      "message": "No I am not interested in human consciousness",
+      "time_spent_ms": 24240,
+      "display_time": 1688785062043,
+      "submission_time": 1688785086283
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: CryptoCoinChronicle. Title: Decoding Cryptocurrency: A Layman's Guide to Digital Currency. Description: Step into the world of digital finance with this beginner-friendly guide to cryptocurrency. This article covers everything from the basics of blockchain technology to the many types of cryptocurrencies available today. It also offers insight into the potential risks and rewards of this novel form of investment. Whether you're new to the concept or a seasoned investor looking to broaden your knowledge, this piece provides a thorough overview of the cryptocurrency landscape. Ideal for finance enthusiasts, tech-lovers, or anyone curious about the future of money."
+    },
+    {
+      "sender": "user",
+      "message": "No I do not care for cryptocurrency",
+      "time_spent_ms": 32606,
+      "display_time": 1688785091226,
+      "submission_time": 1688785123832
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: PetPulse. Title: Unleashing the Potential: Training Your Dog Using Positive Reinforcement Techniques. Description: Dive into the world of dog training with this comprehensive guide using positive reinforcement techniques. Learn about the psychology of your pet, the effectiveness of reward-based training, and step-by-step instructions on teaching your dog new behaviors. This article also discusses common mistakes to avoid during the training process and how to deal with behavioral issues. Perfect for pet owners, animal lovers, or anyone interested in animal psychology and behavior."
+    },
+    {
+      "sender": "user",
+      "message": "N, I do not have a pet.",
+      "time_spent_ms": 39739,
+      "display_time": 1688785128412,
+      "submission_time": 1688785168151
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "yes",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "3",
+    "feedback_new_issues_interaction": "2",
+    "feedback_interaction_coverage_pretest": "3",
+    "feedback_interaction_coverage_posttest": "5",
+    "feedback_testcase_use_history": "6",
+    "feedback_lm_experience": "5",
+    "feedback_other": "n/a"
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what topics a user is interested in reading online article about. People's interests are broad, so you should seek to understand their interests across many topics; in other words, go for breadth rather than depth. Do not assume a user has given a complete answer to any question, so make sure to keep probing different types of interests.\n\nCome up with a potential edge case to learn as much information as you can about what their desired behavior should be under different circumstances.\nMake sure the edge case addresses different aspects of the system than the edge cases that have already been considered.\n\nAn example edge case is: Are you interested in the following article? Website Name: TechTalkDaily\nTitle: 10 Must-Have Gadgets for 2023: A Comprehensive Guide\nDescription: Discover the top 10 gadgets that will revolutionize your daily life in 2023. From smart home devices to the latest wearables, we've got you covered with our comprehensive guide.\n\nCurrent cases:\n- [Q] -> [A]\n\nGenerate the most informative edge case that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Generate the edge case in the following format, and nothing else: \"Are you interested in the following article? [edge case]\""
+    }
+  ]
+}

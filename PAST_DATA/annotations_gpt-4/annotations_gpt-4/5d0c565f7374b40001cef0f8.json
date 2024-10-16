@@ -1,0 +1,259 @@
+{
+  "prolific_id": "5d0c565f7374b40001cef0f8",
+  "engine": "gpt-4",
+  "query_type": "Supervised Learning",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Man found dead in Greensboro identified, police investigating as homicide\nDescription: GREENSBORO, N.C.   Greensboro police have started a homicide investigation after identifying a man found dead, according to a Greensboro Police Department news release. Douglas Wheless, 33, was found dead after being shot, police say. Police responded to the area of 505 Gillespie Street Tuesday around 8 a.m. Wheless was found dead in the road. It is unknown right now what time he was killed. ..."
+    },
+    {
+      "sender": "user",
+      "message": "No, I'm not interested in murders.",
+      "time_spent_ms": 19416,
+      "display_time": 1693594366787,
+      "submission_time": 1693594386203
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Trailer - Polaroid\nDescription: Official Trailer"
+    },
+    {
+      "sender": "user",
+      "message": "What is it? A trailer for a film?",
+      "time_spent_ms": 22672,
+      "display_time": 1693594386323,
+      "submission_time": 1693594408995
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 6-year-old golfer aims to be new Tiger Woods\nDescription: The young golfer started playing at three, and has made such extraordinary progress that he has already won junior tournaments."
+    },
+    {
+      "sender": "user",
+      "message": "No, I'm not interested in sports.",
+      "time_spent_ms": 14650,
+      "display_time": 1693594409113,
+      "submission_time": 1693594423763
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: How millennials are changing banking\nDescription: How millennials changed banking"
+    },
+    {
+      "sender": "user",
+      "message": "No, I'm not interested in that. Do you have any articles on science?",
+      "time_spent_ms": 26328,
+      "display_time": 1693594423891,
+      "submission_time": 1693594450219
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Touch and go: The trouble (and danger) with touchscreens\nDescription: Automakers have fallen in love with touchscreens not just because they look cool but because they save money."
+    },
+    {
+      "sender": "user",
+      "message": "Sure, I'd read that.",
+      "time_spent_ms": 26786,
+      "display_time": 1693594450337,
+      "submission_time": 1693594477123
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: These are the world's most beautiful small towns\nDescription: From historic citadels to snowy ski spots, these stunning small towns are brimming with beauty at every turn."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I'd read that one.",
+      "time_spent_ms": 15187,
+      "display_time": 1693594477249,
+      "submission_time": 1693594492436
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: UAE Ecosystem Stakeholders Weigh In On ENOC vs. CAFU\nDescription: When the big guys come knocking, you know your startup has gotten it right."
+    },
+    {
+      "sender": "user",
+      "message": "I'm not sure what those acronyms are for, but I'd try reading it.",
+      "time_spent_ms": 30335,
+      "display_time": 1693594492549,
+      "submission_time": 1693594522884
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Katie Hill scandal underscores ongoing issue of 'revenge porn' with few solutions\nDescription: Hill resigned amid controversy over an alleged sexual relationship with one of her staffers and the release of nude photos. Her case highlights the lack of broad nonconsensual porn laws in the U.S."
+    },
+    {
+      "sender": "user",
+      "message": "No, I'm not really interested in that story.",
+      "time_spent_ms": 28037,
+      "display_time": 1693594523007,
+      "submission_time": 1693594551044
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: A Los Angeles mansion once listed for $250 million has finally sold for 62% off after 3 years. Take a look inside what was once America's most expensive home.\nDescription: The extravagant Bel Air property has five bars, a bowling alley, a 40-seat movie theater, an 85-foot infinity pool, and a candy wall."
+    },
+    {
+      "sender": "user",
+      "message": "No, I'm not interested.",
+      "time_spent_ms": 23104,
+      "display_time": 1693594551178,
+      "submission_time": 1693594574282
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Work & Play in the Motor City!\nDescription: Locals share some of the best places to visit and experience the culture of Detroit while on a business trip."
+    },
+    {
+      "sender": "user",
+      "message": "No, I'm not interested.",
+      "time_spent_ms": 21006,
+      "display_time": 1693594574403,
+      "submission_time": 1693594595409
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 3 new cocktail books for home bartenders of all ability levels, from basic to master\nDescription: Making cocktails at home, while an elegant treat for your guests and yourself, can be a bit overwhelming."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I'd read that one.",
+      "time_spent_ms": 18239,
+      "display_time": 1693594595526,
+      "submission_time": 1693594613765
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The 15 Longest Nonstop Flights in the World\nDescription: Do you think you could handle being stuck inside a metal tube for this long?"
+    },
+    {
+      "sender": "user",
+      "message": "No, I'm not interested in that one.",
+      "time_spent_ms": 21251,
+      "display_time": 1693594613886,
+      "submission_time": 1693594635137
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Our Favorite Manatee Photos of All Time\nDescription: Get up-close and personal with these gentle giants that are notoriously hard to photograph and learn all about them while you're at it! The post Our Favorite Manatee Photos of All Time appeared first on Reader's Digest."
+    },
+    {
+      "sender": "user",
+      "message": "Absolutely! I'd definitely read that one.",
+      "time_spent_ms": 16438,
+      "display_time": 1693594635259,
+      "submission_time": 1693594651697
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Stephen Curry calls out Michael Jordan for being a 'hater'\nDescription: While the opinion of arguably the greatest NBA player of all time is certainly noteworthy, most people disagree with Jordan."
+    },
+    {
+      "sender": "user",
+      "message": "No, I'm not interested in sports.",
+      "time_spent_ms": 22246,
+      "display_time": 1693594651813,
+      "submission_time": 1693594674059
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "yes",
+      "explanation": "I'm interested in cutting carbon."
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "yes",
+      "explanation": "I like history."
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "yes",
+      "explanation": "I'm interested in AI."
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "no",
+      "explanation": "While I love to bake, I don't like banana bread."
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "yes",
+      "explanation": "I like National Geographic, so I'd at least take a look."
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "yes",
+      "explanation": "I'm curious about travel."
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "yes",
+      "explanation": "I'm curious about cognitive health."
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "no",
+      "explanation": "I like to play games, but reading about them not so much."
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": "I'm not interested in sports."
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": "The topic just doesn't interest me."
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "yes",
+      "explanation": "I'm always looking for new music."
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "yes",
+      "explanation": "I'm interested in cooking and baking."
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": "I enjoy fashion, but I'm not really into reading about it."
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": "I'm not interested in running."
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "no",
+      "explanation": "I hate business articles."
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "yes",
+      "explanation": "I'm curious about psychology."
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "2",
+    "feedback_new_issues_interaction": "4",
+    "feedback_interaction_coverage_pretest": "2",
+    "feedback_interaction_coverage_posttest": "5",
+    "feedback_testcase_use_history": "2",
+    "feedback_lm_experience": "1",
+    "feedback_other": "Nothing I can think of."
+  },
+  "query_prompt": "pool_random"
+}

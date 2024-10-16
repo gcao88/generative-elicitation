@@ -1,0 +1,512 @@
+{
+  "prolific_id": "5d23460ad4c57900192b129c",
+  "engine": "gpt-4",
+  "query_type": "Supervised Learning",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Race Rewind: Phoenix heats up and Denny delivers\nDescription: Relive Denny Hamlin's incredible day at ISM Raceway in this week's Monster Energy NASCAR Cup Series Race Rewind."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 7539,
+      "display_time": 1693593507083,
+      "submission_time": 1693593514622
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 15 Things Dog Shelters Need You to Know\nDescription: When you're looking for your new best friend, staffers and volunteers at dog shelters can help."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 12535,
+      "display_time": 1693593514734,
+      "submission_time": 1693593527269
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 2021 VW Golf GTI Caught At The 'Ring Perfecting Hot Hatch Recipe\nDescription: One of the very few eighth-gen Golfs coming to the U.S."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 5969,
+      "display_time": 1693593527372,
+      "submission_time": 1693593533341
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Vanna White hosts 'Wheel of Fortune' after Sajak has surgery\nDescription: LOS ANGELES (AP)   \"Wheel of Fortune\" host Pat Sajak had to have emergency surgery, and his longtime co-host Vanna White will fill in for him while he recovers. The show said in a statement that Thursday's taping was canceled as the 73-year-old Sajak underwent successful surgery to correct a blocked intestine. The 62-year-old White stepped in as host when taping resumed Friday for episodes that will air starting Dec. 9."
+    },
+    {
+      "sender": "user",
+      "message": "Yes.",
+      "time_spent_ms": 7234,
+      "display_time": 1693593533443,
+      "submission_time": 1693593540677
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The Curious Pasta Dish I Found on My Solo Trip to Italy\nDescription: Table for One is a column by Senior Editor Eric Kim, who loves traveling alone, and seeks to celebrate the beauty of solitude in its many forms."
+    },
+    {
+      "sender": "user",
+      "message": "Yes.",
+      "time_spent_ms": 5877,
+      "display_time": 1693593540784,
+      "submission_time": 1693593546661
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Here's how you can help California's wildfire victims\nDescription: California's wildfires have forced hundreds of thousands of people from their homes as firefighters battle historically dire conditions."
+    },
+    {
+      "sender": "user",
+      "message": "Yes.",
+      "time_spent_ms": 15405,
+      "display_time": 1693593546872,
+      "submission_time": 1693593562277
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Tips From The Test Kitchen: Basic Easy Fruit Crisp\nDescription: This easy fruit crisp can be made all year long, just substitute in any seasonal fruit to make this dessert one of a kind."
+    },
+    {
+      "sender": "user",
+      "message": "Yes.",
+      "time_spent_ms": 4951,
+      "display_time": 1693593562406,
+      "submission_time": 1693593567357
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 10 farm-fresh pickup trucks worth buying before values rise\nDescription: Pickup a bargain before it's too late\u2026"
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 6701,
+      "display_time": 1693593567464,
+      "submission_time": 1693593574165
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Porsche Taycan Turbo S Sport Turismo runs hard at the 'Ring\nDescription: Clearly, it'll haul more than just tykes and whatnots"
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 6386,
+      "display_time": 1693593574275,
+      "submission_time": 1693593580661
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: These 50+ Last-Minute Halloween Costumes Are Perfect for Procrastinators\nDescription: An easy, Insta-worthy costume in 3, 2, 1 ..."
+    },
+    {
+      "sender": "user",
+      "message": "Yes.",
+      "time_spent_ms": 4526,
+      "display_time": 1693593580767,
+      "submission_time": 1693593585293
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: If You're Not Serving Mac 'n Cheese This Thanksgiving, You're Missing Out\nDescription: Think outside the box this Thanksgiving."
+    },
+    {
+      "sender": "user",
+      "message": "Yes.",
+      "time_spent_ms": 17559,
+      "display_time": 1693593585398,
+      "submission_time": 1693593602957
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Roush Teases Its Most Powerful Mustang Ever Ahead Of SEMA Debut\nDescription: Only 60 will be built, and there should be over 710 horsepower under the hood."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 11257,
+      "display_time": 1693593603067,
+      "submission_time": 1693593614324
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 5 things you need to know about the 2019 VW Beetle Final Edition\nDescription: The last Beetle gets a special edition to celebrate one of the most popular cars ever."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 5771,
+      "display_time": 1693593614433,
+      "submission_time": 1693593620204
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: America's Biggest Trash Hauler Stops Shipping Plastic To Poor Countries\nDescription: After months of global outcry over the United States' role in the plastic pollution crisis, companies that collect and dispose of waste are trying to clamp down on the amount of American refuse that gets dumped in poorer countries. Waste Management Inc., the nation's largest trash hauler, is no longer shipping discarded plastic to countries outside North America. This week, Greenpeace confirmed the policy change, which went into effect in..."
+    },
+    {
+      "sender": "user",
+      "message": "Yes.",
+      "time_spent_ms": 10171,
+      "display_time": 1693593620321,
+      "submission_time": 1693593630492
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Man sets pet lion on electrician who tried to collect pay, police say\nDescription: The caretaker of a Pakistani house of worship unleashed his pet lion on an electrician who was trying to collect late payment, local police say."
+    },
+    {
+      "sender": "user",
+      "message": "YES!",
+      "time_spent_ms": 11405,
+      "display_time": 1693593630599,
+      "submission_time": 1693593642004
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: California Beekeeper Thinks 'Rewilding' Might Save Bees\nDescription: The idea is to let bees be bees."
+    },
+    {
+      "sender": "user",
+      "message": "Yes.",
+      "time_spent_ms": 8792,
+      "display_time": 1693593642116,
+      "submission_time": 1693593650908
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Old tires on your car can have tragic consequences\nDescription: When dealing with cars that are infrequently driven, sometimes tires can age out before they wear out. So inspecting them is imperative."
+    },
+    {
+      "sender": "user",
+      "message": "Yes.",
+      "time_spent_ms": 9503,
+      "display_time": 1693593651013,
+      "submission_time": 1693593660516
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Berlin Freezes Rents in Landmark Plan to Tackle Cost Spiral\nDescription: Berlin's governing parties struck a deal to freeze rents for five years, marking one of the most radical plans to tackle spiraling housing costs in a major city and hitting the shares of major apartment owners."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 7485,
+      "display_time": 1693593660623,
+      "submission_time": 1693593668108
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The 9 most mind-blowing concept cars of the past decade\nDescription: With their futuristic designs, mind-blowing technology, and brilliant engineering, concept cars are one of the most exciting parts of the automotive industry. Fortunately, the 2010s featured a wide array of these dreamy vehicles that catered to every type of car lover out there. From luxury automakers like Mercedes-Benz, Audi, BMW, and Aston Martin came some of the most breathtaking concepts to ever hit the auto-show stages. Even Toyota debuted a sports car we can't believe will never reach production. Out of everything the 2010s brought us, though, we've narrowed it down to nine that we feel were the coolest concepts of the decade."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 7960,
+      "display_time": 1693593668212,
+      "submission_time": 1693593676172
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 125 Cast Iron Recipes for Fall\nDescription: Break out Grandma's well-seasoned cast iron and whip up some heavenly, comforting fall recipes."
+    },
+    {
+      "sender": "user",
+      "message": "Yes.",
+      "time_spent_ms": 9560,
+      "display_time": 1693593676276,
+      "submission_time": 1693593685836
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Trump: The economy has exceeded expectations\nDescription: President Donald Trump speaks at the Economic Club of New York on the U.S.-China trade war and the state of the U.S. economy."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 8251,
+      "display_time": 1693593685944,
+      "submission_time": 1693593694195
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Obamacare premiums are dropping for 2020 plans\nDescription: The Affordable Care Act is looking stronger for 2020 -- and the Trump administration is claiming credit for it, even as officials try to upend the landmark health reform law."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 9052,
+      "display_time": 1693593694303,
+      "submission_time": 1693593703355
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 'El Camino: A Breaking Bad Movie': TV Review\nDescription: Vince Gilligan and Aaron Paul jump back into the aftermath of 'Breaking Bad' for a two-hour movie that's fun and often thrilling, but never feels necessary."
+    },
+    {
+      "sender": "user",
+      "message": "Yes.",
+      "time_spent_ms": 6806,
+      "display_time": 1693593703461,
+      "submission_time": 1693593710267
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 2019 Tokyo Motor Show preview: Debuts from Honda, Mazda, Toyota and more\nDescription: Whether you're after electric cars, sports cars or something out of left field, Tokyo's got it."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 8501,
+      "display_time": 1693593710375,
+      "submission_time": 1693593718876
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: England secures place in Rugby World Cup final\nDescription: England put on one of the great Rugby World Cup performances to stun two-time defending champion New Zealand 19-7 and book its place in the final for the first time since 2007."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 6555,
+      "display_time": 1693593718984,
+      "submission_time": 1693593725539
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Our 10 favorite Dutch ovens of 2019\nDescription: Including a budget option and one for campers."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 7484,
+      "display_time": 1693593725647,
+      "submission_time": 1693593733131
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Roush Claims F-150 Nitemare Is 'World's Quickest Production Truck'\nDescription: It goes 0-60 in 3.9 seconds, but there are some catches."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 4280,
+      "display_time": 1693593733243,
+      "submission_time": 1693593737523
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 24 Celebrities Tell Us the Book That Changed Their Life\nDescription: Taraji P. Henson, Serena Williams, and Chrissy Teigen and other stars' must-reads."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 5686,
+      "display_time": 1693593737653,
+      "submission_time": 1693593743339
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Kylie Jenner is front row for Spanish singer Rosal\u00eda at Travis Scott's Astroworld Festival\nDescription: It was initially unclear why police and security guards formed a tight circle near the front of the stage during Spanish singer Rosal\u00eda's set at Saturday's Astroworld Festival."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 5689,
+      "display_time": 1693593743450,
+      "submission_time": 1693593749139
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: This Is the Best Time of the Week to Buy a Car\nDescription: It's probably not the most convenient, but it will get you the best deal. The post This Is the Best Time of the Week to Buy a Car appeared first on Reader's Digest."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 6386,
+      "display_time": 1693593749265,
+      "submission_time": 1693593755651
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The Jose Cuervo Express Is Hosting A Special Day Of The Dead Train Ride With Tequila Tastings And Live Music\nDescription: All aboard!"
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 7251,
+      "display_time": 1693593755760,
+      "submission_time": 1693593763011
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Sinner upsets top seed De Minaur in Milan final\nDescription: Italian Jannik Sinner has upset top seed Alex De Minaur to win the Next Gen Finals in Milan."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 7513,
+      "display_time": 1693593763122,
+      "submission_time": 1693593770635
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: How I Got Lung Cancer at 31 Without Ever Smoking a Single Cigarette\nDescription: Rachael Malmberg was 31 when she received a deadly diagnosis. She is fighting her condition and has embarked upon a mission to educate others about the second leading cause of lung cancer and it has nothing to do with smoking."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 6658,
+      "display_time": 1693593770745,
+      "submission_time": 1693593777403
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Take those pumpkin seeds, and make a chocolaty treat\nDescription: Pumpkin Seed Clusters are easy to make and hard to stop eating."
+    },
+    {
+      "sender": "user",
+      "message": "Yes.",
+      "time_spent_ms": 6828,
+      "display_time": 1693593777527,
+      "submission_time": 1693593784355
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: A new Microsoft cloud category to watch: The Microsoft 365 number\nDescription: Microsoft doesn't break out Microsoft 365 as a separate category in its earnings reports. But indicators that the suite is starting to gain traction are evident in its Q1 FY'20 report."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 7315,
+      "display_time": 1693593784464,
+      "submission_time": 1693593791779
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Voters tuning in to the race for Allegheny County District Attorney\nDescription: An off-year election doesn't bode well for heavy voter turnout. However, voters in Allegheny County are paying attention to the race for district attorney, between Democratic incumbent Stephen Zappala and independent candidate Lisa Middleman, who is a part-time public defender and private criminal defense attorney. Both candidates have their respective supporters. Zappala is endorsed by the Allegheny Democratic Committee. Sign up for our..."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 8010,
+      "display_time": 1693593792025,
+      "submission_time": 1693593800035
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 'Born, Not Made': Doctors With CHOP Offer New Insights On Best Way To Treat Picky Eaters\nDescription: The research says parents can be trained on how to get their kids to eat."
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 7510,
+      "display_time": 1693593800165,
+      "submission_time": 1693593807675
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "yes",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "2",
+    "feedback_new_issues_interaction": "5",
+    "feedback_interaction_coverage_pretest": "5",
+    "feedback_interaction_coverage_posttest": "5",
+    "feedback_testcase_use_history": "2",
+    "feedback_lm_experience": "7",
+    "feedback_other": ""
+  },
+  "query_prompt": "pool_random"
+}

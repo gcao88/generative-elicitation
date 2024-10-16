@@ -17,12 +17,12 @@ OPENAI FUNCTIONS
 
 def save_openai_cache(new_entry, openai_cache=None, openai_cache_file=None):
     '''Saves the new entry to the openai cache file and updates the openai_cache dict.
-    
+
     Args:
         new_entry (dict): The new entry to save to the cache.
         openai_cache (dict): The openai cache dict to update.
         openai_cache_file (str): The path to the openai cache file.
-    
+
     Returns:
         None
     '''
@@ -52,7 +52,7 @@ async def dispatch_openai_requests(
 
     Adapted from https://gist.github.com/neubig/80de662fb3e225c18172ec218be4917a
     Uses a cache to retrieve cached responses
-    
+
     Args:
         messages_history_list: List of message histories to be sent to async OpenAI ChatCompletion API.
         model: OpenAI model to use.
@@ -64,7 +64,7 @@ async def dispatch_openai_requests(
     """
     noncached_message_list = []
     messages_to_responses = {}
-    
+
     # Add cache hits to messages_to_responses dict
     for message_history in message_history_list:
         messages_cache_key = json.dumps(message_history)
@@ -73,7 +73,7 @@ async def dispatch_openai_requests(
             messages_to_responses[messages_cache_key] = response
         else:
             noncached_message_list.append(message_history)
-    
+
     # Do async API call for remaining uncached queries
     if "temperature" not in kwargs:
         kwargs["temperature"] = 0.0
@@ -96,7 +96,7 @@ async def dispatch_openai_requests(
             for message_history in noncached_message_list
         ]
     responses = await asyncio.gather(*async_responses)
-    
+
     # Add new {query: response} pairs to cache
     for i, response in enumerate(responses):
         messages_cache_key = json.dumps(noncached_message_list[i])
@@ -121,14 +121,14 @@ async def dispatch_openai_requests(
 @retry(wait=wait_random_exponential(min=1, max=60))
 def query_api(messages, engine, openai_cache=None, openai_cache_file=None, **kwargs):
     '''Queries the OpenAI API with the given messages.
-    
+
     NOTE: This function mutates the messages list to add the new_message and the response from the API.
-    
+
     Args:
         messages (list): A list of past messages to send to the API.
         openai_cache (dict, optional): The openai cache dict. Stores the API responses to avoid duplicate queries. Defaults to None.
         openai_cache_file (str, optional): The path to write the cache entries to. Defaults to None.
-    
+
     Returns:
         str: The response from the API.
     '''
@@ -162,10 +162,10 @@ def query_api(messages, engine, openai_cache=None, openai_cache_file=None, **kwa
 
 def load_openai_cache(openai_cache_file):
     '''Loads the openai cache file into a dict.
-    
+
     Args:
         openai_cache_file (str): The path to the openai cache file.
-        
+
     Returns:
         dict: The openai cache dict.
     '''
@@ -225,7 +225,7 @@ def average_lines(lines, num_points=100):
         average_line: A 2D numpy array with shape (num_points, 2), where the columns are x and y coordinates
                       of the averaged line.
     """
-    
+
     # Step 1: Create interpolation functions
     interp_funcs = [interp1d(line[:,0], line[:,1], kind='linear', fill_value='extrapolate') for line in lines]
 
@@ -243,5 +243,5 @@ def average_lines(lines, num_points=100):
     # Now you have your average line
     average_line = np.column_stack((x_values, y_values))
     assert y_errors.shape[0] == y_values.shape[0]
-    
+
     return average_line, y_errors

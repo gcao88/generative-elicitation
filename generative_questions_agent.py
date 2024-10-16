@@ -23,7 +23,7 @@ class GenerativeQuestionsAgent(BaseActiveLearningAgent):
 
             Previous questions and answers:
             {interaction_history}
-            
+
             Previous invalid attempts (these regexes failed to compile):
             {broken_regexes}
 
@@ -59,23 +59,26 @@ class GenerativeQuestionsAgent(BaseActiveLearningAgent):
                 interaction_history=self.format_questions_and_answers(interaction_history)
             )
         print(question_prompt)
-        print("===")
+        print("=== function get_question_prompt")
         return [{"role": "user", "content": question_prompt}]
-    
+
     def get_query_prompt(self):
+        print("function get_query_prompt")
         return self.get_question_prompt(self.task_description, self.question_type, self.implementation, [["[Q]", "[A]"]])
 
     def generate_active_query(self):
         '''Generates a question for the oracle.'''
         question_prompt = self.get_question_prompt(self.task_description, self.question_type, self.implementation, self.interaction_history)
+        print("getting api")
         question, _ = query_api(question_prompt, self.engine, self.openai_cache, self.openai_cache_file, temperature=self.temperature)
+        print("done getting api")
         return question
-       
+
     def generate_oracle_response(self, question):
         '''Generates an oracle response for the question'''
         answer = self.query_oracle_api(question, self.question_type)
         self.interaction_history.append((question, answer))
         return answer
-    
+
     def query_type(self):
         return f"question_{self.question_type}"

@@ -1,0 +1,303 @@
+{
+  "prolific_id": "5af7094225561e00013acd70",
+  "engine": "gpt-4",
+  "query_type": "Non-interactive",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's fuzzy intuitions and preferences.\nIn this activity, we're going to be looking at different strings of text and you'll be deciding if they look like they could be an email address or not. For example, most people would agree that \"username@domain.com\" looks like an email address, while \"n12z5lFEN4\" does not. However, the rules for what can be an email address can be very unusual, so what we're really interested in is your intuition on what an email address could look like. \n<b>Important:</b> We are not asking you to determine the rules for a *good* email address, or a *real (non-spam)* email address. We are simply asking about your intuition as to why certain strings look like email addresses and certain strings do not. \n<b>Tip:</b> in an email such as username@cs.stanford.edu, \"username\" is called the local-part of the email, while \"cs.stanford.edu\" is the domain. Furthermore, \"cs\" is a subdomain, and \"edu\" is a top-level domain.",
+    "task_description": "your intuition of what makes email addresses look like email addresses",
+    "noninteractive_task_description": "Try to be as detailed as possible. For example, if you were writing a regex that accepts only email-address-like strings, what might that regex look like? What are permissible / non-permissible symbols and characters, and in what positions?",
+    "final": "In the final part of the study, you will give feedback on a test set of email addresses, which will enable us to see how well a chatbot reading your responses has learned your email preferences.",
+    "evaluation": "Please indicate whether you think the following strings look like reasonably well-formatted email addresses or not: \"yes\" if they do, \"no\" if they don't."
+  },
+  "conversation_history": [
+    {
+      "sender": "user",
+      "message": "I think that the 2 or 4 characters of the local part of the email address can be numbers, but most likely not symbols.\r\n\r\nRegardless of whether the first 2 or 4 are characters, there also has to be a string at the beginning (or after the initial 2 or 4 numbers) of 4 or more letters that make an actual word (e.g. \"user\", \"admin\") or possibly a name (e.g. 'lee', 'sam'). \r\n\r\nIt is also acceptable to have a period somewhere before the @ symbol, but only if it is being used to separate different parts of the local part of the address (e.g. 'lee.richards' where the . is functioning as a space). ",
+      "time_spent_ms": 307599,
+      "display_time": 1690235092902,
+      "submission_time": 1690235400501
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "user@domain.a",
+      "label": "no",
+      "explanation": "Top-level domain of .a is unfamiliar to me."
+    },
+    {
+      "sample": "user@domain.edu",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@111.222.333.4444",
+      "label": "no",
+      "explanation": "While it seems technically okay that an ip address is in the place of the domain (i.e. this email address would technically work), I would have to question why it was formatted like that instead of as the domain name."
+    },
+    {
+      "sample": "user@[123.45.67.89]",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary-jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary+jane@domain.com",
+      "label": "no",
+      "explanation": "The + symbol makes me think that this email was \"generated,\" not thought up by a person."
+    },
+    {
+      "sample": "mary_jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "-maryjane@domain.com",
+      "label": "no",
+      "explanation": "Use of symbol in weird place again suggests this email address was \"generated\" (i.e. made up by a program)."
+    },
+    {
+      "sample": "mary=jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary&jane@domain.com",
+      "label": "no",
+      "explanation": "I don't like the ampersand because it should only be used functionally in addresses."
+    },
+    {
+      "sample": "mary.jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "maryjane1@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "1maryjane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "maryjane!@domain.com",
+      "label": "no",
+      "explanation": "Strange placement of ! symbol "
+    },
+    {
+      "sample": "mary%jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary*jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary(ja)ne@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary@jane@domain.com",
+      "label": "no",
+      "explanation": "It seems like this address wouldn't even work so it would make me very suspicious."
+    },
+    {
+      "sample": "_maryjane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": ".maryjane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary?jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\"mary\"jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "m\"ary\"jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary'jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "'maryjane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "+user@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary jane@domain.com",
+      "label": "no",
+      "explanation": "This address wouldn't work."
+    },
+    {
+      "sample": "mary\\jane@domain.com",
+      "label": "no",
+      "explanation": "\\ should be used for escape."
+    },
+    {
+      "sample": "\"mary\\ jane\"@domain.com",
+      "label": "no",
+      "explanation": "\\ should be used for escape. Having a space won't work."
+    },
+    {
+      "sample": "\"maryjane\"@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\u0438\u0432\u0430\u043d.\u0441\u0435\u0440\u0433\u0435\u0435\u0432@\u043f\u0440\u0438\u043c\u0435\u0440.\u0440\u0444",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\u7528\u6237@\u4f8b\u5b50.\u5e7f\u544a",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "\u0cac\u0cc6\u0c82\u0cac\u0cb2@\u0ca1\u0cc7\u0c9f\u0cbe\u0cae\u0cc7\u0cb2\u0ccd.\u0cad\u0cbe\u0cb0\u0ca4",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "D\u00f6rte@S\u00f6rensen.example.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user\ud83d\ude03@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user\u221a3@domin.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@sub.domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@example.co.uk",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@sub.example.co.uk",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.co.co.co.co",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "abc@domain.-com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d-omain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d+omain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d_omain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d3omain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c-om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c_om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c+om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c3om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "abc@domain.com,def@domain.com",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "5",
+    "feedback_new_issues_interaction": "4",
+    "feedback_interaction_coverage_pretest": "3",
+    "feedback_interaction_coverage_posttest": "5",
+    "feedback_testcase_use_history": "5",
+    "feedback_lm_experience": "3",
+    "feedback_other": "Don't use ChatGPT to make up a bunch of fake email addresses?"
+  },
+  "query_prompt": "non-interactive"
+}

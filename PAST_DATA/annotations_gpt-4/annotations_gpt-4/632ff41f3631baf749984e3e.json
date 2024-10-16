@@ -1,0 +1,314 @@
+{
+  "prolific_id": "632ff41f3631baf749984e3e",
+  "engine": "gpt-4",
+  "query_type": "Supervised Learning",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Prince's anticipated, posthumous memoir is ready for fans\nDescription: NEW YORK (AP)   Panic, joy, shock: Dan Piepenbring felt them all when Prince plucked him to collaborate on his first memoir, followed by more shock and profound sadness at news of the superstar's death while the book was in its early stages."
+    },
+    {
+      "sender": "user",
+      "message": "I'm slightly interested in this article.",
+      "time_spent_ms": 22577,
+      "display_time": 1693606199361,
+      "submission_time": 1693606221938
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Nashville SC: How to watch, stream 2019 MLS Expansion Draft\nDescription: Find out how to watch Nashville SC and Inter Miami CF will participate in the 2019 MLS Expansion Draft."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 10935,
+      "display_time": 1693606222177,
+      "submission_time": 1693606233112
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Porsche Taycan Turbo S Sport Turismo runs hard at the 'Ring\nDescription: Clearly, it'll haul more than just tykes and whatnots"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 12686,
+      "display_time": 1693606233274,
+      "submission_time": 1693606245960
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: First Drive! 2020 Shelby GT500 Is an Apex Predator, Turning Drivers Into Track Stars\nDescription: Driving the 2020 Shelby GT500 on the street, dragstrip, and road course reveals an apex predator that turns any driver into a track star."
+    },
+    {
+      "sender": "user",
+      "message": "I'm definitely interested.",
+      "time_spent_ms": 37987,
+      "display_time": 1693606246255,
+      "submission_time": 1693606284242
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 27 Things No One Tells You About Having Diabetes\nDescription: Discover the realities of living with diabetes that nobody tells you until you're diagnosed and actually experiencing them."
+    },
+    {
+      "sender": "user",
+      "message": "Not at all",
+      "time_spent_ms": 13785,
+      "display_time": 1693606284463,
+      "submission_time": 1693606298248
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Trailer - Polaroid\nDescription: Official Trailer"
+    },
+    {
+      "sender": "user",
+      "message": "I'm slightly interested in this article.",
+      "time_spent_ms": 9902,
+      "display_time": 1693606298415,
+      "submission_time": 1693606308317
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Being the Only Woman of Color in My Office Taught Me So Much About the Real World\nDescription: I've always been a hard worker."
+    },
+    {
+      "sender": "user",
+      "message": "Absolutely ",
+      "time_spent_ms": 17108,
+      "display_time": 1693606308545,
+      "submission_time": 1693606325653
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: A Los Angeles mansion once listed for $250 million has finally sold for 62% off after 3 years. Take a look inside what was once America's most expensive home.\nDescription: The extravagant Bel Air property has five bars, a bowling alley, a 40-seat movie theater, an 85-foot infinity pool, and a candy wall."
+    },
+    {
+      "sender": "user",
+      "message": "No I'm not interested in this article",
+      "time_spent_ms": 24625,
+      "display_time": 1693606325825,
+      "submission_time": 1693606350450
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Sharon Stone Recreates 'Basic Instinct' Scene 27 Years After Film's Release\nDescription: The 61-year-old actress performed the scene upon receiving GQ's Woman of the Year award."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I'd like to read this.",
+      "time_spent_ms": 17515,
+      "display_time": 1693606350614,
+      "submission_time": 1693606368129
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 30 Major Design Mistakes That Everyone Should Avoid\nDescription: You may be committing a design crime without even realizing it."
+    },
+    {
+      "sender": "user",
+      "message": "Not at all",
+      "time_spent_ms": 8582,
+      "display_time": 1693606368291,
+      "submission_time": 1693606376873
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Are you in a relationship with a coworker? Read this\nDescription: Rules on workplace relationships are becoming increasingly common in the #MeToo era."
+    },
+    {
+      "sender": "user",
+      "message": "I'm slightly interested in this article.",
+      "time_spent_ms": 10518,
+      "display_time": 1693606377125,
+      "submission_time": 1693606387643
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: A Teenage Inventor May Have Solved the Problem of Car Blindspots\nDescription: Trying to see around a car pillar can be frustrating. Thanks to a Pennsylvania teen, we might not have to deal with it for much longer."
+    },
+    {
+      "sender": "user",
+      "message": "I'm definitely interested.",
+      "time_spent_ms": 9446,
+      "display_time": 1693606387917,
+      "submission_time": 1693606397363
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: ALDI now making beer, wine deliveries in Hampton Roads\nDescription: Didn't get your hands on that highly-coveted ALDI wine and beer Advent calendar? No worries. You can still get your wine and beer fix from the store but delivered right to your front door. ALDI has just announced that it's making alcohol delivery available nationwide. Shoppers can visit ALDI's website or Instacart to make their beer and wine selection. ALDI started making grocery deliveries in 2017 and gradually expanded its service to more..."
+    },
+    {
+      "sender": "user",
+      "message": "No, I'm not interested in this article.",
+      "time_spent_ms": 26383,
+      "display_time": 1693606397528,
+      "submission_time": 1693606423911
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 15 Things Dog Shelters Need You to Know\nDescription: When you're looking for your new best friend, staffers and volunteers at dog shelters can help."
+    },
+    {
+      "sender": "user",
+      "message": "Absolutely ",
+      "time_spent_ms": 7682,
+      "display_time": 1693606424070,
+      "submission_time": 1693606431752
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Indigenous leaders urge EU to protect forest homeland\nDescription: Brazilian indigenous leaders pleaded Tuesday with European lawmakers to protect the Amazon and the communities living there, warning that the West's insatiable appetite was risking the health of the planet."
+    },
+    {
+      "sender": "user",
+      "message": "I would like to learn more about this.",
+      "time_spent_ms": 20888,
+      "display_time": 1693606431922,
+      "submission_time": 1693606452810
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: One in 5 children live below the poverty line: Here are the states with the highest number of kids dependent on free lunches\nDescription: More than 30 million kids around around the country rely on free or reduced price lunches, but some states need more help than others."
+    },
+    {
+      "sender": "user",
+      "message": "I'm slightly interested in this article.",
+      "time_spent_ms": 18784,
+      "display_time": 1693606453024,
+      "submission_time": 1693606471808
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The Nationals World Series parade will be Saturday\nDescription: Holy smokes folks, the Washington Nationals are World Series champions! Take a minute and let that feeling fully sink in. The rust-colored dust hasn't even settled yet, but Mayor Bowser announced early Thursday morning that the victory parade would be held at 2 p.m. Saturday, Nov. 2. The parade will begin on Constitution Avenue Northwest at 15th Street and end on Pennsylvania Avenue Northwest at 3rd Street with a team rally. While D.C. has not..."
+    },
+    {
+      "sender": "user",
+      "message": "Not at all",
+      "time_spent_ms": 8155,
+      "display_time": 1693606471979,
+      "submission_time": 1693606480134
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Work & Play in the Motor City!\nDescription: Locals share some of the best places to visit and experience the culture of Detroit while on a business trip."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 5868,
+      "display_time": 1693606480299,
+      "submission_time": 1693606486167
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: NYT: Local TV bringing back late-night Anthem sign-off\nDescription: The New York Times reports location TV stations are bringing back the patriotic sign-off of playing the National Anthem, saying it encourages unity at a time of deep division. CNN's Michael Smerconish discusses with musicologist Mark Clague."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 13855,
+      "display_time": 1693606486388,
+      "submission_time": 1693606500243
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "3",
+    "feedback_new_issues_interaction": "5",
+    "feedback_interaction_coverage_pretest": "2",
+    "feedback_interaction_coverage_posttest": "5",
+    "feedback_testcase_use_history": "1",
+    "feedback_lm_experience": "6",
+    "feedback_other": ""
+  },
+  "query_prompt": "pool_random"
+}

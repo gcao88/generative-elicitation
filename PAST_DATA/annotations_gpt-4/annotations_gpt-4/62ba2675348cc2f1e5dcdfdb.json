@@ -1,0 +1,248 @@
+{
+  "prolific_id": "62ba2675348cc2f1e5dcdfdb",
+  "engine": "gpt-4",
+  "query_type": "Supervised Learning",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Under-the-Radar Winter Destinations for Whole Family\nDescription: These underrated places are great for a winter vacation"
+    },
+    {
+      "sender": "user",
+      "message": "No, I am not. I hate the cold.",
+      "time_spent_ms": 16009,
+      "display_time": 1693606263135,
+      "submission_time": 1693606279144
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 17 Signs a Marriage Won't Last, According to Wedding Planners\nDescription: Wedding planners see all the ins and outs of nuptials. And over time, they begin to see the signs that mean a marriage won't last long after the big day."
+    },
+    {
+      "sender": "user",
+      "message": "No, because I am not getting married in the near future.",
+      "time_spent_ms": 13767,
+      "display_time": 1693606279223,
+      "submission_time": 1693606292990
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Prince's anticipated, posthumous memoir is ready for fans\nDescription: NEW YORK (AP)   Panic, joy, shock: Dan Piepenbring felt them all when Prince plucked him to collaborate on his first memoir, followed by more shock and profound sadness at news of the superstar's death while the book was in its early stages."
+    },
+    {
+      "sender": "user",
+      "message": "No, because I am not a fan of Prince.",
+      "time_spent_ms": 18138,
+      "display_time": 1693606293067,
+      "submission_time": 1693606311205
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Column: Canelo Alvarez is the king of boxing's wait class\nDescription: Dwayne Johnson, the actor and former professional wrestler who performs under the moniker The Rock, appeared on the arena's oversized video screens with what looked like a title belt over his shoulder. Instead of the name of a combat sports sanctioning body or a wrestling organization, the belt was adorned with the letters \"BMF.\" As a smiling Johnson strode through a partition in the crowd, ..."
+    },
+    {
+      "sender": "user",
+      "message": "No, because I don't care about the rock.",
+      "time_spent_ms": 16334,
+      "display_time": 1693606311292,
+      "submission_time": 1693606327626
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Sinner upsets top seed De Minaur in Milan final\nDescription: Italian Jannik Sinner has upset top seed Alex De Minaur to win the Next Gen Finals in Milan."
+    },
+    {
+      "sender": "user",
+      "message": "What is Next Gen Finals?",
+      "time_spent_ms": 17852,
+      "display_time": 1693606327711,
+      "submission_time": 1693606345563
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Hosting MLS Cup is great, but have you tried winning it at home?\nDescription: Winning at home means just as much to coaches like Brian Schmetzer and Tommy Dutra as the rest of us. We should take comfort in that."
+    },
+    {
+      "sender": "user",
+      "message": "No, because I am not interested in sports.",
+      "time_spent_ms": 39224,
+      "display_time": 1693606345640,
+      "submission_time": 1693606384864
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Anne Hathaway wore an eye-catching tiered maternity blouse on the red carpet\nDescription: The actress wore the outfit while attending the red-carpet premiere of \"Modern Love,\" an Amazon original series, in New York City."
+    },
+    {
+      "sender": "user",
+      "message": "No, because she isn't an interesting actress to me.",
+      "time_spent_ms": 15201,
+      "display_time": 1693606384941,
+      "submission_time": 1693606400142
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 3 astronomy events that you won't want to miss in November\nDescription: While many wait until the sun has set to look to the sky, November will feature a rare astronomical event that will take place during the day and will only be visible if you have the right equipment. Here's what to look for in the night sky throughout the new month."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I am interested in this. Astronomy has always been a passion of mine.",
+      "time_spent_ms": 25860,
+      "display_time": 1693606400224,
+      "submission_time": 1693606426084
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Louisville unveils home for regional AI hub powered by Microsoft, names director\nDescription: Mayor Greg Fischer today joined Microsoft U.S. Chief Technology Officer Jennifer Byrne to announce that Ben Reno-Weber will serve as Director of the Future of Work Initiative, the tech giant's regional efforts around artificial intelligence, internet of things, and data science. They also cut the ribbon on the initiative's home, Story Louisville powered-by-Microsoft, at 900 E. Main St. \"Artificial intelligence and internet of things are the..."
+    },
+    {
+      "sender": "user",
+      "message": "No, I am not interested in this, because I don't really care about AI.",
+      "time_spent_ms": 30841,
+      "display_time": 1693606426159,
+      "submission_time": 1693606457000
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: See All the Best Looks From the 2019 People's Choice Awards\nDescription: From Zendaya to the Kardashians."
+    },
+    {
+      "sender": "user",
+      "message": "I am interested in this, because there will probably be some pictures of hot girls in it.",
+      "time_spent_ms": 24745,
+      "display_time": 1693606457079,
+      "submission_time": 1693606481824
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Film Review: 'Black and Blue'\nDescription: A timely yet undercooked action-thriller about police corruption and racism, \"Black and Blue\" cuts to the chase from its very first, promising sequence. Along the beats of Lecrae's social injustice-themed \"Welcome to America,\" Alicia West (Naomie Harris) jogs through the middle-class streets of a suburban New Orleans neighborhood, only to be stopped and harassed by"
+    },
+    {
+      "sender": "user",
+      "message": "No, I am not interested in this, because I barely watch movies.",
+      "time_spent_ms": 17267,
+      "display_time": 1693606481906,
+      "submission_time": 1693606499173
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: PEOPLE's Super Exclusive (and Very Official) Sexiest Man Alive Dads' Club\nDescription: Did you know that all but three of our SMAs are dads? Here, some of their cutest moments"
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I am interested in this, because I am curious how my looks compare to those of the sexiest men alive.",
+      "time_spent_ms": 27951,
+      "display_time": 1693606499253,
+      "submission_time": 1693606527204
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Voters tuning in to the race for Allegheny County District Attorney\nDescription: An off-year election doesn't bode well for heavy voter turnout. However, voters in Allegheny County are paying attention to the race for district attorney, between Democratic incumbent Stephen Zappala and independent candidate Lisa Middleman, who is a part-time public defender and private criminal defense attorney. Both candidates have their respective supporters. Zappala is endorsed by the Allegheny Democratic Committee. Sign up for our..."
+    },
+    {
+      "sender": "user",
+      "message": "No, I am not interested in this, because I have basically no interest in politics.",
+      "time_spent_ms": 42434,
+      "display_time": 1693606527289,
+      "submission_time": 1693606569723
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "yes",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "7",
+    "feedback_new_issues_interaction": "1",
+    "feedback_interaction_coverage_pretest": "1",
+    "feedback_interaction_coverage_posttest": "1",
+    "feedback_testcase_use_history": "4",
+    "feedback_lm_experience": "7",
+    "feedback_other": "No."
+  },
+  "query_prompt": "pool_random"
+}

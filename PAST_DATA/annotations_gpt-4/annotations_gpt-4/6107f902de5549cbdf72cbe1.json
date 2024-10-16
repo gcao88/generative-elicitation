@@ -1,0 +1,323 @@
+{
+  "prolific_id": "6107f902de5549cbdf72cbe1",
+  "engine": "gpt-4",
+  "query_type": "Generative edge cases",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: HealthAndWellnessDaily Title: The Impact of Climate Change on Mental Health: An Unseen Crisis Description: This article discusses the growing concern over the potential consequences of climate change on mental health. It includes insights from leading psychologists, environmentalists and policymakers."
+    },
+    {
+      "sender": "user",
+      "message": "Yeah that sounds interesting",
+      "time_spent_ms": 12660,
+      "display_time": 1688842056244,
+      "submission_time": 1688842068904
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FoodieWorld Title: The Rise of Plant-Based Diets: A Sociocultural Perspective Description: This article delves into the growing popularity of plant-based diets, examining the sociocultural factors that have contributed to this shift, and exploring the potential implications for the future of food."
+    },
+    {
+      "sender": "user",
+      "message": "That sounds alright, do you have any articles on technology?",
+      "time_spent_ms": 23768,
+      "display_time": 1688842071924,
+      "submission_time": 1688842095692
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FinanceGuru Title: Blockchain and Cryptocurrency: Transforming the Future of Global Economy Description: This article provides an in-depth analysis of the impact of Blockchain and Cryptocurrency on the global economy. It covers the latest trends, challenges, and future outlook of these technologies."
+    },
+    {
+      "sender": "user",
+      "message": "yeah that sounds good. ",
+      "time_spent_ms": 15274,
+      "display_time": 1688842098490,
+      "submission_time": 1688842113764
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: ArtistryMag\nTitle: The Intersection of Technology and Art: An Innovative Fusion\nDescription: This article explores the novel blend of technology and art, shedding light on how technology is influencing contemporary art practices, leading to the creation of fascinating new genres and revolutionizing the way art is perceived and appreciated."
+    },
+    {
+      "sender": "user",
+      "message": "Sure, but do you have any articles on movies/tv?",
+      "time_spent_ms": 22209,
+      "display_time": 1688842116459,
+      "submission_time": 1688842138668
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: SpaceVentures\nTitle: Mars Colonization: The New Frontier in Space Exploration\nDescription: This article dives into the ambitious plans and cutting-edge technology that are driving humanity's quest to colonize Mars. It features interviews with leading scientists and explores the potential benefits and challenges of life on the Red Planet."
+    },
+    {
+      "sender": "user",
+      "message": "I do like Mars",
+      "time_spent_ms": 12818,
+      "display_time": 1688842141418,
+      "submission_time": 1688842154236
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: GamingUniverse Title: The Evolution of Video Games and their Impact on Society and Culture Description: This article traces the history of video games, discussing their evolution from simple arcade games to the complex, immersive worlds of today. It also explores how video games have influenced society and culture, and what the future might hold for this dynamic medium."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I do enjoy videogames",
+      "time_spent_ms": 11549,
+      "display_time": 1688842157503,
+      "submission_time": 1688842169052
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FutureTravel Title: The Future of Sustainable Travel: Embracing Eco-Tourism and Responsible Travel Description: This article delves into the growing global trend of sustainable travel methods, showcasing innovative solutions for eco-tourism and responsible travel practices. It explores how these changes could reshape the travel industry and our planet."
+    },
+    {
+      "sender": "user",
+      "message": "anything on tourism and technology?",
+      "time_spent_ms": 34550,
+      "display_time": 1688842172454,
+      "submission_time": 1688842207004
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FashionTechInsights Title: The Transformation of Fashion Industry through Artificial Intelligence Description: This article provides an insightful perspective on how artificial intelligence is revolutionizing the fashion industry, from designing to manufacturing and retail. It also discusses the ethical implications of integrating AI into fashion and what it means for the future of this industry."
+    },
+    {
+      "sender": "user",
+      "message": "No, I do not care for fashion",
+      "time_spent_ms": 9188,
+      "display_time": 1688842210743,
+      "submission_time": 1688842219931
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: SportsTechGuide\nTitle: The Rise of eSports: The Intersection of Gaming, Technology, and Professional Sports\nDescription: This article unravels the emergence and rapid growth of eSports, examining how advancements in technology and the gaming industry are reshaping the world of professional sports. It provides an analysis of the eSports industry, its impact on traditional sports, and the future outlook."
+    },
+    {
+      "sender": "user",
+      "message": "ooo sports are fun",
+      "time_spent_ms": 5867,
+      "display_time": 1688842223944,
+      "submission_time": 1688842229811
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: EduTechReview\nTitle: The Influence of Virtual Reality on Education: A New Era for Learning\nDescription: This article focuses on the integration of Virtual Reality (VR) in education, exploring its potential to transform traditional learning methods. It dives into the benefits and challenges of VR-based education, provides examples of its implementation, and discusses what this technology could mean for the future of education worldwide."
+    },
+    {
+      "sender": "user",
+      "message": "These are great articles",
+      "time_spent_ms": 11042,
+      "display_time": 1688842233625,
+      "submission_time": 1688842244667
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: QuantumPhysicsToday Title: Quantum Computing: The Next Leap in Technology Description: This article provides a deep dive into the fascinating and complex world of quantum computing. It presents the basics of quantum mechanics, explains how quantum computers work, discusses their potential applications, and explores the challenges that scientists face in making quantum computing a reality. It also offers thoughts on what the advent of quantum computing could mean for the future of technology, privacy, and the world at large."
+    },
+    {
+      "sender": "user",
+      "message": "eh maybe not that one",
+      "time_spent_ms": 15480,
+      "display_time": 1688842248067,
+      "submission_time": 1688842263547
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: AnimalPlanetNews Title: Technological Advancements in Wildlife Conservation: A Beacon of Hope Description: This article takes a deep dive into how modern technology is playing a pivotal role in wildlife conservation. It highlights cutting-edge technologies like AI, drones, and GPS tracking, and how they are used to monitor, protect, and preserve various species. It also discusses the potential ethical considerations and future prospects in this field."
+    },
+    {
+      "sender": "user",
+      "message": "Animals are fun. Maybe a good article",
+      "time_spent_ms": 10131,
+      "display_time": 1688842267248,
+      "submission_time": 1688842277379
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: SocietyandTechInsights Title: The Influence of Social Media Algorithms on Political Views: An In-depth Analysis Description: This article delves into the little-known world of social media algorithms and their potential influence on shaping political views. It brings to light how these algorithms work, the extent of their reach, and the implications on democracy and free speech. It includes insights from leading data scientists, politicians and sociologists."
+    },
+    {
+      "sender": "user",
+      "message": "Issues on social media interest me",
+      "time_spent_ms": 9014,
+      "display_time": 1688842282781,
+      "submission_time": 1688842291795
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: HistoricalTech\nTitle: The Evolution of Computing: From Abacus to Quantum Computers\nDescription: This article takes you on an intriguing journey through the evolution of computing, from the ancient abacus to the cutting-edge quantum computers of today. It offers a comprehensive understanding of how each breakthrough has revolutionized the technology landscape, transforming the way our society functions. It also speculates where the future of computing might lead us."
+    },
+    {
+      "sender": "user",
+      "message": "that sounds cool",
+      "time_spent_ms": 11705,
+      "display_time": 1688842295699,
+      "submission_time": 1688842307404
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: EnvironmentalTech \nTitle: Harnessing Technology for Sustainable Agriculture: A Path Towards Food Security and Ecosystem Conservation \nDescription: This article discusses the intersection of technology and agriculture, showcasing how innovations are helping to create sustainable farming practices. It delves into digital farming, precision agriculture, and the role of AI in crop management. It also explores the potential implications on food security, environmental conservation, and climate change mitigation."
+    },
+    {
+      "sender": "user",
+      "message": "not interested",
+      "time_spent_ms": 5306,
+      "display_time": 1688842311601,
+      "submission_time": 1688842316907
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: LiteratureTechReview\nTitle: The Impact of E-Books and Audiobooks on Reading Habits and Literacy Rates \nDescription: This article explores the rise of digital reading formats, like e-books and audiobooks, and their impact on reading habits and literacy rates worldwide. It delves into the technological advancements that have made these formats possible and accessible, and discusses their implications on traditional publishing, libraries, education, and the future of reading."
+    },
+    {
+      "sender": "user",
+      "message": "yes interested",
+      "time_spent_ms": 4709,
+      "display_time": 1688842321782,
+      "submission_time": 1688842326491
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: MusicTechInnovations Title: The Resonance of AI in Music Creation: Disruption or Revolution? Description: This article delves into the evolving role of artificial intelligence in music creation and production. It explores how AI is being used to compose music, create unique sounds, and even perform live. It also discusses the potential implications for musicians, the music industry, and listeners around the world."
+    },
+    {
+      "sender": "user",
+      "message": "yes interested",
+      "time_spent_ms": 6081,
+      "display_time": 1688842330779,
+      "submission_time": 1688842336860
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: AutoTechInsights \nTitle: Autonomous Vehicles and Smart Cities: A Transportation Revolution \nDescription: This article delves into the future of transportation with autonomous vehicles and their pivotal role in the development of smart cities. It discusses the current state of autonomous vehicle technology, the infrastructural changes needed for their integration into urban landscapes, and the potential social, economic, and environmental impacts. It also discusses the legal and ethical challenges that autonomous vehicles present."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 4278,
+      "display_time": 1688842341598,
+      "submission_time": 1688842345876
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: BioTechInsider\nTitle: The Role of Genetic Engineering in Producing Sustainable Biofuels: A Potential Solution for the Climate Crisis?\nDescription: This article delves into the intricate field of genetic engineering, particularly its potential in creating more efficient and sustainable biofuels. It explores the latest research in the field, the ethical and safety concerns associated with genetic modifications, and its potential implications on the global energy landscape and climate change mitigation."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 1851,
+      "display_time": 1688842350137,
+      "submission_time": 1688842351988
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: ExperimentalPsychologyInsights\nTitle: The Role of Technology in Altering Human Behaviors and Perceptions: A Psychological Perspective\nDescription: This article provides a comprehensive understanding of how technology impacts human behavior, cognition, and perception from a psychological perspective. It delves into the psychological theories underpinning the influence of technology on human nature, exploring the effects of social media, gaming, virtual reality, and AI on our minds. It further discusses the potential implications for mental health, interpersonal relationships, and societal norms."
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "yes",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "3",
+    "feedback_new_issues_interaction": "5",
+    "feedback_interaction_coverage_pretest": "5",
+    "feedback_interaction_coverage_posttest": "4",
+    "feedback_testcase_use_history": "4",
+    "feedback_lm_experience": "4",
+    "feedback_other": ""
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what topics a user is interested in reading online article about. People's interests are broad, so you should seek to understand their interests across many topics; in other words, go for breadth rather than depth. Do not assume a user has given a complete answer to any question, so make sure to keep probing different types of interests.\n\nCome up with a potential edge case to learn as much information as you can about what their desired behavior should be under different circumstances.\nMake sure the edge case addresses different aspects of the system than the edge cases that have already been considered.\n\nAn example edge case is: Are you interested in the following article? Website Name: TechTalkDaily\nTitle: 10 Must-Have Gadgets for 2023: A Comprehensive Guide\nDescription: Discover the top 10 gadgets that will revolutionize your daily life in 2023. From smart home devices to the latest wearables, we've got you covered with our comprehensive guide.\n\nCurrent cases:\n- [Q] -> [A]\n\nGenerate the most informative edge case that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Generate the edge case in the following format, and nothing else: \"Are you interested in the following article? [edge case]\""
+    }
+  ]
+}

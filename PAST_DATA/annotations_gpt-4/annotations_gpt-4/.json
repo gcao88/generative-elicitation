@@ -1,0 +1,436 @@
+{
+  "prolific_id": "",
+  "engine": "gpt-4",
+  "query_type": "Generative yes/no questions",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's fuzzy intuitions and preferences.\nIn this activity, we're going to be looking at different strings of text and you'll be deciding if they look like they could be an email address or not. For example, most people would agree that \"username@domain.com\" looks like an email address, while \"n12z5lFEN4\" does not. However, the rules for what can be an email address can be very unusual, so what we're really interested in is your intuition on what an email address could look like. \n<b>Tip:</b> in an email such as username@cs.stanford.edu, \"username\" is called the local-part of the email, while \"cs.stanford.edu\" is the domain. Furthermore, \"cs\" is a subdomain, and \"edu\" is a top-level domain.",
+    "task_description": "your intuition of what is or is not possible for an email address",
+    "final": "In the final part of the study, you will give feedback on a test set of email addresses, which will enable us to see how well a chatbot reading your responses has learned your email preferences.",
+    "evaluation": "Please indicate whether you think the following strings look like reasonably well-formatted email addresses or not: \"yes\" if they do, \"no\" if they don't."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Should an email address contain at least one period (.) after the @ symbol, but before the end of the address?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 17160,
+      "display_time": 1689948208123,
+      "submission_time": 1689948225283
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address always start with a letter or a number, and not a special character like a period (.) or an underscore (_) ?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 10032,
+      "display_time": 1689948227541,
+      "submission_time": 1689948237573
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address contain at least one @ symbol, and only one, to separate the username from the domain?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 7860,
+      "display_time": 1689948240215,
+      "submission_time": 1689948248075
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address end with a top-level domain (like .com, .net, .org, etc.) after the last period?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes, one reason is that I already used to it.",
+      "time_spent_ms": 18180,
+      "display_time": 1689948251808,
+      "submission_time": 1689948269988
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address allow for the use of hyphens (-) and underscores (_) within the username part, but not at the beginning or end of it?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 7817,
+      "display_time": 1689948273447,
+      "submission_time": 1689948281264
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address allow for the use of numbers within the domain part, after the @ symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 22657,
+      "display_time": 1689948284226,
+      "submission_time": 1689948306883
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address allow for the use of periods (.) within the username part, but not at the beginning or end of it?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 25517,
+      "display_time": 1689948309564,
+      "submission_time": 1689948335081
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address allow for the use of special characters (like !, #, $, %, &, *, +, /, =, ?, ^, {, |, }, ~) within the username part, but not at the beginning or end of it?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 24719,
+      "display_time": 1689948340901,
+      "submission_time": 1689948365620
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address allow for the use of special characters (like !, #, $, %, &, *, +, /, =, ?, ^, {, |, }, ~) within the domain part, after the @ symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 7993,
+      "display_time": 1689948369499,
+      "submission_time": 1689948377492
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address allow for the use of uppercase and lowercase letters interchangeably in both the username and domain parts?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 110129,
+      "display_time": 1689948379802,
+      "submission_time": 1689948489931
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address allow for the use of consecutive periods (..) within the username or domain parts?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 6605,
+      "display_time": 1689948492567,
+      "submission_time": 1689948499172
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address allow for the use of hyphens (-) and underscores (_) within the domain part, after the @ symbol, but not at the beginning or end of it?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 5232,
+      "display_time": 1689948502557,
+      "submission_time": 1689948507789
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address allow for the use of periods (.) within the top-level domain part, after the last period?"
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "user@domain.a",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.edu",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@111.222.333.4444",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@[123.45.67.89]",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary-jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary+jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary_jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "-maryjane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary=jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary&jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary.jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "maryjane1@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "1maryjane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "maryjane!@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary%jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary*jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary(ja)ne@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary@jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "_maryjane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": ".maryjane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary?jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\"mary\"jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "m\"ary\"jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary'jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "'maryjane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "+user@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary\\jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "\"mary\\ jane\"@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "\"maryjane\"@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "\u0438\u0432\u0430\u043d.\u0441\u0435\u0440\u0433\u0435\u0435\u0432@\u043f\u0440\u0438\u043c\u0435\u0440.\u0440\u0444",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\u7528\u6237@\u4f8b\u5b50.\u5e7f\u544a",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\u0cac\u0cc6\u0c82\u0cac\u0cb2@\u0ca1\u0cc7\u0c9f\u0cbe\u0cae\u0cc7\u0cb2\u0ccd.\u0cad\u0cbe\u0cb0\u0ca4",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "D\u00f6rte@S\u00f6rensen.example.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user\ud83d\ude03@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user\u221a3@domin.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@sub.domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@example.co.uk",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@sub.example.co.uk",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.co.co.co.co",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "abc@domain.-com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d-omain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d+omain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d_omain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d3omain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c-om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c_om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c+om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c3om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "abc@domain.com,def@domain.com",
+      "label": "yes",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "3",
+    "feedback_new_issues_interaction": "5",
+    "feedback_interaction_coverage_pretest": "4",
+    "feedback_interaction_coverage_posttest": "4",
+    "feedback_testcase_use_history": "4",
+    "feedback_lm_experience": "4",
+    "feedback_other": ""
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what rules a user believes to be a valid email address format must adhere to (e.g. for developing a regex format checker).\n\nPrevious questions:\n- [Q] -> [A]\n\nGenerate the most informative yes/no question that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Make sure your question addresses different aspects of the regex than the questions that have already been asked. At the same time however, the question should be bite-sized, and not ask for too much at once. Phrase your question in a way that is understandable to non-expert humans; do not use any jargon without explanation. Generate the yes/no question and nothing else:"
+    }
+  ]
+}

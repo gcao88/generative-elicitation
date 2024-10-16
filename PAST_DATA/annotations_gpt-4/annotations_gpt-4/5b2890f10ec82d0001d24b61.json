@@ -1,0 +1,237 @@
+{
+  "prolific_id": "5b2890f10ec82d0001d24b61",
+  "engine": "gpt-4",
+  "query_type": "Supervised Learning",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Stephen Curry calls out Michael Jordan for being a 'hater'\nDescription: While the opinion of arguably the greatest NBA player of all time is certainly noteworthy, most people disagree with Jordan."
+    },
+    {
+      "sender": "user",
+      "message": "No. Nothing about sports",
+      "time_spent_ms": 31911,
+      "display_time": 1693594047099,
+      "submission_time": 1693594079010
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: I'm Sorry, But Please Do Not Put Your Purse On My Couch\nDescription: Welcome to my house, please drop your bag right there."
+    },
+    {
+      "sender": "user",
+      "message": "Yes.  I am intersted",
+      "time_spent_ms": 22052,
+      "display_time": 1693594079387,
+      "submission_time": 1693594101439
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Chipotle is running out of a meaty option, but guac fans you can breathe easy\nDescription: Chipotle is running out of carne asada but is testing a new queso, salads and quesadillas. Plus, the avocado shortage from the summer is over."
+    },
+    {
+      "sender": "user",
+      "message": "No.  Not a fan of Chipotle",
+      "time_spent_ms": 20376,
+      "display_time": 1693594101526,
+      "submission_time": 1693594121902
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 40 Etiquette Mistakes You Need to Stop Making by Age 40\nDescription: From errors you make on the phone to rude things you do with your significant other, clean up your act by ditching these etiquette mistake in your 40s."
+    },
+    {
+      "sender": "user",
+      "message": "Oh yes.  Very interested in etiquette.  Although I dont usually follow it",
+      "time_spent_ms": 30097,
+      "display_time": 1693594122041,
+      "submission_time": 1693594152138
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Live out your racing dreams for $15\nDescription: Ready. Set. Go! K1 Speed is offering San Antonians the chance to live out their racing dreams in honor of the new Twentieth Century Fox movie, Ford v Ferrari. Visitors to K1 Speed can enjoy a single-race package for only $15 when showing their Ford v Ferrari movie ticket. Racers can show either a physical ticket stub or a digital ticket on a mobile device. The offer is valid from November 15 to November 30 and does not include the annual..."
+    },
+    {
+      "sender": "user",
+      "message": "No not interested in that sort of thing.",
+      "time_spent_ms": 49996,
+      "display_time": 1693594152246,
+      "submission_time": 1693594202242
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Russian winger Zykov hit with 20-game NHL doping ban\nDescription: Vegas Golden Knights winger Valentin Zykov has been suspended 20 games without pay by the National Hockey League for a performance-enhancing substances violation. The 24-year-old Russian was taking supplements not approved by the team and without its knowledge, Knights president of hockey operations George McPhee said. \"Needless to say we're extremely disappointed with the result, but we are very supportive of the program,\" McPhee said...."
+    },
+    {
+      "sender": "user",
+      "message": "No do not like hockey",
+      "time_spent_ms": 21870,
+      "display_time": 1693594202362,
+      "submission_time": 1693594224232
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Where did candy corn come from?\nDescription: Despite being a very popular Halloween candy, candy corn is one of the most divisive candies out there."
+    },
+    {
+      "sender": "user",
+      "message": "Yes.  I really love candy,  Sounds fascinating",
+      "time_spent_ms": 20415,
+      "display_time": 1693594224358,
+      "submission_time": 1693594244773
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Packages of dry dates distributed in Florida recalled due to high sulfite content\nDescription: Shivam Distributors of Longwood, Florida, is recalling packages of Parivar brand dry dates because they contain high sulfite content, the US Food and Drug Administration (FDA) announced on Wednesday."
+    },
+    {
+      "sender": "user",
+      "message": "No  I dont live in Florida, so really not interested",
+      "time_spent_ms": 20423,
+      "display_time": 1693594244893,
+      "submission_time": 1693594265316
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 25 Dorm Room Essentials to Buy at the Dollar Store\nDescription: Save some serious dough on back-to-school necessities ranging from slippers to table lamps and cleaning supplies by stocking up at the dollar store. Places like Dollar Tree and Dollar General often beat bigger retailers like Walmart by a large margin on these dorm room necessities."
+    },
+    {
+      "sender": "user",
+      "message": "No  I am not in college and I dont have any children in college.",
+      "time_spent_ms": 25321,
+      "display_time": 1693594265466,
+      "submission_time": 1693594290787
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Golden Globes 2020: Ricky Gervais Returning to Host for Fifth Time\nDescription: When the 77th Annual Golden Globe Awards air on Sunday, Jan. 5 (NBC, 8/7c), the nominees won't be the only nervous people in the audience. Ricky Gervais will return to host the ceremony for a fifth time, TVLine has learned. \"Once again, they've made me an offer I can't refuse,\" Gervais said in a statement."
+    },
+    {
+      "sender": "user",
+      "message": "No.  Not really a fan of award shows.  Find them boring",
+      "time_spent_ms": 32085,
+      "display_time": 1693594290930,
+      "submission_time": 1693594323015
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: If Prince Harry Wasn't So Nice, Kate's Engagement Ring Could Have Been Meghan's\nDescription: If it hadn't been for a very generous act, Prince Harry could have presented Meghan Markle with Diana's iconic ring. Buzz60's TC Newman has more."
+    },
+    {
+      "sender": "user",
+      "message": "No.  Not interested in royal going ons",
+      "time_spent_ms": 20102,
+      "display_time": 1693594323123,
+      "submission_time": 1693594343225
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Anne Hathaway wore an eye-catching tiered maternity blouse on the red carpet\nDescription: The actress wore the outfit while attending the red-carpet premiere of \"Modern Love,\" an Amazon original series, in New York City."
+    },
+    {
+      "sender": "user",
+      "message": "No.  Not interested in this ",
+      "time_spent_ms": 23150,
+      "display_time": 1693594343368,
+      "submission_time": 1693594366518
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": "Not into articles related to vehicles"
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": "I am not interested in the royal doings"
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "yes",
+      "explanation": "Sounds interested.  AI is interesting"
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "yes",
+      "explanation": "I love articles about cooking and tips to follow"
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "yes",
+      "explanation": "This sounds intesting.One of the places I would love to vist"
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "no",
+      "explanation": "I dont fly that often."
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "yes",
+      "explanation": "Would like to know more about this"
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "yes",
+      "explanation": "I enjoy playing video games"
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": "Not to much into this sort of thing"
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": "I dont really like  it.  I dont have a lawn to worry about"
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "yes",
+      "explanation": "I really enjoy music"
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": "I am not a mom and unfortunately mine isnt here any more"
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": "I dont wear any earring or much jewelery"
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": "I am not a runner and have no interest in this"
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "no",
+      "explanation": "I am not interested.  Not a topic of mine"
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "yes",
+      "explanation": "I enjoy meditation and enjoy learning new techniques"
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "2",
+    "feedback_new_issues_interaction": "4",
+    "feedback_interaction_coverage_pretest": "2",
+    "feedback_interaction_coverage_posttest": "4",
+    "feedback_testcase_use_history": "4",
+    "feedback_lm_experience": "4",
+    "feedback_other": "No"
+  },
+  "query_prompt": "pool_random"
+}

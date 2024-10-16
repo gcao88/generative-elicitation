@@ -10,15 +10,17 @@ from flask import Flask, jsonify, render_template, request
 from pool_based_agent import PoolBasedAgent
 from generative_questions_agent import GenerativeQuestionsAgent
 from generative_edge_cases_agent import GenerativeEdgeCasesAgent
+from test_agent import TestAgent
 import json
 import random
 
 load_dotenv()
 
-
+print("====================== RESTARTING RUN ======================")
 
 # Set up OpenAI API
 openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = "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"
 
 app = Flask(__name__)
 
@@ -28,6 +30,11 @@ ENGINE =  "gpt-4"
 SAVE_DIR = f"annotations_{ENGINE}"
 os.makedirs(SAVE_DIR, exist_ok=True)
 
+
+test_query_type = True
+query_type_to_test = "Test"
+
+
 query_type_to_agent = {
     "Non-interactive": "non-interactive",
     "Supervised Learning": PoolBasedAgent,
@@ -35,6 +42,7 @@ query_type_to_agent = {
     "Generative edge cases": GenerativeEdgeCasesAgent,
     "Generative open-ended questions": GenerativeQuestionsAgent,
     "Generative yes/no questions": GenerativeQuestionsAgent,
+    "Test": TestAgent
 }
 
 query_type_to_instruction = {
@@ -44,6 +52,7 @@ query_type_to_instruction = {
     "Generative edge cases": "This chatbot will ask you a series of questions about %task_description%. Try to answer in a way that accurately and comprehensively conveys your preferences, such that someone reading your responses can understand and make judgments as close to your own as possible. Feel free to respond naturally (you can use commas, short phrases, etc), and press [enter] to send your response. Note that the chatbot technology is imperfect, and you are free to avoid answering any questions that are overly broad or uncomfortable. When interacting with the chatbot, please avoid asking follow-up questions or engaging in open-ended dialogue as the chatbot is unable to respond to you.\n<b>Note:</b> The chatbot will stop asking questions after 5 minutes, after which you can send your last response and you will be taken to the final part of the study.",
     "Generative open-ended questions": "This chatbot will ask you a series of questions about %task_description%. Try to answer in a way that accurately and comprehensively conveys your preferences, such that someone reading your responses can understand and make judgments as close to your own as possible. Feel free to respond naturally (you can use commas, short phrases, etc), and press [enter] to send your response. Note that the chatbot technology is imperfect, and you are free to avoid answering any questions that are overly broad or uncomfortable. When interacting with the chatbot, please avoid asking follow-up questions or engaging in open-ended dialogue as the chatbot is unable to respond to you.\n<b>Note:</b> The chatbot will stop asking questions after 5 minutes, after which you can send your last response and you will be taken to the final part of the study.",
     "Generative yes/no questions": "This chatbot will ask you a series of questions about %task_description%. Try to answer in a way that accurately and comprehensively conveys your preferences, such that someone reading your responses can understand and make judgments as close to your own as possible. Feel free to respond naturally (you can use commas, short phrases, etc), and press [enter] to send your response. Note that the chatbot technology is imperfect, and you are free to avoid answering any questions that are overly broad or uncomfortable. When interacting with the chatbot, please avoid asking follow-up questions or engaging in open-ended dialogue as the chatbot is unable to respond to you.\n<b>Note:</b> The chatbot will stop asking questions after 5 minutes, after which you can send your last response and you will be taken to the final part of the study.",
+    "Test": "Test message here -- describing the test/chatbot/task description"
 }
 
 
@@ -74,12 +83,13 @@ def initialize_agent_by_query_type(query_type, problem_instance_filename, pool_f
         pool_diversity_num_clusters=pool_diversity_num_clusters,
         temperature=temperature,
     )
-    
+
 
 experiment_type_to_prolific_id = json.load(open(f"{SAVE_DIR}/experiment_type_to_prolific_id.json"))
 prompt_type_to_prompt = {}
 for prompt_type in experiment_type_to_prolific_id:
-    with open(f"human_exps_prompts/{prompt_type}.json") as f:
+    print("PROMPT TYPE:", prompt_type)
+    with open(f"human_exps_prompts/{prompt_type}.json", encoding="utf8") as f:
         prompt_type_to_prompt[prompt_type] = json.load(f)
 
 def load_prolific_id_info_from_file():
@@ -89,18 +99,20 @@ def load_prolific_id_info_from_file():
     for filename in os.listdir(SAVE_DIR):
         if filename.endswith(".json") and filename != "experiment_type_to_prolific_id.json":
             prolific_id = os.path.split(filename)[-1].split(".json")[0]
+            print(f"LOADING PROLIFIC ID: {prolific_id}")
             with open(os.path.join(SAVE_DIR, filename)) as f:
                 prolific_id_to_user_responses[prolific_id] = json.load(f)
 
-    for prompt_type in experiment_type_to_prolific_id:
-        for query_type in experiment_type_to_prolific_id[prompt_type]:
+    for prompt_type in experiment_type_to_prolific_id:  # "website_preferences"
+        for query_type in experiment_type_to_prolific_id[prompt_type]:  # "Supervised Learning", "Non-interactive", "Pool-based Active Learning", "Generative edge cases", "Generative yes/no questions", "Generative open-ended questions"
             for prolific_id in experiment_type_to_prolific_id[prompt_type][query_type]:
+                print(f"Loading prolific id <{prolific_id}>, prompt type <{prompt_type}>, query type <{query_type}>")
                 prolific_id_to_experiment_type[prolific_id] = {
                     "prompt": prompt_type_to_prompt[prompt_type],
                     "query_type": query_type,
                     "agent": initialize_agent_by_query_type(
                         query_type,
-                        problem_instance_filename=os.path.join("gpt_prompts/", prompt_type, random.choice(os.listdir(f"gpt_prompts/{prompt_type}"))),
+                        problem_instance_filename=os.path.join("gpt_prompts/", prompt_type, random.choice(os.listdir(f"gpt_prompts/{prompt_type}"))),  # random choice of profile for the LLM
                         pool_fp=(prompt_type_to_prompt[prompt_type].get("full_data_path", None) if query_type == "Supervised Learning" else prompt_type_to_prompt[prompt_type].get("pool_data_path", None)),
                         pool_al_sampling_type=("random" if query_type == "Supervised Learning" else prompt_type_to_prompt[prompt_type].get("pool_al_sampling_type", None)),
                         pool_diversity_num_clusters=prompt_type_to_prompt[prompt_type].get("pool_diversity_num_clusters", None),
@@ -139,7 +151,7 @@ def get_next_prompt():
             "feedback": {},
         }
         error = {"error": "This username already exists"}
-    else:
+    else: # new ID
         experiment_types_with_fewest_participants = []
         min_num_participants = float("inf")
         prompt_types_to_consider = ["website_preferences"]
@@ -153,7 +165,10 @@ def get_next_prompt():
                     experiment_types_with_fewest_participants.append((prompt_type, query_type))
 
         # sample experiment to run based on the experiment type with the fewest participants
-        curr_prompt_type, curr_query_type = random.choice(experiment_types_with_fewest_participants)
+        if test_query_type:  # to test a specific query type
+            curr_prompt_type, curr_query_type = ("website_preferences", query_type_to_test)
+        else:
+            curr_prompt_type, curr_query_type = random.choice(experiment_types_with_fewest_participants)
 
         curr_prompt = prompt_type_to_prompt[curr_prompt_type]
         prolific_id_to_user_responses[prolific_id] = {
@@ -179,7 +194,7 @@ def get_next_prompt():
         experiment_type_to_prolific_id[curr_prompt_type][curr_query_type].append(prolific_id)
 
         json.dump(experiment_type_to_prolific_id, open(f"{SAVE_DIR}/experiment_type_to_prolific_id.json", "w"), indent=4)
-    
+
     prompt_to_display = [
         curr_prompt["prompt"]["preamble"],
         query_type_to_instruction[curr_query_type].replace("%task_description%", curr_prompt["prompt"]["task_description"]).replace("%noninteractive_task_description%", curr_prompt["prompt"].get("noninteractive_task_description", "")),
@@ -187,7 +202,7 @@ def get_next_prompt():
     ]
     prompt_to_display = "\n".join(prompt_to_display)
     agent = prolific_id_to_experiment_type[prolific_id]["agent"]
-    if type(agent) == str:
+    if type(agent) == str: #  non-interactive
         prolific_id_to_user_responses[prolific_id]["query_prompt"] = agent
     else:
         prolific_id_to_user_responses[prolific_id]["query_prompt"] = agent.get_query_prompt()
@@ -206,6 +221,7 @@ def update():
     """
     Sends user message (if exists) and queries active learning agent for next query
     """
+    print("=== webserver update")
     user_message = request.form.get("user_message")
     prolific_id = request.form.get("prolific_id")
     if user_message:
@@ -222,6 +238,8 @@ def update():
             "display_time": assistant_display_timestamp,
             "submission_time": user_submission_timestamp,
         })
+        if prolific_id_to_experiment_type[prolific_id]["query_type"] == "Test":
+            prolific_id_to_experiment_type[prolific_id]["agent"].update_times(user_time_spent_on_message)
     query = None
     if not request.form.get("time_up"):
         query = prolific_id_to_experiment_type[prolific_id]["agent"].generate_active_query()
@@ -283,4 +301,5 @@ def feedback_submission():
 
 
 if __name__ == "__main__":
+    print("RUNNING APP")
     app.run(debug=True, host="0.0.0.0", port=8000)

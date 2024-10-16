@@ -1,0 +1,187 @@
+{
+  "prolific_id": "63251e479509813fab713ad2",
+  "engine": "gpt-4",
+  "query_type": "Generative edge cases",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: GreenThumbWeekly\nTitle: Urban Gardening: A Guide to Growing Your Own Food in Small Spaces\nDescription: Learn how to maximize your urban space for food production. From vertical gardens to container gardening, we provide a step-by-step guide to help city dwellers become self-sustaining."
+    },
+    {
+      "sender": "user",
+      "message": "No, I am not interested in gardening.",
+      "time_spent_ms": 19646,
+      "display_time": 1688944666397,
+      "submission_time": 1688944686043
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: WorldHistoryDigest\nTitle: The Influence of Ancient Civilizations on Modern Architecture\nDescription: Delve into the intricate world of architectural design, tracing its roots back to ancient civilizations. Discover how their groundbreaking ideas continue to shape our skylines even today."
+    },
+    {
+      "sender": "user",
+      "message": "I might find that slightly interesting. Anything else?",
+      "time_spent_ms": 38106,
+      "display_time": 1688944688783,
+      "submission_time": 1688944726889
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FutureSpace \nTitle: 5 Upcoming NASA Missions That Will Change Our Understanding of the Universe \nDescription: Get a first look at NASA's next-generation space missions that are set to launch in the coming decade. These groundbreaking initiatives aim to answer fundamental questions about our universe and could redefine our understanding of space and time."
+    },
+    {
+      "sender": "user",
+      "message": "That sounds moderately interesting.",
+      "time_spent_ms": 34702,
+      "display_time": 1688944730341,
+      "submission_time": 1688944765043
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FoodieParadise\nTitle: Molecular Gastronomy: The Science Behind Your Favorite Dishes\nDescription: Dive into the fascinating world of molecular gastronomy and learn how renowned chefs use scientific principles to create unique culinary experiences. This article takes you behind the scenes of some of the most innovative kitchens around the globe."
+    },
+    {
+      "sender": "user",
+      "message": "I am not much of a chef or a foodie but that article sounds interesting.",
+      "time_spent_ms": 58050,
+      "display_time": 1688944768251,
+      "submission_time": 1688944826301
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: QuantumTech\nTitle: Unveiling Quantum Computers: The Future of Data Processing and Cybersecurity\nDescription: Get an in-depth look at how Quantum Computers work, the potential they hold for revolutionizing data processing, artificial intelligence, and cybersecurity. This article breaks down complex quantum mechanics into simple, understandable concepts for non-technical readers."
+    },
+    {
+      "sender": "user",
+      "message": "I'm not much of a techie but that article sounds interesting.",
+      "time_spent_ms": 52831,
+      "display_time": 1688944829822,
+      "submission_time": 1688944882653
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FashionForward\nTitle: The Evolution of Fashion: A Journey from the 1920s to Now\nDescription: Take a voyage through the transformative world of fashion over the last century. This article provides a comprehensive look at how societal changes have shaped fashion trends and how these trends have, in turn, influenced culture. From flapper dresses to sustainable fashion, we cover it all."
+    },
+    {
+      "sender": "user",
+      "message": "I might be slightly interested in reading that article however I don't care much about fasion.",
+      "time_spent_ms": 54687,
+      "display_time": 1688944886470,
+      "submission_time": 1688944941157
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: GlobalEcoNews\nTitle: Climate Change & Biodiversity: The Impact and Solutions for a Sustainable Future\nDescription: This article explores the current state of biodiversity on our planet, how climate change impacts it, and what solutions are being put in place to ensure a sustainable future. Dive into the complexities of ecological balance and the science of climate change, while understanding what steps individuals and societies can take to mitigate its effects."
+    },
+    {
+      "sender": "user",
+      "message": "That doesn't sound interesting to me at all.",
+      "time_spent_ms": 24683,
+      "display_time": 1688944945731,
+      "submission_time": 1688944970414
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "yes",
+      "explanation": "I would actually look for these airlines."
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "yes",
+      "explanation": "I love the Zelda games and I would be curious to know which ones they picked."
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": "For the most part I'm big on architecture."
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": "My mother is deceased."
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": "I'm a male. I don't have much interest in earrings."
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "yes",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "1",
+    "feedback_new_issues_interaction": "5",
+    "feedback_interaction_coverage_pretest": "5",
+    "feedback_interaction_coverage_posttest": "6",
+    "feedback_testcase_use_history": "5",
+    "feedback_lm_experience": "5",
+    "feedback_other": "No"
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what topics a user is interested in reading online article about. People's interests are broad, so you should seek to understand their interests across many topics; in other words, go for breadth rather than depth. Do not assume a user has given a complete answer to any question, so make sure to keep probing different types of interests.\n\nCome up with a potential edge case to learn as much information as you can about what their desired behavior should be under different circumstances.\nMake sure the edge case addresses different aspects of the system than the edge cases that have already been considered.\n\nAn example edge case is: Are you interested in the following article? Website Name: TechTalkDaily\nTitle: 10 Must-Have Gadgets for 2023: A Comprehensive Guide\nDescription: Discover the top 10 gadgets that will revolutionize your daily life in 2023. From smart home devices to the latest wearables, we've got you covered with our comprehensive guide.\n\nCurrent cases:\n- [Q] -> [A]\n\nGenerate the most informative edge case that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Generate the edge case in the following format, and nothing else: \"Are you interested in the following article? [edge case]\""
+    }
+  ]
+}

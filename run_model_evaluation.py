@@ -40,8 +40,8 @@ def run_problem_instance(
     pool_diversity_num_clusters=15, task=None, eval_condition="per_minute",
 ):
     '''Runs the generative active learning loop for a single problem instance.
-    
-    This entails doing several rounds of interaction between the AL agent and the oracle, 
+
+    This entails doing several rounds of interaction between the AL agent and the oracle,
     evaluating the accuracies on held-out test cases after each interaction.
 
     Args:
@@ -49,7 +49,7 @@ def run_problem_instance(
         engine (str): The OpenAI engine to use (e.g. gpt-3.5-turbo, gpt-4).
         openai_cache_file (str): The path to the OpenAI cache file.
         num_interactions (int): The number of interactions between the AL agent and the oracle.
-    
+
     Returns:
         list: The test scores after each interaction.
     '''
@@ -61,7 +61,7 @@ def run_problem_instance(
         pool_diversity_num_clusters=pool_diversity_num_clusters,
         temperature=temperature, base_query_type=base_query_type,
     )
-    
+
     if agent_class != FromSavedFileAgent:
         outputs_save_file.write(f"0. {generative_al_agent.persona}\n\n")
         query_type = AGENT_CLASS_TO_NAME[agent_class]
@@ -90,7 +90,7 @@ def run_problem_instance(
         outputs_save_file.write(f"{i}. {query}\n{answer}\n\n")
         if not generative_al_agent.evaluate_condition():
             continue
-        
+
         outputs_save_file.write("EVAL POINT\n")
 
         test_xs = generative_al_agent.get_interaction_features()
@@ -99,11 +99,11 @@ def run_problem_instance(
         all_test_xs = update_metrics(all_test_xs, test_xs)
         test_scores = update_metrics(test_scores, test_score)
         all_test_responses = update_test_responses(all_test_responses, test_responses)
-    
+
     print(test_xs)
     print(test_scores)
     outputs_save_file.write(f"===TEST RESPONSES===\n{json.dumps(all_test_responses, indent=2)}\n\n")
-    
+
     return all_test_xs, test_scores
 
 
@@ -123,7 +123,7 @@ def main(args):
         question_modes = ["questions_open", "questions_yn", "edge_cases", "pool_diversity", "pool_random", "pool_uncertainty_logits"]
     else:
         question_modes = ["questions_open", "questions_yn", "edge_cases"]
-    
+
 
     avg_test_scores = {}
     for question_mode in question_modes:
@@ -143,10 +143,10 @@ def main(args):
             outputs_save_file = open(f"model_model_results/{args.task}/{args.engine}_{args.eval_condition}_{args.seed}_{question_mode}.txt", "w")
 
             test_xs, test_scores = run_problem_instance(
-                problem_instance_filename=problem_instance_filename, 
-                engine=args.engine, 
-                openai_cache_file=openai_cache_file, 
-                num_interactions=args.num_interactions, 
+                problem_instance_filename=problem_instance_filename,
+                engine=args.engine,
+                openai_cache_file=openai_cache_file,
+                num_interactions=args.num_interactions,
                 agent_class=agent_class,
                 temperature=args.temperature,
                 question_type=question_type,
@@ -171,14 +171,14 @@ def main(args):
             avg_test_scores[question_mode][metric] = np.mean(avg_test_scores[question_mode][metric], axis=0)
             print(f'Test {metric}s across training:', np.array(avg_test_scores[question_mode][metric]))
             print(f'Avg. test {metric}s across training:', avg_test_scores[question_mode][metric])
-    
+
     os.makedirs(f"model_model_results/{args.task}", exist_ok=True)
     all_test_results.to_csv(f"model_model_results/{args.task}/{args.engine}_{args.eval_condition}_{args.seed}_all_test_results.csv")
 
 
 class ArgumentParser(Tap):
     num_interactions: int = 5  # The number of interactions between the AL agent and the oracle.
-    engine: str = "gpt-4"  # The OpenAI engine to use (e.g. gpt-3.5-turbo, gpt-4).
+    engine: str = "gpt-3.5-turbo"  # The OpenAI engine to use (e.g. gpt-3.5-turbo, gpt-4).
     agent: str = "edge_cases"  # The active learning agent to use (e.g. questions_open, questions_yn, edge_cases, pool_diversity, pool_random, saved_file).
     eval_condition: str = "per_turn"  # When to evaluate the agent (e.g. at_end, per_minute, per_turn, per_turn_up_to_5).
     pool_diversity_num_clusters: int = 15  # The number of clusters to use for diversity sampling.

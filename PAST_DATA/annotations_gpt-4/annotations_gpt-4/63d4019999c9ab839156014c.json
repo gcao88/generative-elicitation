@@ -1,0 +1,836 @@
+{
+  "prolific_id": "63d4019999c9ab839156014c",
+  "engine": "gpt-4",
+  "query_type": "Generative yes/no questions",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about advancements in technology and science?"
+    },
+    {
+      "sender": "user",
+      "message": "I enjoy reading about advancements in science, but not really technology ",
+      "time_spent_ms": 19564,
+      "display_time": 1688879658858,
+      "submission_time": 1688879678422
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in reading articles about history and culture?"
+    },
+    {
+      "sender": "user",
+      "message": "No, I do not enjoy history ",
+      "time_spent_ms": 9790,
+      "display_time": 1688879679234,
+      "submission_time": 1688879689024
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you like reading articles related to health and wellness?"
+    },
+    {
+      "sender": "user",
+      "message": "Occasionally",
+      "time_spent_ms": 6431,
+      "display_time": 1688879690070,
+      "submission_time": 1688879696501
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about travel and adventure?"
+    },
+    {
+      "sender": "user",
+      "message": "Not really",
+      "time_spent_ms": 4311,
+      "display_time": 1688879697465,
+      "submission_time": 1688879701776
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about arts and literature?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 3271,
+      "display_time": 1688879702639,
+      "submission_time": 1688879705910
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about sports and fitness?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 1916,
+      "display_time": 1688879706923,
+      "submission_time": 1688879708839
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about personal finance and investing?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 2184,
+      "display_time": 1688879709845,
+      "submission_time": 1688879712029
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about environmental issues and sustainability?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 2032,
+      "display_time": 1688879712970,
+      "submission_time": 1688879715002
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about psychology and human behavior?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes I do.",
+      "time_spent_ms": 3715,
+      "display_time": 1688879715943,
+      "submission_time": 1688879719658
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about cooking and food trends?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 1903,
+      "display_time": 1688879720705,
+      "submission_time": 1688879722608
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about politics and current events?"
+    },
+    {
+      "sender": "user",
+      "message": "Somewhat",
+      "time_spent_ms": 10214,
+      "display_time": 1688879723559,
+      "submission_time": 1688879733773
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about space exploration and astronomy?"
+    },
+    {
+      "sender": "user",
+      "message": "A little bit",
+      "time_spent_ms": 4393,
+      "display_time": 1688879735017,
+      "submission_time": 1688879739410
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about education and learning strategies?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 4651,
+      "display_time": 1688879740680,
+      "submission_time": 1688879745331
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about fashion and lifestyle trends?"
+    },
+    {
+      "sender": "user",
+      "message": "A little bit. Can we discuss something other than articles?",
+      "time_spent_ms": 13329,
+      "display_time": 1688879746373,
+      "submission_time": 1688879759702
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about movies and entertainment industry?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 2185,
+      "display_time": 1688879761601,
+      "submission_time": 1688879763786
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about animal behavior and wildlife conservation?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 6330,
+      "display_time": 1688879764791,
+      "submission_time": 1688879771121
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about philosophy and ethics?"
+    },
+    {
+      "sender": "user",
+      "message": "A little bit",
+      "time_spent_ms": 3901,
+      "display_time": 1688879771944,
+      "submission_time": 1688879775845
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about personal development and self-improvement?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 2438,
+      "display_time": 1688879776981,
+      "submission_time": 1688879779419
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about music and the music industry?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 2688,
+      "display_time": 1688879780466,
+      "submission_time": 1688879783154
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about gardening and home improvement?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 1643,
+      "display_time": 1688879784299,
+      "submission_time": 1688879785942
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about innovations in architecture and interior design?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 1780,
+      "display_time": 1688879786892,
+      "submission_time": 1688879788672
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about social issues and human rights?"
+    },
+    {
+      "sender": "user",
+      "message": "A little bit",
+      "time_spent_ms": 4295,
+      "display_time": 1688879790171,
+      "submission_time": 1688879794466
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about entrepreneurship and business strategies?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 2391,
+      "display_time": 1688879795605,
+      "submission_time": 1688879797996
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about advancements in artificial intelligence and robotics?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 2199,
+      "display_time": 1688879799152,
+      "submission_time": 1688879801351
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about climate change and meteorology?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 2155,
+      "display_time": 1688879802489,
+      "submission_time": 1688879804644
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about different cultures and their cuisines?"
+    },
+    {
+      "sender": "user",
+      "message": "Somewhat",
+      "time_spent_ms": 3328,
+      "display_time": 1688879805658,
+      "submission_time": 1688879808986
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about mysteries and unsolved crimes?"
+    },
+    {
+      "sender": "user",
+      "message": "sYe",
+      "time_spent_ms": 3853,
+      "display_time": 1688879810052,
+      "submission_time": 1688879813905
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about breakthroughs in medical research and healthcare?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 2753,
+      "display_time": 1688879815069,
+      "submission_time": 1688879817822
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about renewable energy and clean technology?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 1866,
+      "display_time": 1688879818890,
+      "submission_time": 1688879820756
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of quantum physics and theoretical science?"
+    },
+    {
+      "sender": "user",
+      "message": "A little bit",
+      "time_spent_ms": 7762,
+      "display_time": 1688879822009,
+      "submission_time": 1688879829771
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest discoveries in archaeology and ancient civilizations?"
+    },
+    {
+      "sender": "user",
+      "message": "A little bit",
+      "time_spent_ms": 8084,
+      "display_time": 1688879830937,
+      "submission_time": 1688879839021
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of genetics and biotechnology?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 2501,
+      "display_time": 1688879840332,
+      "submission_time": 1688879842833
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest trends in digital art and graphic design?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 1902,
+      "display_time": 1688879844070,
+      "submission_time": 1688879845972
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in neuroscience and cognitive science?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 2156,
+      "display_time": 1688879846996,
+      "submission_time": 1688879849152
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of linguistics and language learning?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 1903,
+      "display_time": 1688879850344,
+      "submission_time": 1688879852247
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of virtual reality and augmented reality?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 2430,
+      "display_time": 1688879853407,
+      "submission_time": 1688879855837
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of psychology and mental health?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 1938,
+      "display_time": 1688879857035,
+      "submission_time": 1688879858973
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of anthropology and human evolution?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 1893,
+      "display_time": 1688879860314,
+      "submission_time": 1688879862207
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of marine biology and oceanography?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 1857,
+      "display_time": 1688879863379,
+      "submission_time": 1688879865236
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of space technology and satellite communication?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 1789,
+      "display_time": 1688879867069,
+      "submission_time": 1688879868858
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of sociology and social behavior?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 1830,
+      "display_time": 1688879870241,
+      "submission_time": 1688879872071
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of forensic science and criminology?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 1579,
+      "display_time": 1688879873107,
+      "submission_time": 1688879874686
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of nutrition and dietetics?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 1751,
+      "display_time": 1688879876799,
+      "submission_time": 1688879878550
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of nanotechnology and material science?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2091,
+      "display_time": 1688879880096,
+      "submission_time": 1688879882187
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of theoretical mathematics and complex equations?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 1771,
+      "display_time": 1688879883244,
+      "submission_time": 1688879885015
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of child psychology and early education?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 1729,
+      "display_time": 1688879886414,
+      "submission_time": 1688879888143
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of evolutionary biology and genetics?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 1756,
+      "display_time": 1688879890714,
+      "submission_time": 1688879892470
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of sports science and athletic performance?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 1849,
+      "display_time": 1688879893687,
+      "submission_time": 1688879895536
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of philosophy and cognitive science?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 1709,
+      "display_time": 1688879897264,
+      "submission_time": 1688879898973
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of biochemistry and molecular biology?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 1768,
+      "display_time": 1688879900548,
+      "submission_time": 1688879902316
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of astronomy and astrophysics?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 1748,
+      "display_time": 1688879904246,
+      "submission_time": 1688879905994
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of behavioral economics and consumer behavior?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2228,
+      "display_time": 1688879907410,
+      "submission_time": 1688879909638
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of paleontology and dinosaur discoveries?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 1499,
+      "display_time": 1688879910789,
+      "submission_time": 1688879912288
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of pharmacology and drug discovery?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 1761,
+      "display_time": 1688879913545,
+      "submission_time": 1688879915306
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of mental health and mindfulness practices?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 3118,
+      "display_time": 1688879916728,
+      "submission_time": 1688879919846
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of experimental physics and particle research?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2322,
+      "display_time": 1688879921041,
+      "submission_time": 1688879923363
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of cultural anthropology and societal norms?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 3239,
+      "display_time": 1688879924410,
+      "submission_time": 1688879927649
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of cognitive neuroscience and brain research?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 2579,
+      "display_time": 1688879928831,
+      "submission_time": 1688879931410
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of experimental psychology and human cognition?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 1419,
+      "display_time": 1688879932452,
+      "submission_time": 1688879933871
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of microbiology and infectious diseases?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 3475,
+      "display_time": 1688879935055,
+      "submission_time": 1688879938530
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of conservation biology and biodiversity?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 1718,
+      "display_time": 1688879939778,
+      "submission_time": 1688879941496
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of quantum computing and cryptography?"
+    },
+    {
+      "sender": "user",
+      "message": "Im not sure",
+      "time_spent_ms": 5452,
+      "display_time": 1688879943044,
+      "submission_time": 1688879948496
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of human genetics and gene therapy?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 1563,
+      "display_time": 1688879949699,
+      "submission_time": 1688879951262
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of animal psychology and behavior?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2407,
+      "display_time": 1688879952360,
+      "submission_time": 1688879954767
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of climate science and meteorology?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 1835,
+      "display_time": 1688879955843,
+      "submission_time": 1688879957678
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading articles about the latest developments in the field of neurology and neurological disorders?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 1932,
+      "display_time": 1688879958714,
+      "submission_time": 1688879960646
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "2",
+    "feedback_new_issues_interaction": "2",
+    "feedback_interaction_coverage_pretest": "2",
+    "feedback_interaction_coverage_posttest": "2",
+    "feedback_testcase_use_history": "1",
+    "feedback_lm_experience": "1",
+    "feedback_other": ""
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what topics a user is interested in reading online article about. People's interests are broad, so you should seek to understand their interests across many topics; in other words, go for breadth rather than depth. Do not assume a user has given a complete answer to any question, so make sure to keep probing different types of interests.\n\nPrevious questions:\n- [Q] -> [A]\n\nGenerate the most informative yes/no question that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Make sure your question addresses different aspects of the user's interests than the questions that have already been asked. At the same time however, the question should be bite-sized, and not ask for too much at once. Generate the yes/no question and nothing else:"
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "prolific_id": "5f23ff398626c51fdd6c3fb5",
+  "engine": "gpt-4",
+  "query_type": "Generative yes/no questions",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's fuzzy intuitions and preferences.\nIn this experiment, we'll be capturing your moral intuitions about the act of stealing a loaf of bread, and whether there are certain cases where stealing may be morally permissible.",
+    "task_description": "your belief of when it is moral to steal a loaf of bread",
+    "final": "In the final part of the study, you will give feedback on a test set of moral situations, which will enable us to see how well a chatbot reading your responses has learned your moral preferences.",
+    "evaluation": "Please indicate whether you think the following situations are morally permissible or not: \"yes\" if they are, \"no\" if they aren't."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to feed a starving child?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 4431,
+      "display_time": 1689556981148,
+      "submission_time": 1689556985579
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if there are other legal means to obtain food, but they are more time-consuming or difficult?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 6929,
+      "display_time": 1689556987578,
+      "submission_time": 1689556994507
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to feed yourself, even though you have the means to pay for it?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 5643,
+      "display_time": 1689556997019,
+      "submission_time": 1689557002662
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to feed a pet that is starving?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 8102,
+      "display_time": 1689557004400,
+      "submission_time": 1689557012502
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to prevent food waste, given the store will throw it away at the end of the day?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 22638,
+      "display_time": 1689557014991,
+      "submission_time": 1689557037629
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to feed a homeless person who has no means to pay for it?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 19018,
+      "display_time": 1689557039557,
+      "submission_time": 1689557058575
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to feed a group of people who are protesting for a cause you believe in, but have no means to pay for it?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 9088,
+      "display_time": 1689557060928,
+      "submission_time": 1689557070016
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to feed a starving child, but the act of stealing could potentially lead to your arrest and imprisonment?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 18947,
+      "display_time": 1689557073405,
+      "submission_time": 1689557092352
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to feed a starving child, but the bread is the last one and another person is about to buy it for their own family?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 7485,
+      "display_time": 1689557094908,
+      "submission_time": 1689557102393
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to feed yourself, but you are unemployed and have no immediate means to pay for it?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 6325,
+      "display_time": 1689557104101,
+      "submission_time": 1689557110426
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to feed a starving child, but the store owner is struggling financially and relies on every sale to keep the business afloat?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 6811,
+      "display_time": 1689557112951,
+      "submission_time": 1689557119762
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to feed a starving child, but the bread is gluten-free and specifically stocked for customers with dietary restrictions?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 22458,
+      "display_time": 1689557122990,
+      "submission_time": 1689557145448
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to feed a starving child, but the bread is part of a religious ceremony or ritual?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 9354,
+      "display_time": 1689557147173,
+      "submission_time": 1689557156527
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to feed a starving child, but the bread is the only source of food for another starving child?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 10158,
+      "display_time": 1689557158531,
+      "submission_time": 1689557168689
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to feed a starving child, but the bread is a rare, expensive type that a collector is about to purchase?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 10097,
+      "display_time": 1689557171020,
+      "submission_time": 1689557181117
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to feed a starving child, but the bread is stolen from another starving child who managed to obtain it legally?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 22745,
+      "display_time": 1689557183357,
+      "submission_time": 1689557206102
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to feed a starving child, but the bread is from a charity food bank intended for multiple needy families?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 47297,
+      "display_time": 1689557208323,
+      "submission_time": 1689557255620
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you believe it is ethical to steal a loaf of bread if it is to feed a starving child, but the bread is the last one and a pregnant woman is about to buy it for her own nutritional needs?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 22169,
+      "display_time": 1689557259861,
+      "submission_time": 1689557282030
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Is it ok to steal the loaf of bread if you are starving to death but have the option of begging for food instead?",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Would it be acceptable to steal the loaf of bread to feed an animal starving to death?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it ok to steal the loaf of bread if you are starving to death, but the store owner is also struggling financially?",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Would it be acceptable to steal the loaf of bread if you are not starving to death, but you know someone who is, however they are known to be proud and refuse charity?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it morally permissible to steal the loaf of bread if you are starving to death, and the store owner is known to be an evil, cruel person?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it ok to steal the loaf of bread if you are starving to death, but you could find edible food in a nearby dumpster?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it ok to steal the loaf of bread if you are very depressed and you think the thrill of stealing could significantly improve your mental health?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it morally permissible to steal a loaf of bread if you are not starving but know the bread will go to waste otherwise?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it ok to steal the loaf of bread if you are starving to death, but you know the store worker will be falsely accused and killed for your theft?",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it ok to steal the loaf of bread if you are starving to death, but you know the store worker will be falsely accused and have their reputation tarnished for your theft?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Would it be acceptable to steal the loaf of bread if you are starving to death, but the store owner has a policy of donating unsold bread to other starving people at the end of the day?",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it morally permissible to steal the loaf of bread if you are at risk of starvation in the next few weeks, and the bread could help you perform well on a job interview in an hour that could lead to financial stability?",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it ok to steal the loaf of bread if you are merely hungry but you live in a society where everyone steals?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it ok to steal a loaf of bread if you are not starving but steal as a protest against the store's exploitative labor practices?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it ok to steal the loaf of bread if you are starving to death, but the bread is a luxury item and not basic sustenance, and there is other cheaper food you could steal instead?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Would it be acceptable to steal the loaf of bread if you are starving to death, but the store owner is known for their generosity and may give you the bread if you ask?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it morally permissible to steal the loaf of bread if you are starving to death, but the store is part of a large chain that can absorb the loss?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Would it be acceptable to steal the loaf of bread if you are starving to death, but there is a public assistance program that will provide you food?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it morally permissible to steal the loaf of bread if you are starving to death, but you have a hidden stash of money that you're saving for an emergency which you could use to buy the bread?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Would it be acceptable to steal the loaf of bread if you are starving to death, but you have a friend who would loan you money to buy food if you asked?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it ok to steal the loaf of bread if you are starving to death, but the store owner has a sick family member whose medical expenses rely on their income?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Would it be acceptable to steal the loaf of bread if you are starving to death, but the store owner also has a starving family they need to support?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it morally permissible to steal the loaf of bread if you aren't starving to death, but you want to help a struggling artist who uses bread as a medium for their artwork?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Would it be acceptable to steal the loaf of bread if you aren't starving to death, but you plan to return it later as a test of the store's security measures and to help them improve their loss prevention strategies?",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it morally permissible to steal the loaf of bread if you yourself are wealthy but you will give the bread to those who are starving?",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it morally permissible to steal the loaf of bread from a bakery, but leave money behind to pay for it?",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it acceptable to steal bread from a bakery, if you plan to pay for it later when you have the money?",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Is it morally permissible to steal the loaf of bread from a bakery as a political statement to bring attention to the issue of food waste?",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "5",
+    "feedback_new_issues_interaction": "6",
+    "feedback_interaction_coverage_pretest": "6",
+    "feedback_interaction_coverage_posttest": "4",
+    "feedback_testcase_use_history": "4",
+    "feedback_lm_experience": "5",
+    "feedback_other": "no"
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn under what conditions the user would believe it is or is not ethical to steal a loaf of bread.\n\nPrevious questions:\n- [Q] -> [A]\n\nGenerate the most informative yes/no question that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Make sure your question addresses different aspects of the user's belief system than the questions that have already been asked. At the same time however, the question should be bite-sized, and not ask for too much at once. Generate the yes/no question and nothing else:"
+    }
+  ]
+}

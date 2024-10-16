@@ -1,0 +1,209 @@
+{
+  "prolific_id": "5a5e94a7eedc32000142cd08",
+  "engine": "gpt-4",
+  "query_type": "Generative open-ended questions",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "What types of online communities or forums do you actively participate in, and what draws you to these specific spaces?"
+    },
+    {
+      "sender": "user",
+      "message": "I like to browse reddit usually for communities for the games I play. Being a part of a community is an aspect of the game experience that I love!",
+      "time_spent_ms": 38808,
+      "display_time": 1688944665041,
+      "submission_time": 1688944703849
+    },
+    {
+      "sender": "assistant",
+      "message": "What other topics, outside of gaming, do you enjoy reading or learning about online, and why do these topics interest you?"
+    },
+    {
+      "sender": "user",
+      "message": "I am always keeping up with the news and with what people have to say.",
+      "time_spent_ms": 27665,
+      "display_time": 1688944705290,
+      "submission_time": 1688944732955
+    },
+    {
+      "sender": "assistant",
+      "message": "Can you share some specific areas or topics within news and current events that you find most engaging, and how do you usually engage with these topics online?"
+    },
+    {
+      "sender": "user",
+      "message": "Sure, when the titan submersible lost contact I was very involved in staying up-to-date with various news outlets, as well as seeing what others had to say on Twitter and Reddit about the incident.",
+      "time_spent_ms": 41084,
+      "display_time": 1688944734435,
+      "submission_time": 1688944775519
+    },
+    {
+      "sender": "assistant",
+      "message": "What other hobbies or interests do you have that you haven't mentioned yet, and how do you engage with these interests online?"
+    },
+    {
+      "sender": "user",
+      "message": "I actively look at discussions related to card games I play, which would be Pokemon and Yugioh. I use them to stay informed on current and upcoming products, events, etc.",
+      "time_spent_ms": 72822,
+      "display_time": 1688944777185,
+      "submission_time": 1688944850007
+    },
+    {
+      "sender": "assistant",
+      "message": "What types of literature, music, or other forms of entertainment do you enjoy, and how do you engage with these interests online?"
+    },
+    {
+      "sender": "user",
+      "message": "I don't really browse things related to books or music, but I love to browse stuff related to Marvel and seeing peoples theories on things that happened in the movies.",
+      "time_spent_ms": 30253,
+      "display_time": 1688944851619,
+      "submission_time": 1688944881872
+    },
+    {
+      "sender": "assistant",
+      "message": "Can you tell me more about how you engage with the Marvel community online, such as the types of content you consume, discussions you participate in, or any other ways you interact with this interest?"
+    },
+    {
+      "sender": "user",
+      "message": "Sure, I have been actively watching Secret Invasion as new episodes come out weekly and then seeing what people have to say online after the fact. It's interesting people drawing references to past things in the MCU.",
+      "time_spent_ms": 39455,
+      "display_time": 1688944883855,
+      "submission_time": 1688944923310
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you engage with any educational or learning platforms online, and if so, what subjects or skills are you interested in developing or learning more about?"
+    },
+    {
+      "sender": "user",
+      "message": "No I don't",
+      "time_spent_ms": 7197,
+      "display_time": 1688944925349,
+      "submission_time": 1688944932546
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you follow any specific influencers, bloggers, or content creators online related to your interests, and how do their perspectives or content enhance your engagement with these topics?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes there are a lot that I follow, mainly having to do with news such as Philip DeFranco, or my hobbies.",
+      "time_spent_ms": 24466,
+      "display_time": 1688944934516,
+      "submission_time": 1688944958982
+    },
+    {
+      "sender": "assistant",
+      "message": "Can you share how you engage with the online communities related to the card games you play, such as the types of discussions you participate in, strategies you learn, or how you stay updated on new products and events?"
+    },
+    {
+      "sender": "user",
+      "message": "Sure, I think it is very good to help learn new strategies to the new decks that come out.",
+      "time_spent_ms": 29349,
+      "display_time": 1688944961639,
+      "submission_time": 1688944990988
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "2",
+    "feedback_new_issues_interaction": "1",
+    "feedback_interaction_coverage_pretest": "7",
+    "feedback_interaction_coverage_posttest": "3",
+    "feedback_testcase_use_history": "2",
+    "feedback_lm_experience": "6",
+    "feedback_other": "no feedback but I did enjoy taking the study, thank you!"
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what topics a user is interested in reading online article about. People's interests are broad, so you should seek to understand their interests across many topics; in other words, go for breadth rather than depth. Do not assume a user has given a complete answer to any question, so make sure to keep probing different types of interests.\n\nPrevious questions:\n- [Q] -> [A]\n\nGenerate the most informative open-ended question that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Make sure your question addresses different aspects of the user's interests than the questions that have already been asked. At the same time however, the question should be bite-sized, and not ask for too much at once. Generate the open-ended question and nothing else:"
+    }
+  ]
+}

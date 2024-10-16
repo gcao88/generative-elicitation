@@ -1,0 +1,301 @@
+{
+  "prolific_id": "61338374ecef87bfdfd1c7bb",
+  "engine": "gpt-4",
+  "query_type": "Generative edge cases",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: PhilosophyMatters\nTitle: A Deep Dive into Existentialism: Understanding Sartre and Camus\nDescription: Explore the intricate philosophies of Jean-Paul Sartre and Albert Camus as we delve into the depths of existentialism. This article provides context, analysis, and perspective on key existential concepts and their impact on modern thought."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, this is a very interesting article",
+      "time_spent_ms": 18851,
+      "display_time": 1689561213335,
+      "submission_time": 1689561232186
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: BakersWorld\nTitle: The Chemistry of Baking: Understanding the Role of Each Ingredient\nDescription: Dive into the scientific world behind baking and discover the role each ingredient plays. Learn how different types of flour, sweeteners, fats, leavening agents, and other components come together to create the delicious pastries you enjoy."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 25598,
+      "display_time": 1689561236218,
+      "submission_time": 1689561261816
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Travelista\nTitle: Off the Beaten Path: Exploring Antarctica's Untouched Wilderness\nDescription: Journey with us to the ends of the earth and discover the unspoiled wonder of Antarctica. Learn about its unique wildlife, frigid climate, and the brave explorers who've ventured to this icy frontier. Gain insight into the ongoing conservation efforts to preserve this incredible ecosystem."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 12519,
+      "display_time": 1689561266644,
+      "submission_time": 1689561279163
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: UrbanGardening\nTitle: Rooftop Revolution: Turning Cityscapes into Green Spaces\nDescription: This article explores how urban dwellers are transforming their rooftops into lush gardens. With a focus on sustainability, it offers practical advice on selecting plants, utilizing small spaces, and reaping the benefits of homegrown produce despite living in a concrete jungle."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 2903,
+      "display_time": 1689561284637,
+      "submission_time": 1689561287540
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: GameSphere \nTitle: Virtual Reality: The Future of Gaming or Just a Gimmick? \nDescription: Dive into the heated debate surrounding the role of virtual reality (VR) in gaming. This article explores the potential and challenges of VR, featuring interviews with game developers, critics, and players. Discover how this technology could shape the future of gaming - or end up being a short-lived trend."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 51363,
+      "display_time": 1689561292502,
+      "submission_time": 1689561343865
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: SpaceOdyssey\nTitle: Quantum Computing: The Key to Unveiling the Mysteries of the Universe?\nDescription: Unpack the complexities of quantum computing and its potential to revolutionize our understanding of the cosmos. This article includes interviews with leading physicists and computer scientists, examining the intersection between advanced computation and theoretical astrophysics. Discover how this emerging technology can unlock the secrets of black holes, dark matter, and other cosmic phenomena."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 4164,
+      "display_time": 1689561348787,
+      "submission_time": 1689561352951
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: MusicTheory101\nTitle: The Unexpected Intersections of Classical Music and Heavy Metal\nDescription: Venture into the surprising crossovers between classical music and heavy metal. This piece delves into the history, composition, and performance techniques of both genres, illuminating shared characteristics and mutual influences. Featuring interviews with renowned musicians, composers, and musicologists, it offers a new perspective on the relationship between these seemingly disparate musical forms."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 4355,
+      "display_time": 1689561357701,
+      "submission_time": 1689561362056
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: LanguageLovers\nTitle: The Evolution and Influence of Emoji in Digital Communication\nDescription: This article explores the fascinating rise of emoji in digital communication, their historical roots in pictographic languages, and their powerful role in conveying emotions and ideas in the modern world. From cultural variations to their use in marketing and politics, this piece comprehensively examines the impact of these small, expressive symbols on our daily interactions."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 3803,
+      "display_time": 1689561366929,
+      "submission_time": 1689561370732
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FitnessGuru\nTitle: Mindful Movement: The Intersection of Yoga and Mental Health\nDescription: This article explores the integration of yoga and mental health. Discover the physiological and psychological benefits of regular yoga practice, and learn how this ancient discipline can factually enhance mental well-being. The article includes expert commentaries from mental health professionals and yoga practitioners, as well as scientific research findings on how yoga can reduce stress, anxiety, and depression."
+    },
+    {
+      "sender": "user",
+      "message": "I am not interested in  yoga.",
+      "time_spent_ms": 16440,
+      "display_time": 1689561375104,
+      "submission_time": 1689561391544
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: CryptoSphere\nTitle: The Rise of NFTs and Blockchain in the Art World: A Boon or a Bubble?\nDescription: Delve into the sweeping phenomenon of NFTs (Non-Fungible Tokens) and Blockchain technology in the art world. This article explores the potential and controversies surrounding this digital revolution, including its impact on artists, collectors, and traditional art institutions. It covers everything from the concept of digital ownership, the environmental implications of crypto-art, to the future prospects of this digital art market."
+    },
+    {
+      "sender": "user",
+      "message": "No, I would prefer to stay far far away from the overhyped and dead crypto train",
+      "time_spent_ms": 11326,
+      "display_time": 1689561396750,
+      "submission_time": 1689561408076
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: BioTechToday\nTitle: Genetically Modified Organisms: A Necessary Step or a Dangerous Precedent?\nDescription: Take a deep dive into the world of genetically modified organisms (GMOs). This article provides a balanced view of the benefits and potential risks of GMOs, drawing on recent research and expert opinion. Explore the ethical considerations and regulatory policies shaping the GMO debate. From the role of GMOs in addressing food scarcity to concerns about biodiversity and health risks, this article provides a comprehensive look at a contentious topic in biotechnology."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I think GMOs are a very crucial topic",
+      "time_spent_ms": 10041,
+      "display_time": 1689561415434,
+      "submission_time": 1689561425475
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: AncientHistoryReview\nTitle: Hieroglyphics to Emojis: A Comparative Study of Ancient and Modern Modes of Communication\nDescription: This article traces the fascinating journey of communication from ancient hieroglyphics to modern emojis. Discover the parallels between these two seemingly disparate modes of communication and how they reflect the human desire to express ideas and emotions visually. It also delves into the complexities of interpretation and the role of cultural influences in shaping symbols. Expert linguists and historians provide insights into this intriguing comparison."
+    },
+    {
+      "sender": "user",
+      "message": "No, linguistics has always felt a little dry to me",
+      "time_spent_ms": 9590,
+      "display_time": 1689561431165,
+      "submission_time": 1689561440755
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: SportsAnalytica\nTitle: Breaking Down Boundaries: An In-depth Analysis of the Influence of eSports on Traditional Sports\nDescription: This article delves into the rising significance of eSports and its impact on traditional sports. Including perspectives from eSports professionals, traditional athletes, sports psychologists, and digital innovation experts, it investigates how eSports is challenging and transforming conventional understandings of sports. From the importance of physical fitness in eSports to the development of new sports technologies and strategies, this article offers a comprehensive exploration of the evolving sports landscape."
+    },
+    {
+      "sender": "user",
+      "message": "No, I have never understood sports' appeal",
+      "time_spent_ms": 9130,
+      "display_time": 1689561447728,
+      "submission_time": 1689561456858
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FinLitToday\nTitle: Financial Literacy: The Impact of a Strong Financial Education on Long-Term Wealth Building\nDescription: This article examines the role of financial education in shaping an individual's long-term wealth building strategy. It explores the benefits of understanding personal finance concepts like budgeting, investing, and retirement planning. Featuring expert opinions from financial advisors, educators, and successful individuals, it aims to stress the importance of financial literacy and educate the reader on the basics of managing money."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 3944,
+      "display_time": 1689561463334,
+      "submission_time": 1689561467278
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: PopCulturePulse\nTitle: From Pages to the Big Screen: The Evolution and Impact of Comic Book Adaptations in Modern Cinema\nDescription: This article delves into the journey of comic book adaptations from their humble beginnings to their dominating presence in modern cinema. Analyzing the process of adaptation, the narrative choices, and the impact on the comic book industry, it provides a comprehensive view of this pop culture phenomenon. It includes interviews with film directors, comic book writers, and industry analysts, offering unique insights into the symbiotic relationship between comic books and movies."
+    },
+    {
+      "sender": "user",
+      "message": "No. I would kind of read it, but there are more interesting sources",
+      "time_spent_ms": 10502,
+      "display_time": 1689561472982,
+      "submission_time": 1689561483484
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: DeepSeaDiscoveries \nTitle: Mysteries of the Abyss: The Unexplored Wonders of Marine Biology \nDescription: Navigate the fascinating world of marine biology as we dive deep into the uncharted territories of the ocean's abyss. Discover exotic underwater species, understand unique survival adaptations, and learn about the role of deep-sea exploration in climate change research. This extensive article also highlights the technological advancements in submersible vehicles and the challenges faced by marine biologists in the quest to unravel the secrets of the deep sea."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 5973,
+      "display_time": 1689561491443,
+      "submission_time": 1689561497416
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FutureFarming\nTitle: Urban Vertical Farming: A Sustainable Solution for Feeding Growing Populations\nDescription: This article takes a deep dive into the concept of urban vertical farming, its potential in addressing food security issues for rapidly growing urban populations, and its impact on traditional farming practices. It covers aspects ranging from innovative technologies employed, such as hydroponics and aeroponics, to the environmental benefits and economic viability of vertical farming. The article includes insights from urban planners, agricultural experts, and sustainability advocates, along with case studies of successful urban farms from around the world."
+    },
+    {
+      "sender": "user",
+      "message": "Yes. This is a highly important enviromental topi",
+      "time_spent_ms": 6190,
+      "display_time": 1689561505823,
+      "submission_time": 1689561512013
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: AIInsights\nTitle: Can Artificial Intelligence Compose a Symphony? Exploring AI's Role in Creativity and Music\nDescription: This article delves into the burgeoning field of AI in music, questioning whether artificial intelligence can ever truly be creative. It includes interviews with leading computer scientists, musicians, and philosophers, and explores the current state of AI-composed music and its implications for the future of creativity, the music industry, and our understanding of what it means to be human."
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "yes",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "3",
+    "feedback_new_issues_interaction": "2",
+    "feedback_interaction_coverage_pretest": "4",
+    "feedback_interaction_coverage_posttest": "3",
+    "feedback_testcase_use_history": "2",
+    "feedback_lm_experience": "6",
+    "feedback_other": ""
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what topics a user is interested in reading online article about. People's interests are broad, so you should seek to understand their interests across many topics; in other words, go for breadth rather than depth. Do not assume a user has given a complete answer to any question, so make sure to keep probing different types of interests.\n\nCome up with a potential edge case to learn as much information as you can about what their desired behavior should be under different circumstances.\nMake sure the edge case addresses different aspects of the system than the edge cases that have already been considered.\n\nAn example edge case is: Are you interested in the following article? Website Name: TechTalkDaily\nTitle: 10 Must-Have Gadgets for 2023: A Comprehensive Guide\nDescription: Discover the top 10 gadgets that will revolutionize your daily life in 2023. From smart home devices to the latest wearables, we've got you covered with our comprehensive guide.\n\nCurrent cases:\n- [Q] -> [A]\n\nGenerate the most informative edge case that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Generate the edge case in the following format, and nothing else: \"Are you interested in the following article? [edge case]\""
+    }
+  ]
+}

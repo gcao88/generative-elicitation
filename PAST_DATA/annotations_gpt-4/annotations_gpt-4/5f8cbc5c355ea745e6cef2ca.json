@@ -1,0 +1,308 @@
+{
+  "prolific_id": "5f8cbc5c355ea745e6cef2ca",
+  "engine": "gpt-4",
+  "query_type": "Generative edge cases",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FoodForThought \nTitle: The Evolution of Veganism: Health, Ethics, and Environment \nDescription: Dive deep into the journey of veganism from its ancient roots to its modern day implications. Understand the health benefits, ethical dilemmas, and environmental impacts of a plant-based diet."
+    },
+    {
+      "sender": "user",
+      "message": "Not at all",
+      "time_spent_ms": 10825,
+      "display_time": 1688784863545,
+      "submission_time": 1688784874370
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: SportsGlobe \nTitle: The Rise and Fall of Chess Boxing: A Unique Fusion of Brain and Brawn \nDescription: Explore the intriguing world of chess boxing - a hybrid sport that tests both mental agility and physical toughness. Delve into its origin, popularity peaks, recent decline, and the potential it holds for a compelling comeback."
+    },
+    {
+      "sender": "user",
+      "message": "No, sounds boring",
+      "time_spent_ms": 16573,
+      "display_time": 1688784877716,
+      "submission_time": 1688784894289
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: TheArtistryLounge \nTitle: The Renaissance of 80's Pop Culture: A Nostalgic Revival \nDescription: Take a trip down memory lane into the vibrant world of the 1980s. Uncover how its pop culture is experiencing a revival in today's fashion, music, and entertainment scene, and how it's influencing the younger generation."
+    },
+    {
+      "sender": "user",
+      "message": "Not really, it's not a topic that interests me",
+      "time_spent_ms": 18171,
+      "display_time": 1688784898490,
+      "submission_time": 1688784916661
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: ScienceScape\nTitle: The Hunting Patterns of the Nebula Jellyfish: A Glimpse into the Deep Sea\nDescription: Delve into the mysterious and captivating world of the deep sea through the lens of the nebula jellyfish. Learn about their unique hunting patterns, evolutionary strategies and the critical role they play in maintaining the underwater ecosystem."
+    },
+    {
+      "sender": "user",
+      "message": "Sure, might be worth looking at",
+      "time_spent_ms": 20597,
+      "display_time": 1688784919724,
+      "submission_time": 1688784940321
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: PoliticalPulse \nTitle: Analyzing the Impact of the 2022 Midterm Elections on International Relations \nDescription: Explore the profound effects of the recent 2022 Midterm Elections on the U.S.'s international relations. Understand how the shifts in power dynamics within the U.S. are impacting its relationships with geopolitical allies and rivals, and what this could mean for global stability."
+    },
+    {
+      "sender": "user",
+      "message": "Boring!",
+      "time_spent_ms": 12277,
+      "display_time": 1688784945325,
+      "submission_time": 1688784957602
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: AdventureChronicles \nTitle: The Vanishing Tribes of the Amazon: A Journey into the Unknown \nDescription: Join us in an unexplored journey to the heart of the Amazon, where we delve into the lives, cultures, and challenges of the disappearing indigenous tribes. Engage with the environmental and societal factors pushing them to the brink of extinction and the global efforts to preserve their heritage."
+    },
+    {
+      "sender": "user",
+      "message": "No, it doesn't pique my interest.",
+      "time_spent_ms": 20691,
+      "display_time": 1688784961315,
+      "submission_time": 1688784982006
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: MindfulLiving\nTitle: \"Achieving Inner Peace: A Step-by-Step Guide to Meditation and Mindfulness\"\nDescription: This comprehensive guide will take you on a journey to achieve true inner peace. Learn the basics of meditation, explore the principles of mindfulness, and discover the science-backed benefits of a regular practice. Whether you're a beginner or an experienced practitioner, this article offers tools and techniques to enhance your daily routine and overall well-being."
+    },
+    {
+      "sender": "user",
+      "message": "No thank you.",
+      "time_spent_ms": 9188,
+      "display_time": 1688784986446,
+      "submission_time": 1688784995634
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: TechTimes\nTitle: Virtual Reality: The Impending Future of Gaming, Medicine, and Education\nDescription: Get a glimpse into the future where virtual reality is not just about gaming but also spills over into medical procedures, education, and training. This article explores the potential applications and the transformative impact virtual reality could have on these sectors."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, that sounds really interesting to me.",
+      "time_spent_ms": 13710,
+      "display_time": 1688784999755,
+      "submission_time": 1688785013465
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: SpaceVoyager\nTitle: An Expansive Guide to Space Tourism: Are Starry Holidays the Future?\nDescription: Embark on an interstellar journey through the emerging field of space tourism. This article explores the technological advancements, safety measures, and economic implications of commercial space travel. Are we on the brink of vacationing among the stars? Understand the realities and fantasies of what could be the next giant leap for mankind."
+    },
+    {
+      "sender": "user",
+      "message": "Kinda, could be good",
+      "time_spent_ms": 14979,
+      "display_time": 1688785018648,
+      "submission_time": 1688785033627
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: HistoricalHubs\nTitle: The Great Silk Road: Trade, Culture, and Conflict in the Ancient World\nDescription: This article takes you on a historical journey through the famed Silk Road, a network of trade routes that shaped economic, cultural, and political relations among diverse civilizations. Discover the goods, ideas, and technologies that were exchanged, the conflicts that ensued, and the enduring impact of these interactions on the modern world. How did the Silk Road alter the course of history, and what lessons can we learn from this ancient globalization?"
+    },
+    {
+      "sender": "user",
+      "message": "Yeah why not",
+      "time_spent_ms": 14420,
+      "display_time": 1688785038662,
+      "submission_time": 1688785053082
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: CryptoCurrency101 \nTitle: Understanding Blockchain and its Impact on Society \nDescription: This article explains the basics of blockchain technology, its potential applications, and how it is transforming various sectors from finance to healthcare. Venture beyond the typical association of blockchain with cryptocurrencies, and explore its potential to bring about transparency, security, and decentralization in numerous aspects of society."
+    },
+    {
+      "sender": "user",
+      "message": "Nope, not for me.",
+      "time_spent_ms": 4841,
+      "display_time": 1688785056605,
+      "submission_time": 1688785061446
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: HomeDecorInsight\nTitle: Small Spaces, Big Impact: Creative Design Ideas for Minimalist Living\nDescription: This article offers a wealth of creative, practical solutions for small living spaces. From multi-functional furniture arrangements to innovative storage solutions, discover how to make the most out of minimal square footage. Get inspired to create a beautiful, efficient, and comfortable home without the need for excess."
+    },
+    {
+      "sender": "user",
+      "message": "Not interested.",
+      "time_spent_ms": 9824,
+      "display_time": 1688785065925,
+      "submission_time": 1688785075749
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: AutoInnovation\nTitle: The Rise of Electric Vehicles: An In-depth Look at Tesla's Impact and the Future of Automobiles\nDescription: This article provides a comprehensive analysis of the electric vehicle revolution. It explores the role Tesla has played in this transformation, the challenges faced in the industry, and the potential future of the automotive world. From issues of charging infrastructure to environmental implications, this article covers it all."
+    },
+    {
+      "sender": "user",
+      "message": "Not interested at all.",
+      "time_spent_ms": 10474,
+      "display_time": 1688785080292,
+      "submission_time": 1688785090766
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: LinguisticsWorld\nTitle: The Evolution of Language: Unraveling the Mysteries of Our Most Human Trait \nDescription: This article delves into the fascinating world of language evolution. Explore the origins of language, tracing back to the earliest human societies, and follow its dynamic evolution over millennia. Understand the role language plays in shaping our cultures and identities, and ponder the future of language in an increasingly digital world."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, that sounds interesting.",
+      "time_spent_ms": 8055,
+      "display_time": 1688785095256,
+      "submission_time": 1688785103311
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: BiorhythmDigest \nTitle: The Human Body Clock: Exploring Chronobiology and Its Impacts on Health \nDescription: This article delves into the fascinating science of chronobiology, the study of biological rhythms. Learn about the internal body clock and how it governs a multitude of physiological processes. Understand the impacts of disrupting these rhythms on physical and mental health, and explore strategies to optimize your own biological rhythms for enhanced well-being."
+    },
+    {
+      "sender": "user",
+      "message": "Maybe, I'd prefer something else.",
+      "time_spent_ms": 13487,
+      "display_time": 1688785106975,
+      "submission_time": 1688785120462
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: QuantumQuirks\nTitle: Quantum Computing: The Paradigm Shift in Next-Gen Technology\nDescription: This article takes a deep dive into the intricate world of quantum computing. Grasp the fundamentals of quantum mechanics and how they're being harnessed to build unimaginably powerful computers. Understand the potential these machines hold for solving problems beyond the reach of classical computers and how they might redefine our technological landscape in the near future."
+    },
+    {
+      "sender": "user",
+      "message": "Sure, that sounds good.",
+      "time_spent_ms": 12144,
+      "display_time": 1688785124508,
+      "submission_time": 1688785136652
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: MusicMosaic\nTitle: Exploring the Healing Power of Music Therapy: From Neuroscience to Practical Applications\nDescription: This article dives into the healing potential of music therapy, drawing from latest neuroscience research and clinical case studies. Understand how music impacts our brain, emotions, and body, and explore its therapeutic applications across various populations - from children with autism, to Alzheimer's patients, to those dealing with mental health issues. Get insights into the process of a music therapy session, its benefits, potential challenges, and future advancements in the field."
+    },
+    {
+      "sender": "user",
+      "message": "Kind of, could be good.",
+      "time_spent_ms": 13825,
+      "display_time": 1688785142242,
+      "submission_time": 1688785156067
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: DinoDiscoveries\nTitle: Unearthing the Past: Recent Fossil Discoveries Shed New Light on Prehistoric Life\nDescription: Dive into the world of paleontology with this fascinating look at the latest fossil discoveries. From revealing new dinosaur species to providing unprecedented insights into prehistoric ecosystems, these finds are shaping our understanding of life on Earth millions of years ago. This article offers a thrilling journey into the past, exploring both the scientific significance of these discoveries and the stories of the men and women who unearthed them."
+    },
+    {
+      "sender": "user",
+      "message": "Yes.",
+      "time_spent_ms": 5431,
+      "display_time": 1688785161980,
+      "submission_time": 1688785167411
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "4",
+    "feedback_new_issues_interaction": "1",
+    "feedback_interaction_coverage_pretest": "2",
+    "feedback_interaction_coverage_posttest": "4",
+    "feedback_testcase_use_history": "2",
+    "feedback_lm_experience": "4",
+    "feedback_other": ""
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what topics a user is interested in reading online article about. People's interests are broad, so you should seek to understand their interests across many topics; in other words, go for breadth rather than depth. Do not assume a user has given a complete answer to any question, so make sure to keep probing different types of interests.\n\nCome up with a potential edge case to learn as much information as you can about what their desired behavior should be under different circumstances.\nMake sure the edge case addresses different aspects of the system than the edge cases that have already been considered.\n\nAn example edge case is: Are you interested in the following article? Website Name: TechTalkDaily\nTitle: 10 Must-Have Gadgets for 2023: A Comprehensive Guide\nDescription: Discover the top 10 gadgets that will revolutionize your daily life in 2023. From smart home devices to the latest wearables, we've got you covered with our comprehensive guide.\n\nCurrent cases:\n- [Q] -> [A]\n\nGenerate the most informative edge case that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Generate the edge case in the following format, and nothing else: \"Are you interested in the following article? [edge case]\""
+    }
+  ]
+}

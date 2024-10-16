@@ -1,0 +1,231 @@
+{
+  "prolific_id": "57334d427d01ed00098e8e69",
+  "engine": "gpt-4",
+  "query_type": "Generative edge cases",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: WorldTravelersBlog Title: Exploring Under-the-Radar Culinary Destinations in Southeast Asia Description: Embark on a gastronomic journey through Southeast Asia's lesser-known foodie havens. With insights from local chefs and food critics, we uncover hidden culinary gems in Cambodia, Laos, and Myanmar."
+    },
+    {
+      "sender": "user",
+      "message": "No it seems very long and complicated to me",
+      "time_spent_ms": 23719,
+      "display_time": 1688914615243,
+      "submission_time": 1688914638962
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: BizFinancePro. Title: Investment 101: An Introductory Guide to Cryptocurrency. Description: Making sense of bitcoins, altcoins, and blockchain technology. Learn the rudiments of investing in cryptocurrency and how it could revolutionize your financial portfolio."
+    },
+    {
+      "sender": "user",
+      "message": "That sounds somewhat interesting. I would like that",
+      "time_spent_ms": 20167,
+      "display_time": 1688914642365,
+      "submission_time": 1688914662532
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: ArtisticWorlds. Title: Renaissance Masterpieces: Unraveling the Symbolism in Botticelli's Art. Description: Dive into the world of Italian Renaissance as we dissect the symbols hidden in the famous art pieces of Sandro Botticelli. Learn how his unique style and profound understanding of human nature helped shape the art world."
+    },
+    {
+      "sender": "user",
+      "message": "No it seems too boring for me",
+      "time_spent_ms": 46592,
+      "display_time": 1688914667701,
+      "submission_time": 1688914714293
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: HealthAndWellness360. Title: Exploring the Connection: Mental Health and Exercise. Description: Delve into the scientific links between regular physical activity and mental well-being. Understand how exercise can become a powerful tool in managing stress, anxiety, and depression, aiding your journey towards holistic health."
+    },
+    {
+      "sender": "user",
+      "message": "Not really im not into medical type of stuff",
+      "time_spent_ms": 35695,
+      "display_time": 1688914717258,
+      "submission_time": 1688914752953
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FutureSustainability. Title: The Impact of Emerging Technologies on Climate Change. Description: Explore how emerging technologies like AI, blockchain, and IoT could affect climate change. Understand their potential roles in mitigation, adaptation, and creating sustainable future."
+    },
+    {
+      "sender": "user",
+      "message": "No again. These articles don't seem interesting at all to me",
+      "time_spent_ms": 22629,
+      "display_time": 1688914756584,
+      "submission_time": 1688914779213
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: EntertainmentBuzz. Title: The Evolution of Video Games: A Look Into the Next Decade. Description: Join us as we dive into the fascinating world of video gaming. We'll explore its history, current trends, and what the future holds, including the rise of virtual reality and cloud gaming. Will these advancements redefine entertainment as we know it?"
+    },
+    {
+      "sender": "user",
+      "message": "This one looks good. I do like video games and video game history",
+      "time_spent_ms": 20397,
+      "display_time": 1688914782596,
+      "submission_time": 1688914802993
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: HomeLifeHacks. Title: DIY Home Projects: Easy Ways to Transform Your Space. Description: Looking for a new project during your weekend? Learn how to transform your living space with these simple and budget-friendly DIY home improvement ideas. From repurposing old furniture to creating your own home decor, these projects can make your home feel fresh and new."
+    },
+    {
+      "sender": "user",
+      "message": "no. Im not good at dong home renovations much at all",
+      "time_spent_ms": 29586,
+      "display_time": 1688914806532,
+      "submission_time": 1688914836118
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: SpaceUniverse. Title: Extraterrestrial Lifeforms: The Possibility of Life Beyond Earth. Description: Is there life on other planets? Join us as we explore the potential existence of extraterrestrial lifeforms. Uncover the latest scientific theories and research findings, and understand what these could mean for us and for mankind's place in the universe."
+    },
+    {
+      "sender": "user",
+      "message": "This one might be interesting Aliens seem like a good read",
+      "time_spent_ms": 18104,
+      "display_time": 1688914839903,
+      "submission_time": 1688914858007
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: PetLoversParadise. Title: Understanding Your Furry Friend: The Psychology Behind Cats' Behavior. Description: Get inside the mind of your feline friend. This comprehensive guide delves into the psychology behind cats' mysterious behaviors and ways to better communicate with them. Decode your cat's body language, learn why they purr, knead, or bring you 'gifts' and more."
+    },
+    {
+      "sender": "user",
+      "message": "no. I DONT HAVE PETS AND DO NOT intend to have any in the future",
+      "time_spent_ms": 21886,
+      "display_time": 1688914862637,
+      "submission_time": 1688914884523
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: DigitalLife101. Title: How Social Media Algorithms Work: An Insider's Guide. Description: Ever wondered why you see certain posts on your social media feeds? This article breaks down the complex algorithms behind Facebook, Instagram, and Twitter. Learn how these algorithms affect your online interactions and how to use them to your advantage in personal branding or business marketing."
+    },
+    {
+      "sender": "user",
+      "message": "Yes this one seems interesting and might help understanding",
+      "time_spent_ms": 18522,
+      "display_time": 1688914888030,
+      "submission_time": 1688914906552
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: QuantumWonders. Title: Quantum Mechanics Made Simple: A Beginner's Guide. Description: Has the world of quantum physics always felt elusive and incomprehensible? We break down the complex concepts of quantum mechanics, making it accessible for beginners. Understand the principles of superposition, entanglement, and quantum teleportation in this user-friendly guide. No prior knowledge needed."
+    },
+    {
+      "sender": "user",
+      "message": "Not really it seems too technical for me",
+      "time_spent_ms": 14181,
+      "display_time": 1688914911992,
+      "submission_time": 1688914926173
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "3",
+    "feedback_new_issues_interaction": "2",
+    "feedback_interaction_coverage_pretest": "3",
+    "feedback_interaction_coverage_posttest": "5",
+    "feedback_testcase_use_history": "5",
+    "feedback_lm_experience": "6",
+    "feedback_other": ""
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what topics a user is interested in reading online article about. People's interests are broad, so you should seek to understand their interests across many topics; in other words, go for breadth rather than depth. Do not assume a user has given a complete answer to any question, so make sure to keep probing different types of interests.\n\nCome up with a potential edge case to learn as much information as you can about what their desired behavior should be under different circumstances.\nMake sure the edge case addresses different aspects of the system than the edge cases that have already been considered.\n\nAn example edge case is: Are you interested in the following article? Website Name: TechTalkDaily\nTitle: 10 Must-Have Gadgets for 2023: A Comprehensive Guide\nDescription: Discover the top 10 gadgets that will revolutionize your daily life in 2023. From smart home devices to the latest wearables, we've got you covered with our comprehensive guide.\n\nCurrent cases:\n- [Q] -> [A]\n\nGenerate the most informative edge case that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Generate the edge case in the following format, and nothing else: \"Are you interested in the following article? [edge case]\""
+    }
+  ]
+}

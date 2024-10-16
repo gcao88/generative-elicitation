@@ -1,0 +1,363 @@
+{
+  "prolific_id": "5fbb89e20ddd50a66ab62a67",
+  "engine": "gpt-4",
+  "query_type": "Generative edge cases",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: CulinaryWorld \nTitle: Historical Food Documentaries: Exploring the Intersection of History and Gastronomy\nDescription: Unearth the secrets of historical cuisines and how they have influenced our dining habits today. This includes a deep dive into the culinary traditions of different cultures across centuries."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 8313,
+      "display_time": 1688834785675,
+      "submission_time": 1688834793988
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: EcoEnthusiast\nTitle: The Future of Renewable Energy: A Global Perspective\nDescription: Explore the rapidly evolving landscape of renewable energy across the globe. Delve into the latest breakthroughs in solar, wind, and hydroelectric power, and the impact these technologies could have on our environment and economy."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 11007,
+      "display_time": 1688834797698,
+      "submission_time": 1688834808705
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FitnessFiles\nTitle: The Intersection of Yoga and Mental Health: A Comprehensive Study\nDescription: Delve into the profound impact of yoga on mental health. This comprehensive study explores how regular yoga practice can alleviate stress, anxiety, and depression, and fortify your mental well-being."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 9147,
+      "display_time": 1688834811840,
+      "submission_time": 1688834820987
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: SpaceTimeDigest\nTitle: Dark Matter and the Fabric of the Universe: Unraveling Cosmic Mysteries\nDescription: Journey through the enigmatic cosmos as we attempt to decode the mysteries of dark matter. This article delves into cutting-edge research and theories that try to explain the elusive substance that makes up a significant part of our universe."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6146,
+      "display_time": 1688834824058,
+      "submission_time": 1688834830204
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: DailyFashionista \nTitle: The Evolution of Streetwear: From Subculture to Luxury Fashion\nDescription: An in-depth exploration of the journey of streetwear from urban subculture to a mainstay in luxury fashion. This article touches on key brands, influential figures, and landmark moments that have shaped the trajectory of streetwear over the years."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6096,
+      "display_time": 1688834833991,
+      "submission_time": 1688834840087
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: ArtisticAvenues\nTitle: Understanding Abstract Expressionism: A Dive Into the Art Movement\nDescription: Explore the rich history and intricate details of Abstract Expressionism. This article analyzes the key artists, unique techniques, and significant works that have made this art movement a pivotal part of modern art history."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 5575,
+      "display_time": 1688834843345,
+      "submission_time": 1688834848920
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: PetLoversGuide\nTitle: The World of Exotic Pets: An In-Depth Look at Their Care and Habitat\nDescription: Journey into the fascinating world of exotic pets. This comprehensive guide talks about various unusual pets, their specific care requirements, and how to create a suitable habitat for them at home. It aims to provide valuable insights for those interested in adopting an unconventional pet."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 5976,
+      "display_time": 1688834853311,
+      "submission_time": 1688834859287
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: MotorMania\nTitle: The Evolution of Electric Cars: A Look at Their Past, Present, and Future\nDescription: Discover the history, present advancements, and future possibilities of electric cars in this comprehensive guide. From early innovators to today's leading manufacturers, we cover all aspects of the world of electric vehicles and their role in shaping a sustainable future."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6243,
+      "display_time": 1688834862927,
+      "submission_time": 1688834869170
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: TechTalkDaily\nTitle: The Role of Quantum Computing in Cryptography: A Deep Dive\nDescription: Explore the fascinating intersection of quantum computing and cryptography. This detailed analysis discusses how quantum computers could potentially break most modern encryption methods, and what solutions are being developed to counter this threat."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6151,
+      "display_time": 1688834872451,
+      "submission_time": 1688834878602
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: PersonalGrowthJournal\nTitle: The Science of Happiness: How Positive Psychology Can Enhance Your Life\nDescription: Discover the science behind happiness and how positive psychology can be used to enhance your day-to-day life. This article provides practical tips and techniques based on scientific studies to help you cultivate a more positive mindset and improve your overall well-being."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6253,
+      "display_time": 1688834882333,
+      "submission_time": 1688834888586
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: PopCultureDigest\nTitle: The Evolution of Video Games: From Arcades to Virtual Reality\nDescription: Trace the evolution of video games from their humble beginnings in arcades to the immersive world of virtual reality. This comprehensive guide dives into the technological advancements, major turning points, and future prospects of this popular form of entertainment."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 5249,
+      "display_time": 1688834891703,
+      "submission_time": 1688834896952
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: PoliticsToday\nTitle: Breaking Down the Policies: 2023's Most Influential Political Figures \nDescription: Join us as we delve into a comprehensive analysis of the policies and ideologies of 2023's most influential political figures. This article aims to shed light on the impact these individuals have on our societies, economies, and international relations."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 7165,
+      "display_time": 1688834900805,
+      "submission_time": 1688834907970
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: GardeningGuru\nTitle: The Magic of Bonsai: A Beginner's Guide to Miniature Gardening\nDescription: Unveil the ancient Japanese art of Bonsai. This beginner's guide will walk you through the basic techniques of pruning, shaping, and caring for these miniature trees. Plus, learn about the rich history and philosophy behind Bonsai that has captivated gardeners for centuries."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 5060,
+      "display_time": 1688834911975,
+      "submission_time": 1688834917035
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: EntertainmentScoop\nTitle: The Rise of Robot Comedians: Exploring AI's Impact on Stand-up Comedy\nDescription: Dive into the world of artificial intelligence as we explore its unexpected entry into the domain of stand-up comedy. This article discusses the emerging trend of robot comedians, their performance capabilities, and the implications for the future of entertainment and human creativity."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 5826,
+      "display_time": 1688834921193,
+      "submission_time": 1688834927019
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: MindfulnessMatters\nTitle: The Power of Now: An Introduction to Mindfulness and Meditation\nDescription: Embark on a journey of self-discovery and inner peace with our comprehensive introduction to mindfulness and meditation. Learn simple yet effective techniques to reduce stress and anxiety, improve concentration, and cultivate a sense of well-being."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 4896,
+      "display_time": 1688834930606,
+      "submission_time": 1688834935502
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: LiteraryLounge\nTitle: The Impact of Social Media on Modern Linguistics: An Analytical Study\nDescription: Explore the profound influence of social media on language and communication in the 21st century. This article investigates how social media platforms have contributed to the creation of new words, phrases, and linguistic trends, and how these changes are being received in academic and professional circles."
+    },
+    {
+      "sender": "user",
+      "message": "no - I am interested in economic history",
+      "time_spent_ms": 14947,
+      "display_time": 1688834939204,
+      "submission_time": 1688834954151
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: EconomicInsights\nTitle: The Evolution of Global Economies: A Historical Perspective\nDescription: Delve deep into the fascinating world of economic history across the globe. This comprehensive guide explores how economies have developed over time, the impacts of major historical events, and the rise and fall of economic superpowers. It offers a unique lens to understand the economic realities of today."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 18913,
+      "display_time": 1688834958471,
+      "submission_time": 1688834977384
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: HistoryOfCurrency\nTitle: The Evolution of Money: From Barter to Bitcoin\nDescription: Journey through time as we explore the evolution of money, from ancient barter systems to modern cryptocurrencies. This comprehensive guide delves into the economic and societal factors that shaped each major shift in the forms of money, and what these changes mean for our future."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 8441,
+      "display_time": 1688834980994,
+      "submission_time": 1688834989435
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: TechEconomy\nTitle: The Impact of the Internet on Global Economies: A Retrospective Analysis \nDescription: Explore the profound transformation of global economies brought about by the advent and proliferation of the internet. This article delves into how the internet has reshaped economic structures, influenced growth patterns, and continues to redefine the future of economies worldwide."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 18246,
+      "display_time": 1688834992671,
+      "submission_time": 1688835010917
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FilmEconomy\nTitle: The Financial Impact of Blockbuster Movies on Local Economies: A Case Study\nDescription: Dive into an intriguing case study on how blockbuster movies impact local economies. This article discusses how film production and tourism revenues associated with major film releases can stimulate economic growth, using examples from globally renowned movie franchises."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 9532,
+      "display_time": 1688835014069,
+      "submission_time": 1688835023601
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: EcoEconomy\nTitle: The Economic Impact of Climate Change: A Historical Review\nDescription: Dive into the intertwining realms of economy and ecology as this article takes you through the historical economic impact of climate change. Analyze past economic trends, adaptations, and strategies nations adopted to cope with environmental challenges, and what they could mean for our future economies."
+    },
+    {
+      "sender": "user",
+      "message": "No - I am interested in Marxism",
+      "time_spent_ms": 30088,
+      "display_time": 1688835028612,
+      "submission_time": 1688835058700
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: TheMarxistLens\nTitle: Tracing the Ebb and Flow of Marxism in Economic History: A Detailed Analysis\nDescription: Understand the profound impact of Marxist thought on economic history in this comprehensive analysis. This article explores how Marxism has influenced economic systems, policies, and theories across different regions and time periods. It offers a unique perspective on the interplay between Marxism and the economic evolution of societies."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 8977,
+      "display_time": 1688835063839,
+      "submission_time": 1688835072816
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: SportsEconomy\nTitle: The Economic Impact of Major Sporting Events: A Marxist Perspective\nDescription: Delve into the world of sports economy with a Marxist lens. This article explores how major sporting events, such as the Olympics and the World Cup, impact local and global economies, and how these effects align or conflict with Marxist economic theories."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 16234,
+      "display_time": 1688835077815,
+      "submission_time": 1688835094049
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "2",
+    "feedback_new_issues_interaction": "2",
+    "feedback_interaction_coverage_pretest": "5",
+    "feedback_interaction_coverage_posttest": "4",
+    "feedback_testcase_use_history": "5",
+    "feedback_lm_experience": "3",
+    "feedback_other": "none"
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what topics a user is interested in reading online article about. People's interests are broad, so you should seek to understand their interests across many topics; in other words, go for breadth rather than depth. Do not assume a user has given a complete answer to any question, so make sure to keep probing different types of interests.\n\nCome up with a potential edge case to learn as much information as you can about what their desired behavior should be under different circumstances.\nMake sure the edge case addresses different aspects of the system than the edge cases that have already been considered.\n\nAn example edge case is: Are you interested in the following article? Website Name: TechTalkDaily\nTitle: 10 Must-Have Gadgets for 2023: A Comprehensive Guide\nDescription: Discover the top 10 gadgets that will revolutionize your daily life in 2023. From smart home devices to the latest wearables, we've got you covered with our comprehensive guide.\n\nCurrent cases:\n- [Q] -> [A]\n\nGenerate the most informative edge case that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Generate the edge case in the following format, and nothing else: \"Are you interested in the following article? [edge case]\""
+    }
+  ]
+}

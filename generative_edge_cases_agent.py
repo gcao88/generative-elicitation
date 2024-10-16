@@ -15,7 +15,7 @@ class GenerativeEdgeCasesAgent(BaseActiveLearningAgent):
     @staticmethod
     def format_edge_cases(edge_cases):
         return '\n'.join([f"- {edge_case[0]} -> {edge_case[1]}" for edge_case in edge_cases])
-    
+
     @staticmethod
     def strip_edge_case(edge_case):
         # Strip label
@@ -34,7 +34,7 @@ class GenerativeEdgeCasesAgent(BaseActiveLearningAgent):
 
             Previous edge cases:
             {edge_cases}
-            
+
             Previous invalid attempts (these regexes failed to compile):
             {previous_hypotheses}
 
@@ -46,17 +46,17 @@ class GenerativeEdgeCasesAgent(BaseActiveLearningAgent):
         )
         print(hypothesis_prompt)
         return [{"role": "user", "content": hypothesis_prompt}]
-    
+
     def get_query_prompt(self):
         return self.get_edge_case_prompt(self.task_description, [["[Q]", "[A]"]], self.example_edge_case_question, self.example_edge_case_question_format)
 
     def get_edge_case_prompt(self, task_description, interaction_history, example_edge_case_question, example_edge_case_question_format):
         edge_case_template = textwrap.dedent('''\
             Your task is to {task_description}.
-            
+
             Come up with a potential edge case to learn as much information as you can about what their desired behavior should be under different circumstances.
             Make sure the edge case addresses different aspects of the {implementation} than the edge cases that have already been considered.
-            
+
             An example edge case is: {example_edge_case_question}
 
             Current cases:
@@ -71,7 +71,7 @@ class GenerativeEdgeCasesAgent(BaseActiveLearningAgent):
             edge_cases=self.format_edge_cases(interaction_history),
         )
         print(edge_case_template)
-        print("===")
+        print("=== function generative_edge_case_prompt")
         return [{"role": "user", "content": edge_case_template}]
 
     def generate_active_query(self):
@@ -79,8 +79,9 @@ class GenerativeEdgeCasesAgent(BaseActiveLearningAgent):
         edge_case_prompt = self.get_edge_case_prompt(self.task_description, self.interaction_history, self.example_edge_case_question, self.example_edge_case_question_format)
         edge_case, _ = query_api(edge_case_prompt, self.engine, self.openai_cache, self.openai_cache_file, temperature=self.temperature)
         edge_case = self.strip_edge_case(edge_case)
+        print("function generate_active_query")
         return edge_case
-       
+
     def generate_oracle_response(self, edge_case):
         '''Generates an oracle response for the edge case.'''
         if hasattr(self, 'gold_regex'):
@@ -90,9 +91,9 @@ class GenerativeEdgeCasesAgent(BaseActiveLearningAgent):
             edge_case_passes_gold = super().query_oracle_api(edge_case, "samples")
         self.interaction_history.append((edge_case, edge_case_passes_gold))
         return edge_case_passes_gold
-    
+
     def query_type(self):
         return f"edge_cases"
-    
+
     def get_prompt(self):
         return self.get_edge_case_prompt(self.task_description, self.interaction_history, self.example_edge_case_question, self.example_edge_case_question_format)

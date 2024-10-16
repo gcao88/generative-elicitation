@@ -1,0 +1,182 @@
+{
+  "prolific_id": "63d5a05179cf91a6e6a652cb",
+  "engine": "gpt-4",
+  "query_type": "Supervised Learning",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: ALDI now making beer, wine deliveries in Hampton Roads\nDescription: Didn't get your hands on that highly-coveted ALDI wine and beer Advent calendar? No worries. You can still get your wine and beer fix from the store but delivered right to your front door. ALDI has just announced that it's making alcohol delivery available nationwide. Shoppers can visit ALDI's website or Instacart to make their beer and wine selection. ALDI started making grocery deliveries in 2017 and gradually expanded its service to more..."
+    },
+    {
+      "sender": "user",
+      "message": "Nor really",
+      "time_spent_ms": 28538,
+      "display_time": 1693594379446,
+      "submission_time": 1693594407984
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 2021 Kia Optima Raises the Style Bar for Mid-Size Sedans\nDescription: The new Optima looks as good as we'd hoped given the promising teaser photos."
+    },
+    {
+      "sender": "user",
+      "message": "Sure sounds interesting",
+      "time_spent_ms": 15714,
+      "display_time": 1693594408200,
+      "submission_time": 1693594423914
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Time For Lunch! These Easy Recipes Are Good For Work, School, and Other Busy Weekdays\nDescription: If you're on the lookout for healthy, hearty, and satisfying lunches to bring to work, we rounded up the easiest recipes out there."
+    },
+    {
+      "sender": "user",
+      "message": "Yes it's interesting",
+      "time_spent_ms": 21855,
+      "display_time": 1693594424137,
+      "submission_time": 1693594445992
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 5 things you need to know about the 2019 VW Beetle Final Edition\nDescription: The last Beetle gets a special edition to celebrate one of the most popular cars ever."
+    },
+    {
+      "sender": "user",
+      "message": "Not that interesting to me",
+      "time_spent_ms": 25348,
+      "display_time": 1693594446215,
+      "submission_time": 1693594471563
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: House leaders double down on impeachment positions\nDescription: As the Trump impeachment hearings go public, House Democrats are refining the case against the president to a simple allegation: Bribery. Meanwhile, Republicans are dismissing the testimony so far as hearsay, at best second-hand information. (Nov. 14)"
+    },
+    {
+      "sender": "user",
+      "message": "I think it's interesting but the accusations are probably not true. I don't believe the ex president of the United States would do something like this. In the pat he has shows himself to have good reasoning skill and is good at communication.",
+      "time_spent_ms": 146443,
+      "display_time": 1693594471788,
+      "submission_time": 1693594618231
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The 25 greatest Jimmy Stewart films\nDescription: He starred in countless notable films, so much so we couldn't possibly go over them all. So to save you some time, we've pared it down to the 25-best Stewart moves ever."
+    },
+    {
+      "sender": "user",
+      "message": "Not as interesting to me because I don't know about this person. Maybe I have seen him before in a movie but don't know his name.",
+      "time_spent_ms": 48860,
+      "display_time": 1693594618427,
+      "submission_time": 1693594667287
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Porsche Taycan Turbo S Sport Turismo runs hard at the 'Ring\nDescription: Clearly, it'll haul more than just tykes and whatnots"
+    },
+    {
+      "sender": "user",
+      "message": "I think it interesting that a car would get all of the attention in this way however I don't know what car this is.",
+      "time_spent_ms": 87346,
+      "display_time": 1693594667507,
+      "submission_time": 1693594754853
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": "No I would probably not read this article because i'm not very interested in electric vehicles."
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": "I would also say I don't really want to read this article because i'm not interested in the matters of England."
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "no",
+      "explanation": "I would probably not read this article because i've never played nintendo before. I'm interested in games just not much the history of games i've never played."
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": "I don't wear Earrings"
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "yes",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "6",
+    "feedback_new_issues_interaction": "3",
+    "feedback_interaction_coverage_pretest": "2",
+    "feedback_interaction_coverage_posttest": "3",
+    "feedback_testcase_use_history": "5",
+    "feedback_lm_experience": "5",
+    "feedback_other": "I would say that the only feed back I could have is the structure of the sites makes it hard to scroll sometimes."
+  },
+  "query_prompt": "pool_random"
+}

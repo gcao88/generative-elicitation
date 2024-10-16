@@ -1,0 +1,325 @@
+{
+  "prolific_id": "628f572a2d1304a34b9e1a37",
+  "engine": "gpt-4",
+  "query_type": "Pool-based Active Learning",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: What the Protests Breaking Out All Over the World Have in Common\nDescription: Millions of people are taking to the streets. It might just be the beginning."
+    },
+    {
+      "sender": "user",
+      "message": "Yes. What's it about.",
+      "time_spent_ms": 32368,
+      "display_time": 1688846882037,
+      "submission_time": 1688846914405
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 2019 Los Angeles Auto Show Preview\nDescription: Get ready for the 2019 Los Angeles Auto Show"
+    },
+    {
+      "sender": "user",
+      "message": "Not really.",
+      "time_spent_ms": 17014,
+      "display_time": 1688846914574,
+      "submission_time": 1688846931588
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Fashion hits and misses from the 2019 Hollywood Film Awards\nDescription: Check out the best and worst fashion of the 2019 Hollywood Film Awards"
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 15575,
+      "display_time": 1688846931768,
+      "submission_time": 1688846947343
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Patrick Day boxed for the love of the sport, and unfortunately paid the ultimate price\nDescription: "
+    },
+    {
+      "sender": "user",
+      "message": "No.",
+      "time_spent_ms": 12428,
+      "display_time": 1688846947974,
+      "submission_time": 1688846960402
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 27 Things No One Tells You About Having Diabetes\nDescription: Discover the realities of living with diabetes that nobody tells you until you're diagnosed and actually experiencing them."
+    },
+    {
+      "sender": "user",
+      "message": "Yes.",
+      "time_spent_ms": 21518,
+      "display_time": 1688846960569,
+      "submission_time": 1688846982087
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Central Arkansas vs. Duke Men's Basketball Highlights (2019-20)\nDescription: -"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 11157,
+      "display_time": 1688846982275,
+      "submission_time": 1688846993432
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: If You're Not Serving Mac 'n Cheese This Thanksgiving, You're Missing Out\nDescription: Think outside the box this Thanksgiving."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 7878,
+      "display_time": 1688846994037,
+      "submission_time": 1688847001915
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Under-the-Radar Winter Destinations for Whole Family\nDescription: These underrated places are great for a winter vacation"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 7590,
+      "display_time": 1688847002507,
+      "submission_time": 1688847010097
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: A new Microsoft cloud category to watch: The Microsoft 365 number\nDescription: Microsoft doesn't break out Microsoft 365 as a separate category in its earnings reports. But indicators that the suite is starting to gain traction are evident in its Q1 FY'20 report."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 9778,
+      "display_time": 1688847010277,
+      "submission_time": 1688847020055
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Fact check: Trump falsely claims his 2000 book demanded the killing of Osama bin Laden\nDescription: After announcing the death of ISIS leader Abu Bakr al-Baghdadi, President Donald Trump on Sunday took questions from journalists -- and made a major false claim about his past statements on Osama bin Laden."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 5795,
+      "display_time": 1688847020254,
+      "submission_time": 1688847026049
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Which 4 Zodiac Signs Are Set To Cheat In 2020?\nDescription: Does your sign make the list?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 38087,
+      "display_time": 1688847026233,
+      "submission_time": 1688847064320
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The Super Rich Are Buying $100 Million Homes. For Some, One Isn't Enough.\nDescription: Since 2007, 20 homes have sold for once unthinkable nine-figure price tags, though many more have tried and failed."
+    },
+    {
+      "sender": "user",
+      "message": "Who's buying?",
+      "time_spent_ms": 24801,
+      "display_time": 1688847064504,
+      "submission_time": 1688847089305
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: MLS Cup Talking Points: The perfect ending\nDescription: The Seattle Freaking Sounders did it."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 7449,
+      "display_time": 1688847089897,
+      "submission_time": 1688847097346
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 'Dancing With the Stars': Emma Bunton No Longer Guest Judging Due to Scheduling Conflict\nDescription: ABC announced the news via Twitter on Monday."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 22001,
+      "display_time": 1688847097506,
+      "submission_time": 1688847119507
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Take action: Join MSN, LinkedIn and Team Rubicon in helping veterans become thriving civilians\nDescription: "
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 9213,
+      "display_time": 1688847119683,
+      "submission_time": 1688847128896
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Pollution around the world: 30 shocking photos\nDescription: While it's easy to become overwhelmed by stats and images about current pollution and trajectories for years to come, the intent of this article is not to instill fear. The intent is to be realistic, to learn from what is going on in the world, and to support one another in our collective efforts to change. Pollution knows no boundaries, so for the sake of future generations, let's err on the side of action and hope."
+    },
+    {
+      "sender": "user",
+      "message": "Yes. what pollution.",
+      "time_spent_ms": 24792,
+      "display_time": 1688847129486,
+      "submission_time": 1688847154278
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 2020 Harley-Davidson LiveWire\nDescription: "
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 8085,
+      "display_time": 1688847154452,
+      "submission_time": 1688847162537
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 2019 People's Choice Awards fashion hits and misses\nDescription: See all the best and worst dressed stars at the 2019 People's Choice Awards."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 8453,
+      "display_time": 1688847162772,
+      "submission_time": 1688847171225
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Foul play suspected in case of UFC fighter's missing stepdaughter\nDescription: "
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 7629,
+      "display_time": 1688847171396,
+      "submission_time": 1688847179025
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: How to Drink Coffee Without Any Sweetener\nDescription: There are many reasons someone might want to make the switch from sweetened to unsweetened coffee."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 12875,
+      "display_time": 1688847179254,
+      "submission_time": 1688847192129
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "2",
+    "feedback_new_issues_interaction": "3",
+    "feedback_interaction_coverage_pretest": "2",
+    "feedback_interaction_coverage_posttest": "3",
+    "feedback_testcase_use_history": "3",
+    "feedback_lm_experience": "5",
+    "feedback_other": "There were no responses. It just went from topic to topic."
+  },
+  "query_prompt": "pool_diversity"
+}

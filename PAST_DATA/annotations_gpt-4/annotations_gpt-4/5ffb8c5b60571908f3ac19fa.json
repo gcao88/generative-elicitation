@@ -1,0 +1,264 @@
+{
+  "prolific_id": "5ffb8c5b60571908f3ac19fa",
+  "engine": "gpt-4",
+  "query_type": "Generative edge cases",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Health and Wellness Insider.\nTitle: The Impact of Mental Health on Physical Fitness: A 5-Year Longitudinal Study.\nDescription: This article delves into a comprehensive longitudinal study, examining the intricate relationship between mental health and physical fitness over a span of 5 years. The findings shed light on how improvements in mental health could possibly enhance physical fitness and vice versa."
+    },
+    {
+      "sender": "user",
+      "message": "Yes I am interested",
+      "time_spent_ms": 36558,
+      "display_time": 1688924075881,
+      "submission_time": 1688924112439
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Artistic Visions\nTitle: Exploring the Renaissance: The Intersection of Art, Culture, and Politics\nDescription: This article seeks to provide a nuanced perspective on the Renaissance period, looking beyond just the art to include the cultural and political shifts of the era. It also includes an interactive timeline and high-quality images of key historical artifacts."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 10433,
+      "display_time": 1688924116560,
+      "submission_time": 1688924126993
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: EcoWarrior\nTitle: How Urban Farming Could Revolutionize Our Cities: A Case Study on Detroit\nDescription: This article explores the burgeoning field of urban farming through the lens of Detroit, a city that has embraced this trend to revitalize abandoned areas. Through interviews with local farmers, city planners, and residents, it provides a deep-dive into the environmental, social, and economic impacts of urban agriculture."
+    },
+    {
+      "sender": "user",
+      "message": "yes I would like to read that",
+      "time_spent_ms": 19487,
+      "display_time": 1688924131206,
+      "submission_time": 1688924150693
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Quantum Computing Daily\nTitle: Quantum Entanglement: A Deep Dive into Non-locality and Superposition\nDescription: This article explores the complex concepts of quantum entanglement, non-locality, and superposition. It features in-depth discussions and explanations from world-renowned physicists, thought-provoking theories, and the latest research in quantum physics. The article is designed to be accessible for those new to the field, while still providing substantial depth for those familiar with quantum mechanics."
+    },
+    {
+      "sender": "user",
+      "message": "No I don't want to read that one",
+      "time_spent_ms": 22342,
+      "display_time": 1688924155643,
+      "submission_time": 1688924177985
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Culinary Explorer\nTitle: Unveiling the Secrets of Sushi: From Edo Traditions to Modern Innovations\nDescription: This article offers a history and guide to sushi, tracing its roots in Edo-era Japan to its contemporary global popularity. It provides step-by-step instructions for preparing sushi at home, complete with sumptuous photographs and expert tips, as well as an exploration of innovative trends in sushi-making. Moreover, the article addresses issues of sustainability in the sushi industry and suggests eco-friendly choices for sushi lovers."
+    },
+    {
+      "sender": "user",
+      "message": "yes I would like to read that",
+      "time_spent_ms": 11434,
+      "display_time": 1688924183400,
+      "submission_time": 1688924194834
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: AstroNews\nTitle: Mysterious Radio Waves from Deep Space: What Are Fast Radio Bursts?\nDescription: Dive into the enigmatic world of astrophysics with this in-depth exploration of Fast Radio Bursts (FRBs). Uncover what these mysterious signals from deep space are, what might be causing them, and how astronomers around the globe are using advanced technology to detect and study them. The article also features interviews with leading experts in the field and discusses the implications of FRBs on our understanding of the universe."
+    },
+    {
+      "sender": "user",
+      "message": "yes i really want to read that one",
+      "time_spent_ms": 13495,
+      "display_time": 1688924199105,
+      "submission_time": 1688924212600
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Social Dynamics 101\nTitle: The Role of Social Media in Contemporary Politics: An Analysis of its Impact on Election Campaigns and Public Opinion\nDescription: This article delves into the increasingly complex relationship between social media and politics, examining how platforms such as Twitter, Facebook, and Instagram are used during election campaigns. It explores the strategies employed by politicians to sway public opinion, the role of social media in propagating fake news, and the impact of these factors on democracy. The article features insights from political analysts, data scientists, and social media activists, and includes case studies from recent elections around the world."
+    },
+    {
+      "sender": "user",
+      "message": "no thank you",
+      "time_spent_ms": 13101,
+      "display_time": 1688924219320,
+      "submission_time": 1688924232421
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Cryptocurrency Central\nTitle: Investing in Cryptocurrencies: Risks and Opportunities in the Blockchain Revolution\nDescription: This article offers an insightful guide for beginners looking to invest in cryptocurrencies. It delves into the blockchain technology, the risks involved, strategies for successful trading, and the potential future of crypto. It also emphasizes the role of cryptocurrencies in shaping the global economy and features advice from top financial experts in the field."
+    },
+    {
+      "sender": "user",
+      "message": "I am a little interested",
+      "time_spent_ms": 14987,
+      "display_time": 1688924236524,
+      "submission_time": 1688924251511
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Historical Antiquities Review\nTitle: Unraveling the Mysteries of Ancient Egypt: A Detailed Analysis of Hieroglyphics and Their Significance\nDescription: This article offers an in-depth study of Ancient Egyptian hieroglyphics, exploring their origins, evolution, and cultural significance. It also includes a step-by-step guide to interpreting hieroglyphic texts, featuring high-resolution images of famous inscriptions. Moreover, it delves into the latest research and theories in Egyptology and highlights how modern technology is shedding new light on ancient mysteries."
+    },
+    {
+      "sender": "user",
+      "message": "yes that sounds good",
+      "time_spent_ms": 13053,
+      "display_time": 1688924257340,
+      "submission_time": 1688924270393
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Personal Finance 101\nTitle: An In-depth Look at the Stock Market: From Basic Concepts to Advanced Trading Strategies\nDescription: This article serves as a comprehensive guide to the stock market for both beginners and seasoned investors. Starting with basic concepts such as how stocks work and why companies go public, it gradually delves into complex topics like different trading strategies, interpreting market trends, and understanding financial indicators. It also features expert advice on portfolio management, risk assessment, and long-term investment planning."
+    },
+    {
+      "sender": "user",
+      "message": "no that does not sound exciting right now",
+      "time_spent_ms": 18595,
+      "display_time": 1688924277373,
+      "submission_time": 1688924295968
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Empathy in Engineering\nTitle: The Human Side of Technology: Balancing Technical Skills with Emotional Intelligence in the Tech Industry\nDescription: This article examines the often overlooked importance of emotional intelligence in the technology industry. It explores how engineers and tech professionals can cultivate empathy, improve their communication skills, and foster a more inclusive and collaborative work environment. Through interviews with industry leaders, psychologists, and HR experts, the article provides actionable steps for individuals and businesses to create a more balanced tech industry, where soft skills are valued alongside technical expertise."
+    },
+    {
+      "sender": "user",
+      "message": "hmm that might be interesting",
+      "time_spent_ms": 26233,
+      "display_time": 1688924300981,
+      "submission_time": 1688924327214
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Intrepid Traveler. Title: Space Tourism - The Final Frontier: An Inside Look into the Prospects and Challenges. Description: This article delves into the exciting yet controversial subject of space tourism. It discusses the technological advancements that have made space travel possible for non-astronauts, the companies spearheading this endeavor, the prospective costs, and the ethical and environmental implications. It also includes interviews with experts in the field of space exploration, technology, ethics, and environment, and provides readers with a balanced view on the future of space tourism."
+    },
+    {
+      "sender": "user",
+      "message": "yes I would like to read that",
+      "time_spent_ms": 11918,
+      "display_time": 1688924333378,
+      "submission_time": 1688924345296
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Ethical AI Advocate. Title: The Future of Artificial Intelligence: Balancing Innovation with Ethical Considerations. Description: This article discusses the rapid advancements in AI and the accompanying ethical implications. It explores the potential risks and benefits of AI, the current regulatory landscape, and potential strategies for ensuring the responsible development and use of AI technology. The article features interviews with leading AI researchers, ethicists, and policy-makers. It also includes case studies examining how AI is currently being used across various sectors and the ethical dilemmas this poses."
+    },
+    {
+      "sender": "user",
+      "message": "i am interested in this one",
+      "time_spent_ms": 13276,
+      "display_time": 1688924349473,
+      "submission_time": 1688924362749
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Hobbyist Heaven. Title: The Thrill of Stamp Collecting: From History to Techniques. Description: This article takes a deep dive into the world of philately, exploring the fascinating history and techniques of stamp collecting. It sheds light on the significance of stamp motifs, the art of stamp preservation, and the joy of discovering unique stamps from around the world. Additionally, it contains interviews with prominent philatelists and showcases their prized collections, offering a unique insight into this intriguing hobby. Whether you're a seasoned collector or a novice looking to start a new hobby, this comprehensive guide covers all you need to know about the world of philately."
+    },
+    {
+      "sender": "user",
+      "message": "no thanks i am not interested in stamps",
+      "time_spent_ms": 18190,
+      "display_time": 1688924368437,
+      "submission_time": 1688924386627
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "yes",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "2",
+    "feedback_new_issues_interaction": "4",
+    "feedback_interaction_coverage_pretest": "3",
+    "feedback_interaction_coverage_posttest": "5",
+    "feedback_testcase_use_history": "5",
+    "feedback_lm_experience": "2",
+    "feedback_other": "This was a unique and interesting experience. "
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what topics a user is interested in reading online article about. People's interests are broad, so you should seek to understand their interests across many topics; in other words, go for breadth rather than depth. Do not assume a user has given a complete answer to any question, so make sure to keep probing different types of interests.\n\nCome up with a potential edge case to learn as much information as you can about what their desired behavior should be under different circumstances.\nMake sure the edge case addresses different aspects of the system than the edge cases that have already been considered.\n\nAn example edge case is: Are you interested in the following article? Website Name: TechTalkDaily\nTitle: 10 Must-Have Gadgets for 2023: A Comprehensive Guide\nDescription: Discover the top 10 gadgets that will revolutionize your daily life in 2023. From smart home devices to the latest wearables, we've got you covered with our comprehensive guide.\n\nCurrent cases:\n- [Q] -> [A]\n\nGenerate the most informative edge case that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Generate the edge case in the following format, and nothing else: \"Are you interested in the following article? [edge case]\""
+    }
+  ]
+}

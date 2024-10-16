@@ -1,0 +1,358 @@
+{
+  "prolific_id": "57d6b1718e00270001b430cc",
+  "engine": "gpt-4",
+  "query_type": "Supervised Learning",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Work & Play in the Motor City!\nDescription: Locals share some of the best places to visit and experience the culture of Detroit while on a business trip."
+    },
+    {
+      "sender": "user",
+      "message": "Not really",
+      "time_spent_ms": 12027,
+      "display_time": 1693594077307,
+      "submission_time": 1693594089334
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Pollution around the world: 30 shocking photos\nDescription: While it's easy to become overwhelmed by stats and images about current pollution and trajectories for years to come, the intent of this article is not to instill fear. The intent is to be realistic, to learn from what is going on in the world, and to support one another in our collective efforts to change. Pollution knows no boundaries, so for the sake of future generations, let's err on the side of action and hope."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 9991,
+      "display_time": 1693594089480,
+      "submission_time": 1693594099471
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: These 50+ Last-Minute Halloween Costumes Are Perfect for Procrastinators\nDescription: An easy, Insta-worthy costume in 3, 2, 1 ..."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 5474,
+      "display_time": 1693594099769,
+      "submission_time": 1693594105243
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The 25 greatest Jimmy Stewart films\nDescription: He starred in countless notable films, so much so we couldn't possibly go over them all. So to save you some time, we've pared it down to the 25-best Stewart moves ever."
+    },
+    {
+      "sender": "user",
+      "message": "Yes that could be interesting ",
+      "time_spent_ms": 24191,
+      "display_time": 1693594105543,
+      "submission_time": 1693594129734
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 1 taken to hospital in crash involving a construction vehicle\nDescription: Emergency crews responded to a report of crash involving a car and a construction vehicle in the 3500 block of Shakertown Road around 9 a.m."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 19447,
+      "display_time": 1693594130029,
+      "submission_time": 1693594149476
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Retiring KPRC 2 anchor Bill Balleza looks back on his nearly 50-year career\nDescription: After 39 years of anchoring KPRC (Channel 2)'s evening news, Bill Balleza is ready to do absolutely nothing when he retires in January."
+    },
+    {
+      "sender": "user",
+      "message": "Yes ",
+      "time_spent_ms": 8821,
+      "display_time": 1693594149567,
+      "submission_time": 1693594158388
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Skylar Diggins-Smith played entire 2018 season while pregnant\nDescription: "
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 17484,
+      "display_time": 1693594158544,
+      "submission_time": 1693594176028
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: November freeze means some orange barrels could stay until spring\nDescription: The Michigan Department of Transportation had planned to generally wrap up state road projects for the winter on Friday, spokesman Jeff Cranson said."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 9060,
+      "display_time": 1693594176159,
+      "submission_time": 1693594185219
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Everything You Need to Know About Paid Family Leave\nDescription: Katie Bethell, founder and executive director of PL+US (Paid Leave for the United States), the national campaign to win paid family leave by 2022, answers your FAQs."
+    },
+    {
+      "sender": "user",
+      "message": "Yes i am",
+      "time_spent_ms": 15232,
+      "display_time": 1693594185341,
+      "submission_time": 1693594200573
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 2021 Kia Optima Raises the Style Bar for Mid-Size Sedans\nDescription: The new Optima looks as good as we'd hoped given the promising teaser photos."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 19367,
+      "display_time": 1693594200733,
+      "submission_time": 1693594220100
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The most conservative public colleges in America\nDescription: Think higher education is uniformly liberal? Think again. Stacker looks at the 50 most conservative colleges in America."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 8793,
+      "display_time": 1693594220186,
+      "submission_time": 1693594228979
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: What Does WiFi Stand For? (It's Not What You Think)\nDescription: Whatever you think WiFi stands for, that probably isn't it."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 6158,
+      "display_time": 1693594229079,
+      "submission_time": 1693594235237
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Toss These Clothing Items Because They're Never Coming Back in Style\nDescription: This list is a great excuse to update your wardrobe."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 5776,
+      "display_time": 1693594235449,
+      "submission_time": 1693594241225
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Sharon Stone Recreates 'Basic Instinct' Scene 27 Years After Film's Release\nDescription: The 61-year-old actress performed the scene upon receiving GQ's Woman of the Year award."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 9869,
+      "display_time": 1693594241401,
+      "submission_time": 1693594251270
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: GM, Toyota, Fiat Chrysler back Trump on California emissions challenge\nDescription: The automakers announced on Monday they were filing to intervene on behalf of the Trump administration after California and 22 other states sued in September to undo the Trump administration's determination that federal law bars California from setting stiff tailpipe emission standards and zero-emission vehicle mandates."
+    },
+    {
+      "sender": "user",
+      "message": "Yes i am",
+      "time_spent_ms": 16965,
+      "display_time": 1693594251427,
+      "submission_time": 1693594268392
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Microsoft acquires start-up Mover, shortly after buying Movere, to get more data into its cloud\nDescription: Mover can move files from Box and Dropbox   or on-premises data centers   to Microsoft services like OneDrive and SharePoint."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 17165,
+      "display_time": 1693594268907,
+      "submission_time": 1693594286072
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 'Cats': Watch Taylor Swift Record NEW Song 'Beautiful Ghosts'\nDescription: Taylor Swift and Andrew Lloyd Webber wrote a new song, 'Beautiful Ghosts,' for the 'Cats' soundtrack."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 12594,
+      "display_time": 1693594286191,
+      "submission_time": 1693594298785
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 2019 Tokyo Motor Show preview: Debuts from Honda, Mazda, Toyota and more\nDescription: Whether you're after electric cars, sports cars or something out of left field, Tokyo's got it."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 14053,
+      "display_time": 1693594298914,
+      "submission_time": 1693594312967
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The 30 best shows of Comedy Central's 30 years\nDescription: Comedy Central has been on the air now for 30 years. Since Nov. 15, 1989   when it was The Comedy Channel   it has been the go-to network for comedy, from original programming and movies to favorites and cult classics in syndication."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 36475,
+      "display_time": 1693594313192,
+      "submission_time": 1693594349667
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: RTA board should discontinue paying trustees and adopt term limits for next board president\nDescription: The Greater Cleveland Regional Transit Authority board of trustees is looking at a revamp of its bylaws after recent turmoil that included criminal charges against former board president George Dixon III, who pleaded guilty to felony theft in office, and that saw the departure of longtime RTA General Manager Joe Calabrese. The board is right to do so. Extensive financial and strategic ..."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 6034,
+      "display_time": 1693594349749,
+      "submission_time": 1693594355783
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The Amazon's White Bellbirds Shatter Record For World's Loudest Bird \"Song\"\nDescription: Most male birds try to attract mates with elegant gestures. Seabirds bob their heads and flutter their wings, while peacocks fan out their beautiful feathers."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 5857,
+      "display_time": 1693594355868,
+      "submission_time": 1693594361725
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Roush Claims F-150 Nitemare Is 'World's Quickest Production Truck'\nDescription: It goes 0-60 in 3.9 seconds, but there are some catches."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 6095,
+      "display_time": 1693594361892,
+      "submission_time": 1693594367987
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: A Teenage Inventor May Have Solved the Problem of Car Blindspots\nDescription: Trying to see around a car pillar can be frustrating. Thanks to a Pennsylvania teen, we might not have to deal with it for much longer."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 39238,
+      "display_time": 1693594373711,
+      "submission_time": 1693594412949
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "1",
+    "feedback_new_issues_interaction": "3",
+    "feedback_interaction_coverage_pretest": "5",
+    "feedback_interaction_coverage_posttest": "5",
+    "feedback_testcase_use_history": "5",
+    "feedback_lm_experience": "6",
+    "feedback_other": ""
+  },
+  "query_prompt": "pool_random"
+}

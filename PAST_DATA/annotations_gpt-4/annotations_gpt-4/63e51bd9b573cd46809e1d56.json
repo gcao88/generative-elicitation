@@ -1,0 +1,231 @@
+{
+  "prolific_id": "63e51bd9b573cd46809e1d56",
+  "engine": "gpt-4",
+  "query_type": "Generative open-ended questions",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "What types of online communities or forums do you actively participate in, and what draws you to these specific spaces?"
+    },
+    {
+      "sender": "user",
+      "message": "I actively participate in the twitch community and kai mafia. It gives me a sense of community and connection.",
+      "time_spent_ms": 50937,
+      "display_time": 1688922544784,
+      "submission_time": 1688922595721
+    },
+    {
+      "sender": "assistant",
+      "message": "What types of articles or blogs do you typically read online, and what specific topics within those do you find most engaging or informative?"
+    },
+    {
+      "sender": "user",
+      "message": "I find reddit to be a good source for articles and news in general. I enjoy learning about what's going around in the world.",
+      "time_spent_ms": 54440,
+      "display_time": 1688922597377,
+      "submission_time": 1688922651817
+    },
+    {
+      "sender": "assistant",
+      "message": "What types of documentaries, podcasts, or educational videos do you enjoy watching or listening to, and what subjects or themes within these mediums do you find most captivating?"
+    },
+    {
+      "sender": "user",
+      "message": "I enjoy watching the joe rogan show and documentaries on true crime. ",
+      "time_spent_ms": 44653,
+      "display_time": 1688922653508,
+      "submission_time": 1688922698161
+    },
+    {
+      "sender": "assistant",
+      "message": "What types of books or literature do you enjoy reading, and are there any specific genres, authors, or themes that you find particularly engaging or thought-provoking?"
+    },
+    {
+      "sender": "user",
+      "message": "I don't really read books.",
+      "time_spent_ms": 28929,
+      "display_time": 1688922700720,
+      "submission_time": 1688922729649
+    },
+    {
+      "sender": "assistant",
+      "message": "What types of online games or interactive content do you enjoy, and what aspects or themes within these mediums do you find most engaging or appealing?"
+    },
+    {
+      "sender": "user",
+      "message": "I enjoy playing dota 2 like moba games. It helps me forget about my shitty life.",
+      "time_spent_ms": 17772,
+      "display_time": 1688922731357,
+      "submission_time": 1688922749129
+    },
+    {
+      "sender": "assistant",
+      "message": "What types of music, movies, or TV shows do you enjoy, and are there any specific genres, artists, or themes within these mediums that you find particularly engaging or inspiring?"
+    },
+    {
+      "sender": "user",
+      "message": "I enjoy watching comedy, action, and mystery tv shows.",
+      "time_spent_ms": 12093,
+      "display_time": 1688922750972,
+      "submission_time": 1688922763065
+    },
+    {
+      "sender": "assistant",
+      "message": "What types of art or creative expressions do you appreciate or engage with, and what specific styles, artists, or themes within these mediums do you find most inspiring or intriguing?"
+    },
+    {
+      "sender": "user",
+      "message": "I like hitting the gym.",
+      "time_spent_ms": 41805,
+      "display_time": 1688922764772,
+      "submission_time": 1688922806577
+    },
+    {
+      "sender": "assistant",
+      "message": "What types of science or technology topics do you find most interesting, and are there any specific areas or advancements within these fields that you enjoy learning about or following?"
+    },
+    {
+      "sender": "user",
+      "message": "I like learning about ai.",
+      "time_spent_ms": 8087,
+      "display_time": 1688922808114,
+      "submission_time": 1688922816201
+    },
+    {
+      "sender": "assistant",
+      "message": "What types of travel destinations or cultural experiences do you find most appealing, and are there any specific regions, activities, or aspects of these experiences that you find particularly enriching or exciting?"
+    },
+    {
+      "sender": "user",
+      "message": "I dont travel.",
+      "time_spent_ms": 5220,
+      "display_time": 1688922818053,
+      "submission_time": 1688922823273
+    },
+    {
+      "sender": "assistant",
+      "message": "What types of physical activities or sports do you enjoy participating in or watching, and what do you find most appealing about these activities or sports?"
+    },
+    {
+      "sender": "user",
+      "message": "I like doing cardio and body weight exercises.",
+      "time_spent_ms": 13471,
+      "display_time": 1688922824506,
+      "submission_time": 1688922837977
+    },
+    {
+      "sender": "assistant",
+      "message": "What types of social or political issues do you find most compelling, and are there any specific causes, movements, or perspectives that you feel particularly passionate about or interested in?"
+    },
+    {
+      "sender": "user",
+      "message": "I like learning about gun control and inflation.",
+      "time_spent_ms": 19786,
+      "display_time": 1688922839743,
+      "submission_time": 1688922859529
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "5",
+    "feedback_new_issues_interaction": "5",
+    "feedback_interaction_coverage_pretest": "6",
+    "feedback_interaction_coverage_posttest": "3",
+    "feedback_testcase_use_history": "4",
+    "feedback_lm_experience": "4",
+    "feedback_other": ""
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what topics a user is interested in reading online article about. People's interests are broad, so you should seek to understand their interests across many topics; in other words, go for breadth rather than depth. Do not assume a user has given a complete answer to any question, so make sure to keep probing different types of interests.\n\nPrevious questions:\n- [Q] -> [A]\n\nGenerate the most informative open-ended question that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Make sure your question addresses different aspects of the user's interests than the questions that have already been asked. At the same time however, the question should be bite-sized, and not ask for too much at once. Generate the open-ended question and nothing else:"
+    }
+  ]
+}

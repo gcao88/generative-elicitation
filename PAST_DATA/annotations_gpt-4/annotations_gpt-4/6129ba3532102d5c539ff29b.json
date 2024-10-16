@@ -1,0 +1,809 @@
+{
+  "prolific_id": "6129ba3532102d5c539ff29b",
+  "engine": "gpt-4",
+  "query_type": "Supervised Learning",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The most memorable moments from the 2019 CMA Awards\nDescription: The biggest names in country music took the stage at the 53rd Annual CMA Awards. These are the highlights."
+    },
+    {
+      "sender": "user",
+      "message": "n o",
+      "time_spent_ms": 7182,
+      "display_time": 1693594244176,
+      "submission_time": 1693594251358
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The Nationals World Series parade will be Saturday\nDescription: Holy smokes folks, the Washington Nationals are World Series champions! Take a minute and let that feeling fully sink in. The rust-colored dust hasn't even settled yet, but Mayor Bowser announced early Thursday morning that the victory parade would be held at 2 p.m. Saturday, Nov. 2. The parade will begin on Constitution Avenue Northwest at 15th Street and end on Pennsylvania Avenue Northwest at 3rd Street with a team rally. While D.C. has not..."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 7364,
+      "display_time": 1693594251467,
+      "submission_time": 1693594258831
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 12 photos that show everything kids eat in a week around the world\nDescription: Gregg Segal photographed children surrounded by everything they eat in a week for his new book \"Daily Bread: What Kids Eat Around the World.\""
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 3672,
+      "display_time": 1693594258936,
+      "submission_time": 1693594262608
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Florida State throws 3 passes on big play\nDescription: Florida State threw 3 passes on 1 big play vs. Syracuse. Alex Hornibrook threw to Cam Akers, who threw it back to Hornibrook, who threw to Tamorrion Terry for the 54 yard gain on a busted play in this ACC Must See Moment!"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 5532,
+      "display_time": 1693594262720,
+      "submission_time": 1693594268252
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The Amazon's White Bellbirds Shatter Record For World's Loudest Bird \"Song\"\nDescription: Most male birds try to attract mates with elegant gestures. Seabirds bob their heads and flutter their wings, while peacocks fan out their beautiful feathers."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2765,
+      "display_time": 1693594268359,
+      "submission_time": 1693594271124
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 18 major Oscar contender movies you shouldn't miss in theaters\nDescription: The 2019 movies set to make a run for the Academy Awards are set. Here's how the field looks from our vantage point."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 1868,
+      "display_time": 1693594271232,
+      "submission_time": 1693594273100
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Man found dead in Greensboro identified, police investigating as homicide\nDescription: GREENSBORO, N.C.   Greensboro police have started a homicide investigation after identifying a man found dead, according to a Greensboro Police Department news release. Douglas Wheless, 33, was found dead after being shot, police say. Police responded to the area of 505 Gillespie Street Tuesday around 8 a.m. Wheless was found dead in the road. It is unknown right now what time he was killed. ..."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 1894,
+      "display_time": 1693594273210,
+      "submission_time": 1693594275104
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The Super Rich Are Buying $100 Million Homes. For Some, One Isn't Enough.\nDescription: Since 2007, 20 homes have sold for once unthinkable nine-figure price tags, though many more have tried and failed."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2581,
+      "display_time": 1693594275216,
+      "submission_time": 1693594277797
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: These 50+ Last-Minute Halloween Costumes Are Perfect for Procrastinators\nDescription: An easy, Insta-worthy costume in 3, 2, 1 ..."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2150,
+      "display_time": 1693594277908,
+      "submission_time": 1693594280058
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: This holiday gift could make your child more than $50,000\nDescription: How a small investment now can make your children's lives much easier when they're older."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 1380,
+      "display_time": 1693594280173,
+      "submission_time": 1693594281553
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 25 Dorm Room Essentials to Buy at the Dollar Store\nDescription: Save some serious dough on back-to-school necessities ranging from slippers to table lamps and cleaning supplies by stocking up at the dollar store. Places like Dollar Tree and Dollar General often beat bigger retailers like Walmart by a large margin on these dorm room necessities."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 9499,
+      "display_time": 1693594281656,
+      "submission_time": 1693594291155
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Southland Gas Prices Continue To Drop\nDescription: Regular gas in Los Angeles County dropped 1.2 cents Saturday to $4.09 per gallon, its fourth consecutive decrease."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2985,
+      "display_time": 1693594291266,
+      "submission_time": 1693594294251
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Microsoft acquires start-up Mover, shortly after buying Movere, to get more data into its cloud\nDescription: Mover can move files from Box and Dropbox   or on-premises data centers   to Microsoft services like OneDrive and SharePoint."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2260,
+      "display_time": 1693594294359,
+      "submission_time": 1693594296619
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 27 Things No One Tells You About Having Diabetes\nDescription: Discover the realities of living with diabetes that nobody tells you until you're diagnosed and actually experiencing them."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2252,
+      "display_time": 1693594296728,
+      "submission_time": 1693594298980
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Disney World moves on from Skyliner accident, touts 1 million riders\nDescription: Disney announced in a new blog post that 1 million guests have been on its new Skyliner attraction   though neglected to mention a key incident."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 6680,
+      "display_time": 1693594299093,
+      "submission_time": 1693594305773
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: A Teenage Inventor May Have Solved the Problem of Car Blindspots\nDescription: Trying to see around a car pillar can be frustrating. Thanks to a Pennsylvania teen, we might not have to deal with it for much longer."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 4308,
+      "display_time": 1693594305878,
+      "submission_time": 1693594310186
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 100 books to read in a lifetime   according to Amazon Books editors\nDescription: There are more great books in the world than there is time to read all of them. Amazon's list of 100 books to read in a lifetime is a good place to start."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 9162,
+      "display_time": 1693594310298,
+      "submission_time": 1693594319460
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 'Dancing With the Stars': Emma Bunton No Longer Guest Judging Due to Scheduling Conflict\nDescription: ABC announced the news via Twitter on Monday."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 5849,
+      "display_time": 1693594319573,
+      "submission_time": 1693594325422
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: This One Phrase Helps Turn A Fight Into A Problem To Solve\nDescription: After 10 years of marriage, Ashley Innes is no stranger to heated, circular arguments with her spouse."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 8111,
+      "display_time": 1693594325535,
+      "submission_time": 1693594333646
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Sanders, Ocasio-Cortez Unveil $172 Billion 'Green New Deal For Public Housing'\nDescription: Sen. Bernie Sanders and Rep. Alexandria Ocasio-Cortez unveiled sweeping legislation to invest up to $172 billion over the next decade to drastically upgrade the nation's public housing units."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2059,
+      "display_time": 1693594333754,
+      "submission_time": 1693594335813
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 6-year-old golfer aims to be new Tiger Woods\nDescription: The young golfer started playing at three, and has made such extraordinary progress that he has already won junior tournaments."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2471,
+      "display_time": 1693594335924,
+      "submission_time": 1693594338395
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Our Favorite Manatee Photos of All Time\nDescription: Get up-close and personal with these gentle giants that are notoriously hard to photograph and learn all about them while you're at it! The post Our Favorite Manatee Photos of All Time appeared first on Reader's Digest."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2118,
+      "display_time": 1693594338505,
+      "submission_time": 1693594340623
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Dear Care and Feeding: How Do I Tell My Mom I'm Not Having Kids?\nDescription: Parenting advice on going child-free, peeing on the floor, and Midsommar."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2637,
+      "display_time": 1693594340731,
+      "submission_time": 1693594343368
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: ALDI now making beer, wine deliveries in Hampton Roads\nDescription: Didn't get your hands on that highly-coveted ALDI wine and beer Advent calendar? No worries. You can still get your wine and beer fix from the store but delivered right to your front door. ALDI has just announced that it's making alcohol delivery available nationwide. Shoppers can visit ALDI's website or Instacart to make their beer and wine selection. ALDI started making grocery deliveries in 2017 and gradually expanded its service to more..."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6625,
+      "display_time": 1693594343477,
+      "submission_time": 1693594350102
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Under-the-Radar Winter Destinations for Whole Family\nDescription: These underrated places are great for a winter vacation"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 1946,
+      "display_time": 1693594350211,
+      "submission_time": 1693594352157
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Your Daily Briefing From Microsoft News\nDescription: Election takeaways: What we learned from Kentucky, Virginia, and Mississippi Democrats appear to have won the Kentucky governor's race but Trump's allies said a flawed GOP candidate - not the president - was to blame for the poor showing. Read More USA TODAY Poll: With less than a year to go before 2020 elections, majority expects Trump to win With less than a year to go before the 2020 election, a majority of registered voters say they think..."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2915,
+      "display_time": 1693594352265,
+      "submission_time": 1693594355180
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Saudi says Baghdadi 'distorted' image of Islam, praises killing\nDescription: Saudi Arabia said Monday that Islamic State leader Abu Bakr al-Baghdadi had distorted the image of Islam, and hailed his killing by US special forces in northwestern Syria."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 1977,
+      "display_time": 1693594355287,
+      "submission_time": 1693594357264
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 7 Hidden Ways Your Credit Card Is Costing You\nDescription: Where credit cards get sneaky, and what you can do to avoid their hidden costs."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2147,
+      "display_time": 1693594357378,
+      "submission_time": 1693594359525
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: First Drive! 2020 Shelby GT500 Is an Apex Predator, Turning Drivers Into Track Stars\nDescription: Driving the 2020 Shelby GT500 on the street, dragstrip, and road course reveals an apex predator that turns any driver into a track star."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 10028,
+      "display_time": 1693594359634,
+      "submission_time": 1693594369662
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 30 of the world's oldest jobs people still do today\nDescription: From hunting to writing, healing to baking, some of these ancient careers date back over 50,000 years, but they're still a vital part of modern society"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 5160,
+      "display_time": 1693594369772,
+      "submission_time": 1693594374932
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: This Is the Best Time of the Week to Buy a Car\nDescription: It's probably not the most convenient, but it will get you the best deal. The post This Is the Best Time of the Week to Buy a Car appeared first on Reader's Digest."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 5172,
+      "display_time": 1693594375041,
+      "submission_time": 1693594380213
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 2021 VW Golf GTI Caught At The 'Ring Perfecting Hot Hatch Recipe\nDescription: One of the very few eighth-gen Golfs coming to the U.S."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 8023,
+      "display_time": 1693594380322,
+      "submission_time": 1693594388345
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 11 Things to Remember This Veterans Day\nDescription: The date was chosen to coincide with the anniversary of the end of World War I, which occurred \"at the 11th hour of 11th day of the 11th month.\""
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2069,
+      "display_time": 1693594388460,
+      "submission_time": 1693594390529
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Stephen Curry calls out Michael Jordan for being a 'hater'\nDescription: While the opinion of arguably the greatest NBA player of all time is certainly noteworthy, most people disagree with Jordan."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6405,
+      "display_time": 1693594390649,
+      "submission_time": 1693594397054
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Live out your racing dreams for $15\nDescription: Ready. Set. Go! K1 Speed is offering San Antonians the chance to live out their racing dreams in honor of the new Twentieth Century Fox movie, Ford v Ferrari. Visitors to K1 Speed can enjoy a single-race package for only $15 when showing their Ford v Ferrari movie ticket. Racers can show either a physical ticket stub or a digital ticket on a mobile device. The offer is valid from November 15 to November 30 and does not include the annual..."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 13357,
+      "display_time": 1693594397163,
+      "submission_time": 1693594410520
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Comics - 'Pluggers' by Gary Brookins\nDescription: "
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 10216,
+      "display_time": 1693594410668,
+      "submission_time": 1693594420884
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: How to make dividends work for you\nDescription: The quarterly payouts your stocks yield can multiply your wealth in amazing ways."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 3259,
+      "display_time": 1693594421033,
+      "submission_time": 1693594424292
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Voters tuning in to the race for Allegheny County District Attorney\nDescription: An off-year election doesn't bode well for heavy voter turnout. However, voters in Allegheny County are paying attention to the race for district attorney, between Democratic incumbent Stephen Zappala and independent candidate Lisa Middleman, who is a part-time public defender and private criminal defense attorney. Both candidates have their respective supporters. Zappala is endorsed by the Allegheny Democratic Committee. Sign up for our..."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 1600,
+      "display_time": 1693594424440,
+      "submission_time": 1693594426040
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Here's Why Opening a 401(k) Is a Must, If You Have the Chance\nDescription: It's a way to save for retirement, save on taxes and get a little extra from the boss. What could be better?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 3887,
+      "display_time": 1693594426192,
+      "submission_time": 1693594430079
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 'Born, Not Made': Doctors With CHOP Offer New Insights On Best Way To Treat Picky Eaters\nDescription: The research says parents can be trained on how to get their kids to eat."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 7665,
+      "display_time": 1693594430233,
+      "submission_time": 1693594437898
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: These Color Combos Are The Ultimate Way To Make Your Home Feel Super Cozy\nDescription: AKA a perfect aesthetic."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 4289,
+      "display_time": 1693594438053,
+      "submission_time": 1693594442342
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Lots of good terns: Bird ready to fly off endangered list\nDescription: A tiny Midwestern bird is ready to fly off the endangered species list."
+    },
+    {
+      "sender": "user",
+      "message": "nope",
+      "time_spent_ms": 8397,
+      "display_time": 1693594442501,
+      "submission_time": 1693594450898
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Patrick Day boxed for the love of the sport, and unfortunately paid the ultimate price\nDescription: "
+    },
+    {
+      "sender": "user",
+      "message": "zilch",
+      "time_spent_ms": 8476,
+      "display_time": 1693594451048,
+      "submission_time": 1693594459524
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Obamacare premiums are dropping for 2020 plans\nDescription: The Affordable Care Act is looking stronger for 2020 -- and the Trump administration is claiming credit for it, even as officials try to upend the landmark health reform law."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 7234,
+      "display_time": 1693594459682,
+      "submission_time": 1693594466916
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Explosive new wildfire drives thousands from homes near Los Angeles\nDescription: The Maria fire ignited in Ventura County early Thursday night and raced westward, consuming 4,000 acres in just three hours."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 4230,
+      "display_time": 1693594467074,
+      "submission_time": 1693594471304
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Must-See Fashion Police Moments to Swoon Over This Week\nDescription: "
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 3767,
+      "display_time": 1693594471457,
+      "submission_time": 1693594475224
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: VIDEO: Shark swims close to shore in Ponte Vedra Beach\nDescription: Imagine you're going for a morning stroll on the beach when you look out to shore to see sharks swimming by! This was the sight Theresa Campbell Lindner experienced during her morning walk in Ponte Vedra Beach Friday around 7:30 a.m. She shared this video in our First Coast Weather Watcher Facebook page along with the caption, \"I always enjoy seeing sharks on my morning walk.\" Lindner said there were several sharks and they were eating breakfast..."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 3384,
+      "display_time": 1693594475385,
+      "submission_time": 1693594478769
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Helping to heal with music and art\nDescription: One year after the death of a 3-year-old girl from Somerset County, her family is pushing to keep her memory alive at UPMC Children's Hospital of Pittsburgh through the Nora Grace Kaufman Center for Creative Arts Therapy. The therapy room is a place where young patients can go to escape their hospital rooms for awhile and receive therapy through art and music. The team at UPMC calls it a \"masterpiece of hope\" for the way it helps children..."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 13311,
+      "display_time": 1693594478927,
+      "submission_time": 1693594492238
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Here's how you can help California's wildfire victims\nDescription: California's wildfires have forced hundreds of thousands of people from their homes as firefighters battle historically dire conditions."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 4069,
+      "display_time": 1693594492412,
+      "submission_time": 1693594496481
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Trailer - Polaroid\nDescription: Official Trailer"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2149,
+      "display_time": 1693594496635,
+      "submission_time": 1693594498784
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: What's the best dish in York County? A new restaurant food trail may help decide it.\nDescription: YORK COUNTY -- York County For folks who enjoyed the drinks, it's now time to hit the main course. Plus the apps and desserts. Off the success of the YoCo Brew Trail, Visit York County will launch the YoCo Taste Trail early next year. It will take diners on a tour of the best culinary fare York County has to offer. \"Very similar to the YoCo Brew Trail, except for we are focusing on ..."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6981,
+      "display_time": 1693594498936,
+      "submission_time": 1693594505917
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Denver Broncos quarterback Joe Flacco voices frustration after loss to Colts\nDescription: Denver Broncos quarterback Joe Flacco voices frustration after loss."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2026,
+      "display_time": 1693594506073,
+      "submission_time": 1693594508099
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 'Maleficent: Mistress of Evil' Gives Disney Another No. 1 Box Office Weekend\nDescription: Maleficent: Mistress of Evil has given Disney another No. 1 at the box office. But unlike its other 2019 hits, this sequel will need help from overseas to make back its costs. After making $12.5 million from 3,790 screens on Friday, \"Mistress of Evil\" is now projected for a $38 million opening weekend. That's below pre-weekend projections of a $45 million opening and well below the $69 million opening earned by the first \"Maleficent.\" Also..."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2507,
+      "display_time": 1693594508253,
+      "submission_time": 1693594510760
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Which Animals Are the Loudest?\nDescription: Which Animals Are the Loudest?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2249,
+      "display_time": 1693594510911,
+      "submission_time": 1693594513160
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Time For Lunch! These Easy Recipes Are Good For Work, School, and Other Busy Weekdays\nDescription: If you're on the lookout for healthy, hearty, and satisfying lunches to bring to work, we rounded up the easiest recipes out there."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2066,
+      "display_time": 1693594513320,
+      "submission_time": 1693594515386
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Old tires on your car can have tragic consequences\nDescription: When dealing with cars that are infrequently driven, sometimes tires can age out before they wear out. So inspecting them is imperative."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2120,
+      "display_time": 1693594515550,
+      "submission_time": 1693594517670
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Homeless Couple Gets Married in Laundromat\nDescription: Cheryl Smith and James Knight recently said their vows in an unlikely venue: a Nashville, Tennessee, laundromat. The couple are homeless, and the Soap Opry Laundry is an important place for them. Cheryl works there, as well. At the ceremony, officiated by Reverend Lisa Cook, there were friends, hugs, cake and a competitive bouquet toss. The couple beamed, as Cheryl said, \"It's like a dream come true.\""
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 1525,
+      "display_time": 1693594517830,
+      "submission_time": 1693594519355
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 3 Generations of a Family Lose Everything After California Wildfire Destroys Ranch\nDescription: Easy Fire Destroys Homes Owned by 3 Generations of a Family"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2073,
+      "display_time": 1693594519512,
+      "submission_time": 1693594521585
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Yep, It's From Amazon! 27 of the Best Finds From Amazon's Clothing Brands\nDescription: Amazon might not have always been your first stop for stylish clothes, but the e-commerce giant is quickly establishing itself as a fashion heavyweight, not only offering styles from partner brands and luxury retailers like Shopbop (Amazon Prime members get free two-day shipping for all of the site's wares) but now entering the market with its very own labels."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2007,
+      "display_time": 1693594521741,
+      "submission_time": 1693594523748
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Pollution around the world: 30 shocking photos\nDescription: While it's easy to become overwhelmed by stats and images about current pollution and trajectories for years to come, the intent of this article is not to instill fear. The intent is to be realistic, to learn from what is going on in the world, and to support one another in our collective efforts to change. Pollution knows no boundaries, so for the sake of future generations, let's err on the side of action and hope."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2040,
+      "display_time": 1693594523904,
+      "submission_time": 1693594525944
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 50 Incredible DIY Home Projects\nDescription: If you're looking to become a DIYer or if you've been a DIYer for years we've got an assortment of incredible DIY projects you can try. Check them out."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2215,
+      "display_time": 1693594526100,
+      "submission_time": 1693594528315
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Science Says Doing This One Thing for 15 Minutes Is as Beneficial as a Vacation Day\nDescription: A new study published in The Journal of Positive Psychology has found that the benefits of brief meditation are similar to that of one vacation day."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 5659,
+      "display_time": 1693594528477,
+      "submission_time": 1693594534136
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 'El Camino: A Breaking Bad Movie': TV Review\nDescription: Vince Gilligan and Aaron Paul jump back into the aftermath of 'Breaking Bad' for a two-hour movie that's fun and often thrilling, but never feels necessary."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 4664,
+      "display_time": 1693594534295,
+      "submission_time": 1693594538959
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 17 Signs a Marriage Won't Last, According to Wedding Planners\nDescription: Wedding planners see all the ins and outs of nuptials. And over time, they begin to see the signs that mean a marriage won't last long after the big day."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 10638,
+      "display_time": 1693594539130,
+      "submission_time": 1693594549768
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "3",
+    "feedback_new_issues_interaction": "1",
+    "feedback_interaction_coverage_pretest": "1",
+    "feedback_interaction_coverage_posttest": "3",
+    "feedback_testcase_use_history": "2",
+    "feedback_lm_experience": "5",
+    "feedback_other": ""
+  },
+  "query_prompt": "pool_random"
+}

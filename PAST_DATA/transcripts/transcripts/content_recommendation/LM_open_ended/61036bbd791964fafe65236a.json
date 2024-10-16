@@ -1,0 +1,286 @@
+{
+  "prolific_id": "61036bbd791964fafe65236a",
+  "engine": "gpt-4",
+  "query_type": "LM_open_ended",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate which of the two following articles you would prefer to read."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Question: Can you tell me about any specific themes, genres, or subjects that you find particularly engaging or intriguing in online articles?"
+    },
+    {
+      "sender": "user",
+      "message": "I like researching wars and true crime articles",
+      "time_spent_ms": 40668,
+      "display_time": 1706473300134,
+      "submission_time": 1706473340802,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Question: Besides wars and true crime, are there any other topics in science, arts, technology, or lifestyle that you enjoy reading about?"
+    },
+    {
+      "sender": "user",
+      "message": "I like to research things to better my lifestyle such as skincare steps, dieting and exercise, etc",
+      "time_spent_ms": 45917,
+      "display_time": 1706473342625,
+      "submission_time": 1706473388542,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Question: Are there any topics related to technology, such as AI, gadgets, or software, or perhaps subjects in the arts, like music, film, or literature, that you find interesting to read about online?"
+    },
+    {
+      "sender": "user",
+      "message": "Not really",
+      "time_spent_ms": 15858,
+      "display_time": 1706473391966,
+      "submission_time": 1706473407824,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Question: Are there any topics related to travel, food, sports, or perhaps environmental issues that you find interesting to read about online?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 6876,
+      "display_time": 1706473409540,
+      "submission_time": 1706473416416,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Question: Are there any topics related to personal development, such as psychology, self-improvement, or mindfulness, or perhaps subjects in the field of education, like learning strategies or educational policies, that you find interesting to read about online?"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 14091,
+      "display_time": 1706473418633,
+      "submission_time": 1706473432724,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Question: Are there any topics related to politics, economics, or social issues, or perhaps subjects in the field of health and wellness, like mental health or alternative medicine, that you find interesting to read about online?"
+    },
+    {
+      "sender": "user",
+      "message": "I sometimes research free health care and why America does not incorporate it and why so many are against it",
+      "time_spent_ms": 44284,
+      "display_time": 1706473435286,
+      "submission_time": 1706473479570,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Question: Are there any topics related to hobbies or leisure activities, such as gardening, cooking, or DIY projects, or perhaps subjects related to personal finance, like investing or budgeting, that you find interesting to read about online?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes, hobbies such as crocheting, sewing, and making various DIY projects with my Cricut machine",
+      "time_spent_ms": 40151,
+      "display_time": 1706473481617,
+      "submission_time": 1706473521768,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Question: Are there any topics related to history, such as ancient civilizations or historical figures, or perhaps subjects in the field of space exploration, like astronomy or astronautics, that you find interesting to read about online?"
+    },
+    {
+      "sender": "user",
+      "message": "Some wars that took place in history ",
+      "time_spent_ms": 17881,
+      "display_time": 1706473526239,
+      "submission_time": 1706473544120,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Question: Are there any topics related to nature, such as wildlife, conservation, or outdoor activities, or perhaps subjects in the field of architecture and design, like interior design or urban planning, that you find interesting to read about online?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6770,
+      "display_time": 1706473547225,
+      "submission_time": 1706473553995,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Question: Are there any topics related to culture, such as different world cultures, languages, or social customs, or perhaps subjects in the field of philosophy or religion, that you find interesting to read about online?"
+    },
+    {
+      "sender": "user",
+      "message": "Usually Japanese culture since I watch anime, I like to know what certain things mean",
+      "time_spent_ms": 31642,
+      "display_time": 1706473557066,
+      "submission_time": 1706473588708,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Question: Are there any topics related to entertainment, such as TV shows, movies, or celebrities, or perhaps subjects in the field of fashion, like trends, designers, or personal style, that you find interesting to read about online?"
+    },
+    {
+      "sender": "user",
+      "message": "Taylor Swift, Harry Potter",
+      "time_spent_ms": 14841,
+      "display_time": 1706473591021,
+      "submission_time": 1706473605862,
+      "nl_features": [],
+      "pairwise_comparison": null
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": [
+        "\"In Norway, the Electric Vehicle Future Has Already Arrived\" - About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn't collapsed. But problems with unreliable chargers persist.",
+        "\"Two Coronations, 70 Years Apart\" - The Visual Parallels Between Elizabeth II and Charles III's Coronations"
+      ],
+      "label": "Option B"
+    },
+    {
+      "sample": [
+        "\"Why China Is Tightening Its Oversight of Banking and Tech\" - A series of regulatory changes approved this week reflect the increasingly centralized control of Xi Jinping, newly confirmed for a third term as China's president.",
+        "\"For a Seasonal Taste of Milan: Candied Chestnuts\" - Many residents favor the marrons glac\u00e9s prepared by Giovanni Galli 1911, one of the best-known confectioners in the city."
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"Great Places to Enjoy Art in California\" - Readers recommend their favorite museums and art destinations, including several hidden gems.",
+        "\"Why a Major Primary Challenge to Biden Is So Unlikely\" - It's really hard to run against a sitting president. And beginning at this point, just two months before primary voting starts, wouldn't be feasible anyhow."
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"Can A.I. and Lasers Cure Our Smartphone Addiction?\" - A first impression of Humane's new magnetic Ai Pin: equal parts magical and awkward.",
+        "\"Starfield Review: A Game With a Galaxy of Possibilities\" - Offering a galaxy with more than a thousand planets, a fully customizable ship, and major decisions to make (and small ones too), the brand-new game Starfield promises more than an open world\u2014it presents the mystery, wonder, and terror of space."
+      ],
+      "label": "Option B"
+    },
+    {
+      "sample": [
+        "\"How Coco Gauff Embodies the Biggest Story in Sports\" - As our Sports of The Times columnist moves to a new assignment, he reflects on a recurring theme from his tenure: the rise of female athletes.",
+        "\"'Kids Can't Read': The Revolt That Is Taking On the Education Establishment\" - Fed up parents, civil rights activists, newly awakened educators and lawmakers are crusading for \u201cthe science of reading.\u201d Can they get results?"
+      ],
+      "label": "Option B"
+    },
+    {
+      "sample": [
+        "\"Where the World Is (and Isn't) Making Progress on Climate Change\" - Emissions from electricity and transportation are projected to fall over time, a new report finds, but industry remains a major climate challenge.",
+        "\"When Politics Saves Lives: a Good-News Story.\" - The decision to fund medications to treat H.I.V.-AIDS patients in sub-Saharan Africa and the Caribbean flew in the face of expert advice. But the U.S. did it anyway."
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"A Cartier Ring Inspired by the Work of a 20th-Century Style Icon\" - The piece evokes a 1938 interlocking gold cuff designed by the house's then creative director, Jeanne Toussaint.",
+        "\"52 Places to Go in 2023\" - Travel's rebound has revealed the depth of our drive to explore the world. Why do we travel? For food, culture, adventure, natural beauty? This year's list has all those elements, and more."
+      ],
+      "label": "Option B"
+    },
+    {
+      "sample": [
+        "\"Best Albums of 2023\" - Many of the LPs that made an impact this year, including SZA's \u201cSOS\u201d and Olivia Rodrigo's \u201cGuts,\u201d came from looking inward.",
+        "\"3 Ways to Measure How Fit You Are, Without Focusing on Weight\" - Exercise tests, heart rate and physical ability can tell you more about your health than the scale ever could."
+      ],
+      "label": "Option B"
+    },
+    {
+      "sample": [
+        "\"Our Most Popular Thanksgiving Desserts of All Time\" - Cranberry lemon meringue pie, pumpkin layer cake, rose apple tart: See our most stunning, reader-favorite finales for the big meal.",
+        "\"Nothing but Backboard: Why Some Korean Basketball Players Love the Bank Shot\" - Banked free throws, an unorthodox technique, have a cult following in the Korean Basketball League."
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"5-Minute Morning Yoga\" - Seven poses to help you wake up and feel energized, whether you're an expert or a beginner.",
+        "\"Fighting to Govern Myanmar, From a Teeny Office in Washington\" - The National Unity Government of Myanmar, formed as an alternative to the junta that orchestrated a 2021 coup, has to battle global apathy and ignorance as it struggles for recognition."
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"In 'Barbie' vs. 'Oppenheimer,' the Real Winner May Be the Box Office\" - The toy-based comedy is expected to draw $100 million; the biopic half that. But in an uneven year for movies, the duel seems to be engaging audiences.",
+        "\"In the Stock Market, Don\u2019t Buy and Sell. Just Hold.\" - There\u2019s new evidence that market timing doesn\u2019t work. Your odds of success are better if you just hang on and aim for average returns, our columnist says."
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"What to Cook This Week\" - Our Best Weeknight Dinner Recipes.",
+        "\"Why Is the College Board Pushing to Expand Advanced Placement?\" - This year, taxpayers paid the nonprofit at least $90 million for A.P. tests that many students failed."
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"Cantaloupe, fruit products recalled amid CDC investigation of salmonella infections\" - The US Centers for Disease Control and Prevention says whole and pre-cut cantaloupes have caused dozens of cases of salmonella infection, including 17 hospitalizations, in 15 states and in Canada.",
+        "\"The Last Stand of Soccer's Greatest Generation\" - The World Cup is bidding farewell to the starriest cast the game has ever assembled. The setting is a perfect fit for the game's age of excess."
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"World's first CRISPR therapy approved in UK\" - UK regulators have authorized CRISPR Therapeutics Casgevy to treat two debilitating blood disorders making it the world's first approved CRISPR therapy.",
+        "\"Exploring a Transformational Period in Korean Art\" - Four artists of the Dansaekhwa movement, known for its monochrome abstract paintings, will be featured by the PKM Gallery at TEFAF New York."
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"Inside U.S. Efforts to Untangle an A.I. Giant's Ties to China\" - American spy agencies have warned about the Emirati firm G42 and its work with large Chinese companies that U.S. officials consider security threats.",
+        "\"A Piano With a Curved Keyboard Will Star at Carnegie Hall\" - The unusual piano, made in Belgium, will make its debut in Manhattan tonight. It's more than a foot longer than a Steinway grand."
+      ],
+      "label": "Option B"
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "1",
+    "feedback_new_issues_interaction": "2",
+    "feedback_interaction_coverage_pretest": "1",
+    "feedback_interaction_coverage_posttest": "1",
+    "feedback_testcase_use_history": "1",
+    "feedback_lm_experience": "6",
+    "feedback_other": ""
+  },
+  "ensemble_history": {
+    "0": null,
+    "2": null,
+    "4": null,
+    "6": null,
+    "8": null,
+    "10": null,
+    "12": null,
+    "14": null,
+    "16": null,
+    "18": null,
+    "20": null,
+    "22": null
+  }
+}

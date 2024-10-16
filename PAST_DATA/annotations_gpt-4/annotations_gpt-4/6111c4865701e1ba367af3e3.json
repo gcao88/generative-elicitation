@@ -1,0 +1,204 @@
+{
+  "prolific_id": "6111c4865701e1ba367af3e3",
+  "engine": "gpt-4",
+  "query_type": "Supervised Learning",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: House leaders double down on impeachment positions\nDescription: As the Trump impeachment hearings go public, House Democrats are refining the case against the president to a simple allegation: Bribery. Meanwhile, Republicans are dismissing the testimony so far as hearsay, at best second-hand information. (Nov. 14)"
+    },
+    {
+      "sender": "user",
+      "message": "No, I am not interested in articles that are political. ",
+      "time_spent_ms": 41935,
+      "display_time": 1693594236563,
+      "submission_time": 1693594278498
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: I'm Sorry, But Please Do Not Put Your Purse On My Couch\nDescription: Welcome to my house, please drop your bag right there."
+    },
+    {
+      "sender": "user",
+      "message": "No, that article looks quite boring. I am interested more in scientific facts or celebrity gossip.",
+      "time_spent_ms": 32078,
+      "display_time": 1693594278642,
+      "submission_time": 1693594310720
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: NBA head to travel to China amid flap over pro-Hong Kong tweets\nDescription: Adam Silver said the NBA would not apologize for comments made by the Houston Rockets' general manager as China's main broadcaster is refusing to air two preseason games."
+    },
+    {
+      "sender": "user",
+      "message": "No, as previously stated, I do not like to read articles that are political in nature. Mention of pro-Hong Kong tweets sounds really political.",
+      "time_spent_ms": 66447,
+      "display_time": 1693594310870,
+      "submission_time": 1693594377317
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: How the world's weather is threatening popular tourist attractions\nDescription: Some of the world's most spectacular places are falling victim to severe weather as a result of climate change."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, that sounds interesting, and the title is gripping. I just hope the article has pictures.",
+      "time_spent_ms": 28547,
+      "display_time": 1693594377463,
+      "submission_time": 1693594406010
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 3 retirement numbers you absolutely need to know\nDescription: These numbers can be the key to a happy and comfortable retirement."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I am interested because I think it is something that I need to know. I need to know about retirement unfortunately.",
+      "time_spent_ms": 27297,
+      "display_time": 1693594406152,
+      "submission_time": 1693594433449
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 2021 Kia Optima Raises the Style Bar for Mid-Size Sedans\nDescription: The new Optima looks as good as we'd hoped given the promising teaser photos."
+    },
+    {
+      "sender": "user",
+      "message": "No, I don't know enough about the differences between cars to care about any articles regarding them.",
+      "time_spent_ms": 34083,
+      "display_time": 1693594433594,
+      "submission_time": 1693594467677
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Dancing With the Stars Week 3 Recap: Who Should Go Home After Movie Night? And Who Nearly Did?\nDescription: Dancing With the Stars went to the movies in its third Season 28 broadcast   and like any good film, Movie Night had its fair share of plot twists."
+    },
+    {
+      "sender": "user",
+      "message": "I don't watch dancing with the stars. I only care about celebrity gossip regarding big celebrities.",
+      "time_spent_ms": 51024,
+      "display_time": 1693594467894,
+      "submission_time": 1693594518918
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: What's The Impact Of Tire Size On Tesla Vehicle Range?\nDescription: Range is certainly affected, but not by as much as some might think."
+    },
+    {
+      "sender": "user",
+      "message": "No because I don't care about cars.",
+      "time_spent_ms": 14224,
+      "display_time": 1693594519062,
+      "submission_time": 1693594533286
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The 25 greatest Jimmy Stewart films\nDescription: He starred in countless notable films, so much so we couldn't possibly go over them all. So to save you some time, we've pared it down to the 25-best Stewart moves ever."
+    },
+    {
+      "sender": "user",
+      "message": "No because I don't know who Jimmy Stewart is.",
+      "time_spent_ms": 21394,
+      "display_time": 1693594533437,
+      "submission_time": 1693594554831
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": "I don't know anything about cars."
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "yes",
+      "explanation": "The British monarchy sounds interesting."
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "no",
+      "explanation": "I don't know what sentience means."
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "yes",
+      "explanation": "I love baking and cooking."
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "yes",
+      "explanation": "These would be good things to know for travelling."
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "no",
+      "explanation": "I don't play video games."
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "yes",
+      "explanation": "I love music, and knowing summer jams, I bet Cruel Summer is on there."
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "yes",
+      "explanation": "Sounds delicious!"
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "2",
+    "feedback_new_issues_interaction": "1",
+    "feedback_interaction_coverage_pretest": "5",
+    "feedback_interaction_coverage_posttest": "3",
+    "feedback_testcase_use_history": "5",
+    "feedback_lm_experience": "2",
+    "feedback_other": ""
+  },
+  "query_prompt": "pool_random"
+}

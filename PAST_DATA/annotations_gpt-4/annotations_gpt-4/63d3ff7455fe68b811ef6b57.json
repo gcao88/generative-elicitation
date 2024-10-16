@@ -1,0 +1,700 @@
+{
+  "prolific_id": "63d3ff7455fe68b811ef6b57",
+  "engine": "gpt-4",
+  "query_type": "Generative edge cases",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's fuzzy intuitions and preferences.\nIn this activity, we're going to be looking at different strings of text and you'll be deciding if they look like they could be an email address or not. For example, most people would agree that \"username@domain.com\" looks like an email address, while \"n12z5lFEN4\" does not. However, the rules for what can be an email address can be very unusual, so what we're really interested in is your intuition on what an email address could look like. \n<b>Tip:</b> in an email such as username@cs.stanford.edu, \"username\" is called the local-part of the email, while \"cs.stanford.edu\" is the domain. Furthermore, \"cs\" is a subdomain, and \"edu\" is a top-level domain.",
+    "task_description": "your intuition of what is or is not possible for an email address",
+    "final": "In the final part of the study, you will give feedback on a test set of email addresses, which will enable us to see how well a chatbot reading your responses has learned your email preferences.",
+    "evaluation": "Please indicate whether you think the following strings look like reasonably well-formatted email addresses or not: \"yes\" if they do, \"no\" if they don't."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@ex.ample.com"
+    },
+    {
+      "sender": "user",
+      "message": "Yes, that looks okay",
+      "time_spent_ms": 34177,
+      "display_time": 1689974484996,
+      "submission_time": 1689974519173
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@ex_ample.com"
+    },
+    {
+      "sender": "user",
+      "message": "No, you cannot have an underscore in a domain",
+      "time_spent_ms": 15549,
+      "display_time": 1689974520561,
+      "submission_time": 1689974536110
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user.name+tag@example.com"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 4705,
+      "display_time": 1689974538219,
+      "submission_time": 1689974542924
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@example"
+    },
+    {
+      "sender": "user",
+      "message": "No, there is no TLD at the end of the domain name",
+      "time_spent_ms": 5762,
+      "display_time": 1689974544076,
+      "submission_time": 1689974549838
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user..name@example.com"
+    },
+    {
+      "sender": "user",
+      "message": "No, you cannot have multiple dots in a row",
+      "time_spent_ms": 8776,
+      "display_time": 1689974551401,
+      "submission_time": 1689974560177
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@example.co.uk"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 2708,
+      "display_time": 1689974561686,
+      "submission_time": 1689974564394
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user@name@example.com"
+    },
+    {
+      "sender": "user",
+      "message": "No, you can only have one @ symbol",
+      "time_spent_ms": 7798,
+      "display_time": 1689974565584,
+      "submission_time": 1689974573382
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@123.com"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 2230,
+      "display_time": 1689974574669,
+      "submission_time": 1689974576899
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user.name.@example.com"
+    },
+    {
+      "sender": "user",
+      "message": "No, you cannot have an @ following a dot",
+      "time_spent_ms": 13595,
+      "display_time": 1689974578201,
+      "submission_time": 1689974591796
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@ex-ample.com"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 2946,
+      "display_time": 1689974593376,
+      "submission_time": 1689974596322
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@ex_ample.co"
+    },
+    {
+      "sender": "user",
+      "message": "No, you cannot have an underscore in a domain",
+      "time_spent_ms": 15743,
+      "display_time": 1689974597500,
+      "submission_time": 1689974613243
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user_name@example.com"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 1842,
+      "display_time": 1689974614680,
+      "submission_time": 1689974616522
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user..name@example.co."
+    },
+    {
+      "sender": "user",
+      "message": "No, you cannot have multiple dots in a row",
+      "time_spent_ms": 6621,
+      "display_time": 1689974618554,
+      "submission_time": 1689974625175
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user..name@ex..ample.com"
+    },
+    {
+      "sender": "user",
+      "message": "No, you cannot have multiple dots in a row",
+      "time_spent_ms": 2993,
+      "display_time": 1689974626390,
+      "submission_time": 1689974629383
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@.com"
+    },
+    {
+      "sender": "user",
+      "message": "No, there is no domain name, just a TLD",
+      "time_spent_ms": 6141,
+      "display_time": 1689974630659,
+      "submission_time": 1689974636800
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user@ex.am-ple.com"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 5292,
+      "display_time": 1689974638440,
+      "submission_time": 1689974643732
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user@ex.ample"
+    },
+    {
+      "sender": "user",
+      "message": "No, .ample is an invalid TLD",
+      "time_spent_ms": 7289,
+      "display_time": 1689974644869,
+      "submission_time": 1689974652158
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user@ex.ample.comm"
+    },
+    {
+      "sender": "user",
+      "message": "No, .comm is an invalid TLD",
+      "time_spent_ms": 5303,
+      "display_time": 1689974653772,
+      "submission_time": 1689974659075
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user@ex.123"
+    },
+    {
+      "sender": "user",
+      "message": "No, .123 is an invalid TLD",
+      "time_spent_ms": 6795,
+      "display_time": 1689974660304,
+      "submission_time": 1689974667099
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@ex.ample-web.com"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 2715,
+      "display_time": 1689974668379,
+      "submission_time": 1689974671094
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user@ex.ample-web-site.technology"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 2803,
+      "display_time": 1689974672557,
+      "submission_time": 1689974675360
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@ex.am-ple.web"
+    },
+    {
+      "sender": "user",
+      "message": "No, .web is an invalid TLD",
+      "time_spent_ms": 7365,
+      "display_time": 1689974677594,
+      "submission_time": 1689974684959
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? .username@example.com"
+    },
+    {
+      "sender": "user",
+      "message": "No, an email cannot start with a dot",
+      "time_spent_ms": 9068,
+      "display_time": 1689974685975,
+      "submission_time": 1689974695043
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@ex_ample-web.com"
+    },
+    {
+      "sender": "user",
+      "message": "No, you cannot have an underscore in a domain name",
+      "time_spent_ms": 7960,
+      "display_time": 1689974696384,
+      "submission_time": 1689974704344
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user@ex.am-ple.comm"
+    },
+    {
+      "sender": "user",
+      "message": "No, .comm is an invalid TLD",
+      "time_spent_ms": 5965,
+      "display_time": 1689974705678,
+      "submission_time": 1689974711643
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user@ex.ample-site.info"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 2148,
+      "display_time": 1689974712993,
+      "submission_time": 1689974715141
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@ex.amp_le.com"
+    },
+    {
+      "sender": "user",
+      "message": "No, you cannot have an underscore in a domain name",
+      "time_spent_ms": 1879,
+      "display_time": 1689974716425,
+      "submission_time": 1689974718304
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user-name@example.com"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 1604,
+      "display_time": 1689974719707,
+      "submission_time": 1689974721311
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@example.c"
+    },
+    {
+      "sender": "user",
+      "message": "No, .c is an invalid TLD",
+      "time_spent_ms": 3838,
+      "display_time": 1689974722812,
+      "submission_time": 1689974726650
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user@ex.ample-site.1nfo"
+    },
+    {
+      "sender": "user",
+      "message": "No, .1nfo is an invalid TLD",
+      "time_spent_ms": 6892,
+      "display_time": 1689974728073,
+      "submission_time": 1689974734965
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user@ex.ample-site.education"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 5210,
+      "display_time": 1689974736272,
+      "submission_time": 1689974741482
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user@ex.ample-site.\u00e9ducation"
+    },
+    {
+      "sender": "user",
+      "message": "No, \u00e9 is an invalid character in .education",
+      "time_spent_ms": 9670,
+      "display_time": 1689974742709,
+      "submission_time": 1689974752379
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@ex.ample-site.education-info"
+    },
+    {
+      "sender": "user",
+      "message": "No, .education-info is not a TLD",
+      "time_spent_ms": 5588,
+      "display_time": 1689974754373,
+      "submission_time": 1689974759961
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user_name-tag19@ex.ample-site.education-info.org"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 5409,
+      "display_time": 1689974761762,
+      "submission_time": 1689974767171
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user..name..tag@example.com"
+    },
+    {
+      "sender": "user",
+      "message": "No, you cannot have two dots in a row",
+      "time_spent_ms": 8364,
+      "display_time": 1689974768467,
+      "submission_time": 1689974776831
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@[192.168.1.1]"
+    },
+    {
+      "sender": "user",
+      "message": "No, you cannot have the [",
+      "time_spent_ms": 5311,
+      "display_time": 1689974778942,
+      "submission_time": 1689974784253
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user@name@ex.ample.com"
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "user@domain.a",
+      "label": "no",
+      "explanation": "Invalid TLD"
+    },
+    {
+      "sample": "user@domain.edu",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@111.222.333.4444",
+      "label": "no",
+      "explanation": "Invalid IP"
+    },
+    {
+      "sample": "user@[123.45.67.89]",
+      "label": "no",
+      "explanation": "invalid characters [ and ]"
+    },
+    {
+      "sample": "mary-jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary+jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary_jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "-maryjane@domain.com",
+      "label": "no",
+      "explanation": "Invalid starting character"
+    },
+    {
+      "sample": "mary=jane@domain.com",
+      "label": "no",
+      "explanation": "Invalid character ="
+    },
+    {
+      "sample": "mary&jane@domain.com",
+      "label": "no",
+      "explanation": "Invalid character &"
+    },
+    {
+      "sample": "mary.jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "maryjane1@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "1maryjane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "maryjane!@domain.com",
+      "label": "no",
+      "explanation": "Invalid character !"
+    },
+    {
+      "sample": "mary%jane@domain.com",
+      "label": "no",
+      "explanation": "Invalid character %"
+    },
+    {
+      "sample": "mary*jane@domain.com",
+      "label": "no",
+      "explanation": "Invalid character *"
+    },
+    {
+      "sample": "mary(ja)ne@domain.com",
+      "label": "no",
+      "explanation": "Invalid character ( and )"
+    },
+    {
+      "sample": "mary@jane@domain.com",
+      "label": "no",
+      "explanation": "Invalid multiple usage of @"
+    },
+    {
+      "sample": "_maryjane@domain.com",
+      "label": "no",
+      "explanation": "Invalid starting character"
+    },
+    {
+      "sample": ".maryjane@domain.com",
+      "label": "no",
+      "explanation": "Invalid starting character"
+    },
+    {
+      "sample": "mary?jane@domain.com",
+      "label": "no",
+      "explanation": "Invalid character ?"
+    },
+    {
+      "sample": "\"mary\"jane@domain.com",
+      "label": "no",
+      "explanation": "Invalid character \""
+    },
+    {
+      "sample": "m\"ary\"jane@domain.com",
+      "label": "no",
+      "explanation": "Invalid character *"
+    },
+    {
+      "sample": "mary'jane@domain.com",
+      "label": "no",
+      "explanation": "Invalid character '"
+    },
+    {
+      "sample": "'maryjane@domain.com",
+      "label": "no",
+      "explanation": "Invalid character '"
+    },
+    {
+      "sample": "+user@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary jane@domain.com",
+      "label": "no",
+      "explanation": "Invalid space"
+    },
+    {
+      "sample": "mary\\jane@domain.com",
+      "label": "no",
+      "explanation": "Invalid character \\"
+    },
+    {
+      "sample": "\"mary\\ jane\"@domain.com",
+      "label": "no",
+      "explanation": "Invalid character \\ and \""
+    },
+    {
+      "sample": "\"maryjane\"@domain.com",
+      "label": "no",
+      "explanation": "Invalid character "
+    },
+    {
+      "sample": "\u0438\u0432\u0430\u043d.\u0441\u0435\u0440\u0433\u0435\u0435\u0432@\u043f\u0440\u0438\u043c\u0435\u0440.\u0440\u0444",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\u7528\u6237@\u4f8b\u5b50.\u5e7f\u544a",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\u0cac\u0cc6\u0c82\u0cac\u0cb2@\u0ca1\u0cc7\u0c9f\u0cbe\u0cae\u0cc7\u0cb2\u0ccd.\u0cad\u0cbe\u0cb0\u0ca4",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "D\u00f6rte@S\u00f6rensen.example.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user\ud83d\ude03@domain.com",
+      "label": "no",
+      "explanation": "Invalid emoji"
+    },
+    {
+      "sample": "user\u221a3@domin.com",
+      "label": "no",
+      "explanation": "Invalid math symbol"
+    },
+    {
+      "sample": "@domain.com",
+      "label": "no",
+      "explanation": "No email"
+    },
+    {
+      "sample": "user@",
+      "label": "no",
+      "explanation": "No domain"
+    },
+    {
+      "sample": "user@.com",
+      "label": "no",
+      "explanation": "No domain"
+    },
+    {
+      "sample": "user@domain",
+      "label": "no",
+      "explanation": "No TLD"
+    },
+    {
+      "sample": "user@sub.domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@example.co.uk",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@sub.example.co.uk",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.co.co.co.co",
+      "label": "no",
+      "explanation": "Chained TLD"
+    },
+    {
+      "sample": "abc@domain.-com",
+      "label": "no",
+      "explanation": "Invalid TLD"
+    },
+    {
+      "sample": "user@d-omain.com",
+      "label": "no",
+      "explanation": "Invalid character -"
+    },
+    {
+      "sample": "user@d+omain.com",
+      "label": "no",
+      "explanation": "Invalid character +"
+    },
+    {
+      "sample": "user@d_omain.com",
+      "label": "no",
+      "explanation": "Invalid character _"
+    },
+    {
+      "sample": "user@d3omain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c-om",
+      "label": "no",
+      "explanation": "Invalid TLD"
+    },
+    {
+      "sample": "user@domain.c_om",
+      "label": "no",
+      "explanation": "Invalid TLD"
+    },
+    {
+      "sample": "user@domain.c+om",
+      "label": "no",
+      "explanation": "Invalid TLD"
+    },
+    {
+      "sample": "user@domain.c3om",
+      "label": "no",
+      "explanation": "Invalid TLD"
+    },
+    {
+      "sample": "abc@domain.com,def@domain.com",
+      "label": "no",
+      "explanation": "Invalid format"
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "2",
+    "feedback_new_issues_interaction": "4",
+    "feedback_interaction_coverage_pretest": "5",
+    "feedback_interaction_coverage_posttest": "5",
+    "feedback_testcase_use_history": "7",
+    "feedback_lm_experience": "6",
+    "feedback_other": ""
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what rules a user believes to be a valid email address format must adhere to (e.g. for developing a regex format checker).\n\nCome up with a potential edge case to learn as much information as you can about what their desired behavior should be under different circumstances.\nMake sure the edge case addresses different aspects of the system than the edge cases that have already been considered.\n\nAn example edge case is: Should the following email be accepted? username@example.com\n\nCurrent cases:\n- [Q] -> [A]\n\nGenerate the most informative edge case that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Generate the edge case in the following format, and nothing else: \"Should the following be accepted? [edge case]\""
+    }
+  ]
+}

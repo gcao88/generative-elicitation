@@ -1,0 +1,567 @@
+{
+  "prolific_id": "60d099f849987e86824eedcd",
+  "engine": "gpt-4",
+  "query_type": "Supervised Learning",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Comics - 'Pluggers' by Gary Brookins\nDescription: "
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 7486,
+      "display_time": 1693594257514,
+      "submission_time": 1693594265000
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: A GM, Manager and Player Weigh In on the Astros' Sign-Stealing Investigation\nDescription: Steve Phillips, John Farrell and Trevor Plouffe weigh in on the Astros facing investigation for using technology to steal signs during the 2017 season."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6860,
+      "display_time": 1693594265131,
+      "submission_time": 1693594271991
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The 20 most festive places to spend the holidays in the US\nDescription: From towns with Christmas light festivals to European-inspired holiday markets, these festive locations certainly bring the holiday cheer."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 7417,
+      "display_time": 1693594272111,
+      "submission_time": 1693594279528
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: These 50+ Last-Minute Halloween Costumes Are Perfect for Procrastinators\nDescription: An easy, Insta-worthy costume in 3, 2, 1 ..."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 6680,
+      "display_time": 1693594279660,
+      "submission_time": 1693594286340
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Saudi says Baghdadi 'distorted' image of Islam, praises killing\nDescription: Saudi Arabia said Monday that Islamic State leader Abu Bakr al-Baghdadi had distorted the image of Islam, and hailed his killing by US special forces in northwestern Syria."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6209,
+      "display_time": 1693594286466,
+      "submission_time": 1693594292675
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Company paying 'ultimate Disney fans' $1,000 to stream Disney+ movies\nDescription: Are you such a big Disney fan that you have dreams of diving into piles of money a la Scrooge McDuck? If so, then Reviews.org, an online review website, might just have the perfect job for you. The company announced Monday it's hiring the ultimate Disney fan to watch 30 movies in 30 days on the new streaming service Disney +. To make the job even better, you won't have to rub a magic lamp to get paid. Reviews.org said they'll pay up to five..."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 6081,
+      "display_time": 1693594292803,
+      "submission_time": 1693594298884
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 1 taken to hospital in crash involving a construction vehicle\nDescription: Emergency crews responded to a report of crash involving a car and a construction vehicle in the 3500 block of Shakertown Road around 9 a.m."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 4752,
+      "display_time": 1693594299017,
+      "submission_time": 1693594303769
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: I used a mail-order mattress for 2 weeks: Here's what happened, and how to get 30% off\nDescription: This exclusive discount nets you the best prices anywhere on SweetNight's memory-foam and hybrid mattresses."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6617,
+      "display_time": 1693594303902,
+      "submission_time": 1693594310519
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 12 photos that show everything kids eat in a week around the world\nDescription: Gregg Segal photographed children surrounded by everything they eat in a week for his new book \"Daily Bread: What Kids Eat Around the World.\""
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 6614,
+      "display_time": 1693594310645,
+      "submission_time": 1693594317259
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Helping to heal with music and art\nDescription: One year after the death of a 3-year-old girl from Somerset County, her family is pushing to keep her memory alive at UPMC Children's Hospital of Pittsburgh through the Nora Grace Kaufman Center for Creative Arts Therapy. The therapy room is a place where young patients can go to escape their hospital rooms for awhile and receive therapy through art and music. The team at UPMC calls it a \"masterpiece of hope\" for the way it helps children..."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 8561,
+      "display_time": 1693594317389,
+      "submission_time": 1693594325950
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Howell City weighing offer from developer to purchase 64-space downtown parking lot\nDescription: Okemos-based True North Development has offered the city $250,000 for a 64-parking lot downtown."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 7560,
+      "display_time": 1693594326073,
+      "submission_time": 1693594333633
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 2019 Latin Grammy Awards: See all the photos from the red carpet\nDescription: See the stars at the 2019 Latin Grammy Awards."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 4971,
+      "display_time": 1693594333765,
+      "submission_time": 1693594338736
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: A domestic violence activist says NBC tried to kill her story detailing sexual assault allegations against Russell Simmons and AJ Calloway\nDescription: In an op-ed for The Daily Beast, domestic violence activist Sil Lai Abrams wrote that NBC tried to kill her story detailing her allegations in 2018."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 8576,
+      "display_time": 1693594338873,
+      "submission_time": 1693594347449
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Where did candy corn come from?\nDescription: Despite being a very popular Halloween candy, candy corn is one of the most divisive candies out there."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 5442,
+      "display_time": 1693594347578,
+      "submission_time": 1693594353020
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Homeless Couple Gets Married in Laundromat\nDescription: Cheryl Smith and James Knight recently said their vows in an unlikely venue: a Nashville, Tennessee, laundromat. The couple are homeless, and the Soap Opry Laundry is an important place for them. Cheryl works there, as well. At the ceremony, officiated by Reverend Lisa Cook, there were friends, hugs, cake and a competitive bouquet toss. The couple beamed, as Cheryl said, \"It's like a dream come true.\""
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 8526,
+      "display_time": 1693594353179,
+      "submission_time": 1693594361705
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: How to Drink Coffee Without Any Sweetener\nDescription: There are many reasons someone might want to make the switch from sweetened to unsweetened coffee."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 5881,
+      "display_time": 1693594361842,
+      "submission_time": 1693594367723
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: If You're Not Serving Mac 'n Cheese This Thanksgiving, You're Missing Out\nDescription: Think outside the box this Thanksgiving."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 12696,
+      "display_time": 1693594367854,
+      "submission_time": 1693594380550
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Pollution around the world: 30 shocking photos\nDescription: While it's easy to become overwhelmed by stats and images about current pollution and trajectories for years to come, the intent of this article is not to instill fear. The intent is to be realistic, to learn from what is going on in the world, and to support one another in our collective efforts to change. Pollution knows no boundaries, so for the sake of future generations, let's err on the side of action and hope."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 9750,
+      "display_time": 1693594380683,
+      "submission_time": 1693594390433
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Our 10 favorite Dutch ovens of 2019\nDescription: Including a budget option and one for campers."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6313,
+      "display_time": 1693594390563,
+      "submission_time": 1693594396876
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Microsoft wins Pentagon's $10 billion JEDI cloud contract, beating Amazon\nDescription: With its stunning win of a lucrative $10 billion Pentagon technology contract Friday, Microsoft Corp. not only beat Amazon.com Inc. but uprooted its larger rival as the federal government's go-to cloud-computing vendor."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 8581,
+      "display_time": 1693594397007,
+      "submission_time": 1693594405588
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The 9 most mind-blowing concept cars of the past decade\nDescription: With their futuristic designs, mind-blowing technology, and brilliant engineering, concept cars are one of the most exciting parts of the automotive industry. Fortunately, the 2010s featured a wide array of these dreamy vehicles that catered to every type of car lover out there. From luxury automakers like Mercedes-Benz, Audi, BMW, and Aston Martin came some of the most breathtaking concepts to ever hit the auto-show stages. Even Toyota debuted a sports car we can't believe will never reach production. Out of everything the 2010s brought us, though, we've narrowed it down to nine that we feel were the coolest concepts of the decade."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 8287,
+      "display_time": 1693594405720,
+      "submission_time": 1693594414007
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: This Is the Best Time of the Week to Buy a Car\nDescription: It's probably not the most convenient, but it will get you the best deal. The post This Is the Best Time of the Week to Buy a Car appeared first on Reader's Digest."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 19036,
+      "display_time": 1693594414148,
+      "submission_time": 1693594433184
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: What's in a Brand? A Look at Polestar's Tesla-Fighting Future\nDescription: "
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 4976,
+      "display_time": 1693594433311,
+      "submission_time": 1693594438287
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 2019 Tokyo Motor Show preview: Debuts from Honda, Mazda, Toyota and more\nDescription: Whether you're after electric cars, sports cars or something out of left field, Tokyo's got it."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 4287,
+      "display_time": 1693594438421,
+      "submission_time": 1693594442708
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The Best Way to Honor Veterans Is to Hire One\nDescription: Hiring veterans and helping them acquire the skills they need to accelerate their careers is patriotic and smart business."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 6062,
+      "display_time": 1693594442834,
+      "submission_time": 1693594448896
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 19 Christian Quotes to Empower and Inspire You to Live Faithfully\nDescription: You are the only Bible some unbelievers will ever read."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 4065,
+      "display_time": 1693594449029,
+      "submission_time": 1693594453094
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Take action: Join MSN, LinkedIn and Team Rubicon in helping veterans become thriving civilians\nDescription: "
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 9420,
+      "display_time": 1693594453219,
+      "submission_time": 1693594462639
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Time For Lunch! These Easy Recipes Are Good For Work, School, and Other Busy Weekdays\nDescription: If you're on the lookout for healthy, hearty, and satisfying lunches to bring to work, we rounded up the easiest recipes out there."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 3710,
+      "display_time": 1693594462775,
+      "submission_time": 1693594466485
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Signs Your Refrigerator Is About to Die\nDescription: Is it time to start shopping for a new refrigerator? Here are the telltale signs that yours may be on its way out."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 4304,
+      "display_time": 1693594466611,
+      "submission_time": 1693594470915
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Denver Broncos quarterback Joe Flacco voices frustration after loss to Colts\nDescription: Denver Broncos quarterback Joe Flacco voices frustration after loss."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 4149,
+      "display_time": 1693594471048,
+      "submission_time": 1693594475197
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: OMG! You Can Visit \"Schitt's Creek\" in Real Life\nDescription: Fans of the hit Netflix show can tour the wacky town at a new pop-up exhibition."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 12274,
+      "display_time": 1693594475330,
+      "submission_time": 1693594487604
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Is buying an abandoned property a good investment?\nDescription: Is abandoned property a good buy?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 5556,
+      "display_time": 1693594487741,
+      "submission_time": 1693594493297
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Everything you need to know about natural wine this holiday season\nDescription: Although it's wine season, year-round, the holidays are the perfect time to try something different, and that's where natural wines come in. The natural wines category is growing pretty rapidly, and if you haven't gotten into the craze, now is the perfect time to join team natural wine. As a huge wino, I was curious to explore the world of natural wines. I spoke with natural wines expert and beverage director at Faro, Siobhan Spencer, all about..."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6628,
+      "display_time": 1693594493430,
+      "submission_time": 1693594500058
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Take those pumpkin seeds, and make a chocolaty treat\nDescription: Pumpkin Seed Clusters are easy to make and hard to stop eating."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 5511,
+      "display_time": 1693594500182,
+      "submission_time": 1693594505693
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Doc's TML: I hope the Brown family proves me wrong on setting a new course for the Bengals\nDescription: I'd love for The Family to prove me wrong. Let's see Mike, Katie, Troy and Duke be aggressive in the next week before the deal deadline."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 4151,
+      "display_time": 1693594505841,
+      "submission_time": 1693594509992
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Arizona podcast Valley 101 answers your questions about metro Phoenix\nDescription: A community-driven podcast about metro Phoenix where we investigate the questions you ask. Submit your curiosities here, on this page."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 7385,
+      "display_time": 1693594510132,
+      "submission_time": 1693594517517
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: I'm Sorry, But Please Do Not Put Your Purse On My Couch\nDescription: Welcome to my house, please drop your bag right there."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6042,
+      "display_time": 1693594517694,
+      "submission_time": 1693594523736
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: FAFSA 2020-2021: Here are tips, deadline for financial aid application\nDescription: FAFSA rolls out Oct. 1 for students who plan to go to college in fall 2020. Experts say students should file FAFSAs as soon after Oct. 1 as possible."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 5823,
+      "display_time": 1693594523924,
+      "submission_time": 1693594529747
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: A new Microsoft cloud category to watch: The Microsoft 365 number\nDescription: Microsoft doesn't break out Microsoft 365 as a separate category in its earnings reports. But indicators that the suite is starting to gain traction are evident in its Q1 FY'20 report."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 5567,
+      "display_time": 1693594529924,
+      "submission_time": 1693594535491
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Danny Ainge Asserts Reported Details Of Jaylen Brown Extension Offer Aren't Accurate\nDescription: The Boston Celtics are trying to get a deal done with Jaylen Brown just not at the figure that's being reported so says Danny Ainge. Yahoo Sports' Chris Haynes reported"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 9939,
+      "display_time": 1693594535688,
+      "submission_time": 1693594545627
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The 25 best soundtracks of the '90s\nDescription: It was the decade of grunge, hip-hop and techno, and while Hollywood milked all of these musical genres for every last drop of marketability, many of the best soundtracks of the '90s were backward-looking compilations of familiar and forgotten classics."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 4385,
+      "display_time": 1693594545821,
+      "submission_time": 1693594550206
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Bumpy Ride! How to Avoid Getting the Middle Seat on a Plane\nDescription: There are a few ways to avoid the dreaded middle seat. Buzz60's Sean Dowling has more."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 8083,
+      "display_time": 1693594550388,
+      "submission_time": 1693594558471
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "yes",
+      "explanation": "like anything to do with cooking"
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "yes",
+      "explanation": "l like games"
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": "not interested in nfl"
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "yes",
+      "explanation": "alway slike to discover new music"
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "yes",
+      "explanation": "nice to get great cooking ideas"
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "5",
+    "feedback_new_issues_interaction": "3",
+    "feedback_interaction_coverage_pretest": "5",
+    "feedback_interaction_coverage_posttest": "5",
+    "feedback_testcase_use_history": "2",
+    "feedback_lm_experience": "5",
+    "feedback_other": "thanks"
+  },
+  "query_prompt": "pool_random"
+}

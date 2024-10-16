@@ -1,0 +1,182 @@
+{
+  "prolific_id": "6413c7853eba2b2215197ff4",
+  "engine": "gpt-4",
+  "query_type": "Supervised Learning",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Doc's TML: I hope the Brown family proves me wrong on setting a new course for the Bengals\nDescription: I'd love for The Family to prove me wrong. Let's see Mike, Katie, Troy and Duke be aggressive in the next week before the deal deadline."
+    },
+    {
+      "sender": "user",
+      "message": "No, I'm not interested because I don't know what they RE TALKING ABOUT.",
+      "time_spent_ms": 52865,
+      "display_time": 1693594253853,
+      "submission_time": 1693594306718
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Trump: The economy has exceeded expectations\nDescription: President Donald Trump speaks at the Economic Club of New York on the U.S.-China trade war and the state of the U.S. economy."
+    },
+    {
+      "sender": "user",
+      "message": "Yes. I always enjoy reading articles about President Trump.",
+      "time_spent_ms": 40766,
+      "display_time": 1693594306844,
+      "submission_time": 1693594347610
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The 9 most mind-blowing concept cars of the past decade\nDescription: With their futuristic designs, mind-blowing technology, and brilliant engineering, concept cars are one of the most exciting parts of the automotive industry. Fortunately, the 2010s featured a wide array of these dreamy vehicles that catered to every type of car lover out there. From luxury automakers like Mercedes-Benz, Audi, BMW, and Aston Martin came some of the most breathtaking concepts to ever hit the auto-show stages. Even Toyota debuted a sports car we can't believe will never reach production. Out of everything the 2010s brought us, though, we've narrowed it down to nine that we feel were the coolest concepts of the decade."
+    },
+    {
+      "sender": "user",
+      "message": "I am not interested in concept cars. I just want gas prices to come down. ",
+      "time_spent_ms": 47492,
+      "display_time": 1693594347738,
+      "submission_time": 1693594395230
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: If Your Grandparent Is from One of These Countries, You Might Be Able to Get Another Passport\nDescription: Have a grandparent from one of these countries? You can get another passport. Buzz60's Natasha Abellard has the story."
+    },
+    {
+      "sender": "user",
+      "message": "I am not interested in this article. I am American and my grandparents are all dead.",
+      "time_spent_ms": 37713,
+      "display_time": 1693594395371,
+      "submission_time": 1693594433084
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 100 books to read in a lifetime   according to Amazon Books editors\nDescription: There are more great books in the world than there is time to read all of them. Amazon's list of 100 books to read in a lifetime is a good place to start."
+    },
+    {
+      "sender": "user",
+      "message": "I think it is a good idea to let people know about great books.",
+      "time_spent_ms": 35165,
+      "display_time": 1693594433229,
+      "submission_time": 1693594468394
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Homeless Couple Gets Married in Laundromat\nDescription: Cheryl Smith and James Knight recently said their vows in an unlikely venue: a Nashville, Tennessee, laundromat. The couple are homeless, and the Soap Opry Laundry is an important place for them. Cheryl works there, as well. At the ceremony, officiated by Reverend Lisa Cook, there were friends, hugs, cake and a competitive bouquet toss. The couple beamed, as Cheryl said, \"It's like a dream come true.\""
+    },
+    {
+      "sender": "user",
+      "message": "Even though it sounds weird and ridiculous to get married in a laundromat, to each his own.",
+      "time_spent_ms": 49516,
+      "display_time": 1693594468546,
+      "submission_time": 1693594518062
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Everything You Need to Know About Paid Family Leave\nDescription: Katie Bethell, founder and executive director of PL+US (Paid Leave for the United States), the national campaign to win paid family leave by 2022, answers your FAQs."
+    },
+    {
+      "sender": "user",
+      "message": "I disagree with the premise of Paid Family Leave. People use it just because it's there, even if they do not need it. ",
+      "time_spent_ms": 54629,
+      "display_time": 1693594518220,
+      "submission_time": 1693594572849
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": "I do not care about battery powered or electric cars. "
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "no",
+      "explanation": "I do not care about this subject. "
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "no",
+      "explanation": "I have my own recipe."
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "no",
+      "explanation": "Not going to the Amazon rainforest."
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "no",
+      "explanation": "I do not fly. "
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "no",
+      "explanation": "Not interested., "
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "no",
+      "explanation": "I don't play Nintendo games. "
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": "I do not care about professional sports anymore. "
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": "I would never use artificial grass."
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "no",
+      "explanation": "I have my own music choices. "
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "yes",
+      "explanation": "Always looking for new brunch ideas."
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "yes",
+      "explanation": "I make and sell earrings. "
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": "I do not run."
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "no",
+      "explanation": "Don't care."
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "yes",
+      "explanation": "I appreciate Buddhism ideals. "
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "1",
+    "feedback_new_issues_interaction": "1",
+    "feedback_interaction_coverage_pretest": "4",
+    "feedback_interaction_coverage_posttest": "4",
+    "feedback_testcase_use_history": "1",
+    "feedback_lm_experience": "1",
+    "feedback_other": "I don't even know what chatgpt is. I do not know if I have used it or not. I took the survey seriously and answered questions seriously though. "
+  },
+  "query_prompt": "pool_random"
+}

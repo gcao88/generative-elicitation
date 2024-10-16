@@ -1,0 +1,421 @@
+{
+  "prolific_id": "631745a70c7c585248df1a5d",
+  "engine": "gpt-4",
+  "query_type": "Generative open-ended questions",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's fuzzy intuitions and preferences.\nIn this activity, we're going to be looking at different strings of text and you'll be deciding if they look like they could be an email address or not. For example, most people would agree that \"username@domain.com\" looks like an email address, while \"n12z5lFEN4\" does not. However, the rules for what can be an email address can be very unusual, so what we're really interested in is your intuition on what an email address could look like. \n<b>Tip:</b> in an email such as username@cs.stanford.edu, \"username\" is called the local-part of the email, while \"cs.stanford.edu\" is the domain. Furthermore, \"cs\" is a subdomain, and \"edu\" is a top-level domain.",
+    "task_description": "your intuition of what is or is not possible for an email address",
+    "final": "In the final part of the study, you will give feedback on a test set of email addresses, which will enable us to see how well a chatbot reading your responses has learned your email preferences.",
+    "evaluation": "Please indicate whether you think the following strings look like reasonably well-formatted email addresses or not: \"yes\" if they do, \"no\" if they don't."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Can you describe what kind of special characters, if any, you believe should be allowed in an email address and where they should be placed?"
+    },
+    {
+      "sender": "user",
+      "message": "@ only, keeps things simple",
+      "time_spent_ms": 16757,
+      "display_time": 1689974441508,
+      "submission_time": 1689974458265
+    },
+    {
+      "sender": "assistant",
+      "message": "What are your thoughts on the use of numbers and capital letters in an email address, and do you believe there should be any restrictions on where they can be placed?"
+    },
+    {
+      "sender": "user",
+      "message": "No because they are just treated as normal letters so no restrictions ",
+      "time_spent_ms": 39120,
+      "display_time": 1689974461106,
+      "submission_time": 1689974500226
+    },
+    {
+      "sender": "assistant",
+      "message": "What are your thoughts on the length of an email address? Do you believe there should be a minimum or maximum number of characters? If so, what should these limits be?"
+    },
+    {
+      "sender": "user",
+      "message": "Maybe around 30 characters ",
+      "time_spent_ms": 16386,
+      "display_time": 1689974502787,
+      "submission_time": 1689974519173
+    },
+    {
+      "sender": "assistant",
+      "message": "What are your thoughts on the use of periods or dots in an email address? Should they be allowed anywhere, or only in specific places?"
+    },
+    {
+      "sender": "user",
+      "message": "No restrictions of counted as normal characters ",
+      "time_spent_ms": 16849,
+      "display_time": 1689974521322,
+      "submission_time": 1689974538171
+    },
+    {
+      "sender": "assistant",
+      "message": "What are your thoughts on the use of underscores or hyphens in an email address? Should they be allowed anywhere, or only in specific places?"
+    },
+    {
+      "sender": "user",
+      "message": "No because they are just treated as normal letters so no restrictions ",
+      "time_spent_ms": 59624,
+      "display_time": 1689974540462,
+      "submission_time": 1689974600086
+    },
+    {
+      "sender": "assistant",
+      "message": "What are your thoughts on the placement of the @ symbol in an email address? Should it be allowed anywhere, or only in specific places?"
+    },
+    {
+      "sender": "user",
+      "message": "Works well as it is now, only allowed before the domain ",
+      "time_spent_ms": 28742,
+      "display_time": 1689974602185,
+      "submission_time": 1689974630927
+    },
+    {
+      "sender": "assistant",
+      "message": "What are your thoughts on the use of multiple @ symbols in an email address? Should they be allowed, and if so, how should they be handled?"
+    },
+    {
+      "sender": "user",
+      "message": "Shouldn't be allowed ",
+      "time_spent_ms": 8560,
+      "display_time": 1689974633152,
+      "submission_time": 1689974641712
+    },
+    {
+      "sender": "assistant",
+      "message": "What are your thoughts on the use of domain extensions in an email address? Should there be any restrictions on the type or number of domain extensions used? For example, should we allow only .com, .org, .net etc., or also country-specific ones like .us, .uk, .au etc.?"
+    },
+    {
+      "sender": "user",
+      "message": "No restrictions, it will allow for more customisation ",
+      "time_spent_ms": 37919,
+      "display_time": 1689974646368,
+      "submission_time": 1689974684287
+    },
+    {
+      "sender": "assistant",
+      "message": "What are your thoughts on the use of special characters like exclamation marks, percentage signs, or asterisks in an email address? Should they be allowed, and if so, where should they be placed?"
+    },
+    {
+      "sender": "user",
+      "message": "No because they are just treated as normal letters so no restrictions ",
+      "time_spent_ms": 12217,
+      "display_time": 1689974686814,
+      "submission_time": 1689974699031
+    },
+    {
+      "sender": "assistant",
+      "message": "What are your thoughts on the use of consecutive special characters (like two periods or two @ symbols in a row) in an email address? Should they be allowed, and if so, where should they be placed?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes for most, but not for @ symbol",
+      "time_spent_ms": 18969,
+      "display_time": 1689974702470,
+      "submission_time": 1689974721439
+    },
+    {
+      "sender": "assistant",
+      "message": "What are your thoughts on the use of non-alphanumeric characters, such as emojis or other symbols not typically found on a keyboard, in an email address? Should they be allowed, and if so, where should they be placed?"
+    },
+    {
+      "sender": "user",
+      "message": "No because it can cause weird formatting on unsupported devices ",
+      "time_spent_ms": 26209,
+      "display_time": 1689974724563,
+      "submission_time": 1689974750772
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "user@domain.a",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.edu",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@111.222.333.4444",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@[123.45.67.89]",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary-jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary+jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary_jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "-maryjane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary=jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary&jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary.jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "maryjane1@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "1maryjane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "maryjane!@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary%jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary*jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary(ja)ne@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary@jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "_maryjane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": ".maryjane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary?jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\"mary\"jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "m\"ary\"jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary'jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "'maryjane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "+user@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary\\jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\"mary\\ jane\"@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "\"maryjane\"@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "\u0438\u0432\u0430\u043d.\u0441\u0435\u0440\u0433\u0435\u0435\u0432@\u043f\u0440\u0438\u043c\u0435\u0440.\u0440\u0444",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\u7528\u6237@\u4f8b\u5b50.\u5e7f\u544a",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\u0cac\u0cc6\u0c82\u0cac\u0cb2@\u0ca1\u0cc7\u0c9f\u0cbe\u0cae\u0cc7\u0cb2\u0ccd.\u0cad\u0cbe\u0cb0\u0ca4",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "D\u00f6rte@S\u00f6rensen.example.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user\ud83d\ude03@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user\u221a3@domin.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@sub.domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@example.co.uk",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@sub.example.co.uk",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.co.co.co.co",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "abc@domain.-com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d-omain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d+omain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d_omain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d3omain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c-om",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c_om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c+om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c3om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "abc@domain.com,def@domain.com",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "2",
+    "feedback_new_issues_interaction": "2",
+    "feedback_interaction_coverage_pretest": "3",
+    "feedback_interaction_coverage_posttest": "4",
+    "feedback_testcase_use_history": "4",
+    "feedback_lm_experience": "2",
+    "feedback_other": ""
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what rules a user believes to be a valid email address format must adhere to (e.g. for developing a regex format checker).\n\nPrevious questions:\n- [Q] -> [A]\n\nGenerate the most informative open-ended question that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Make sure your question addresses different aspects of the regex than the questions that have already been asked. At the same time however, the question should be bite-sized, and not ask for too much at once. Phrase your question in a way that is understandable to non-expert humans; do not use any jargon without explanation. Generate the open-ended question and nothing else:"
+    }
+  ]
+}

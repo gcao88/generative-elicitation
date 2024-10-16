@@ -1,0 +1,724 @@
+{
+  "prolific_id": "60d2b465d78a9aac15d87288",
+  "engine": "gpt-4",
+  "query_type": "LM_pairwise",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate which of the two following articles you would prefer to read."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Would you prefer \nOption A: An article about the latest advancements in technology \nOR \nOption B: An article about recent developments in global politics?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 5825,
+      "display_time": 1706473276856,
+      "submission_time": 1706473282681,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer \nOption A: An article about the latest trends in fashion \nOR \nOption B: An article about recent discoveries in space exploration?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 8222,
+      "display_time": 1706473284227,
+      "submission_time": 1706473292449,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest breakthroughs in medical research\nOR\nOption B: An article about recent developments in environmental conservation?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 4809,
+      "display_time": 1706473294573,
+      "submission_time": 1706473299382,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest innovations in sustainable energy\nOR\nOption B: An article about recent trends in global cuisine?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 7006,
+      "display_time": 1706473300919,
+      "submission_time": 1706473307925,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest developments in the world of sports\nOR\nOption B: An article about recent advancements in the field of psychology?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 3042,
+      "display_time": 1706473309642,
+      "submission_time": 1706473312684,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest achievements in the field of artificial intelligence\nOR\nOption B: An article about recent developments in the world of contemporary art?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 3480,
+      "display_time": 1706473314539,
+      "submission_time": 1706473318019,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest developments in the music industry\nOR\nOption B: An article about recent breakthroughs in genetic engineering?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 6214,
+      "display_time": 1706473319658,
+      "submission_time": 1706473325872,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest developments in the film and television industry\nOR\nOption B: An article about recent advancements in the field of quantum physics?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 5933,
+      "display_time": 1706473327851,
+      "submission_time": 1706473333784,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in virtual reality and gaming\nOR\nOption B: An article about recent developments in climate change and its impacts?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 2902,
+      "display_time": 1706473336050,
+      "submission_time": 1706473338952,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in cryptocurrency and blockchain technology\nOR\nOption B: An article about recent developments in wildlife conservation and biodiversity?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 4206,
+      "display_time": 1706473341466,
+      "submission_time": 1706473345672,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in electric vehicles and transportation technology\nOR\nOption B: An article about recent developments in the world of literature and book publishing?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 8187,
+      "display_time": 1706473348532,
+      "submission_time": 1706473356719,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in social media platforms and digital communication\nOR\nOption B: An article about recent developments in gardening and home improvement?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 2835,
+      "display_time": 1706473359186,
+      "submission_time": 1706473362021,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in fitness and wellness trends\nOR\nOption B: An article about recent developments in archaeology and ancient history?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 5121,
+      "display_time": 1706473364819,
+      "submission_time": 1706473369940,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in robotics and automation\nOR\nOption B: An article about recent developments in organic farming and sustainable agriculture?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 4494,
+      "display_time": 1706473371983,
+      "submission_time": 1706473376477,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in space tourism and exploration\nOR\nOption B: An article about recent developments in culinary arts and food culture?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 5712,
+      "display_time": 1706473379666,
+      "submission_time": 1706473385378,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in marine biology and ocean exploration\nOR\nOption B: An article about recent developments in architecture and urban planning?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 4297,
+      "display_time": 1706473387242,
+      "submission_time": 1706473391539,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in cybersecurity and data protection\nOR\nOption B: An article about recent developments in the world of performing arts and theater?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 5234,
+      "display_time": 1706473393382,
+      "submission_time": 1706473398616,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in renewable energy and climate solutions\nOR\nOption B: An article about recent developments in the world of gourmet cooking and food pairing?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 3207,
+      "display_time": 1706473401064,
+      "submission_time": 1706473404271,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in nanotechnology and its applications\nOR\nOption B: An article about recent developments in the world of travel and adventure tourism?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 2915,
+      "display_time": 1706473406391,
+      "submission_time": 1706473409306,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in virtual and augmented reality in education\nOR\nOption B: An article about recent developments in sustainable fashion and ethical clothing production?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 3929,
+      "display_time": 1706473410997,
+      "submission_time": 1706473414926,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in 3D printing and its applications\nOR\nOption B: An article about recent developments in mindfulness and meditation practices?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 3463,
+      "display_time": 1706473416831,
+      "submission_time": 1706473420294,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in drone technology and its applications\nOR\nOption B: An article about recent developments in the world of wine tasting and vineyard tours?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 3579,
+      "display_time": 1706473422084,
+      "submission_time": 1706473425663,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in biotechnology and its impact on healthcare\nOR\nOption B: An article about recent developments in interior design and home decor trends?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 5037,
+      "display_time": 1706473428712,
+      "submission_time": 1706473433749,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in virtual reality for fitness and wellness\nOR\nOption B: An article about recent developments in the world of photography and visual arts?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 3983,
+      "display_time": 1706473435784,
+      "submission_time": 1706473439767,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in data science and machine learning\nOR\nOption B: An article about recent developments in the world of yoga and holistic wellness?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 4264,
+      "display_time": 1706473442331,
+      "submission_time": 1706473446595,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in sports training\nOR\nOption B: An article about recent developments in the world of sustainable tourism and eco-friendly travel practices?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 3469,
+      "display_time": 1706473448929,
+      "submission_time": 1706473452398,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in filmmaking\nOR\nOption B: An article about recent developments in the world of organic beauty and skincare products?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 10216,
+      "display_time": 1706473455028,
+      "submission_time": 1706473465244,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in sports training\nOR\nOption B: An article about recent developments in the world of sustainable tourism and eco-friendly travel practices?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 2370,
+      "display_time": 1706473468026,
+      "submission_time": 1706473470396,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in online shopping experiences\nOR\nOption B: An article about recent developments in the world of sustainable and ethical investment practices?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 5180,
+      "display_time": 1706473472952,
+      "submission_time": 1706473478132,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in architectural design\nOR\nOption B: An article about recent developments in the world of vegan and plant-based diets?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 5414,
+      "display_time": 1706473480529,
+      "submission_time": 1706473485943,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in event planning and management\nOR\nOption B: An article about recent developments in the world of sustainable and zero-waste living practices?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 7952,
+      "display_time": 1706473489648,
+      "submission_time": 1706473497600,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in mental health therapy\nOR\nOption B: An article about recent developments in the world of sustainable and organic winemaking?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 7829,
+      "display_time": 1706473500907,
+      "submission_time": 1706473508736,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in physical rehabilitation and therapy\nOR\nOption B: An article about recent developments in the world of sustainable and ethical fashion trends?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 3054,
+      "display_time": 1706473511151,
+      "submission_time": 1706473514205,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in language learning and education\nOR\nOption B: An article about recent developments in the world of sustainable and organic gardening practices?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 3589,
+      "display_time": 1706473517126,
+      "submission_time": 1706473520715,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in wildlife conservation and biodiversity\nOR\nOption B: An article about recent developments in the world of jazz music and its influence on modern culture?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 5014,
+      "display_time": 1706473523538,
+      "submission_time": 1706473528552,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in historical education and immersive learning\nOR\nOption B: An article about recent developments in the world of sustainable and ethical practices in the coffee industry?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 5743,
+      "display_time": 1706473531114,
+      "submission_time": 1706473536857,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in the music industry\nOR\nOption B: An article about recent developments in the world of sustainable and ethical practices in the toy industry?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 3624,
+      "display_time": 1706473539919,
+      "submission_time": 1706473543543,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in the real estate industry\nOR\nOption B: An article about recent developments in the world of sustainable and ethical practices in the chocolate industry?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 2747,
+      "display_time": 1706473546581,
+      "submission_time": 1706473549328,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in the fitness industry\nOR\nOption B: An article about recent developments in the world of sustainable and ethical practices in the seafood industry?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 2897,
+      "display_time": 1706473552107,
+      "submission_time": 1706473555004,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in the automotive industry\nOR\nOption B: An article about recent developments in the world of sustainable and ethical practices in the cosmetics industry?"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 5372,
+      "display_time": 1706473557636,
+      "submission_time": 1706473563008,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in the gaming industry\nOR\nOption B: An article about recent developments in the world of sustainable and ethical practices in the furniture industry?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 2035,
+      "display_time": 1706473565523,
+      "submission_time": 1706473567558,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in the travel and tourism industry\nOR\nOption B: An article about recent developments in the world of sustainable and ethical practices in the music industry?"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 2736,
+      "display_time": 1706473570742,
+      "submission_time": 1706473573478,
+      "nl_features": [],
+      "pairwise_comparison": null
+    },
+    {
+      "sender": "assistant",
+      "message": "Would you prefer\nOption A: An article about the latest advancements in the field of virtual reality in the field of sports broadcasting\nOR\nOption B: An article about recent developments in the world of sustainable and ethical practices in the jewelry industry?"
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": [
+        "\"In Norway, the Electric Vehicle Future Has Already Arrived\" - About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn't collapsed. But problems with unreliable chargers persist.",
+        "\"Two Coronations, 70 Years Apart\" - The Visual Parallels Between Elizabeth II and Charles III's Coronations"
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"Why China Is Tightening Its Oversight of Banking and Tech\" - A series of regulatory changes approved this week reflect the increasingly centralized control of Xi Jinping, newly confirmed for a third term as China's president.",
+        "\"For a Seasonal Taste of Milan: Candied Chestnuts\" - Many residents favor the marrons glac\u00e9s prepared by Giovanni Galli 1911, one of the best-known confectioners in the city."
+      ],
+      "label": "Option B"
+    },
+    {
+      "sample": [
+        "\"Great Places to Enjoy Art in California\" - Readers recommend their favorite museums and art destinations, including several hidden gems.",
+        "\"Why a Major Primary Challenge to Biden Is So Unlikely\" - It's really hard to run against a sitting president. And beginning at this point, just two months before primary voting starts, wouldn't be feasible anyhow."
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"Can A.I. and Lasers Cure Our Smartphone Addiction?\" - A first impression of Humane's new magnetic Ai Pin: equal parts magical and awkward.",
+        "\"Starfield Review: A Game With a Galaxy of Possibilities\" - Offering a galaxy with more than a thousand planets, a fully customizable ship, and major decisions to make (and small ones too), the brand-new game Starfield promises more than an open world\u2014it presents the mystery, wonder, and terror of space."
+      ],
+      "label": "Option B"
+    },
+    {
+      "sample": [
+        "\"How Coco Gauff Embodies the Biggest Story in Sports\" - As our Sports of The Times columnist moves to a new assignment, he reflects on a recurring theme from his tenure: the rise of female athletes.",
+        "\"'Kids Can't Read': The Revolt That Is Taking On the Education Establishment\" - Fed up parents, civil rights activists, newly awakened educators and lawmakers are crusading for \u201cthe science of reading.\u201d Can they get results?"
+      ],
+      "label": "Option B"
+    },
+    {
+      "sample": [
+        "\"Where the World Is (and Isn't) Making Progress on Climate Change\" - Emissions from electricity and transportation are projected to fall over time, a new report finds, but industry remains a major climate challenge.",
+        "\"When Politics Saves Lives: a Good-News Story.\" - The decision to fund medications to treat H.I.V.-AIDS patients in sub-Saharan Africa and the Caribbean flew in the face of expert advice. But the U.S. did it anyway."
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"A Cartier Ring Inspired by the Work of a 20th-Century Style Icon\" - The piece evokes a 1938 interlocking gold cuff designed by the house's then creative director, Jeanne Toussaint.",
+        "\"52 Places to Go in 2023\" - Travel's rebound has revealed the depth of our drive to explore the world. Why do we travel? For food, culture, adventure, natural beauty? This year's list has all those elements, and more."
+      ],
+      "label": "Option B"
+    },
+    {
+      "sample": [
+        "\"Best Albums of 2023\" - Many of the LPs that made an impact this year, including SZA's \u201cSOS\u201d and Olivia Rodrigo's \u201cGuts,\u201d came from looking inward.",
+        "\"3 Ways to Measure How Fit You Are, Without Focusing on Weight\" - Exercise tests, heart rate and physical ability can tell you more about your health than the scale ever could."
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"Our Most Popular Thanksgiving Desserts of All Time\" - Cranberry lemon meringue pie, pumpkin layer cake, rose apple tart: See our most stunning, reader-favorite finales for the big meal.",
+        "\"Nothing but Backboard: Why Some Korean Basketball Players Love the Bank Shot\" - Banked free throws, an unorthodox technique, have a cult following in the Korean Basketball League."
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"5-Minute Morning Yoga\" - Seven poses to help you wake up and feel energized, whether you're an expert or a beginner.",
+        "\"Fighting to Govern Myanmar, From a Teeny Office in Washington\" - The National Unity Government of Myanmar, formed as an alternative to the junta that orchestrated a 2021 coup, has to battle global apathy and ignorance as it struggles for recognition."
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"In 'Barbie' vs. 'Oppenheimer,' the Real Winner May Be the Box Office\" - The toy-based comedy is expected to draw $100 million; the biopic half that. But in an uneven year for movies, the duel seems to be engaging audiences.",
+        "\"In the Stock Market, Don\u2019t Buy and Sell. Just Hold.\" - There\u2019s new evidence that market timing doesn\u2019t work. Your odds of success are better if you just hang on and aim for average returns, our columnist says."
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"What to Cook This Week\" - Our Best Weeknight Dinner Recipes.",
+        "\"Why Is the College Board Pushing to Expand Advanced Placement?\" - This year, taxpayers paid the nonprofit at least $90 million for A.P. tests that many students failed."
+      ],
+      "label": "Option B"
+    },
+    {
+      "sample": [
+        "\"Cantaloupe, fruit products recalled amid CDC investigation of salmonella infections\" - The US Centers for Disease Control and Prevention says whole and pre-cut cantaloupes have caused dozens of cases of salmonella infection, including 17 hospitalizations, in 15 states and in Canada.",
+        "\"The Last Stand of Soccer's Greatest Generation\" - The World Cup is bidding farewell to the starriest cast the game has ever assembled. The setting is a perfect fit for the game's age of excess."
+      ],
+      "label": "Option A"
+    },
+    {
+      "sample": [
+        "\"World's first CRISPR therapy approved in UK\" - UK regulators have authorized CRISPR Therapeutics Casgevy to treat two debilitating blood disorders making it the world's first approved CRISPR therapy.",
+        "\"Exploring a Transformational Period in Korean Art\" - Four artists of the Dansaekhwa movement, known for its monochrome abstract paintings, will be featured by the PKM Gallery at TEFAF New York."
+      ],
+      "label": "Option B"
+    },
+    {
+      "sample": [
+        "\"Inside U.S. Efforts to Untangle an A.I. Giant's Ties to China\" - American spy agencies have warned about the Emirati firm G42 and its work with large Chinese companies that U.S. officials consider security threats.",
+        "\"A Piano With a Curved Keyboard Will Star at Carnegie Hall\" - The unusual piano, made in Belgium, will make its debut in Manhattan tonight. It's more than a foot longer than a Steinway grand."
+      ],
+      "label": "Option A"
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "2",
+    "feedback_new_issues_interaction": "4",
+    "feedback_interaction_coverage_pretest": "5",
+    "feedback_interaction_coverage_posttest": "3",
+    "feedback_testcase_use_history": "5",
+    "feedback_lm_experience": "6",
+    "feedback_other": ""
+  },
+  "ensemble_history": {
+    "0": null,
+    "2": null,
+    "4": null,
+    "6": null,
+    "8": null,
+    "10": null,
+    "12": null,
+    "14": null,
+    "16": null,
+    "18": null,
+    "20": null,
+    "22": null,
+    "24": null,
+    "26": null,
+    "28": null,
+    "30": null,
+    "32": null,
+    "34": null,
+    "36": null,
+    "38": null,
+    "40": null,
+    "42": null,
+    "44": null,
+    "46": null,
+    "48": null,
+    "50": null,
+    "52": null,
+    "54": null,
+    "56": null,
+    "58": null,
+    "60": null,
+    "62": null,
+    "64": null,
+    "66": null,
+    "68": null,
+    "70": null,
+    "72": null,
+    "74": null,
+    "76": null,
+    "78": null,
+    "80": null,
+    "82": null,
+    "84": null
+  }
+}

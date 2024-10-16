@@ -1,0 +1,281 @@
+{
+  "prolific_id": "63d97656f4c5e18d8889afcc",
+  "engine": "gpt-4",
+  "query_type": "Supervised Learning",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: VIDEO: Shark swims close to shore in Ponte Vedra Beach\nDescription: Imagine you're going for a morning stroll on the beach when you look out to shore to see sharks swimming by! This was the sight Theresa Campbell Lindner experienced during her morning walk in Ponte Vedra Beach Friday around 7:30 a.m. She shared this video in our First Coast Weather Watcher Facebook page along with the caption, \"I always enjoy seeing sharks on my morning walk.\" Lindner said there were several sharks and they were eating breakfast..."
+    },
+    {
+      "sender": "user",
+      "message": "I am interested",
+      "time_spent_ms": 39681,
+      "display_time": 1693606321976,
+      "submission_time": 1693606361657
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Helping to heal with music and art\nDescription: One year after the death of a 3-year-old girl from Somerset County, her family is pushing to keep her memory alive at UPMC Children's Hospital of Pittsburgh through the Nora Grace Kaufman Center for Creative Arts Therapy. The therapy room is a place where young patients can go to escape their hospital rooms for awhile and receive therapy through art and music. The team at UPMC calls it a \"masterpiece of hope\" for the way it helps children..."
+    },
+    {
+      "sender": "user",
+      "message": "Do you have any news about current events",
+      "time_spent_ms": 17542,
+      "display_time": 1693606361825,
+      "submission_time": 1693606379367
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 8 of the best and 8 of the worst TV shows that got canceled this year, so far\nDescription: Critics feel that some series that ended in 2019, like Netflix's \"Tuca & Bertie,\" didn't deserve to be axed but others, like NBC's \"I Feel Bad,\" did."
+    },
+    {
+      "sender": "user",
+      "message": "No I am not interested",
+      "time_spent_ms": 12137,
+      "display_time": 1693606379488,
+      "submission_time": 1693606391625
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Kobe Bryant wants to be known as a storyteller\nDescription: Kobe Bryant's legendary mindset and work ethic helped the NBA's third all-time leading scorer win five championships, an Olympic gold medal and a guaranteed spot in basketball's hall of fame. It's also the same mindset he's taken into \"retirement.\" Dana Jacobson reports"
+    },
+    {
+      "sender": "user",
+      "message": "No.  Show me articles about hockey",
+      "time_spent_ms": 42419,
+      "display_time": 1693606391747,
+      "submission_time": 1693606434166
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 45 Retro Wedding Moments That Show How the Times Have Changed\nDescription: These vintage dresses will raise a few eyebrows, that's for sure."
+    },
+    {
+      "sender": "user",
+      "message": "Give me hockey articles",
+      "time_spent_ms": 8419,
+      "display_time": 1693606434289,
+      "submission_time": 1693606442708
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: If You're Not Serving Mac 'n Cheese This Thanksgiving, You're Missing Out\nDescription: Think outside the box this Thanksgiving."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 2780,
+      "display_time": 1693606442830,
+      "submission_time": 1693606445610
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 2020 Harley-Davidson LiveWire\nDescription: "
+    },
+    {
+      "sender": "user",
+      "message": "No I do not find any interest in that",
+      "time_spent_ms": 59094,
+      "display_time": 1693606445731,
+      "submission_time": 1693606504825
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The Super Rich Are Buying $100 Million Homes. For Some, One Isn't Enough.\nDescription: Since 2007, 20 homes have sold for once unthinkable nine-figure price tags, though many more have tried and failed."
+    },
+    {
+      "sender": "user",
+      "message": "I hate rich people.  Do not show me articles about home ownership",
+      "time_spent_ms": 19744,
+      "display_time": 1693606504952,
+      "submission_time": 1693606524696
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Stephen Curry's broken hand shakes up the celebrity golf circuit\nDescription: The Golden State Warriors superstar sadly is going to miss some serious time on the basketball court and golf course."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 3289,
+      "display_time": 1693606524818,
+      "submission_time": 1693606528107
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Elin Nordegren Steps Out With Jordan Cameron After Welcoming Baby No. 3\nDescription: Parenting double-duty! Elin Nordegren emerged for the first time since giving birth to her third child. The model, 39, and boyfriend Jordan Cameron cheered on her 10-year-old son, Charlie, at a soccer tournament in Florida on Friday, October 18. The couple brought along their newborn for the family outing. Nordegren glowed in a black, floral-print maxi dress and white sandals. She chatted with Cameron, 31, as he held their first child together. The proud mom took in the game from a chair on the sidelines. The Sweden native shares daughter Sam, 12, and son Charlie with ex-husband Tiger Woods. The pair split in 2010 following his highly publicized cheating scandal. Us Weekly reported in June that Nordegren was pregnant. She showed off her baby bump at Charlie's flag football game at the time. A source told Us in June that she and Cameron were \"very happy about the pregnancy\" and preferred to stay out of the spotlight. \"Elin maintains a low profile and has a normal, boring life,\" the insider revealed. \"Florida allows her to live that quiet life. I hear she's surprised that people care this much that she's pregnant.\" Woods, for his part, opened up about his coparenting relationship with Nordegren in October 2016. \"She's been one of my best friends and I've talked to her about so many different things and she does the same thing with me back and forth,\" the golf player, 43, said during an appearance on The Late Show With Stephen Colbert. \"We communicate so much better now, it's incredible. I wish we would have done that earlier on, but it's been incredible to have a best friend like that.\" The athlete elaborated on the amicable development. \"It becomes two simple things, OK?\" he explained. \"We have Sam and we have Charlie. And we love them so much that we are going to [do] whatever it takes to make that work. That's how it happened.\" Woods admitted on Good Morning America in March 2017 that his kids \"now dominate my life and I think that's a good thing.\" Scroll to see more photos of Nordegren's post-baby outing!"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 6560,
+      "display_time": 1693606528228,
+      "submission_time": 1693606534788
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: The Best Christmas Tree Toppers Online Right Now\nDescription: An easy way to add interest to your tree."
+    },
+    {
+      "sender": "user",
+      "message": "Colorado Avalanche",
+      "time_spent_ms": 5757,
+      "display_time": 1693606534909,
+      "submission_time": 1693606540666
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: In Photos: Guinness World Records Day 2019\nDescription: "
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 2321,
+      "display_time": 1693606540962,
+      "submission_time": 1693606543283
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: How to Avoid Airbnb Scams and Find Legit Vacation Rentals Online\nDescription: Worried about getting scammed on your next vacation rental? Follow these tips to avoid the hassle and arrive with peace of mind."
+    },
+    {
+      "sender": "user",
+      "message": "I have experienced this once.  I am interested",
+      "time_spent_ms": 38619,
+      "display_time": 1693606543405,
+      "submission_time": 1693606582024
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 2019 Tokyo Motor Show preview: Debuts from Honda, Mazda, Toyota and more\nDescription: Whether you're after electric cars, sports cars or something out of left field, Tokyo's got it."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 8666,
+      "display_time": 1693606582145,
+      "submission_time": 1693606590811
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Central Arkansas vs. Duke Men's Basketball Highlights (2019-20)\nDescription: -"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 7954,
+      "display_time": 1693606590933,
+      "submission_time": 1693606598887
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Winter's worst: history's most dramatic seasonal weather\nDescription: From deadly snowstorms to crippling floods, here's a look at history's most dramatic winter weather from around the globe."
+    },
+    {
+      "sender": "user",
+      "message": "Can you show me something about the Colorado Avalanche hockey team?",
+      "time_spent_ms": 37601,
+      "display_time": 1693606599009,
+      "submission_time": 1693606636610
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": "I am not interested in EV topics.  "
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": "Down with the Monarchy!"
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "yes",
+      "explanation": "I love food related topics.  I would read it."
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "no",
+      "explanation": "I fly one airline and am not interested in finding out about others"
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": "Dont care much for sports articles if it isnt about hockey"
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "yes",
+      "explanation": "Dont know why but this sounds like it would be interesting to read"
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "yes",
+      "explanation": "I love music."
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "yes",
+      "explanation": "I love cooking related recipes."
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "2",
+    "feedback_new_issues_interaction": "2",
+    "feedback_interaction_coverage_pretest": "1",
+    "feedback_interaction_coverage_posttest": "3",
+    "feedback_testcase_use_history": "1",
+    "feedback_lm_experience": "6",
+    "feedback_other": ""
+  },
+  "query_prompt": "pool_random"
+}

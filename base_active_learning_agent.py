@@ -8,7 +8,7 @@ from sklearn.metrics import roc_auc_score
 
 
 class BaseActiveLearningAgent(ABC):
-    
+
     def __init__(self, target_specification_file, engine, openai_cache_file=None, **kwargs):
         self.get_gold_domain_info(target_specification_file)
         self.engine = engine
@@ -22,7 +22,7 @@ class BaseActiveLearningAgent(ABC):
     def get_gold_domain_info(self, target_specification_file):
         '''Gets the gold domain specification that the model should try to learn and other associated information.
         '''
-        gold_task = json.load(open(target_specification_file))  #"sample_tests.json"
+        gold_task = json.load(open(target_specification_file, encoding="utf8"))  #"sample_tests.json"
         for key in gold_task:
             setattr(self, key, gold_task[key])
             if key == "regex":
@@ -42,7 +42,7 @@ class BaseActiveLearningAgent(ABC):
 
         Args:
             questions_and_answers (list): A list of tuples of the form (question, answer).
-        
+
         Returns:
             str: The formatted questions and answers.
         '''
@@ -52,7 +52,7 @@ class BaseActiveLearningAgent(ABC):
         hypothesis_prompt = textwrap.dedent('''\
             {single_instance_prompt1}
             {previous_examples}
-            
+
             {single_instance_prompt2}
             {test_case}
             '''
@@ -63,19 +63,19 @@ class BaseActiveLearningAgent(ABC):
             test_case=test_case,
         )
         return [{"role": "user", "content": hypothesis_prompt}]
-    
+
     def generate_test_case_answer(self, test_case):
         test_case_messages = self.get_test_case_prompt(self.interaction_history, test_case)
         test_case_answer, _ = query_api(test_case_messages, self.engine, self.openai_cache, self.openai_cache_file)
         test_case_answer = test_case_answer.strip().lower()
-        
+
         return test_case_answer
 
     def score_test_cases_direct(self, start_metrics=None):
         """
         Condition on query answers directly to score the test cases.
         start_metrics (dict): metrics at the start of the interaction, set to None if computing absolute metrics, else compute relative metrics
-            
+
         Returns:
         Tuple[Dict, List[Dict]]: A tuple of the following:
             Dict: scores (dict): A dictionary containing the accuracy and F1 score of the answers on the test cases.
@@ -142,7 +142,7 @@ class BaseActiveLearningAgent(ABC):
         metrics_dict["accuracy_relative"] = metrics_dict["accuracy"] - start_metrics["accuracy"][0]
         metrics_dict["AUCROC_relative"] = metrics_dict["AUCROC"] - start_metrics["AUCROC"][0]
         metrics_dict["correct_prob_relative"] = metrics_dict["correct_prob"] - start_metrics["correct_prob"][0]
-        
+
         return metrics_dict, all_test_details
 
     def score_test_cases(self, start_metrics=None):
@@ -166,7 +166,7 @@ class BaseActiveLearningAgent(ABC):
         Generates a hypothesis regex given a task description and the previous interaction history.
 
         Loops until a compileable regex is produced. Regexes that fail to compile are stored in broken_regexes and used to prompt the model for a regex that compiles.
-            
+
         Returns:
             hypothesis_regex (str)
         """
@@ -185,15 +185,15 @@ class BaseActiveLearningAgent(ABC):
                 print("Failed to compile hypothesis regex")
                 continue
             break
-        
+
         return hypothesis_regex
 
     def strip_hypothesis_regex(self, hypothesis_regex_text):
         '''Strips the hypothesis regex of quotes.
-        
+
         Args:
             hypothesis_regex_text (str): The hypothesis regex to strip.
-        
+
         Returns:
             str: The stripped hypothesis regex.
         '''
@@ -203,7 +203,7 @@ class BaseActiveLearningAgent(ABC):
     @abstractmethod
     def get_hypothesis_prompt(self, interaction_history, broken_regexes=None):
         '''Creates prompt for the model which produces a hypothesis using the given active learning framework.
-        
+
         Args:
             task_description (str): Description of the task
             interaction_history (list of tuples): List of (question, answer) tuples. The precise format of the questions / answers differs based on the type of active learning agent.
@@ -213,7 +213,7 @@ class BaseActiveLearningAgent(ABC):
             prompt (str): Prompt for the model to generate a new hypothesis
         '''
         pass
-    
+
     @abstractmethod
     def generate_active_query(self):
         '''Generates an active query to ask the oracle.'''
@@ -223,7 +223,7 @@ class BaseActiveLearningAgent(ABC):
     def generate_oracle_response(self, query):
         '''Produces an oracle response to the active query, and adds (query, response) to self.interaction_history.'''
         pass
-    
+
     def update_interaction_history(self, active_query, oracle_response):
         '''Updates self.interaction_history based on the active query and oracle response.'''
         self.interaction_history.append((active_query, oracle_response))
@@ -231,7 +231,7 @@ class BaseActiveLearningAgent(ABC):
     def add_turn(self, query, response):
         '''Add (query, response) to self.interaction_history.'''
         self.interaction_history.append((query, response))
-    
+
     def get_query_prompt(self):
         pass
 
@@ -256,7 +256,7 @@ class BaseActiveLearningAgent(ABC):
 
     def evaluate_condition(self, **kwargs):
         return True
-    
+
     def get_interaction_features(self):
         """
         Returns a dictionary of features for the current interaction trajectory.

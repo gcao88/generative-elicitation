@@ -1,0 +1,209 @@
+{
+  "prolific_id": "5f16f559325a640008bb9a07",
+  "engine": "gpt-4",
+  "query_type": "Generative edge cases",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: World History Today. Title: Decoding Ancient Hieroglyphics: A Deep Dive into Egyptian History. Description: Explore the fascinating world of ancient Egyptian hieroglyphics and understand the significance of these symbols in deciphering Egypt's rich history. This comprehensive study offers insights into the culture, society, and lifestyle of one of the earliest civilizations."
+    },
+    {
+      "sender": "user",
+      "message": "Yes that sounds interesting",
+      "time_spent_ms": 15944,
+      "display_time": 1688922534830,
+      "submission_time": 1688922550774
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Sports Chronicles. Title: The Underdog Story: Women in Competitive Chess. Description: This article unveils the untold story of women in the world of competitive chess, tracing the successes, struggles and breakthroughs of some of the most influential female chess players. It challenges the stereotypes and biases, providing an in-depth analysis of gender dynamics in this strategic game."
+    },
+    {
+      "sender": "user",
+      "message": "That also sounds interesting, like the show Queens Gambit",
+      "time_spent_ms": 30054,
+      "display_time": 1688922553973,
+      "submission_time": 1688922584027
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Culinary Arts Digest. Title: Molecular Gastronomy: The Science Behind the Art of Cooking. Description: Delve into the world of molecular gastronomy, where science and cooking intersect. We will explore techniques like spherification and sous-vide, and how renowned chefs use these to create mind-blowing dishes. This article blends chemistry with cuisine to give readers a unique perspective on the food we eat."
+    },
+    {
+      "sender": "user",
+      "message": "Yeah I like food and culinary arts",
+      "time_spent_ms": 13011,
+      "display_time": 1688922588696,
+      "submission_time": 1688922601707
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Universe Wonders. Title: Dark Matter and Energy: The Unseen Forces Shaping our Cosmos. Description: Embark on a cosmic journey that dives into the intriguing enigma of dark matter and dark energy. These elusive entities make up the lion's share of our universe, yet remain barely understood. This article explores the latest theories and research endeavors in astrophysics, aiming to shed light on the dark secrets of the cosmos."
+    },
+    {
+      "sender": "user",
+      "message": "That sounds interesting and I like science and space topics",
+      "time_spent_ms": 19292,
+      "display_time": 1688922606509,
+      "submission_time": 1688922625801
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Eco-Activist Hub. Title: Urban Farming Revolution: Building Sustainable Cities through Green Roofs and Vertical Gardens. Description: This article explores the increasingly popular trend of urban farming, highlighting how green roofs and vertical gardens can transform city landscapes into sustainable living spaces. It delves into the practicality and benefits of these methods, illuminating the potential for a greener future in our concrete jungles. It also includes case studies of successful urban farming initiatives from around the globe."
+    },
+    {
+      "sender": "user",
+      "message": "I am very eco friendly and vegan so I think this is right up my alley",
+      "time_spent_ms": 25858,
+      "display_time": 1688922630269,
+      "submission_time": 1688922656127
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Cybersecurity Central. Title: Cryptocurrency and Blockchain: Protecting Your Digital Assets. Description: This article dives into the complexities of safeguarding cryptocurrencies and the use of blockchain technology for enhanced security. It offers practical tips on protecting your digital assets from potential cyber threats, along with providing an understanding of how blockchain technology contributes to a secure digital economy. It also explores the impact of advancements in cybersecurity on the future of digital currencies and online transactions."
+    },
+    {
+      "sender": "user",
+      "message": "Not really, I don't care about block chain topics",
+      "time_spent_ms": 72972,
+      "display_time": 1688922660271,
+      "submission_time": 1688922733243
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Artistic Expressions. Title: Evolution of Digital Art: A Journey through Pixels and Imagination. Description: This article explores the transformative journey of digital art, from its humble beginnings to its present-day intricacies. It highlights key artists, tools and techniques that shaped the evolution of digital art. It also discusses the impact of advancements in technology on art creation and appreciation, with a spotlight on virtual reality and 3D printing. In addition, it delves into the debate of digital art's authenticity and acceptance in traditional art circles, presenting different perspectives to provoke thought."
+    },
+    {
+      "sender": "user",
+      "message": "Not really, I'm not a big fan of digital art",
+      "time_spent_ms": 42115,
+      "display_time": 1688922739045,
+      "submission_time": 1688922781160
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Quantum Computing Times. Title: Building Qubits: An Introduction to Quantum Computing. Description: This article unravels the complexities of quantum computing and the science behind quantum bits or 'qubits'. It gives an overview of quantum mechanics principles like superposition and entanglement, which form the basis of this next-generation computing technology. Plus, it also explores the potential applications and challenges of quantum computing, and how it could revolutionize fields ranging from cryptography to drug discovery."
+    },
+    {
+      "sender": "user",
+      "message": "I think this topic is interesting but I don't want to read about it",
+      "time_spent_ms": 19372,
+      "display_time": 1688922785869,
+      "submission_time": 1688922805241
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: Pop Culture Pulse. Title: The Impact of Social Media Trends on Fashion Industry. Description: This article investigates how social media trends shape the fashion industry. It delves into the influence of influencers, the rise of 'viral' fashion trends, and the role of social platforms in market predictions and brand development. It will also cover how fashion brands have adapted to the digital age, particularly in the midst of the global pandemic. It provides a comprehensive look into the dynamic relationship between fashion and digital social platforms."
+    },
+    {
+      "sender": "user",
+      "message": "I'm not a fan of anything fashion related",
+      "time_spent_ms": 39805,
+      "display_time": 1688922810694,
+      "submission_time": 1688922850499
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "1",
+    "feedback_new_issues_interaction": "2",
+    "feedback_interaction_coverage_pretest": "5",
+    "feedback_interaction_coverage_posttest": "6",
+    "feedback_testcase_use_history": "3",
+    "feedback_lm_experience": "5",
+    "feedback_other": "None"
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what topics a user is interested in reading online article about. People's interests are broad, so you should seek to understand their interests across many topics; in other words, go for breadth rather than depth. Do not assume a user has given a complete answer to any question, so make sure to keep probing different types of interests.\n\nCome up with a potential edge case to learn as much information as you can about what their desired behavior should be under different circumstances.\nMake sure the edge case addresses different aspects of the system than the edge cases that have already been considered.\n\nAn example edge case is: Are you interested in the following article? Website Name: TechTalkDaily\nTitle: 10 Must-Have Gadgets for 2023: A Comprehensive Guide\nDescription: Discover the top 10 gadgets that will revolutionize your daily life in 2023. From smart home devices to the latest wearables, we've got you covered with our comprehensive guide.\n\nCurrent cases:\n- [Q] -> [A]\n\nGenerate the most informative edge case that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Generate the edge case in the following format, and nothing else: \"Are you interested in the following article? [edge case]\""
+    }
+  ]
+}

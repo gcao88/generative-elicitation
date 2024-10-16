@@ -1,0 +1,432 @@
+{
+  "prolific_id": "6317b7a699896d5d934ef262",
+  "engine": "gpt-4",
+  "query_type": "Generative edge cases",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's fuzzy intuitions and preferences.\nIn this activity, we're going to be looking at different strings of text and you'll be deciding if they look like they could be an email address or not. For example, most people would agree that \"username@domain.com\" looks like an email address, while \"n12z5lFEN4\" does not. However, the rules for what can be an email address can be very unusual, so what we're really interested in is your intuition on what an email address could look like. \n<b>Tip:</b> in an email such as username@cs.stanford.edu, \"username\" is called the local-part of the email, while \"cs.stanford.edu\" is the domain. Furthermore, \"cs\" is a subdomain, and \"edu\" is a top-level domain.",
+    "task_description": "your intuition of what is or is not possible for an email address",
+    "final": "In the final part of the study, you will give feedback on a test set of email addresses, which will enable us to see how well a chatbot reading your responses has learned your email preferences.",
+    "evaluation": "Please indicate whether you think the following strings look like reasonably well-formatted email addresses or not: \"yes\" if they do, \"no\" if they don't."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user-name_with.mixed+characters123@example.co.in"
+    },
+    {
+      "sender": "user",
+      "message": "I think it should",
+      "time_spent_ms": 14383,
+      "display_time": 1689974536211,
+      "submission_time": 1689974550594
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user..name@example.com"
+    },
+    {
+      "sender": "user",
+      "message": "Yes, it hase the same symbols as the first one in the username",
+      "time_spent_ms": 19627,
+      "display_time": 1689974552560,
+      "submission_time": 1689974572187
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@123.456.789"
+    },
+    {
+      "sender": "user",
+      "message": "The domain is a bit strange, if it is a valid IP address of a mailing server it might technically work? I would say do not accept, not human readable",
+      "time_spent_ms": 39745,
+      "display_time": 1689974573712,
+      "submission_time": 1689974613457
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? user@name@example.com"
+    },
+    {
+      "sender": "user",
+      "message": "No, the \"at\" symbol should be reserved as a separator between username and domain",
+      "time_spent_ms": 49544,
+      "display_time": 1689974614892,
+      "submission_time": 1689974664436
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@ex_ample.com"
+    },
+    {
+      "sender": "user",
+      "message": "Yes it should, the domain name has an underscore, but that is nothing special in and of itself",
+      "time_spent_ms": 29102,
+      "display_time": 1689974665818,
+      "submission_time": 1689974694920
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@ex-ample.com"
+    },
+    {
+      "sender": "user",
+      "message": "Same reasoning as before. Accept",
+      "time_spent_ms": 9302,
+      "display_time": 1689974696496,
+      "submission_time": 1689974705798
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@.com"
+    },
+    {
+      "sender": "user",
+      "message": "No, \".com\" is not a valid domain",
+      "time_spent_ms": 15305,
+      "display_time": 1689974707038,
+      "submission_time": 1689974722343
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@ex.ample..com"
+    },
+    {
+      "sender": "user",
+      "message": "I think it should, it looks strange but it is still a valid domain",
+      "time_spent_ms": 29730,
+      "display_time": 1689974723729,
+      "submission_time": 1689974753459
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? .username@example.com"
+    },
+    {
+      "sender": "user",
+      "message": "Yes, see my response number 2. Nothing wrong with that username",
+      "time_spent_ms": 19206,
+      "display_time": 1689974755625,
+      "submission_time": 1689974774831
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@example"
+    },
+    {
+      "sender": "user",
+      "message": "No, \"example\" is not a valid domain",
+      "time_spent_ms": 9683,
+      "display_time": 1689974776016,
+      "submission_time": 1689974785699
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@.example.com"
+    },
+    {
+      "sender": "user",
+      "message": "No, \".\" is not a valid subdomain name",
+      "time_spent_ms": 38822,
+      "display_time": 1689974787101,
+      "submission_time": 1689974825923
+    },
+    {
+      "sender": "assistant",
+      "message": "Should the following be accepted? username@subdomain.example.com"
+    },
+    {
+      "sender": "user",
+      "message": "Yes, this is as vanilla as they come",
+      "time_spent_ms": 9742,
+      "display_time": 1689974827228,
+      "submission_time": 1689974836970
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "user@domain.a",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.edu",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@111.222.333.4444",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@[123.45.67.89]",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary-jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary+jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary_jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "-maryjane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary=jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary&jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary.jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "maryjane1@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "1maryjane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "maryjane!@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary%jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary*jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary(ja)ne@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary@jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "_maryjane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": ".maryjane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary?jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\"mary\"jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "m\"ary\"jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary'jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "'maryjane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "+user@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary\\jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\"mary\\ jane\"@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "\"maryjane\"@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\u0438\u0432\u0430\u043d.\u0441\u0435\u0440\u0433\u0435\u0435\u0432@\u043f\u0440\u0438\u043c\u0435\u0440.\u0440\u0444",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\u7528\u6237@\u4f8b\u5b50.\u5e7f\u544a",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\u0cac\u0cc6\u0c82\u0cac\u0cb2@\u0ca1\u0cc7\u0c9f\u0cbe\u0cae\u0cc7\u0cb2\u0ccd.\u0cad\u0cbe\u0cb0\u0ca4",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "D\u00f6rte@S\u00f6rensen.example.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user\ud83d\ude03@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user\u221a3@domin.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@sub.domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@example.co.uk",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@sub.example.co.uk",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.co.co.co.co",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "abc@domain.-com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d-omain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d+omain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d_omain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d3omain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c-om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c_om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c+om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c3om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "abc@domain.com,def@domain.com",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "3",
+    "feedback_new_issues_interaction": "6",
+    "feedback_interaction_coverage_pretest": "5",
+    "feedback_interaction_coverage_posttest": "6",
+    "feedback_testcase_use_history": "4",
+    "feedback_lm_experience": "2",
+    "feedback_other": ""
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what rules a user believes a valid email address format must adhere to (e.g. for developing a regex format checker).\n\nCome up with a potential edge case to learn as much information as you can about what their desired behavior should be under different circumstances.\nMake sure the edge case addresses different aspects of the system than the edge cases that have already been considered.\n\nAn example edge case is: Should the following email be accepted? username@example.com\n\nCurrent cases:\n- [Q] -> [A]\n\nGenerate the most informative edge case that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Generate the edge case in the following format, and nothing else: \"Should the following be accepted? [edge case]\""
+    }
+  ]
+}

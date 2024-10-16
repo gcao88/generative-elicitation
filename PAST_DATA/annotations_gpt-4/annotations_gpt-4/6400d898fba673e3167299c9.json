@@ -1,0 +1,428 @@
+{
+  "prolific_id": "6400d898fba673e3167299c9",
+  "engine": "gpt-4",
+  "query_type": "Supervised Learning",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 5 Reasons Destin Is a Great Family Vacation Destination\nDescription: The calm emerald waters and family-friendly attractions of the area make Destin a top spot for a fall or winter getaway."
+    },
+    {
+      "sender": "user",
+      "message": "Yes ",
+      "time_spent_ms": 19177,
+      "display_time": 1693594257278,
+      "submission_time": 1693594276455
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 12 things you should never say to your LGBTQ coworkers\nDescription: Certain comments and invasive questions can be dehumanizing to LGBTQ workers and make them feel uncomfortable in their work environment."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 12122,
+      "display_time": 1693594276965,
+      "submission_time": 1693594289087
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Porsche Taycan Turbo S Sport Turismo runs hard at the 'Ring\nDescription: Clearly, it'll haul more than just tykes and whatnots"
+    },
+    {
+      "sender": "user",
+      "message": "Nope",
+      "time_spent_ms": 29059,
+      "display_time": 1693594289785,
+      "submission_time": 1693594318844
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Are you in a relationship with a coworker? Read this\nDescription: Rules on workplace relationships are becoming increasingly common in the #MeToo era."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 3658,
+      "display_time": 1693594320639,
+      "submission_time": 1693594324297
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Trump was already violating the emoluments clause. Grabbing the G-7 is even worse.\nDescription: Who is benefiting when the president's businesses get contracts? Not the public."
+    },
+    {
+      "sender": "user",
+      "message": "Definitely not ",
+      "time_spent_ms": 11541,
+      "display_time": 1693594324437,
+      "submission_time": 1693594335978
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 'El Camino: A Breaking Bad Movie': TV Review\nDescription: Vince Gilligan and Aaron Paul jump back into the aftermath of 'Breaking Bad' for a two-hour movie that's fun and often thrilling, but never feels necessary."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 3211,
+      "display_time": 1693594336639,
+      "submission_time": 1693594339850
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: I used a mail-order mattress for 2 weeks: Here's what happened, and how to get 30% off\nDescription: This exclusive discount nets you the best prices anywhere on SweetNight's memory-foam and hybrid mattresses."
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 3920,
+      "display_time": 1693594340635,
+      "submission_time": 1693594344555
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Sanders, Ocasio-Cortez Unveil $172 Billion 'Green New Deal For Public Housing'\nDescription: Sen. Bernie Sanders and Rep. Alexandria Ocasio-Cortez unveiled sweeping legislation to invest up to $172 billion over the next decade to drastically upgrade the nation's public housing units."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 15745,
+      "display_time": 1693594344979,
+      "submission_time": 1693594360724
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: This Louisville woman's tea shop will be an LGBTQ space for black and sober people\nDescription: Arielle Clark, a 28-year-old queer woman and Louisville native, has spent thousands on her goal of opening a sober space for black, LGBTQ folks."
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 27525,
+      "display_time": 1693594361381,
+      "submission_time": 1693594388906
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Dominant all year, New Castle forced to work in state title-clinching win over HSE\nDescription: After winning two straight state titles, blasting through a season at 34-1 with a No. 1-ranking, the Trojans found out early this one wouldn't be easy."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 28066,
+      "display_time": 1693594389182,
+      "submission_time": 1693594417248
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Trump: The economy has exceeded expectations\nDescription: President Donald Trump speaks at the Economic Club of New York on the U.S.-China trade war and the state of the U.S. economy."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 4739,
+      "display_time": 1693594417745,
+      "submission_time": 1693594422484
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: This Is the Best Time of the Week to Buy a Car\nDescription: It's probably not the most convenient, but it will get you the best deal. The post This Is the Best Time of the Week to Buy a Car appeared first on Reader's Digest."
+    },
+    {
+      "sender": "user",
+      "message": "Nope",
+      "time_spent_ms": 4358,
+      "display_time": 1693594423972,
+      "submission_time": 1693594428330
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 15 Things Dog Shelters Need You to Know\nDescription: When you're looking for your new best friend, staffers and volunteers at dog shelters can help."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 10931,
+      "display_time": 1693594429111,
+      "submission_time": 1693594440042
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Capital One brings back lucrative bonus of up to 200,000 miles on Spark Miles, $2,000 on Spark Cash\nDescription: Please note: the offers mentioned below are subject to change at any time and may not be available. The biggest sign-up bonuses of last year are back! Capital One is once again offering incredible elevated sign-up bonuses for two of its Spark business cards   the Capital One\u00ae Spark\u00ae Miles for Business and Capital One\u00ae Spark\u00ae Cash \u2026"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 8965,
+      "display_time": 1693594440886,
+      "submission_time": 1693594449851
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Skylar Diggins-Smith played entire 2018 season while pregnant\nDescription: "
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 4740,
+      "display_time": 1693594450207,
+      "submission_time": 1693594454947
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Who let the dogs out! Hundreds of festive pooches hit the streets dressed as Rihanna, Greta Thunberg and dinosaurs for New York City's annual Halloween dog parade\nDescription: New York's pooches put their best paws forward on Sunday for the 29th Annual Tompkins Square Dog Parade in Manhattan where hundreds of spectators joined to watch the fun."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 6785,
+      "display_time": 1693594456097,
+      "submission_time": 1693594462882
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Our 10 favorite Dutch ovens of 2019\nDescription: Including a budget option and one for campers."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 13827,
+      "display_time": 1693594463116,
+      "submission_time": 1693594476943
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: These 50+ Last-Minute Halloween Costumes Are Perfect for Procrastinators\nDescription: An easy, Insta-worthy costume in 3, 2, 1 ..."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 7256,
+      "display_time": 1693594477443,
+      "submission_time": 1693594484699
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Colorado State women's basketball team dominates second half to beat Northern Colorado\nDescription: The Rams went on the road to Greeley and broke a halftime tie with a big 2nd half to beat the Bears 75-58 on Friday night"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 5724,
+      "display_time": 1693594485530,
+      "submission_time": 1693594491254
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Vanna White hosts 'Wheel of Fortune' after Sajak has surgery\nDescription: LOS ANGELES (AP)   \"Wheel of Fortune\" host Pat Sajak had to have emergency surgery, and his longtime co-host Vanna White will fill in for him while he recovers. The show said in a statement that Thursday's taping was canceled as the 73-year-old Sajak underwent successful surgery to correct a blocked intestine. The 62-year-old White stepped in as host when taping resumed Friday for episodes that will air starting Dec. 9."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 4271,
+      "display_time": 1693594491998,
+      "submission_time": 1693594496269
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: What's The Impact Of Tire Size On Tesla Vehicle Range?\nDescription: Range is certainly affected, but not by as much as some might think."
+    },
+    {
+      "sender": "user",
+      "message": "Nope",
+      "time_spent_ms": 5926,
+      "display_time": 1693594497001,
+      "submission_time": 1693594502927
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Sean Spicer voted off 'Dancing With the Stars' after weeks of controversy with low scores, judicial frustration\nDescription: President Trump weighed in on his former press secretary's elimination: \"We are all proud of you!\" he tweeted."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 3875,
+      "display_time": 1693594503861,
+      "submission_time": 1693594507736
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Foul play suspected in case of UFC fighter's missing stepdaughter\nDescription: "
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 6433,
+      "display_time": 1693594508336,
+      "submission_time": 1693594514769
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Microsoft acquires start-up Mover, shortly after buying Movere, to get more data into its cloud\nDescription: Mover can move files from Box and Dropbox   or on-premises data centers   to Microsoft services like OneDrive and SharePoint."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 3808,
+      "display_time": 1693594515736,
+      "submission_time": 1693594519544
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: 9 Ways to Lose Weight When You're in Your 50s\nDescription: These simple changes will help you shed the extra pounds."
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 8149,
+      "display_time": 1693594520041,
+      "submission_time": 1693594528190
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: You've won a car! Should you take cash instead?\nDescription: Win a car? There may be big taxes"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 6575,
+      "display_time": 1693594528848,
+      "submission_time": 1693594535423
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Golden Globes 2020: Ricky Gervais Returning to Host for Fifth Time\nDescription: When the 77th Annual Golden Globe Awards air on Sunday, Jan. 5 (NBC, 8/7c), the nominees won't be the only nervous people in the audience. Ricky Gervais will return to host the ceremony for a fifth time, TVLine has learned. \"Once again, they've made me an offer I can't refuse,\" Gervais said in a statement."
+    },
+    {
+      "sender": "user",
+      "message": "Nope",
+      "time_spent_ms": 8425,
+      "display_time": 1693594536016,
+      "submission_time": 1693594544441
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Florida State throws 3 passes on big play\nDescription: Florida State threw 3 passes on 1 big play vs. Syracuse. Alex Hornibrook threw to Cam Akers, who threw it back to Hornibrook, who threw to Tamorrion Terry for the 54 yard gain on a busted play in this ACC Must See Moment!"
+    },
+    {
+      "sender": "user",
+      "message": "No",
+      "time_spent_ms": 6836,
+      "display_time": 1693594544881,
+      "submission_time": 1693594551717
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: These Color Combos Are The Ultimate Way To Make Your Home Feel Super Cozy\nDescription: AKA a perfect aesthetic."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 4983,
+      "display_time": 1693594552271,
+      "submission_time": 1693594557254
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website: msn.com\nTitle: Updated UFC Moscow Fight Card, ESPN+ Line Up\nDescription: With Junior dos Santos injured and unable to compete, controversial heavyweight slugger Greg Hardy will join the Moscow line up to battle Alexander Volkov in the new co-main event (full details here). The Zabit Magomedsharipov vs. Calvin Kattar featherweight showdown, meanwhile, is being promoted to event headliner, but will remain just three rounds because of the short notice."
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "3",
+    "feedback_new_issues_interaction": "4",
+    "feedback_interaction_coverage_pretest": "4",
+    "feedback_interaction_coverage_posttest": "6",
+    "feedback_testcase_use_history": "5",
+    "feedback_lm_experience": "2",
+    "feedback_other": ""
+  },
+  "query_prompt": "pool_random"
+}

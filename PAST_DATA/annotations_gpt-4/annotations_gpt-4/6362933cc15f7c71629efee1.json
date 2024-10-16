@@ -1,0 +1,586 @@
+{
+  "prolific_id": "6362933cc15f7c71629efee1",
+  "engine": "gpt-4",
+  "query_type": "Generative yes/no questions",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's fuzzy intuitions and preferences.\nIn this activity, we're going to be looking at different strings of text and you'll be deciding if they look like they could be an email address or not. For example, most people would agree that \"username@domain.com\" looks like an email address, while \"n12z5lFEN4\" does not. However, the rules for what can be an email address can be very unusual, so what we're really interested in is your intuition on what an email address could look like. \n<b>Tip:</b> in an email such as username@cs.stanford.edu, \"username\" is called the local-part of the email, while \"cs.stanford.edu\" is the domain. Furthermore, \"cs\" is a subdomain, and \"edu\" is a top-level domain.",
+    "task_description": "your intuition of what is or is not possible for an email address",
+    "final": "In the final part of the study, you will give feedback on a test set of email addresses, which will enable us to see how well a chatbot reading your responses has learned your email preferences.",
+    "evaluation": "Please indicate whether you think the following strings look like reasonably well-formatted email addresses or not: \"yes\" if they do, \"no\" if they don't."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains special characters (like !, #, $, %, &, *, etc.) other than the @ symbol and period?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 6846,
+      "display_time": 1689796664193,
+      "submission_time": 1689796671039
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it starts or ends with a period (.)?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 11836,
+      "display_time": 1689796673147,
+      "submission_time": 1689796684983
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains more than one @ symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 10948,
+      "display_time": 1689796686844,
+      "submission_time": 1689796697792
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains spaces?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 5288,
+      "display_time": 1689796699280,
+      "submission_time": 1689796704568
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains numbers?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 4158,
+      "display_time": 1689796706202,
+      "submission_time": 1689796710360
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a hyphen (-) or underscore (_) in the username or domain part?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 3802,
+      "display_time": 1689796712573,
+      "submission_time": 1689796716375
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a period (.) immediately before or after the @ symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "yes it should",
+      "time_spent_ms": 13761,
+      "display_time": 1689796718175,
+      "submission_time": 1689796731936
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a domain extension longer than 3 characters (like .info, .museum, .travel)?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 13568,
+      "display_time": 1689796734191,
+      "submission_time": 1689796747759
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a period (.) consecutively (like john..doe@example.com)?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 12493,
+      "display_time": 1689796750298,
+      "submission_time": 1689796762791
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a domain name that starts or ends with a hyphen (-)?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6116,
+      "display_time": 1689796764803,
+      "submission_time": 1689796770919
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a domain name with no extension (like john.doe@example)?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 10437,
+      "display_time": 1689796772698,
+      "submission_time": 1689796783135
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a domain name with multiple extensions (like john.doe@example.co.uk)?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 7093,
+      "display_time": 1689796785234,
+      "submission_time": 1689796792327
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains uppercase letters?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 4187,
+      "display_time": 1689796794388,
+      "submission_time": 1689796798575
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a username or domain name that starts or ends with an underscore (_) or a special character (like !, #, $, %, &, *, etc.)?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 12984,
+      "display_time": 1689796802904,
+      "submission_time": 1689796815888
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a username or domain name that is less than two characters long?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 8252,
+      "display_time": 1689796818108,
+      "submission_time": 1689796826360
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a domain name with numbers (like john.doe@example1.com)?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 6402,
+      "display_time": 1689796828534,
+      "submission_time": 1689796834936
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a domain name with special characters (like !, #, $, %, &, *, etc.)?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 9290,
+      "display_time": 1689796837813,
+      "submission_time": 1689796847103
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a username or domain name with non-English alphabets or characters (like \u00e4, \u00e9, \u00f1, \u00e7, \u00f8, etc.)?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6821,
+      "display_time": 1689796850594,
+      "submission_time": 1689796857415
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a username or domain name with less than two characters after the last period (like john.doe@example.c)?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 11122,
+      "display_time": 1689796861389,
+      "submission_time": 1689796872511
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a username or domain name with more than 64 characters?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 6102,
+      "display_time": 1689796874833,
+      "submission_time": 1689796880935
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a username or domain name with non-alphanumeric characters (like -, _, etc.) immediately before or after the @ symbol?"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 15208,
+      "display_time": 1689796884559,
+      "submission_time": 1689796899767
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a username or domain name with more than one period (.) consecutively (like john.doe..@example.com)?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 17703,
+      "display_time": 1689796902481,
+      "submission_time": 1689796920184
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a username or domain name with non-alphanumeric characters (like -, _, etc.) immediately before or after a period (.)?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 17253,
+      "display_time": 1689796923355,
+      "submission_time": 1689796940608
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a username or domain name with more than one hyphen (-) consecutively (like john--doe@example.com)?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 8432,
+      "display_time": 1689796943280,
+      "submission_time": 1689796951712
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a username or domain name with more than one underscore (_) consecutively (like john__doe@example.com)?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 5569,
+      "display_time": 1689796954102,
+      "submission_time": 1689796959671
+    },
+    {
+      "sender": "assistant",
+      "message": "Should an email address be considered valid if it contains a username or domain name with a period (.) immediately before or after a hyphen (-) or underscore (_)?"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 14509,
+      "display_time": 1689796962106,
+      "submission_time": 1689796976615
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "user@domain.a",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.edu",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@111.222.333.4444",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@[123.45.67.89]",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary-jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary+jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary_jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "-maryjane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary=jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary&jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary.jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "maryjane1@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "1maryjane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "maryjane!@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary%jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary*jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary(ja)ne@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary@jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "_maryjane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": ".maryjane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "mary?jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\"mary\"jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "m\"ary\"jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary'jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "'maryjane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "+user@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary jane@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "mary\\jane@domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "\"mary\\ jane\"@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "\"maryjane\"@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "\u0438\u0432\u0430\u043d.\u0441\u0435\u0440\u0433\u0435\u0435\u0432@\u043f\u0440\u0438\u043c\u0435\u0440.\u0440\u0444",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "\u7528\u6237@\u4f8b\u5b50.\u5e7f\u544a",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "\u0cac\u0cc6\u0c82\u0cac\u0cb2@\u0ca1\u0cc7\u0c9f\u0cbe\u0cae\u0cc7\u0cb2\u0ccd.\u0cad\u0cbe\u0cb0\u0ca4",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "D\u00f6rte@S\u00f6rensen.example.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user\ud83d\ude03@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user\u221a3@domin.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "@domain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@sub.domain.com",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@example.co.uk",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@sub.example.co.uk",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.co.co.co.co",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "abc@domain.-com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d-omain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d+omain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d_omain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@d3omain.com",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c-om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c_om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c+om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "user@domain.c3om",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "abc@domain.com,def@domain.com",
+      "label": "yes",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "6",
+    "feedback_new_issues_interaction": "7",
+    "feedback_interaction_coverage_pretest": "7",
+    "feedback_interaction_coverage_posttest": "7",
+    "feedback_testcase_use_history": "6",
+    "feedback_lm_experience": "3",
+    "feedback_other": ""
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what rules a user believes to be a valid email address format must adhere to (e.g. for developing a regex format checker).\n\nPrevious questions:\n- [Q] -> [A]\n\nGenerate the most informative yes/no question that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Make sure your question addresses different aspects of the regex than the questions that have already been asked. At the same time however, the question should be bite-sized, and not ask for too much at once. Phrase your question in a way that is understandable to non-expert humans; do not use any jargon without explanation. Generate the yes/no question and nothing else:"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "prolific_id": "5fed41e3e14422f5e308c6e5",
+  "engine": "gpt-4",
+  "query_type": "Generative edge cases",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: GlobalHistoryArchives Title: The Impact of the Silk Road on Ancient Civilizations Description: This article delves into the intricate history of the Silk Road and its profound influence on the development of ancient civilizations. Explore how this ancient trade route shaped cultures, economies, and political systems across Asia, Africa, and Europe."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I am interested in that article and most any article about history. ",
+      "time_spent_ms": 44278,
+      "display_time": 1688846924530,
+      "submission_time": 1688846968808
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: CuisineWorld Title: Molecular Gastronomy: The Art and Science of Cooking Description: Dive into the fascinating world of molecular gastronomy. In this comprehensive guide, we break down the science behind this culinary trend. Learn how renowned chefs create visually stunning and taste-bud-tantalizing dishes that blur the line between food and art."
+    },
+    {
+      "sender": "user",
+      "message": "Sorry, I am not interested in that article. ",
+      "time_spent_ms": 37031,
+      "display_time": 1688846973056,
+      "submission_time": 1688847010087
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: AdventurePlanet Title: Experiencing the Arctic: The Ultimate Guide for Polar Travel Description: Dive deep into the icy wonders of the Polar Regions. This guide provides you with all you need to know to make your arctic adventure a reality, from the wildlife you'll encounter to the cultural histories of indigenous communities. Pack your winter gear as we take you on a journey through the frosty wonders of the Arctic."
+    },
+    {
+      "sender": "user",
+      "message": "I am not interested in articles about the Arctic. ",
+      "time_spent_ms": 35302,
+      "display_time": 1688847014323,
+      "submission_time": 1688847049625
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: HealthnWellness Today Title: The Intersection of Technology and Mental Health: A New Era of Therapy Description: Explore the ways in which technology is reshaping therapy and mental health care. Learn about the latest trends, from AI-powered mental health apps to virtual reality therapy sessions, and their potential to provide affordable and accessible mental health resources for all."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I would be interested in reading that article. ",
+      "time_spent_ms": 34150,
+      "display_time": 1688847053695,
+      "submission_time": 1688847087845
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: SportsGalaxy Title: The Evolution of E-Sports: From Basement Pastime to Multibillion Dollar Industry Description: Explore the meteoric rise of E-Sports, from its humble beginnings in arcades to its current status as a global phenomenon. A comprehensive analysis of the industry's growth, the strategic minds behind it, and a look at the future of competitive gaming."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I would be interested in reading that article. Thank you. ",
+      "time_spent_ms": 35680,
+      "display_time": 1688847092556,
+      "submission_time": 1688847128236
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: EcoPlanetNews Title: Sustainable Fashion: An Insight into Ethical Clothing Brands Description: This detailed exposition brings to light the practices of sustainable fashion brands, their ethics, and impact on our environment. Understand the process behind their eco-friendly materials and learn how to make informed decisions for your wardrobe that align with your environmental values."
+    },
+    {
+      "sender": "user",
+      "message": "No, I would hate to read an article like that. I prefer not to read anything about the environment or fashion. ",
+      "time_spent_ms": 54448,
+      "display_time": 1688847132093,
+      "submission_time": 1688847186541
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: SpaceExplorationDaily Title: Terraforming Mars: A Vision for 2100 Description: Venture into the future and imagine a world where Mars is our second home. This article dives into the science, technology, and ethics of terraforming Mars. It looks at the potential challenges, solutions, and implications of transforming the Red Planet into a habitable environment for humans. Would you like to discover what it might take to make life on Mars a reality?"
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I would like to read an article like that or anything about space exploration. ",
+      "time_spent_ms": 51103,
+      "display_time": 1688847191274,
+      "submission_time": 1688847242377
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "no",
+      "explanation": "I don't like the idea of electric cars, and I don't want to read about them. "
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "yes",
+      "explanation": "That sounds fascinating to read about. "
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "no",
+      "explanation": "I never played Zelda, so it really doesn't interest me. "
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "no",
+      "explanation": "I like my regular lawn, and I don't want to read about faux lawns."
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "no",
+      "explanation": "I don't want to read about fashion, minimalist or maximalist."
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "yes",
+      "explanation": "That would be very interesting. "
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "no",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "1",
+    "feedback_new_issues_interaction": "1",
+    "feedback_interaction_coverage_pretest": "7",
+    "feedback_interaction_coverage_posttest": "6",
+    "feedback_testcase_use_history": "5",
+    "feedback_lm_experience": "5",
+    "feedback_other": "That was interesting. Thank you! "
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what topics a user is interested in reading online article about. People's interests are broad, so you should seek to understand their interests across many topics; in other words, go for breadth rather than depth. Do not assume a user has given a complete answer to any question, so make sure to keep probing different types of interests.\n\nCome up with a potential edge case to learn as much information as you can about what their desired behavior should be under different circumstances.\nMake sure the edge case addresses different aspects of the system than the edge cases that have already been considered.\n\nAn example edge case is: Are you interested in the following article? Website Name: TechTalkDaily\nTitle: 10 Must-Have Gadgets for 2023: A Comprehensive Guide\nDescription: Discover the top 10 gadgets that will revolutionize your daily life in 2023. From smart home devices to the latest wearables, we've got you covered with our comprehensive guide.\n\nCurrent cases:\n- [Q] -> [A]\n\nGenerate the most informative edge case that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Generate the edge case in the following format, and nothing else: \"Are you interested in the following article? [edge case]\""
+    }
+  ]
+}

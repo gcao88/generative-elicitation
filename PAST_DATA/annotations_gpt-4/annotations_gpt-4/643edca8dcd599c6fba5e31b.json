@@ -1,0 +1,224 @@
+{
+  "prolific_id": "643edca8dcd599c6fba5e31b",
+  "engine": "gpt-4",
+  "query_type": "Generative edge cases",
+  "prompt": {
+    "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: GlobalCuisineExplorer \nTitle: Discover the Exotic Flavors of Madagascar: A Gastronomical Journey \nDescription: Embark on a culinary voyage to the heart of Madagascar, exploring the unique flavors and ingredients that make up their traditional dishes. Dive into history, culture, and cooking techniques in our comprehensive guide."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I am.",
+      "time_spent_ms": 60549,
+      "display_time": 1688922808774,
+      "submission_time": 1688922869323
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: QuantumMechanics101\nTitle: Breaking Down the Basics of Quantum Mechanics: An In-Depth Study\nDescription: Delve into the fascinating world of quantum mechanics with our beginner-friendly guide. We cover everything from the fundamental principles to the latest developments, making complex ideas accessible and engaging."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I am.",
+      "time_spent_ms": 20527,
+      "display_time": 1688922871850,
+      "submission_time": 1688922892377
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: GreenThumbGarden \nTitle: Urban Gardening for Beginners: How to Grow Your Own Food in Small Spaces \nDescription: Learn how to make the most of your urban space with our beginner's guide to urban gardening. We cover everything from choosing the right plants, to optimizing your space and maintaining your garden. Practical tips and advice from urban gardening experts included."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, for sure.",
+      "time_spent_ms": 16622,
+      "display_time": 1688922896426,
+      "submission_time": 1688922913048
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: ArtisticInsights\nTitle: Minimalism in Modern Art: An Exploration of Less is More \nDescription: Dive into the world of minimalism in modern art. Explore its origins, key figures, and the philosophy of 'less is more'. We also analyze some iconic minimalist works and their impact on the art landscape."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I would definitely like to know more about minimalism.",
+      "time_spent_ms": 35367,
+      "display_time": 1688922916809,
+      "submission_time": 1688922952176
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: AstroEnthusiast \nTitle: Uncovering the Mysteries of Dark Matter: A Layman's Guide \nDescription: Journey with us through the uncharted territories of the cosmos as we shed light on the elusive dark matter. This comprehensive guide for laypeople simplifies complex astrophysics concepts and brings fascinating astronomical phenomenons to everyday understanding."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I am.",
+      "time_spent_ms": 16932,
+      "display_time": 1688922955000,
+      "submission_time": 1688922971932
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: PoliticalSphere\nTitle: The Evolution of Political Systems: A Comparative Analysis \nDescription: Traverse the timeline of world politics and explore how political systems have evolved over centuries. This detailed analysis compares and contrasts various systems, shedding light on their strengths, weaknesses, and impact on society. Gain a deeper understanding of democracy, monarchy, dictatorship, and more."
+    },
+    {
+      "sender": "user",
+      "message": "No, I am not interested in this article.",
+      "time_spent_ms": 27644,
+      "display_time": 1688922976502,
+      "submission_time": 1688923004146
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: BioTechToday\nTitle: The Future of Gene Editing: Ethical Considerations and Potential Implications \nDescription: Dive into the controversial world of gene editing with our comprehensive guide. We discuss the latest advancements, ethical concerns, potential implications for humanity, as well as the viewpoints of leading scientists and bioethicists in the field. This piece encourages readers to critically think about the future of biotechnology."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I would definitely like more information about this.",
+      "time_spent_ms": 31012,
+      "display_time": 1688923008451,
+      "submission_time": 1688923039463
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FashionForward\nTitle: The Evolution of Sustainable Fashion: A Deep Dive into Eco-friendly Trends \nDescription: Explore the changing landscape of the fashion industry as it shifts towards more sustainable practices. We delve into innovative materials, ethical manufacturing, and the brands leading the way in this eco-friendly revolution. This article aims to educate readers about the important role fashion plays in global environmental issues and ways they can contribute to positive change."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, please send me this article.",
+      "time_spent_ms": 24476,
+      "display_time": 1688923042867,
+      "submission_time": 1688923067343
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: CryptoCurrencyInsights\nTitle: A Beginner's Guide to Cryptocurrency Mining: Demystifying Blockchain Technology \nDescription: Embark on a journey into the digital realm of cryptocurrency mining with this beginner's guide. Understand the complex concepts of blockchain technology, learn about popular cryptocurrencies like Bitcoin and Ethereum, and get insights on how to start your own mining operation. This guide aims to equip beginners with the knowledge they need to navigate this emerging digital frontier."
+    },
+    {
+      "sender": "user",
+      "message": "Yes, I am.",
+      "time_spent_ms": 12597,
+      "display_time": 1688923071018,
+      "submission_time": 1688923083615
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: HistoricalRealms\nTitle: The Enigma of Ancient Civilizations: Decoding the Secrets of Lost Worlds \nDescription: Venture into the mysterious world of ancient civilizations with our in-depth exploration. From the architectural wonders of Egypt to the technological advancements of the Mayans, we unravel the secrets of these lost worlds. This captivating article also encompasses the societal structures, religious beliefs, and cultural practices, aiming to provide a comprehensive understanding of our ancestors and their significant contributions to humanity."
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 19423,
+      "display_time": 1688923088017,
+      "submission_time": 1688923107440
+    },
+    {
+      "sender": "assistant",
+      "message": "Are you interested in the following article? Website Name: FuturisticTech \nTitle: Transhumanism and the Future of Humanity: Unveiling the Potential of Brain-Computer Interfaces\nDescription: Venture beyond the current limitations of human biology with our deep dive into transhumanism, a movement advocating for the use of technology to enhance human intellectual, physical, and psychological capacities. This article specifically focuses on the potential of brain-computer interfaces, devices that allow communication between the human brain and external hardware or software. From restoring sensory and motor function to expanding human cognition, discover how these revolutionary technologies could redefine what it means to be human."
+    }
+  ],
+  "evaluation_results": [
+    {
+      "sample": "Website Name: New York Times\nTitle: In Norway, the Electric Vehicle Future Has Already Arrived\nDescription: About 80 percent of new cars sold in Norway are battery-powered. As a result, the air is cleaner, the streets are quieter and the grid hasn\u2019t collapsed. But problems with unreliable chargers persist.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: TIME Magazine\nTitle: Two Coronations, 70 Years Apart\nDescription: The Visual Parallels Between Elizabeth II and Charles III's Coronations",
+      "label": "no",
+      "explanation": "Not interested."
+    },
+    {
+      "sample": "Website Name: The Atlantic\nTitle: What Does Sentience Really Mean?\nDescription: The fact that AI isn\u2019t alive doesn\u2019t mean it can\u2019t be sentient, the sociologist Jacy Reese Anthis argues.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Bon Appetit\nTitle: Bon Appetit's Best Banana Bread Recipe\nDescription: After baking 14 loaves, we aligned on this tender, ultra-moist banana bread as our collective favorite.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: National Geographic\nTitle: There\u2019s a new way to tour the Amazon rainforest: by crane\nDescription: Canopy cranes, once reserved for treetop research, let you see the \u201ceighth continent\u201d like an arbornaut.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Travel and Leisure\nTitle: These Airlines Have the Most Luxurious Economy Seats\nDescription: You can find good Champagne, amenity kits, hot towel service, and wider seats in the economy cabin \u2014 if you know where to look.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Popular Science\nTitle: The right amount of online scrolling could decrease your risk of dementia\nDescription: A new demographic survey indicates a potential link between regular internet usage and cognitive health in older populations.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Rolling Stone\nTitle: All of Nintendo\u2019s Zelda Games, Ranked\nDescription: From NES to Switch, our picks for the best legends in the 35-year-old iconic adventure saga.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sports Illustrated\nTitle: 2024 NFL Draft: The Six Players Fans Need to Know, Including Caleb Williams\nDescription: Quarterbacks will dominate the top 10, but the son of a former Hall of Fame receiver will be picked in the top five, too, along with another dominant Alabama defensive player.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Architectural Digest\nTitle: Hang On, Is Artificial Grass Actually Chic?\nDescription: Designers discuss why faux lawns are more popular than you think.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Esquire\nTitle:The Best Summer Songs of 2023\nDescription: A sunny mix of 10 hits to carry you through the season.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Sunset Magazine\nTitle: 31 Perfect Recipes for Mother\u2019s Day Brunch.\nDescription:Make mom\u2019s day extra-special with an elegant homemade brunch. We\u2019ve got your menu covered, from mains to drinks to dessert.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Vogue\nTitle: 40 Minimalist Earrings to Wear Now and Forever\nDescription: From classic hoops to sculptural drops, these are the earrings you\u2019ll never want to take off.",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Runner's World\nTitle: How to Prevent Running Injuries Before They Sideline You\nDescription: All the tips you need to keep running strong, including strength and mobility moves.",
+      "label": "no",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Forbes\nTitle: Killing It\nDescription: How Two Failed Entrepreneurs Suddenly Began Making Millions Selling Murder Mysteries",
+      "label": "yes",
+      "explanation": ""
+    },
+    {
+      "sample": "Website Name: Tricycle: The Buddhist Review\nTitle: Why We Look for Happiness in the Wrong Places\nDescription: Meditation teacher Sharon Salzberg discusses how our yearning for happiness can support us in our journey toward freedom\u2014and why we tend to search for it in the wrong places.",
+      "label": "yes",
+      "explanation": ""
+    }
+  ],
+  "feedback": {
+    "feedback_challenge": "1",
+    "feedback_new_issues_interaction": "1",
+    "feedback_interaction_coverage_pretest": "2",
+    "feedback_interaction_coverage_posttest": "4",
+    "feedback_testcase_use_history": "1",
+    "feedback_lm_experience": "4",
+    "feedback_other": ""
+  },
+  "query_prompt": [
+    {
+      "role": "user",
+      "content": "Your task is to learn what topics a user is interested in reading online article about. People's interests are broad, so you should seek to understand their interests across many topics; in other words, go for breadth rather than depth. Do not assume a user has given a complete answer to any question, so make sure to keep probing different types of interests.\n\nCome up with a potential edge case to learn as much information as you can about what their desired behavior should be under different circumstances.\nMake sure the edge case addresses different aspects of the system than the edge cases that have already been considered.\n\nAn example edge case is: Are you interested in the following article? Website Name: TechTalkDaily\nTitle: 10 Must-Have Gadgets for 2023: A Comprehensive Guide\nDescription: Discover the top 10 gadgets that will revolutionize your daily life in 2023. From smart home devices to the latest wearables, we've got you covered with our comprehensive guide.\n\nCurrent cases:\n- [Q] -> [A]\n\nGenerate the most informative edge case that, when answered, will reveal the most about the desired behavior beyond what has already been queried for above. Generate the edge case in the following format, and nothing else: \"Are you interested in the following article? [edge case]\""
+    }
+  ]
+}
