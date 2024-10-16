@@ -23,7 +23,6 @@ print("====================== RESTARTING RUN ======================")
 # Set up OpenAI API
 openai.api_key = os.getenv("OPENAI_API_KEY")
 openai.api_key = API_KEY
-
 app = Flask(__name__)
 
 
