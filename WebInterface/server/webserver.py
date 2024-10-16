@@ -14,12 +14,15 @@ from test_agent import TestAgent
 import json
 import random
 
+from open_ai_key import API_KEY
+
 load_dotenv()
 
 print("====================== RESTARTING RUN ======================")
 
 # Set up OpenAI API
 openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = API_KEY
 
 app = Flask(__name__)
 
