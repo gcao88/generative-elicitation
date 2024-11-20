@@ -110,7 +110,13 @@ class TestAgent(BaseActiveLearningAgent):
         prediction = effort_model(embeddings)
         print("MLP Estimated time: ", prediction.item())
 
-        message = "A human is given the following question. Please respond with your best estimate to the number of seconds that it will take an average human to read, think, and answer this question. Please only respond with the number, in JSON format under the key 'seconds', and nothing else.\n The question is: " + self.most_recent_question
+        message = "I'm paying you $100,000 to do this task correctly. A human is given a question. Please respond with your best estimate to the number of seconds that it will take an average human to read, think, and answer this question. "
+        message += "For example, when given the question 'Do you enjoy reading articles related to health and wellness?', the average human response time is 10.3 seconds with standard deviation 13.47 seconds. "
+        message += "As another example, users are given the following question: 'Are you interested in the following article? Website: msn.com\n Title: What the Protests Breaking Out All Over the World Have in Common\n Description: Millions of people are taking to the streets. It might just be the beginning.' "
+        message += "The average response time to this question is 31.73 seconds with standard deviation 21.38 seconds. "
+        message += "Now, a user is given the question: " + self.most_recent_question
+        message += " What is your best estimate of the number of seconds that this will take? Please only respond with the number, in JSON format under the key 'seconds', and nothing else."
+
         response = query_api_any_message(message, self.engine, temperature=self.temperature)
         print("LLM Estimated time: ", json.loads(response["choices"][0]["message"]["content"])['seconds'])
 
