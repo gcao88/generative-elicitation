@@ -1,11 +1,24 @@
 import textwrap
 
 from base_active_learning_agent import BaseActiveLearningAgent
-from utils import query_api
+from utils import query_api, query_api_any_message
+from sentence_transformers import SentenceTransformer
+import torch
+import json
+import random
+from effort_model_class import ResponseTimePredictor
 
 QUESTION_TYPES = ["yn", "open"]
 IMPLEMENTATION = "Python regex"  #["Python regex", "system"]
 
+cache_dir = "C:\\LLMs"
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+sentence_model = SentenceTransformer('all-mpnet-base-v2', cache_folder = cache_dir)
+effort_model = ResponseTimePredictor(sentence_model.get_sentence_embedding_dimension())
+print(sentence_model.get_sentence_embedding_dimension())
+effort_model.load_state_dict(torch.load("effort_model/model_state_dict.pth"))
+effort_model.to(device)
+effort_model.eval()
 
 class TestAgent(BaseActiveLearningAgent):
     def __init__(self, target_specification_file, engine, openai_cache_file=None, question_type=None, **kwargs):
@@ -17,6 +30,8 @@ class TestAgent(BaseActiveLearningAgent):
         self.open_count = 1
         self.open_time = self.open_count * 49.54
         self.last_question_type = None
+
+        self.most_recent_question = None
 
     def get_hypothesis_prompt(self, task_description, interaction_history, broken_regexes=None):
         hypothesis_prompt = textwrap.dedent('''\
@@ -41,7 +56,8 @@ class TestAgent(BaseActiveLearningAgent):
 
     def get_question_prompt(self, task_description, implementation, interaction_history):
         print("=== in function get_question_prompt")
-        if self.yn_count == 0 or (self.open_count != 0 and self.yn_time/self.yn_count < self.open_time/self.open_count):
+        if random.random() < 0.5:
+        # self.yn_count == 0 or (self.open_count != 0 and self.yn_time/self.yn_count < self.open_time/self.open_count):
             question_type_insert = "yes/no question"
             self.last_question_type = "yn"
         else:
@@ -71,8 +87,11 @@ class TestAgent(BaseActiveLearningAgent):
 
     def generate_active_query(self):
         '''Generates a question for the oracle.'''
+        print("=== generate_active_query ===")
         question_prompt = self.get_question_prompt(self.task_description, self.implementation, self.interaction_history)
         question, _ = query_api(question_prompt, self.engine, self.openai_cache, self.openai_cache_file, temperature=self.temperature)
+
+        self.most_recent_question = question
         return question
 
     def generate_oracle_response(self, question):
@@ -85,6 +104,16 @@ class TestAgent(BaseActiveLearningAgent):
         return f"question_{self.question_type}"
 
     def update_times(self, time):
+        print("Actual time: ", time/1000)
+
+        embeddings = sentence_model.encode(self.most_recent_question, convert_to_tensor=True).to(device)
+        prediction = effort_model(embeddings)
+        print("MLP Estimated time: ", prediction.item())
+
+        message = "A human is given the following question. Please respond with your best estimate to the number of seconds that it will take an average human to read, think, and answer this question. Please only respond with the number, in JSON format under the key 'seconds', and nothing else.\n The question is: " + self.most_recent_question
+        response = query_api_any_message(message, self.engine, temperature=self.temperature)
+        print("LLM Estimated time: ", json.loads(response["choices"][0]["message"]["content"])['seconds'])
+
         if self.last_question_type == "yn":
             self.yn_count += 1
             self.yn_time += time/1000

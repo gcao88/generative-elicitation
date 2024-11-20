@@ -159,6 +159,25 @@ def query_api(messages, engine, openai_cache=None, openai_cache_file=None, **kwa
     return response_text, response
 
 
+@retry(wait=wait_random_exponential(min=1, max=60))
+def query_api_any_message(message, engine, **kwargs):
+    if "temperature" not in kwargs:
+        kwargs["temperature"] = 0.0
+    if engine == "gpt-4" or engine == "gpt-3.5-turbo":
+        message_dict = [{"role": "user", "content": message}]
+        response = openai.ChatCompletion.create(
+            model=engine,
+            messages=message_dict,
+            **kwargs
+        )
+    else:
+        response = openai.Completion.create(
+            engine=engine,
+            prompt=message,
+            **kwargs
+        )
+    return response
+
 
 def load_openai_cache(openai_cache_file):
     '''Loads the openai cache file into a dict.
