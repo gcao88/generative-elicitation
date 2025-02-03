@@ -6,7 +6,7 @@ from sentence_transformers import SentenceTransformer
 import torch
 import json
 import random
-from effort_model_class import ResponseTimePredictor
+from effort_model_class import ResponseTimePredictor, QueryTimePredictor
 
 QUESTION_TYPES = ["yn", "open"]
 IMPLEMENTATION = "Python regex"  #["Python regex", "system"]
@@ -14,11 +14,19 @@ IMPLEMENTATION = "Python regex"  #["Python regex", "system"]
 cache_dir = "C:\\LLMs"
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 sentence_model = SentenceTransformer('all-mpnet-base-v2', cache_folder = cache_dir)
-effort_model = ResponseTimePredictor(sentence_model.get_sentence_embedding_dimension())
-print(sentence_model.get_sentence_embedding_dimension())
+embedding_dim = sentence_model.get_sentence_embedding_dimension()
+print(embedding_dim)
+
+effort_model = ResponseTimePredictor(embedding_dim)
 effort_model.load_state_dict(torch.load("effort_model/model_state_dict.pth"))
 effort_model.to(device)
 effort_model.eval()
+
+online_model = QueryTimePredictor(8, embedding_dim)
+online_model.load_state_dict(torch.load("effort_model/online_effort_state_dict.pth"))
+online_model.to(device)
+online_model.eval()
+
 
 class TestAgent(BaseActiveLearningAgent):
     def __init__(self, target_specification_file, engine, openai_cache_file=None, question_type=None, **kwargs):
@@ -32,6 +40,10 @@ class TestAgent(BaseActiveLearningAgent):
         self.last_question_type = None
 
         self.most_recent_question = None
+        self.cur_convo = {
+            "query_embeds": torch.zeros((1, embedding_dim), dtype=torch.float32),
+            "time_spents": torch.zeros((1, 1), dtype=torch.float32),
+        }
 
     def get_hypothesis_prompt(self, task_description, interaction_history, broken_regexes=None):
         hypothesis_prompt = textwrap.dedent('''\
@@ -119,6 +131,14 @@ class TestAgent(BaseActiveLearningAgent):
 
         response = query_api_any_message(message, self.engine, temperature=self.temperature)
         print("LLM Estimated time: ", json.loads(response["choices"][0]["message"]["content"])['seconds'])
+
+        pred = online_model(self.cur_convo['query_embeds'].unsqueeze(0), self.cur_convo['time_spents'].unsqueeze(0), embeddings.unsqueeze(0))
+        print("Online RNN Estimated time: ", torch.exp(pred).item())
+        self.cur_convo = {
+                    "query_embeds": torch.cat((self.cur_convo["query_embeds"], embeddings.unsqueeze(dim=0))),
+                    "time_spents": torch.cat((self.cur_convo["time_spents"], torch.log(torch.tensor([[time]], dtype=torch.float32))))
+                }
+
 
         if self.last_question_type == "yn":
             self.yn_count += 1
