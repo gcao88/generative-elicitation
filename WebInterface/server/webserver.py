@@ -267,7 +267,7 @@ def update():
         # if prolific_id_to_experiment_type[prolific_id]["query_type"] == "Test":
         #     prolific_id_to_experiment_type[prolific_id]["agent"].update_times(user_time_spent_on_message)
     query = None
-    type = None
+    type = "text"
     if not request.form.get("time_up"):
         if prolific_id_to_experiment_type[prolific_id]['query_type'] == 'Fixed':
             query_type = prolific_id_to_experiment_type[prolific_id]["agent"].generate_active_query()

@@ -24,7 +24,7 @@ class FixedAgent(BaseActiveLearningAgent):
                 elif question_type == 'comparison':
                     self.question_list.append({'question': question, 'type': "Options"})
                 else:
-                    self.question_list.append({'question': question, 'type': question_type})
+                    self.question_list.append({'question': question, 'type': "text"})
 
         self.cur_question = 0
 

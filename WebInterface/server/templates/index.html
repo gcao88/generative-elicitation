@@ -645,7 +645,7 @@
             return data;
         }
 
-        function addNewTurn(text, className, query_type, options = null) {
+        function addNewTurn(text, className, query_type, options = {optionA: "Option 1", optionB: "Option 2"}) {
             console.log("addNewTurn");
             text = text.replace(/\n/g, '<br>')
             const chatBubble = document.createElement("div");
@@ -674,7 +674,7 @@
                         showYesNoButtons();
                         break;
                     case "Options":
-                        showOptionButtons(options.optionA, options.optionB);
+                        showOptionButtons(options.optionA || "Option A", options.optionB || "Option B");
                         break;
                     case "Slider":
                         showSlider();
