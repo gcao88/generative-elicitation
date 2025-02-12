@@ -327,6 +327,12 @@
             <button type="submit">Submit</button>
         </form>
     </div>
+    <!-- Add this new div for the thank you screen -->
+    <div id="thank_you" style="display: none;">
+        <h1>Thank you!</h1>
+        <p>Your response has been recorded. You may now close this window.</p>
+        <p>If you were redirected here from Prolific, please return to Prolific to complete your submission.</p>
+    </div>
 
     <script>
 
@@ -674,15 +680,11 @@
                 body: makeServerRequestBody(false),
             });
             document.getElementById("generative_al_task").style.display = "none";
-            document.getElementById("feedback_intermediate").style.display = "block";
-            if (queryMode == "chat") {
-                document.getElementById("instructions").innerHTML = "Please answer the following questions about the conversation you just had with the chatbot.";
-            } else {
-                document.getElementById("instructions").innerHTML = "Please answer the following questions about the answer you just wrote.";
-            }
-            document.getElementById(`interm_q1_${queryMode}`).style.display = "inline";
-            document.getElementById(`interm_q2_${queryMode}`).style.display = "block";
-            document.getElementById(`interm_q3_${queryMode}`).style.display = "inline";
+            document.getElementById("instructions").style.display = "none";
+            document.getElementById("timer").style.display = "none";
+
+            // Show thank you screen
+            document.getElementById("thank_you").style.display = "block";
         }
 
         document.getElementById("prompt_submit").addEventListener("click", async (e) => {
@@ -823,19 +825,21 @@
             document.getElementById("timer_value").innerHTML = timeToDisplay;
 
             // Display the message when countdown is over
-            if (timespent > 5 * 60 * 1000) {
-                if (lastTurnType == "assistant-message" || queryMode == "prompt") {
-                    // waiting for user to submit
-                    clearInterval(timer);
-                    if (queryMode == "prompt") {
-                        document.getElementById("timer_value").innerHTML = "Your 5 minutes are up. Please finish up and submit what you have. Once you submit, you will be redirected to the next page.";
-                    } else {
-                        document.getElementById("timer_value").innerHTML = "This will be the last question. Please finish and submit your response to this question. Once you submit, you will be redirected to the next page.";
-                    }
-                } else {
-                    // submit automatically
-                    submit_conversation();
-                }
+            if (timespent > 15 * 60 * 1000) {
+                submit_conversation();
+                clearInterval(timer);
+                // if (lastTurnType == "assistant-message" || queryMode == "prompt") {
+                //     // waiting for user to submit
+                //     clearInterval(timer);
+                //     if (queryMode == "prompt") {
+                //         document.getElementById("timer_value").innerHTML = "Your 5 minutes are up. Please finish up and submit what you have. Once you submit, you will be redirected to the next page.";
+                //     } else {
+                //         document.getElementById("timer_value").innerHTML = "This will be the last question. Please finish and submit your response to this question. Once you submit, you will be redirected to the next page.";
+                //     }
+                // } else {
+                //     // submit automatically
+                //     submit_conversation();
+                // }
             }
         }, 1000);
     </script>

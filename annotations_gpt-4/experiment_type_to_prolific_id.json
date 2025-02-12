@@ -2,7 +2,8 @@
     "website_preferences": {
         "Fixed": [
             "website_fixed",
-            "test1"
+            "test1",
+            "test"
         ]
     }
 }
