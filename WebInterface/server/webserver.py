@@ -10,7 +10,8 @@ from flask import Flask, jsonify, render_template, request
 from pool_based_agent import PoolBasedAgent
 from generative_questions_agent import GenerativeQuestionsAgent
 from generative_edge_cases_agent import GenerativeEdgeCasesAgent
-from test_agent import TestAgent
+# from test_agent import TestAgent
+from fixed_agent import FixedAgent
 import json
 import random
 
@@ -33,7 +34,7 @@ os.makedirs(SAVE_DIR, exist_ok=True)
 
 
 test_query_type = True
-query_type_to_test = "Test"
+query_type_to_test = "Fixed"
 
 
 query_type_to_agent = {
@@ -43,7 +44,8 @@ query_type_to_agent = {
     "Generative edge cases": GenerativeEdgeCasesAgent,
     "Generative open-ended questions": GenerativeQuestionsAgent,
     "Generative yes/no questions": GenerativeQuestionsAgent,
-    "Test": TestAgent
+    # "Test": TestAgent,
+    "Fixed": FixedAgent
 }
 
 query_type_to_instruction = {
@@ -53,7 +55,8 @@ query_type_to_instruction = {
     "Generative edge cases": "This chatbot will ask you a series of questions about %task_description%. Try to answer in a way that accurately and comprehensively conveys your preferences, such that someone reading your responses can understand and make judgments as close to your own as possible. Feel free to respond naturally (you can use commas, short phrases, etc), and press [enter] to send your response. Note that the chatbot technology is imperfect, and you are free to avoid answering any questions that are overly broad or uncomfortable. When interacting with the chatbot, please avoid asking follow-up questions or engaging in open-ended dialogue as the chatbot is unable to respond to you.\n<b>Note:</b> The chatbot will stop asking questions after 5 minutes, after which you can send your last response and you will be taken to the final part of the study.",
     "Generative open-ended questions": "This chatbot will ask you a series of questions about %task_description%. Try to answer in a way that accurately and comprehensively conveys your preferences, such that someone reading your responses can understand and make judgments as close to your own as possible. Feel free to respond naturally (you can use commas, short phrases, etc), and press [enter] to send your response. Note that the chatbot technology is imperfect, and you are free to avoid answering any questions that are overly broad or uncomfortable. When interacting with the chatbot, please avoid asking follow-up questions or engaging in open-ended dialogue as the chatbot is unable to respond to you.\n<b>Note:</b> The chatbot will stop asking questions after 5 minutes, after which you can send your last response and you will be taken to the final part of the study.",
     "Generative yes/no questions": "This chatbot will ask you a series of questions about %task_description%. Try to answer in a way that accurately and comprehensively conveys your preferences, such that someone reading your responses can understand and make judgments as close to your own as possible. Feel free to respond naturally (you can use commas, short phrases, etc), and press [enter] to send your response. Note that the chatbot technology is imperfect, and you are free to avoid answering any questions that are overly broad or uncomfortable. When interacting with the chatbot, please avoid asking follow-up questions or engaging in open-ended dialogue as the chatbot is unable to respond to you.\n<b>Note:</b> The chatbot will stop asking questions after 5 minutes, after which you can send your last response and you will be taken to the final part of the study.",
-    "Test": "Test message here -- describing the test/chatbot/task description"
+    # "Test": "Test message here -- describing the test/chatbot/task description",
+    "Fixed": "here"
 }
 
 
@@ -137,6 +140,7 @@ def home():
 
 @app.route("/get_next_prompt", methods=["POST"])
 def get_next_prompt():
+    print("=== webserver get_next_prompt ===")
     prolific_id = request.form.get("prolific_id")
     error = {}
     if prolific_id in prolific_id_to_experiment_type:
@@ -170,6 +174,9 @@ def get_next_prompt():
             curr_prompt_type, curr_query_type = ("website_preferences", query_type_to_test)
         else:
             curr_prompt_type, curr_query_type = random.choice(experiment_types_with_fewest_participants)
+
+        curr_prompt_type = "website_preferences"
+        curr_query_type = "Fixed"
 
         curr_prompt = prompt_type_to_prompt[curr_prompt_type]
         prolific_id_to_user_responses[prolific_id] = {
@@ -205,6 +212,8 @@ def get_next_prompt():
     agent = prolific_id_to_experiment_type[prolific_id]["agent"]
     if type(agent) == str: #  non-interactive
         prolific_id_to_user_responses[prolific_id]["query_prompt"] = agent
+    elif isinstance(agent, FixedAgent):
+        pass
     else:
         prolific_id_to_user_responses[prolific_id]["query_prompt"] = agent.get_query_prompt()
 
@@ -217,12 +226,28 @@ def get_next_prompt():
     })
 
 
+@app.route("/save_typing_speed", methods=["POST"])
+def save_typing_speed():
+    print("=== webserver save_typing_speed ===")
+    data = request.json
+    prolific_id = data.get("prolific_id")
+
+    # Add typing speed data to user responses
+    if prolific_id in prolific_id_to_user_responses:
+        prolific_id_to_user_responses[prolific_id]["typing_speed"] = {
+            "wpm": data.get("wpm"),
+        }
+    else:
+        print("Couldn't save WPM for prolific ID:", prolific_id)
+    return jsonify({"status": "success"})
+
+
 @app.route("/update", methods=["POST"])
 def update():
     """
     Sends user message (if exists) and queries active learning agent for next query
     """
-    print("=== webserver update")
+    print("=== webserver update ===")
     user_message = request.form.get("user_message")
     prolific_id = request.form.get("prolific_id")
     if user_message:
@@ -239,18 +264,26 @@ def update():
             "display_time": assistant_display_timestamp,
             "submission_time": user_submission_timestamp,
         })
-        if prolific_id_to_experiment_type[prolific_id]["query_type"] == "Test":
-            prolific_id_to_experiment_type[prolific_id]["agent"].update_times(user_time_spent_on_message)
+        # if prolific_id_to_experiment_type[prolific_id]["query_type"] == "Test":
+        #     prolific_id_to_experiment_type[prolific_id]["agent"].update_times(user_time_spent_on_message)
     query = None
     if not request.form.get("time_up"):
-        query = prolific_id_to_experiment_type[prolific_id]["agent"].generate_active_query()
-        prolific_id_to_user_responses[prolific_id]["conversation_history"].append({"sender": "assistant", "message": query})
+        if prolific_id_to_experiment_type[prolific_id]['query_type'] == 'Fixed':
+            query_type = prolific_id_to_experiment_type[prolific_id]["agent"].generate_active_query()
+            query = query_type['question']
+            type = query_type['type']
+            prolific_id_to_user_responses[prolific_id]["conversation_history"].append({"sender": "assistant", "message": query, "type": type})
+            print('query', query)
+        else:
+            query = prolific_id_to_experiment_type[prolific_id]["agent"].generate_active_query()
+            prolific_id_to_user_responses[prolific_id]["conversation_history"].append({"sender": "assistant", "message": query})
 
     return jsonify({"response": query})
 
 
 @app.route("/update_user_response", methods=["POST"])
 def update_user_response():
+    print("=== webserver update_user_response ===")
     user_message = request.form.get("user_message")
     prolific_id = request.form.get("prolific_id")
     previous_query = prolific_id_to_user_responses[prolific_id]["conversation_history"][-1]["message"]
@@ -261,6 +294,7 @@ def update_user_response():
 
 @app.route("/get_next_query", methods=["POST"])
 def get_next_query():
+    print("=== webserver get_next_query ===")
     prolific_id = request.form.get("prolific_id")
     query = prolific_id_to_experiment_type[prolific_id]["agent"].generate_active_query()
     prolific_id_to_user_responses[prolific_id]["conversation_history"].append({"sender": "assistant", "message": query})
@@ -270,6 +304,7 @@ def get_next_query():
 
 @app.route("/save", methods=["POST"])
 def save():
+    print("=== webserver save ===")
     prolific_id = request.form.get("prolific_id")
     with open(os.path.join(SAVE_DIR, f"{prolific_id}.json"), "w") as f:
         json.dump(prolific_id_to_user_responses[prolific_id], f, indent=2)
@@ -278,6 +313,7 @@ def save():
 
 @app.route("/submit_evaluation", methods=["POST"])
 def evaluation_submission():
+    print("=== webserver evaluation_submission ===")
     prolific_id = request.form.get("prolific_id")
     user_labels = []
     for idx, test_sample in enumerate(prolific_id_to_experiment_type[prolific_id]["prompt"]["test_samples"]):
@@ -293,6 +329,7 @@ def evaluation_submission():
 
 @app.route("/submit_feedback", methods=["POST"])
 def feedback_submission():
+    print("=== webserver feedback_submission ===")
     prolific_id = request.form.get("prolific_id")
     for feedback_type in request.form:
         if feedback_type.startswith("feedback_"):

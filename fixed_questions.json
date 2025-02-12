@@ -1,0 +1,53 @@
+{
+    "yes_no": [
+        "Do you enjoy reading about current events and news?",
+        "Are you interested in scientific discoveries and research?",
+        "Do you like reading about technology and innovations?",
+        "Are you interested in finance and investment topics?",
+        "Do you enjoy articles about personal development and self-improvement?",
+        "Do you find articles about psychology and human behavior interesting?",
+        "Are you interested in reading about politics and government policies?",
+        "Do you enjoy learning about history and historical events?",
+        "Do you like reading about health and wellness topics?",
+        "Are you interested in fitness and exercise-related content?",
+        "Do you enjoy reading about food, nutrition, and cooking?",
+        "Are you interested in travel articles and destination guides?",
+        "Do you like reading about business and entrepreneurship?",
+        "Are you interested in sports-related articles and news?",
+        "Do you enjoy reading about entertainment, movies, and TV shows?",
+        "Are you interested in celebrity news and gossip?",
+        "Do you like reading about art and design?",
+        "Are you interested in fashion and style trends?",
+        "Do you enjoy reading about music and musicians?",
+        "Are you interested in gaming and video game news?",
+        "Do you like reading about DIY projects and home improvement?",
+        "Are you interested in science fiction and fantasy topics?",
+        "Do you enjoy reading about philosophy and deep thinking?",
+        "Are you interested in articles about space exploration and astronomy?",
+        "Do you like reading about environmental issues and sustainability?",
+        "Are you interested in animal and wildlife-related articles?",
+        "Do you enjoy reading about hacking, cybersecurity, and privacy?",
+        "Are you interested in articles about artificial intelligence and machine learning?",
+        "Do you like reading about educational topics and online learning?",
+        "Are you interested in reading about cultural and societal trends?"
+    ],
+    "comparison": [
+        "Would you rather read an article about cutting-edge AI models or an article about the future of space exploration?\n\nOption 1:\nThe Next Generation of AI: How Models Are Learning Like Never Before\nAn in-depth look at the latest advancements in artificial intelligence, including deep learning breakthroughs and their real-world applications.\n\nOption 2:\nMars, Moon, and Beyond: The Future of Space Exploration\nAn exploration of humanity’s next steps in space travel, including missions to Mars, lunar bases, and potential interstellar travel.",
+        "Would you rather read an article about financial market trends or an article about the psychology of decision-making?\n\nOption 1:\nWhere the Markets Are Headed: Key Trends for the Next Decade\nA deep dive into financial market predictions, including stock trends, economic indicators, and investment opportunities.\n\nOption 2:\nThe Science of Choice: Why We Make the Decisions We Do\nAn exploration of cognitive biases, decision-making frameworks, and how our brains process risk and uncertainty.",
+        "Would you rather read an article about ancient civilizations or an article about modern tech innovations?\n\nOption 1:\nLost Empires: The Rise and Fall of Ancient Civilizations\nA historical analysis of great civilizations like the Aztecs, Romans, and Mesopotamians, and what led to their decline.\n\nOption 2:\nThe Technologies That Will Change Our World in the Next 10 Years\nAn overview of emerging technologies such as quantum computing, biotech, and AI that are shaping the future.",
+        "Would you rather read an article about a famous unsolved mystery or an article about groundbreaking scientific research?\n\nOption 1:\nThe World’s Biggest Unsolved Mysteries: What We Still Don’t Know\nA look at baffling mysteries such as the Dyatlov Pass incident, the Voynich manuscript, and missing treasures.\n\nOption 2:\nThe Latest Scientific Breakthroughs That Could Change Everything\nA summary of cutting-edge scientific research, from CRISPR gene editing to the search for dark matter.",
+        "Would you rather read an article about the impact of social media or an article about cybersecurity and online privacy?\n\nOption 1:\nHow Social Media is Reshaping Society, for Better or Worse\nAn analysis of social media’s influence on mental health, politics, and human behavior in the digital age.\n\nOption 2:\nStaying Safe Online: The Growing Importance of Cybersecurity\nA guide to protecting yourself from hackers, data breaches, and digital surveillance in an increasingly connected world.",
+        "Would you rather read an article about the neuroscience of creativity or an article about the habits of highly successful people?\n\nOption 1:\nUnlocking Creativity: What Neuroscience Tells Us About Original Thinking\nA look at how the brain generates creative ideas, the role of the subconscious, and techniques to boost innovation.\n\nOption 2:\nThe Daily Routines of Highly Successful People\nAn analysis of the habits, schedules, and mindset strategies used by some of the world’s most accomplished individuals.",
+        "Would you rather read an article about the future of renewable energy or an article about the ethics of artificial intelligence?\n\nOption 1:\nThe Future of Renewable Energy: How the World is Transitioning to Green Power\nA discussion on advancements in solar, wind, and battery storage technology, and their impact on global energy consumption.\n\nOption 2:\nCan AI Be Ethical? The Debate Over Machine Morality\nAn examination of ethical dilemmas in AI development, including bias in algorithms, autonomous weapons, and privacy concerns.",
+        "Would you rather read an article about extreme weather events or an article about deep-sea exploration?\n\nOption 1:\nThe Science Behind Extreme Weather: Why Storms Are Becoming More Intense\nAn investigation into the rising frequency of hurricanes, wildfires, and heatwaves due to climate change.\n\nOption 2:\nExploring the Deep: The Mysteries of Earth’s Last Frontier\nA journey into the uncharted depths of the ocean, featuring newly discovered species, hydrothermal vents, and deep-sea expeditions.",
+        "Would you rather read an article about the history of pandemics or an article about futuristic medical technologies?\n\nOption 1:\nPlagues and Pandemics: A History of Disease That Shaped the World\nAn overview of history’s deadliest outbreaks, from the Black Death to COVID-19, and their long-term effects on society.\n\nOption 2:\nThe Future of Medicine: How Technology is Revolutionizing Healthcare\nA look at medical advancements such as personalized medicine, AI-driven diagnostics, and robotic surgeries.",
+        "Would you rather read an article about the philosophy of happiness or an article about the secrets of longevity?\n\nOption 1:\nWhat is Happiness? Philosophical Perspectives on the Good Life\nA discussion on different philosophical views of happiness, from Aristotle’s eudaimonia to modern psychological insights.\n\nOption 2:\nThe Longevity Secrets of the World’s Healthiest People\nAn exploration of the habits, diets, and environments of long-lived populations, such as those in Blue Zones."
+    ],
+    "open-ended": [
+        "What types of articles do you find yourself reading the most online, and why?",
+        "If you could instantly become an expert in any subject, what would it be, and what kinds of articles would you read to learn more about it?",
+        "Think of the last few articles you really enjoyed reading—what were they about, and what made them interesting to you?",
+        "If you had to pick one website or publication to read from every day, which one would it be, and what draws you to it?",
+        "Are there any topics you used to read about frequently but have lost interest in? If so, what changed?"
+    ]
+}

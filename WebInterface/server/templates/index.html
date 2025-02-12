@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Elicitation Study</title>
+    <title>User Effort Study</title>
+    <script src="https://cdn.jsdelivr.net/npm/string-similarity@4.0.4/umd/string-similarity.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -187,11 +188,11 @@
 </head>
 
 <body>
-    <h1>Task Elicitation Study</h1>
+    <h1>User Effort Study</h1>
     <div id="instructions">
         By answering the following questions, you are participating in a study being performed by computer scientists in the
-        MIT Department of Electrical Engineering and Computer Science and the Stanford Computer Science Department.
-        If you have questions about this research, please contact Belinda Li at bzl@mit.edu or Alex Tamkin at atamkin@stanford.edu.
+        MIT Department of Electrical Engineering and Computer Science.
+        If you have questions about this research, please contact George Cao at georgec8@mit.edu.
         You must be at least 18 years old to participate. Your participation in this research is voluntary.
         You may decline to answer any or all of the following questions. You may decline further participation, at any time, without adverse consequences.
         Your anonymity is assured; the researchers who have requested your participation will not receive any personal information about you.
@@ -203,6 +204,29 @@
     </div>
     <div id="start_page" style="display: none;">
         <button id="start">Start</button>
+    </div>
+    <div id="typing_test" style="display: none;">
+        <div id="typing_prompt" style="font-size: 18px; margin-bottom: 20px; margin-top: 20px;">
+            To begin, we want to test your typing speed. Please type the following text as quickly and accurately as possible:
+            <div id="text_to_type"
+                style="background-color: #f0f0f0; padding: 15px; margin: 15px 0; border-radius: 5px;"
+                oncopy="return false"
+                oncut="return false"
+                onpaste="return false"
+                onselectstart="return false"
+                unselectable="on"
+                style="-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;">
+                lead eye number well than right no for will run how would group could call man become take have can come she high at might he use real not find while feel new between those down could first he if come eye write for man interest which since work well
+            </div>
+        </div>
+        <textarea id="typing_input"
+            rows="5"
+            style="width: 100%; margin-bottom: 15px;"
+            onpaste="return false"
+            ondrop="return false">
+        </textarea>
+        <div id="typing_feedback" style="color: red;"></div>
+        <button id="submit_typing">Continue</button>
     </div>
     <div id="generative_al_task" style="display: none;">
         <div id="timer">
@@ -314,7 +338,87 @@
         var queryMode;
         var evalPrompt;
 
+        document.getElementById("start").addEventListener("click", async (e) => {
+            document.getElementById("start_page").style.display = "none";
+            document.getElementById("typing_test").style.display = "block";
+        });
+
+        // Add new typing test related code
+        let typingStartTime = null;
+        let typingEndTime;
+        let wpm;
+        let submittedTypingTest = false;
+        const textToType = "lead eye number well than right no for will run how would group could call man become take have can come she high at might he use real not find while feel new between those down could first he if come eye write for man interest which since work well";
+        // Starts the timer for typing test
+        document.getElementById("typing_input").addEventListener("input", function(e) {
+            const typed = e.target.value;
+            const submitButton = document.getElementById("submit_typing");
+            if (typingStartTime === null && typed.length > 0) {
+                typingStartTime = Date.now();
+            }
+        });
+        // Function to check typing accuracy on Enter/Submit
+        function checkTypingAndSubmit() {
+            if (submittedTypingTest) {
+                return;
+            }
+            const typed = document.getElementById("typing_input").value;
+            const submitButton = document.getElementById("submit_typing");
+
+            const similarity = stringSimilarity.compareTwoStrings(typed, textToType);
+            const accuracyPercent = Math.round(similarity * 100);
+
+            if (similarity >= 0.9) {
+                typingEndTime = Date.now();
+                const timeInSeconds = (typingEndTime - typingStartTime) / 1000;
+                const wordsTyped = textToType.split(' ').length;
+                wpm = Math.round((wordsTyped / timeInSeconds) * 60);
+
+                document.getElementById("typing_feedback").style.color = "green";
+                document.getElementById("typing_feedback").textContent = `Correct! Your typing speed is ${wpm} WPM and your accuracy is ${accuracyPercent}%`;
+                submittedTypingTest = true;
+            } else {
+                document.getElementById("typing_feedback").style.color = "red";
+                document.getElementById("typing_feedback").textContent =
+                    `Accuracy (${accuracyPercent}%) too low. Need at least 90% accuracy. Please try again.`;
+            }
+        }
+        // Checks for "Enter" key press to submit typing test
+        document.getElementById("typing_input").addEventListener("keypress", function(e) {
+            if (e.key === "Enter") {
+                e.preventDefault(); // Prevent newline in textarea
+                checkTypingAndSubmit();
+            }
+        });
+        // Handles final submission of typing test
+        document.getElementById("submit_typing").addEventListener("click", async (e) => {
+            checkTypingAndSubmit();
+
+            if (submittedTypingTest) {
+                await fetch("/save_typing_speed", {
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({wpm: wpm, prolific_id: prolificID})
+                });
+
+                // Continue to main task
+                document.getElementById("typing_test").style.display = "none";
+                document.getElementById("generative_al_task").style.display = "block";
+                if (queryMode == "chat") {
+                    document.getElementById("generative_al_task_chat").style.display = "block";
+                    await askInitialQuestion();
+                } else {
+                    document.getElementById("generative_al_task_prompt").style.display = "block";
+                    lastAssistantMessageTime = Date.now();
+                    conversationTaskStartTime = Date.now();
+                }
+            }
+        });
+
         async function populateTestSamples(testSamples) {
+            console.log("populateTestSamples");
             const testSamplesElement = document.getElementById("test_samples");
             var testSampleIdx = 0;
             testSamples.forEach((sample) => {
@@ -358,12 +462,12 @@
 
         async function getNextPrompt() {
             // get next prompt from server
+            console.log("getNextPrompt");
             let response = await fetch("/get_next_prompt", {
                 method: "POST",
                 body: makeServerRequestBody(false),
             });
             let data = await response.json();
-            console.log(data);
             // check if null
             if (data.hasOwnProperty("error")) {
                 let textNotice = document.createTextNode(`Error: ${data["error"]}`);
@@ -415,11 +519,13 @@
 
             prompt = prompt.replace(/\n/g, '<br><br>')
             document.getElementById("instructions").innerHTML = prompt;
-            populateTestSamples(testSamples);
+            // populateTestSamples(testSamples);
+
             return true;
         }
 
         function getConversation() {
+            console.log("getConversation");
             // convert conversation to JSON
             const conversation = [];
             document.getElementById("conversation").childNodes.forEach((node) => {
@@ -430,6 +536,7 @@
         }
 
         function getCurrentUserMessage() {
+            console.log("getCurrentUserMessage");
             if (queryMode == "prompt")
                 return document.getElementById("prompt").value;
             else {
@@ -438,6 +545,7 @@
         }
 
         function makeServerRequestBody(submitUserMessage=true) {
+            console.log("makeServerRequestBody");
             const conversation = getConversation();
             const data = new FormData();
             data.append("conversation", conversation);
@@ -452,6 +560,7 @@
         }
 
         function addNewTurn(text, className) {
+            console.log("addNewTurn");
             text = text.replace(/\n/g, '<br>')
             const chatBubble = document.createElement("div");
             chatBubble.classList.add(className);
@@ -477,6 +586,7 @@
         }
 
         function addPrompt(prompt) {
+            console.log("addPrompt");
             document.getElementById("evaluation_reference_query_answers").innerHTML += prompt.replace(/\n/g, '<br>');
         }
 
@@ -508,18 +618,18 @@
             }
         });
 
-        document.getElementById("start").addEventListener("click", async (e) => {
-            document.getElementById("start_page").style.display = "none";
-            document.getElementById("generative_al_task").style.display = "block";
-            if (queryMode == "chat") {
-                document.getElementById("generative_al_task_chat").style.display = "block";
-                await askInitialQuestion();
-            } else {
-                document.getElementById("generative_al_task_prompt").style.display = "block";
-                lastAssistantMessageTime = Date.now();
-                conversationTaskStartTime = Date.now();
-            }
-        });
+        // document.getElementById("start").addEventListener("click", async (e) => {
+        //     document.getElementById("start_page").style.display = "none";
+        //     document.getElementById("generative_al_task").style.display = "block";
+        //     if (queryMode == "chat") {
+        //         document.getElementById("generative_al_task_chat").style.display = "block";
+        //         await askInitialQuestion();
+        //     } else {
+        //         document.getElementById("generative_al_task_prompt").style.display = "block";
+        //         lastAssistantMessageTime = Date.now();
+        //         conversationTaskStartTime = Date.now();
+        //     }
+        // });
 
         document.getElementById("chat-form").addEventListener("submit", async (e) => {
             e.preventDefault();
@@ -554,6 +664,7 @@
         });
 
         async function submit_conversation() {
+            console.log("submit_conversation");
             if (document.getElementById("generative_al_task").style.display == "none") {
                 // already submitted
                 return;

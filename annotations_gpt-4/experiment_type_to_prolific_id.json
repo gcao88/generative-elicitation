@@ -1,60 +1,8 @@
 {
     "website_preferences": {
-        "Supervised Learning": [
-            "website_supervised"
-        ],
-        "Non-interactive": [
-            "website_noninteractive"
-        ],
-        "Pool-based Active Learning": [
-            "website_pool_al"
-        ],
-        "Generative edge cases": [
-            "website_edge_case"
-        ],
-        "Generative yes/no questions": [
-            "website_questions_yn",
-            "001",
-            "002",
-            "004",
-            "testing 123",
-            "test16"
-        ],
-        "Generative open-ended questions": [
-            "website_questions",
-            "test51"
-        ],
-        "Test": [
-            "website_test",
-            "003",
-            "005",
-            "006",
-            "007",
-            "testing ",
-            "testing 1092",
-            "test 935",
-            "test 937",
-            "test654",
-            "test8729",
-            "test 925",
-            "test 925",
-            "test 954",
-            "test1532",
-            "test1825",
-            "test45665",
-            "test751",
-            "test364",
-            "test189",
-            "test4189",
-            "test1893",
-            "test68745",
-            "test7698",
-            "test156",
-            "test93",
-            "test929r40",
-            "testsd345678",
-            "testing oneline",
-            "test online"
+        "Fixed": [
+            "website_fixed",
+            "test1"
         ]
     }
 }
