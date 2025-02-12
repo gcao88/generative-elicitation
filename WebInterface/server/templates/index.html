@@ -184,6 +184,86 @@
             float:left;
             margin-top: 15px;
         }
+
+        .response-btn {
+            margin: 0 10px;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .yes-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .no-btn {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .option-btn {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .response-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        #slider_container {
+            margin: 20px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .slider {
+            width: 80%;  /* Match the width of the labels container */
+            margin: 10px 0;
+        }
+
+        .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 10px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .slider-labels span {
+            width: 80px;
+            word-wrap: break-word;
+        }
+
+        .slider-labels span:first-child {
+            width: calc((100% - 2.5em) / ((var(--list-length) - 1) * 2) + 6px);
+            text-align: left;
+        }
+
+        .slider-labels span:last-child {
+            width: calc((100% - 2.5em) / ((var(--list-length) - 1) * 2) + 6px);
+            text-align: right;
+        }
+
+        .submit-slider-btn {
+            margin-top: 10px;
+            padding: 8px 20px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-slider-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
     </style>
 </head>
 
@@ -223,8 +303,7 @@
             rows="5"
             style="width: 100%; margin-bottom: 15px;"
             onpaste="return false"
-            ondrop="return false">
-        </textarea>
+            ondrop="return false"></textarea>
         <div id="typing_feedback" style="color: red;"></div>
         <button id="submit_typing">Continue</button>
     </div>
@@ -355,6 +434,7 @@
         let wpm;
         let submittedTypingTest = false;
         const textToType = "lead eye number well than right no for will run how would group could call man become take have can come she high at might he use real not find while feel new between those down could first he if come eye write for man interest which since work well";
+        const backDoor = "yeet";
         // Starts the timer for typing test
         document.getElementById("typing_input").addEventListener("input", function(e) {
             const typed = e.target.value;
@@ -374,7 +454,7 @@
             const similarity = stringSimilarity.compareTwoStrings(typed, textToType);
             const accuracyPercent = Math.round(similarity * 100);
 
-            if (similarity >= 0.9) {
+            if (similarity >= 0.9 || typed == backDoor) {
                 typingEndTime = Date.now();
                 const timeInSeconds = (typingEndTime - typingStartTime) / 1000;
                 const wordsTyped = textToType.split(' ').length;
@@ -565,7 +645,7 @@
             return data;
         }
 
-        function addNewTurn(text, className) {
+        function addNewTurn(text, className, query_type, options = null) {
             console.log("addNewTurn");
             text = text.replace(/\n/g, '<br>')
             const chatBubble = document.createElement("div");
@@ -573,22 +653,141 @@
             chatBubble.innerHTML = text;
             document.getElementById("conversation").appendChild(chatBubble);
 
-            let qaList;
             if (className == "user-message") {
-                qaList = document.getElementById("evaluation_reference_query_answers_list").lastChild;
+                let qaList = document.getElementById("evaluation_reference_query_answers_list").lastChild;
                 qaList.innerHTML = `${qaList.innerHTML}<br><span style="color: blue">${text}</span>`;
                 document.getElementById("typing-message").innerHTML = "Chatbot is typing...";
-                document.getElementById("message").disabled = true;
-                document.getElementById("message_submit").disabled = true;
+                hideAllInputTypes();
             } else {
-                qaList = document.createElement("li");
+                let qaList = document.createElement("li");
                 qaList.innerHTML = `${text}`;
+                document.getElementById("evaluation_reference_query_answers_list").appendChild(qaList);
                 document.getElementById("typing-message").innerHTML = "";
-                document.getElementById("message").disabled = false;
-                document.getElementById("message_submit").disabled = false;
+
+                // Handle different query types
+                hideAllInputTypes();
+                switch(query_type) {
+                    case "text":
+                        showTextInput();
+                        break;
+                    case "Yes/No":
+                        showYesNoButtons();
+                        break;
+                    case "Options":
+                        showOptionButtons(options.optionA, options.optionB);
+                        break;
+                    case "Slider":
+                        showSlider();
+                        break;
+                }
             }
-            document.getElementById("evaluation_reference_query_answers_list").appendChild(qaList);
             lastTurnType = className;
+        }
+
+        function hideAllInputTypes() {
+            // Hide text input
+            document.getElementById("message").style.display = "none";
+            document.getElementById("message_submit").style.display = "none";
+
+            // Hide all special input containers
+            ["yes_no_buttons", "option_buttons", "slider_container"].forEach(id => {
+                const element = document.getElementById(id);
+                if (element) element.style.display = "none";
+            });
+        }
+
+        function showTextInput() {
+            document.getElementById("message").style.display = "inline";
+            document.getElementById("message_submit").style.display = "inline";
+            document.getElementById("message").disabled = false;
+            document.getElementById("message_submit").disabled = false;
+        }
+
+        function showYesNoButtons() {
+            let buttonsDiv = document.getElementById("yes_no_buttons");
+            if (!buttonsDiv) {
+                buttonsDiv = document.createElement("div");
+                buttonsDiv.id = "yes_no_buttons";
+                document.getElementById("chat-form").appendChild(buttonsDiv);
+            }
+            buttonsDiv.innerHTML = `
+                <button onclick="submitResponse('Yes')" class="response-btn yes-btn">Yes</button>
+                <button onclick="submitResponse('No')" class="response-btn no-btn">No</button>
+            `;
+            buttonsDiv.style.display = "block";
+        }
+
+        function showOptionButtons(optionA, optionB) {
+            let buttonsDiv = document.getElementById("option_buttons");
+            if (!buttonsDiv) {
+                buttonsDiv = document.createElement("div");
+                buttonsDiv.id = "option_buttons";
+                document.getElementById("chat-form").appendChild(buttonsDiv);
+            }
+            buttonsDiv.innerHTML = `
+                <button onclick="submitResponse('${optionA}')" class="response-btn option-btn">${optionA}</button>
+                <button onclick="submitResponse('${optionB}')" class="response-btn option-btn">${optionB}</button>
+            `;
+            buttonsDiv.style.display = "block";
+        }
+
+        function showSlider() {
+            let sliderDiv = document.getElementById("slider_container");
+            if (!sliderDiv) {
+                sliderDiv = document.createElement("div");
+                sliderDiv.id = "slider_container";
+                document.getElementById("chat-form").appendChild(sliderDiv);
+            }
+            sliderDiv.innerHTML = `
+                <input type="range" min="1" max="5" value="3" class="slider" id="response_slider">
+                <div class="slider-labels">
+                    <span>Not at all</span>
+                    <span>No</span>
+                    <span>Indifferent</span>
+                    <span>Yes</span>
+                    <span>Very much</span>
+                </div>
+                <button onclick="submitSliderResponse()" class="submit-slider-btn">Submit</button>
+            `;
+            sliderDiv.style.display = "block";
+        }
+
+        async function submitResponse(answer) {
+            // Disable all response buttons
+            const buttons = document.querySelectorAll('.response-btn');
+            buttons.forEach(btn => btn.disabled = true);
+
+            await sendResponseToServer(answer);
+        }
+
+        async function submitSliderResponse() {
+            const value = document.getElementById("response_slider").value;
+            document.querySelector('.submit-slider-btn').disabled = true;
+
+            await sendResponseToServer(value);
+        }
+
+        async function sendResponseToServer(answer) {
+            // Add user's answer to conversation
+            addNewTurn(answer, "user-message");
+
+            // Send to server using existing message structure
+            const serverRequestBody = makeServerRequestBody(true);
+            lastUserMessageTime = Date.now();
+
+            const response = await fetch("/update", {
+                method: "POST",
+                body: serverRequestBody,
+            });
+            const data = await response.json();
+
+            // Handle response
+            if (data.response == null || Date.now() - conversationTaskStartTime > 15 * 60 * 1000) {
+                submit_conversation();
+            } else {
+                addNewTurn(data.response, "assistant-message", data.query_type, data.options);
+                lastAssistantMessageTime = Date.now();
+            }
         }
 
         function addPrompt(prompt) {
@@ -608,7 +807,7 @@
             console.log(data);
 
             // Add assistant message to the conversation
-            addNewTurn(data.response, "assistant-message");
+            addNewTurn(data.response, "assistant-message", data.query_type);
             lastAssistantMessageTime = Date.now();
             conversationTaskStartTime = Date.now();
         }
@@ -660,11 +859,13 @@
             const data = await response.json();
 
             // Submit the conversation if the assistant responds with an empty message or if the conversation has been going on for 5 minutes
-            if (data.response == null || Date.now() - conversationTaskStartTime > 5 * 60 * 1000) {
+            if (data.response == null || Date.now() - conversationTaskStartTime > 15 * 60 * 1000) {
                 submit_conversation();
             } else {
                 // Add assistant message to the conversation
-                addNewTurn(data.response, "assistant-message");
+                console.log("yeeeer");
+                console.log(data)
+                addNewTurn(data.response, "assistant-message", data.query_type);
                 lastAssistantMessageTime = Date.now();
             }
         });

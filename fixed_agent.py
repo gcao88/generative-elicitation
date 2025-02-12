@@ -5,11 +5,11 @@ from utils import query_api, query_api_any_message
 import json
 import random
 
-QUESTION_TYPES = ["yn", "open"]
+QUESTION_TYPES = ["yn", "text"]
 IMPLEMENTATION = "Python regex"  #["Python regex", "system"]
 with open("fixed_questions.json", "r", encoding="utf-8") as file:
     question_type_to_questions = json.load(file)
-yes_no_types = ['button', 'scale', 'open_ended']
+yes_no_types = ['Yes/No', 'Slider', 'text']
 
 class FixedAgent(BaseActiveLearningAgent):
     def __init__(self, target_specification_file, engine, openai_cache_file=None, question_type=None, **kwargs):
@@ -20,7 +20,9 @@ class FixedAgent(BaseActiveLearningAgent):
             questions = question_type_to_questions[question_type]
             for question in questions:
                 if question_type == 'yes_no':
-                    self.question_list.append({'question': question, 'type': question_type + "_" + random.choice(yes_no_types)})
+                    self.question_list.append({'question': question, 'type': random.choice(yes_no_types)})
+                elif question_type == 'comparison':
+                    self.question_list.append({'question': question, 'type': "Options"})
                 else:
                     self.question_list.append({'question': question, 'type': question_type})
 

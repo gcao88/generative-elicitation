@@ -251,9 +251,9 @@ def update():
     user_message = request.form.get("user_message")
     prolific_id = request.form.get("prolific_id")
     if user_message:
-        if prolific_id_to_experiment_type[prolific_id]["query_type"] != "Non-interactive":
-            previous_query = prolific_id_to_user_responses[prolific_id]["conversation_history"][-1]["message"]
-            prolific_id_to_experiment_type[prolific_id]["agent"].add_turn(previous_query, user_message)
+        # if prolific_id_to_experiment_type[prolific_id]["query_type"] != "Non-interactive":
+        #     previous_query = prolific_id_to_user_responses[prolific_id]["conversation_history"][-1]["message"]
+        #     prolific_id_to_experiment_type[prolific_id]["agent"].add_turn(previous_query, user_message)
         assistant_display_timestamp = int(request.form.get("last_assistant_message_display_time"))
         user_submission_timestamp = int(request.form.get("last_user_message_submission_time"))
         user_time_spent_on_message = user_submission_timestamp - assistant_display_timestamp
@@ -267,18 +267,19 @@ def update():
         # if prolific_id_to_experiment_type[prolific_id]["query_type"] == "Test":
         #     prolific_id_to_experiment_type[prolific_id]["agent"].update_times(user_time_spent_on_message)
     query = None
+    type = None
     if not request.form.get("time_up"):
         if prolific_id_to_experiment_type[prolific_id]['query_type'] == 'Fixed':
             query_type = prolific_id_to_experiment_type[prolific_id]["agent"].generate_active_query()
             query = query_type['question']
             type = query_type['type']
             prolific_id_to_user_responses[prolific_id]["conversation_history"].append({"sender": "assistant", "message": query, "type": type})
-            print('query', query)
+            print('query', query, 'type', type)
         else:
             query = prolific_id_to_experiment_type[prolific_id]["agent"].generate_active_query()
             prolific_id_to_user_responses[prolific_id]["conversation_history"].append({"sender": "assistant", "message": query})
 
-    return jsonify({"response": query})
+    return jsonify({"response": query, "query_type": type})
 
 
 @app.route("/update_user_response", methods=["POST"])
