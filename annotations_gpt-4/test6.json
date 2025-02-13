@@ -1,0 +1,25 @@
+{
+  "prolific_id": "test6",
+  "query_type": "Fixed",
+  "prompt": {
+    "preamble": "We are testing a system for understanding how much effort and how long it takes people to read and answer different types of questions.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "You will begin by testing your typing speed. Then you will answer some questions, and there will be various methods of responding.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Is watching documentaries something you find enjoyable?",
+      "type": "Slider"
+    },
+    {
+      "sender": "assistant",
+      "message": "What is one hobby or activity you've always wanted to try, but haven't yet?",
+      "type": "text"
+    }
+  ],
+  "typing_speed": {
+    "wpm": 8902
+  }
+}

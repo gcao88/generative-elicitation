@@ -1,0 +1,116 @@
+{
+  "prolific_id": "test2",
+  "query_type": "Fixed",
+  "prompt": {
+    "preamble": "We are testing a system for understanding how much effort and how long it takes people to read and answer different types of questions.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "You will begin by testing your typing speed. Then you will answer some questions, and there will be various methods of responding.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Which do you prefer:\n\nOption A: Listening to podcasts\n\nOption B: Watching YouTube videos",
+      "type": "Options"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 1740,
+      "display_time": 1739421306779,
+      "submission_time": 1739421308519
+    },
+    {
+      "sender": "assistant",
+      "message": "Which do you prefer:\n\nOption A: Learning a new skill\n\nOption B: Mastering an existing skill",
+      "type": "Options"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 2423,
+      "display_time": 1739421308533,
+      "submission_time": 1739421310956
+    },
+    {
+      "sender": "assistant",
+      "message": "Which do you prefer:\n\nOption A: Spending time indoors\n\nOption B: Spending time outdoors",
+      "type": "Options"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 1041,
+      "display_time": 1739421310973,
+      "submission_time": 1739421312014
+    },
+    {
+      "sender": "assistant",
+      "message": "Which do you prefer:\n\nOption A: Visiting art galleries\n\nOption B: Visiting historical landmarks",
+      "type": "Options"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 2263,
+      "display_time": 1739421312039,
+      "submission_time": 1739421314302
+    },
+    {
+      "sender": "assistant",
+      "message": "Which do you prefer:\n\nOption A: Playing strategy games\n\nOption B: Playing action games",
+      "type": "Options"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 1484,
+      "display_time": 1739421314319,
+      "submission_time": 1739421315803
+    },
+    {
+      "sender": "assistant",
+      "message": "Which do you prefer:\n\nOption A: Eating sweet snacks\n\nOption B: Eating savory snacks",
+      "type": "Options"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 1368,
+      "display_time": 1739421315818,
+      "submission_time": 1739421317186
+    },
+    {
+      "sender": "assistant",
+      "message": "Which do you prefer:\n\nOption A: Traveling solo\n\nOption B: Traveling with friends",
+      "type": "Options"
+    },
+    {
+      "sender": "user",
+      "message": "Option A",
+      "time_spent_ms": 1114,
+      "display_time": 1739421317202,
+      "submission_time": 1739421318316
+    },
+    {
+      "sender": "assistant",
+      "message": "Which do you prefer:\n\nOption A: Attending formal events\n\nOption B: Attending casual gatherings",
+      "type": "Options"
+    },
+    {
+      "sender": "user",
+      "message": "Option B",
+      "time_spent_ms": 963,
+      "display_time": 1739421318330,
+      "submission_time": 1739421319293
+    },
+    {
+      "sender": "assistant",
+      "message": "Which do you prefer:\n\nOption A: Fictional books\n\nOption B: Non-fictional books",
+      "type": "Options"
+    }
+  ],
+  "typing_speed": {
+    "wpm": 8174
+  }
+}

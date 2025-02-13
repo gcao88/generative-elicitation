@@ -1,0 +1,66 @@
+{
+  "prolific_id": "test5",
+  "query_type": "Fixed",
+  "prompt": {
+    "preamble": "We are testing a system for understanding how much effort and how long it takes people to read and answer different types of questions.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "You will begin by testing your typing speed. Then you will answer some questions, and there will be various methods of responding.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Do you prefer working in the morning over the evening?",
+      "type": "Yes/No"
+    },
+    {
+      "sender": "assistant",
+      "message": "Have you ever tried a completely new hobby in the past year?",
+      "type": "Yes/No"
+    },
+    {
+      "sender": "assistant",
+      "message": "Is pineapple on pizza something you enjoy?",
+      "type": "text"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 2138,
+      "display_time": 1739419743555,
+      "submission_time": 1739419745693
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you consider yourself more introverted than extroverted?",
+      "type": "text"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 1885,
+      "display_time": 1739419745714,
+      "submission_time": 1739419747599
+    },
+    {
+      "sender": "assistant",
+      "message": "Have you ever traveled to more than three countries?",
+      "type": "text"
+    },
+    {
+      "sender": "user",
+      "message": "yes",
+      "time_spent_ms": 1981,
+      "display_time": 1739419747623,
+      "submission_time": 1739419749604
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy reading books more than watching movies?",
+      "type": "Slider"
+    }
+  ],
+  "typing_speed": {
+    "wpm": 8955
+  }
+}

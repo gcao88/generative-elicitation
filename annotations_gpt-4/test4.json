@@ -1,0 +1,32 @@
+{
+  "prolific_id": "test4",
+  "query_type": "Fixed",
+  "prompt": {
+    "preamble": "We are testing a system for understanding how much effort and how long it takes people to read and answer different types of questions.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "You will begin by testing your typing speed. Then you will answer some questions, and there will be various methods of responding.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Imagine you found a wallet with a large sum of money and no identification\u2014how would you handle the situation?",
+      "type": "text"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 1558,
+      "display_time": 1739421669234,
+      "submission_time": 1739421670792
+    },
+    {
+      "sender": "assistant",
+      "message": "If you could press a button to instantly solve one global problem, but it would create a new unknown problem, would you press it? Why or why not?",
+      "type": "text"
+    }
+  ],
+  "typing_speed": {
+    "wpm": 9375
+  }
+}

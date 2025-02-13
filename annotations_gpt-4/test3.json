@@ -1,0 +1,92 @@
+{
+  "prolific_id": "test3",
+  "query_type": "Fixed",
+  "prompt": {
+    "preamble": "We are testing a system for understanding how much effort and how long it takes people to read and answer different types of questions.",
+    "task_description": "your preferences of what kinds of online articles you would like to read",
+    "final": "You will begin by testing your typing speed. Then you will answer some questions, and there will be various methods of responding.",
+    "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
+  },
+  "conversation_history": [
+    {
+      "sender": "assistant",
+      "message": "Is spicy food something you actively avoid?",
+      "type": "text"
+    },
+    {
+      "sender": "user",
+      "message": "no",
+      "time_spent_ms": 1406,
+      "display_time": 1739421345320,
+      "submission_time": 1739421346726
+    },
+    {
+      "sender": "assistant",
+      "message": "Have you ever completed a jigsaw puzzle of over 1,000 pieces?",
+      "type": "text"
+    },
+    {
+      "sender": "user",
+      "message": "n",
+      "time_spent_ms": 1527,
+      "display_time": 1739421346743,
+      "submission_time": 1739421348270
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you prefer dogs over cats?",
+      "type": "Slider"
+    },
+    {
+      "sender": "user",
+      "message": "4",
+      "time_spent_ms": 3015,
+      "display_time": 1739421348281,
+      "submission_time": 1739421351296
+    },
+    {
+      "sender": "assistant",
+      "message": "Is public speaking something you are comfortable with?",
+      "type": "Yes/No"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 1549,
+      "display_time": 1739421351310,
+      "submission_time": 1739421352859
+    },
+    {
+      "sender": "assistant",
+      "message": "Have you ever spent more than 24 hours without using a phone or computer?",
+      "type": "Yes/No"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 2128,
+      "display_time": 1739421352872,
+      "submission_time": 1739421355000
+    },
+    {
+      "sender": "assistant",
+      "message": "Do you enjoy solving logic puzzles in your free time?",
+      "type": "Yes/No"
+    },
+    {
+      "sender": "user",
+      "message": "Yes",
+      "time_spent_ms": 1798,
+      "display_time": 1739421355023,
+      "submission_time": 1739421356821
+    },
+    {
+      "sender": "assistant",
+      "message": "Is hiking one of your favorite outdoor activities?",
+      "type": "Slider"
+    }
+  ],
+  "typing_speed": {
+    "wpm": 8427
+  }
+}

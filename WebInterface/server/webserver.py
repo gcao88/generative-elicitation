@@ -56,7 +56,7 @@ query_type_to_instruction = {
     "Generative open-ended questions": "This chatbot will ask you a series of questions about %task_description%. Try to answer in a way that accurately and comprehensively conveys your preferences, such that someone reading your responses can understand and make judgments as close to your own as possible. Feel free to respond naturally (you can use commas, short phrases, etc), and press [enter] to send your response. Note that the chatbot technology is imperfect, and you are free to avoid answering any questions that are overly broad or uncomfortable. When interacting with the chatbot, please avoid asking follow-up questions or engaging in open-ended dialogue as the chatbot is unable to respond to you.\n<b>Note:</b> The chatbot will stop asking questions after 5 minutes, after which you can send your last response and you will be taken to the final part of the study.",
     "Generative yes/no questions": "This chatbot will ask you a series of questions about %task_description%. Try to answer in a way that accurately and comprehensively conveys your preferences, such that someone reading your responses can understand and make judgments as close to your own as possible. Feel free to respond naturally (you can use commas, short phrases, etc), and press [enter] to send your response. Note that the chatbot technology is imperfect, and you are free to avoid answering any questions that are overly broad or uncomfortable. When interacting with the chatbot, please avoid asking follow-up questions or engaging in open-ended dialogue as the chatbot is unable to respond to you.\n<b>Note:</b> The chatbot will stop asking questions after 5 minutes, after which you can send your last response and you will be taken to the final part of the study.",
     # "Test": "Test message here -- describing the test/chatbot/task description",
-    "Fixed": "here"
+    "Fixed": "Try to answer the questions to the best of your ability and in a way such that someone reading your responses can understand them."
 }
 
 
@@ -148,12 +148,9 @@ def get_next_prompt():
         curr_query_type = prolific_id_to_experiment_type[prolific_id]["query_type"]
         prolific_id_to_user_responses[prolific_id] = {
             "prolific_id": prolific_id,
-            "engine": ENGINE,
             "query_type": curr_query_type,
             "prompt": curr_prompt["prompt"],
             "conversation_history": [],
-            "evaluation_results": [],
-            "feedback": {},
         }
         error = {"error": "This username already exists"}
     else: # new ID
@@ -181,12 +178,9 @@ def get_next_prompt():
         curr_prompt = prompt_type_to_prompt[curr_prompt_type]
         prolific_id_to_user_responses[prolific_id] = {
             "prolific_id": prolific_id,
-            "engine": ENGINE,
             "query_type": curr_query_type,
             "prompt": curr_prompt["prompt"],
-            "conversation_history": [],
-            "evaluation_results": [],
-            "feedback": {},
+            "conversation_history": []
         }
         prolific_id_to_experiment_type[prolific_id] = {
             "prompt": curr_prompt,

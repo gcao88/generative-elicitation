@@ -1,8 +1,8 @@
 {
     "prompt": {
-        "preamble": "We are testing a system for understanding people's interest in reading different kinds of online articles.\nFor example, you might be interested in articles about some topics, but not about others.",
+        "preamble": "We are testing a system for understanding how much effort and how long it takes people to read and answer different types of questions.",
         "task_description": "your preferences of what kinds of online articles you would like to read",
-        "final": "In the final part of the study, you will give feedback on a test set of article headline and descriptions, which will enable us to see how well a chatbot reading your responses has learned what you like and dislike.",
+        "final": "You will begin by testing your typing speed. Then you will answer some questions, and there will be various methods of responding.",
         "evaluation": "Please indicate whether you would like to read the following articles: \"yes\" if you would, \"no\" if you would not."
     },
     "test_samples": [
